@@ -3,18 +3,18 @@ project:
 
 book: 
   page-navigation: true
-  title: "NOAA quarto book" 
-  site-url: "https://nmfs-opensci.github.io/NOAA-quarto-book" 
-  repo-url: "https://github.com/nmfs-opensci/NOAA-quarto-book"
+  title: "CPS Acoustic Classification" 
+  site-url: "https://nmfs-swfsc-ast.github.io/echo-class/" 
+  repo-url: "https://github.com/nmfs-swfsc-ast/echo-class"
   repo-actions: [edit, source, issue]
   favicon: assets/favicon.ico
   downloads: [pdf, docx]
   search: true
   author:
-    - name: Jane Doe
+    - name: Alice Beittel
       affiliations:
         - name: NOAA Fisheres
-          department: Northwest Fisheries Science Center
+          department: Southwest Fisheries Science Center
     - name: Eva Nováková
       institute: test
       affiliations:
