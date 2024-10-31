@@ -13,21 +13,23 @@ book:
   author:
     - name: Alice Beittel
       affiliations:
-        - name: NOAA Fisheres
+        - name: NOAA Southwest Fisheres Science Center
           department: Southwest Fisheries Science Center
-    - name: Eva Nováková
-      institute: test
-      affiliations:
-        - name: NOAA Fisheries
-          department: West Coast Regional Office
-          institute: test
-    - name: Matti Meikäläinen
-      affiliations:
-        - name: NOAA Fisheries
-          department: Southwest Fisheries Science Center
+   # - name: Eva Nováková
+   #   institute: test
+   #   affiliations:
+   #     - name: NOAA Fisheries
+   #       department: West Coast Regional Office
+   #       institute: test
+   # - name: Matti Meikäläinen
+   #   affiliations:
+   #     - name: NOAA Fisheries
+   #       department: Southwest Fisheries Science Center
   chapters:
     - index.qmd
-    - content/setup.qmd
+    - content/background.qmd
+    - content/acquisition.qmd
+    - content/workflow.qmd
     - content/add-content.qmd
     - content/customizing.qmd
     - content/rendering.qmd
