@@ -4,179 +4,259 @@
     "href": "index.html",
     "title": "CPS Acoustic Classification",
     "section": "",
-    "text": "What is this resource?\nThe SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Since then, they have expanded in scope and objectives to include the larger forage-fish assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.",
+    "text": "How do we use sound to count fish?\nDocument Objective: This resource will serve as a tutorial to demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species from Baja, Mexico to Vancouver, Canada.",
     "crumbs": [
-      "What is this resource?"
+      "How do we use sound to count fish?"
     ]
   },
   {
-    "objectID": "content/setup.html",
-    "href": "content/setup.html",
-    "title": "1  Set-up",
+    "objectID": "index.html#short-and-sweet-overview-of-survey",
+    "href": "index.html#short-and-sweet-overview-of-survey",
+    "title": "CPS Acoustic Classification",
+    "section": "Short and sweet overview of survey",
+    "text": "Short and sweet overview of survey\nThe SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Since then, we have expanded in scope and objectives to include the larger forage-fish assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.",
+    "crumbs": [
+      "How do we use sound to count fish?"
+    ]
+  },
+  {
+    "objectID": "index.html#cite-this-data",
+    "href": "index.html#cite-this-data",
+    "title": "CPS Acoustic Classification",
+    "section": "Cite This Data",
+    "text": "Cite This Data\n[enter text on how to do this]",
+    "crumbs": [
+      "How do we use sound to count fish?"
+    ]
+  },
+  {
+    "objectID": "index.html#noaa-readme",
+    "href": "index.html#noaa-readme",
+    "title": "CPS Acoustic Classification",
+    "section": "NOAA README",
+    "text": "NOAA README\nThis repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.",
+    "crumbs": [
+      "How do we use sound to count fish?"
+    ]
+  },
+  {
+    "objectID": "index.html#noaa-license",
+    "href": "index.html#noaa-license",
+    "title": "CPS Acoustic Classification",
+    "section": "NOAA License",
+    "text": "NOAA License\nSoftware code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.",
+    "crumbs": [
+      "How do we use sound to count fish?"
+    ]
+  },
+  {
+    "objectID": "content/background.html",
+    "href": "content/background.html",
+    "title": "1  Survey Background",
     "section": "",
     "text": "1.1 GitHub Set-up",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Set-up</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
     ]
   },
   {
-    "objectID": "content/setup.html#github-set-up",
-    "href": "content/setup.html#github-set-up",
-    "title": "1  Set-up",
+    "objectID": "content/background.html#github-set-up",
+    "href": "content/background.html#github-set-up",
+    "title": "1  Survey Background",
     "section": "",
     "text": "Click the green “use template” button to make a repository with this content. Make sure to make your repo public (since GitHub Pages doesn’t work on private repos unless you have a paid account) and check box to include all the branches (so that you get the gh-pages branch). \nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and root directory. \nTurn on GitHub Actions under Settings &gt; Actions &gt; General \nEdit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the Settings &gt; Pages page to find the url.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Set-up</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
+    ]
+  },
+  {
+    "objectID": "content/acquisition.html",
+    "href": "content/acquisition.html",
+    "title": "2  Data Acquisition",
+    "section": "",
+    "text": "2.1 Survey Design",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Acquisition</span>"
+    ]
+  },
+  {
+    "objectID": "content/acquisition.html#survey-equipment",
+    "href": "content/acquisition.html#survey-equipment",
+    "title": "2  Data Acquisition",
+    "section": "2.2 Survey Equipment",
+    "text": "2.2 Survey Equipment\n\n2.2.1 Acoustic Instruments\n\n\n\nTransducer locations on the bottom of the centerboard aboard Lasker.\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard”. The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was re- tracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\n2.2.2 Underway CTD\nOn Lasker and Shimada, conductivity and temperature profiles were measured down to 300 m using calibrated sensors on a probe cast from the vessel while underway (UnderwayCTD, or UCTD; Teledyne Ocean- science). Casts were typically conducted between two to four times along each transect. These data indicate the depth of the surface mixed layer, above which most epipelagic CPS reside during the day. These data were also used to estimate the time-averaged sound speed (Demer, 2004), for estimating ranges to the sound scatterers, and frequency-specifc sound absorption coefcients, for compensating signal attenuation of the sound pulse between the transducer and scatterers (Simmonds and MacLennan, 2005).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Acquisition</span>"
+    ]
+  },
+  {
+    "objectID": "content/acquisition.html#software",
+    "href": "content/acquisition.html#software",
+    "title": "2  Data Acquisition",
+    "section": "2.3 Software",
+    "text": "2.3 Software\n\n2.3.1 Echosounder Software\nEK80\n\n\n2.3.2 NetTime\nOn Lasker and Shimada, the computer clocks were synchronized with the GPS clock (UTC) using a synchronization software called NetTime.\n\n\n2.3.3 EAL\nThe 38-, 70-, 120-, 200-, and 333-kHz echosounders were controlled by the EK80 Adaptive Logger (EAL2, Renfree and Demer, 2016). The EAL optimizes the pulse interval based on the seabed depth, while avoiding aliased seabed echoes, and was programmed such that once an hour the echosounders would record three pings in passive mode, for obtaining estimates of the background noise level.\n\n\n2.3.4 K Sync\nTo minimize acoustic interference on Lasker and Shimada, transmit pulses from the EK80s, acoustic Doppler current profler and echosounder (Simrad-Kongsberg EC150-3C), multibeam echosounder (Simrad- Kongsberg ME70), imaging sonar (Simrad-Kongsberg MS70), scanning sonar (Simrad-Kongsberg SX90), and a separate acoustic Doppler current profler (Teledyne RD Instruments OS75 ADCP) were triggered using a synchronization system (Simrad K-Sync; Kongsberg). The K-Sync trigger rate, and thus the echosounder ping interval, was modulated by the EAL using the 18-kHz seabed depth provided by the Scientifc Computing System (SCS).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Acquisition</span>"
+    ]
+  },
+  {
+    "objectID": "content/acquisition.html#raw-acoustic-data-format",
+    "href": "content/acquisition.html#raw-acoustic-data-format",
+    "title": "2  Data Acquisition",
+    "section": "2.4 Raw Acoustic Data Format",
+    "text": "2.4 Raw Acoustic Data Format\nMeasurements of volume backscattering strength (Sv; dB re 1 m2 m-3) and target strength (TS; dB re 1 m2), indexed by time and geographic positions provided by GPS receivers, were stored in Simrad-Kongsberg .raw format with a 1-GB maximum fle size. During daytime, the echosounders operated in CW mode and logged to 60 m beyond the detected seabed range or to a maximum range of 500, 500, 500, 300, and 150 m for 38, 70, 120, 200, and 333 kHz, respectively. During nighttime, the echosounders operated in FM mode and logged to 100 m. For each acoustic instrument, the prefx for each fle name is a concatenation of the survey name (e.g., 2307RL), the operational mode (CW or FM), and the logging commencement date and time from the EK80 software (v21.15.1). For example, a fle generated by the Simrad-Kongsberg EK80 software for a WBT operated in CW mode is named 2307RL_CW-D20220826-T155651.raw.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Acquisition</span>"
     ]
   },
   {
     "objectID": "content/add-content.html",
     "href": "content/add-content.html",
-    "title": "2  Customize",
+    "title": "4  Customize",
     "section": "",
-    "text": "2.1 Edit and add your pages\nEdit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation).",
+    "text": "4.1 Edit and add your pages\nEdit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation).",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Customize</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Customize</span>"
     ]
   },
   {
     "objectID": "content/add-content.html#edit-and-add-your-pages",
     "href": "content/add-content.html#edit-and-add-your-pages",
-    "title": "2  Customize",
+    "title": "4  Customize",
     "section": "",
     "text": "---\ntitle: your title\n---\n\n---\ntitle: your title\n---",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Customize</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Customize</span>"
     ]
   },
   {
     "objectID": "content/add-content.html#add-your-pages-the-project",
     "href": "content/add-content.html#add-your-pages-the-project",
-    "title": "2  Customize",
-    "section": "2.2 Add your pages the project",
-    "text": "2.2 Add your pages the project\n\nAdd the files to _quarto.yml",
+    "title": "4  Customize",
+    "section": "4.2 Add your pages the project",
+    "text": "4.2 Add your pages the project\n\nAdd the files to _quarto.yml",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Customize</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Customize</span>"
     ]
   },
   {
     "objectID": "content/customizing.html",
     "href": "content/customizing.html",
-    "title": "3  Customization",
+    "title": "5  Customization",
     "section": "",
-    "text": "3.1 Quarto documentation\nQuarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation.",
+    "text": "5.1 Quarto documentation\nQuarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Customization</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Customization</span>"
     ]
   },
   {
     "objectID": "content/customizing.html#examples",
     "href": "content/customizing.html#examples",
-    "title": "3  Customization",
-    "section": "3.2 Examples",
-    "text": "3.2 Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFaye lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory.",
+    "title": "5  Customization",
+    "section": "5.2 Examples",
+    "text": "5.2 Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFaye lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Customization</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Customization</span>"
     ]
   },
   {
     "objectID": "content/rendering.html",
     "href": "content/rendering.html",
-    "title": "4  Rendering",
+    "title": "6  Rendering",
     "section": "",
-    "text": "4.1 Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto.",
+    "text": "6.1 Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Rendering</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Rendering</span>"
     ]
   },
   {
     "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
     "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "title": "4  Rendering",
-    "section": "4.2 Step 2. Clone and create RStudio project",
-    "text": "4.2 Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up.",
+    "title": "6  Rendering",
+    "section": "6.2 Step 2. Clone and create RStudio project",
+    "text": "6.2 Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Rendering</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Rendering</span>"
     ]
   },
   {
     "objectID": "content/rendering.html#step-3.-render-within-rstudio",
     "href": "content/rendering.html#step-3.-render-within-rstudio",
-    "title": "4  Rendering",
-    "section": "4.3 Step 3. Render within RStudio",
-    "text": "4.3 Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”.",
+    "title": "6  Rendering",
+    "section": "6.3 Step 3. Render within RStudio",
+    "text": "6.3 Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Rendering</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Rendering</span>"
     ]
   },
   {
     "objectID": "content/figures_and_tables.html",
     "href": "content/figures_and_tables.html",
-    "title": "5  Figures and Tables",
+    "title": "7  Figures and Tables",
     "section": "",
-    "text": "5.1 Code\nYou can embed an R code chunk like this:\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00",
+    "text": "7.1 Code\nYou can embed an R code chunk like this:\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Figures and Tables</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Figures and Tables</span>"
     ]
   },
   {
     "objectID": "content/figures_and_tables.html#including-plots",
     "href": "content/figures_and_tables.html#including-plots",
-    "title": "5  Figures and Tables",
-    "section": "5.2 Including Plots",
-    "text": "5.2 Including Plots\nYou can also embed plots and reference them, like so Figure 5.1.\n\n\n\n\n\n\n\n\nFigure 5.1: Plot of pressure\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.",
+    "title": "7  Figures and Tables",
+    "section": "7.2 Including Plots",
+    "text": "7.2 Including Plots\nYou can also embed plots and reference them, like so Figure 7.1.\n\n\n\n\n\n\n\n\nFigure 7.1: Plot of pressure\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Figures and Tables</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Figures and Tables</span>"
     ]
   },
   {
     "objectID": "content/figures_and_tables.html#including-tables",
     "href": "content/figures_and_tables.html#including-tables",
-    "title": "5  Figures and Tables",
-    "section": "5.3 Including Tables",
-    "text": "5.3 Including Tables\nYou can also embed tables and reference them with Table 5.1.\n\nlibrary(knitr)\nkable(head(iris))\n\n\n\nTable 5.1: Iris Data\n\n\n\n\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n5.0\n3.6\n1.4\n0.2\nsetosa\n\n\n5.4\n3.9\n1.7\n0.4\nsetosa",
+    "title": "7  Figures and Tables",
+    "section": "7.3 Including Tables",
+    "text": "7.3 Including Tables\nYou can also embed tables and reference them with Table 7.1.\n\nlibrary(knitr)\nkable(head(iris))\n\n\n\nTable 7.1: Iris Data\n\n\n\n\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n5.0\n3.6\n1.4\n0.2\nsetosa\n\n\n5.4\n3.9\n1.7\n0.4\nsetosa",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Figures and Tables</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Figures and Tables</span>"
     ]
   },
   {
     "objectID": "content/code.html",
     "href": "content/code.html",
-    "title": "6  Rendering with Code",
+    "title": "8  Rendering with Code",
     "section": "",
-    "text": "6.1 Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it.",
+    "text": "8.1 Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Rendering with Code</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Rendering with Code</span>"
     ]
   },
   {
     "objectID": "content/code.html#modify-the-github-action",
     "href": "content/code.html#modify-the-github-action",
-    "title": "6  Rendering with Code",
+    "title": "8  Rendering with Code",
     "section": "",
     "text": "render-and-publish.old_yml",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Rendering with Code</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Rendering with Code</span>"
     ]
   },
   {
     "objectID": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
     "href": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
-    "title": "6  Rendering with Code",
-    "section": "6.2 Render locally and publish to gh-pages branch",
-    "text": "6.2 Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages",
+    "title": "8  Rendering with Code",
+    "section": "8.2 Render locally and publish to gh-pages branch",
+    "text": "8.2 Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Rendering with Code</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Rendering with Code</span>"
     ]
   },
   {
     "objectID": "content/adding-refs.html",
     "href": "content/adding-refs.html",
-    "title": "7  References",
+    "title": "9  References",
     "section": "",
     "text": "Quarto has powerful references functionality. You can easily insert citations from Zotero libraries that you maintain in the cloud (on Zotero). This allows the whole team to update the library and you can sync up to that library. Read about this on the Quarto documentation on citations. Google youtube videos on this also to see it in action.\nAdd a .bib file in to your project or add a linked Zotero library via RStudio in Visual mode with Tools &gt; Project Options… &gt; R Markdown &gt; select custom libraries from the Zotero dropdown.\nThe you can type @ and you will see a dropdown of the references in your libraries. You can then select the ones to add. If you don’t see the one you need, you can paste in the DOI and it will be added to your references file (with all the info). The references will be added to your references section of your book automatically.\nSee the references.qmd file for how to include the references.\n\n@ansley1981 will produce Ansley and Davis (1981)\n[@ansley1981] will produce (Ansley and Davis 1981).\n\n\n\n\n\nAnsley, H. L. H., and C. D. Davis. 1981. “Migration and Standing Stock of Fishes Associated with Artificial and Natural Reefs on Georgia’s Outer Continental Shelf.” Brunswick, Georgia, USA.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>References</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>References</span>"
     ]
   },
   {
