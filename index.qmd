@@ -1,4 +1,8 @@
-\[add report run date\]
+```{r, echo=FALSE}
+render.date <- format(Sys.time(), format = "%F %T", usetz = TRUE)
+```
+
+**Last updated:** `{r} render.date`
 
 # How do we use sound to count fish? {.unnumbered}
 
