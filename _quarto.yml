@@ -44,14 +44,14 @@ book:
   
   sidebar:
     background: "#D9E3E4"
-    logo: "https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png"
+    logo: "https://media.fisheries.noaa.gov/dam-migration-miss/md_YPyChZ2sgSi5.png?1595971802"
     favicon: images/favicon.ico
     pinned: true
     align: center
     tools: 
       - icon: globe
-        href: https://nmfs-opensci.github.io
-        text: "NMFS Open Science"
+        href: "https://www.fisheries.noaa.gov/west-coast/science-data/advanced-survey-technologies-assessments-california-current-ecosystem"
+        text: "SWFSC AST"
     style: "docked"
     search: true
     collapse-level: 1
