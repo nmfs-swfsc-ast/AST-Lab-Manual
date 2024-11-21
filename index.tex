@@ -510,18 +510,30 @@ Center
 \mainmatter
 \bookmarksetup{startatroot}
 
-\chapter*{How do we use sound to count
-fish?}\label{how-do-we-use-sound-to-count-fish}
-\addcontentsline{toc}{chapter}{How do we use sound to count fish?}
+\chapter*{Welcome}\label{welcome}
+\addcontentsline{toc}{chapter}{Welcome}
 
-\markboth{How do we use sound to count fish?}{How do we use sound to
-count fish?}
+\markboth{Welcome}{Welcome}
 
-{[}add report run date{]}
+\textbf{Last updated:} 2024-11-21 11:50:54 PST
 
-\textbf{Document Objective:} This resource will serve as a tutorial to
-demonstrate how the SWFSC uses acoustic data generate biomass estimates
-of Coastal Pelagic Species from Baja, Mexico to Vancouver, Canada.
+{[}{[}{[}enter cool image of CPS survey{]}{]}{]}
+
+\href{https://www.fisheries.noaa.gov/species/west-coast-coastal-pelagic-species}{West
+Coast coastal pelagic species} play an important role in the California
+Current ecosystem. They're food sources for marine mammals, sea birds,
+and larger fish, and they support commercial and recreational fisheries.
+The biomass and abundance estimates derived from this project are used
+in stock assessment models to support sustainable fisheries.
+
+\section*{Document Objective:}\label{document-objective}
+\addcontentsline{toc}{section}{Document Objective:}
+
+\markright{Document Objective:}
+
+This resource will serve as a tutorial to demonstrate how the SWFSC uses
+acoustic data generate biomass estimates of Coastal Pelagic Species from
+Baja, Mexico to Vancouver, Canada.
 
 As part of our commitment to open science, reproducibility, and
 transparency, we provide this metadata guide to compliment our
@@ -537,17 +549,10 @@ suggest improvements to infrastructure. Thank you in advance for your
 collaboration and partnership with us as we develop our future data
 universe.
 
-\section*{Short and sweet overview of
-survey}\label{short-and-sweet-overview-of-survey}
-\addcontentsline{toc}{section}{Short and sweet overview of survey}
+\section*{User Resources}\label{user-resources}
+\addcontentsline{toc}{section}{User Resources}
 
-\markright{Short and sweet overview of survey}
-
-The SWFSC's ATM surveys of CPS in the CCE began in 2006 with a focus on
-the northern stock of Pacific Sardine. Since then, we have expanded in
-scope and objectives to include the larger forage-fish assemblage and
-krill. This evolution, and the migratory behavior of Pacific Sardine,
-serve to explain the present survey region and design.
+\markright{User Resources}
 
 \section*{Cite This Data}\label{cite-this-data}
 \addcontentsline{toc}{section}{Cite This Data}
@@ -556,11 +561,10 @@ serve to explain the present survey region and design.
 
 {[}enter text on how to do this{]}
 
-\section*{\texorpdfstring{\textbf{NOAA
-README}}{NOAA README}}\label{noaa-readme}
-\addcontentsline{toc}{section}{\textbf{NOAA README}}
+\section*{NOAA README}\label{noaa-readme}
+\addcontentsline{toc}{section}{NOAA README}
 
-\markright{\textbf{NOAA README}}
+\markright{NOAA README}
 
 This repository is a scientific product and is not official
 communication of the National Oceanic and Atmospheric Administration, or
@@ -576,11 +580,10 @@ The Department of Commerce seal and logo, or the seal and logo of a DOC
 bureau, shall not be used in any manner to imply endorsement of any
 commercial product or activity by DOC or the United States Government.
 
-\section*{\texorpdfstring{\textbf{NOAA
-License}}{NOAA License}}\label{noaa-license}
-\addcontentsline{toc}{section}{\textbf{NOAA License}}
+\section*{NOAA License}\label{noaa-license}
+\addcontentsline{toc}{section}{NOAA License}
 
-\markright{\textbf{NOAA License}}
+\markright{NOAA License}
 
 Software code created by U.S. Government employees is not subject to
 copyright in the United States (17 U.S.C. §105). The United
@@ -595,45 +598,92 @@ works of the Software outside of the United States.
 
 \chapter{Survey Background}\label{survey-background}
 
-This is a template for a simple Quarto book output to html, PDF or docx
-format. It includes a GitHub Action that will build the website
-automatically when you make changes to the files. The NOAA palette and
-fonts has been added to \texttt{theme.scss}. The webpage will be on the
-\texttt{gh-pages} branch. Serving the website files from this branch is
-a common way to keep all the website files from cluttering your main
-branch.
+\section{Who conducts the survey?}\label{who-conducts-the-survey}
 
-The GitHub Action installs R so you can have R code in your qmd or Rmd
-files. Note, you do not need to make changes to your Rmd files unless
-your need Quarto features like cross-references.
+The California Current Ecosystem Survey is conducted by researchers at
+the NOAA Southwest Fisheries Science Center from the Fisheries Resources
+Division. The survey is also made possible by volunteers from additional
+NOAA line offices and science centers, universities, international
+partners, NOAA interns, and inter-agency employees.
 
-\section{GitHub Set-up}\label{github-set-up}
+\section{Where does the survey take
+place?}\label{where-does-the-survey-take-place}
 
-\begin{itemize}
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=\textwidth,height=6in]{content/images/clipboard-1472872065.png}
+
+}
+
+\subcaption{Sardine distribution}
+
+\end{figure}%
+
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=\textwidth,height=6in]{content/images/fig_survey_map.png}
+
+}
+
+\subcaption{General sampling scheme}
+
+\end{figure}%
+
+\end{minipage}%
+
+\caption{\label{fig-survey}On left, a conceptual spring (shaded region)
+and summer (hashed region) distributions of potential habitat for the
+northern stock of Pacific Sardine along the west coasts of Mexico, the
+United States, and Canada. On right, the general sampling scheme of
+planned core-region (solid black lines), adaptive (dashed red lines),
+and nearshore lines (pink).}
+
+\end{figure}%
+
+\section{Research objectives:}\label{research-objectives}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
-  Click the green ``use template'' button to make a repository with this
-  content. Make sure to make your repo public (since GitHub Pages
-  doesn't work on private repos unless you have a paid account) and
-  check box to include all the branches (so that you get the gh-pages
-  branch).
+  Acoustically map the distributions, measure the species compositions
+  and size-frequency distributions, and estimate the abundances and
+  biomasses of CPS present in the survey area, e.g., Pacific Sardine
+  Sardinops sagax, Northern Anchovy (\emph{Engraulis mordax}), Pacifc
+  Herring (\emph{Clupea pallasii}), Round Herring (\emph{Etrumeus
+  acuminatus}), Pacific Mackerel (\emph{Scomber japonicus}), and Jack
+  Mackerel (\emph{Trachurus symmetricus})
 \item
-  Turn on GitHub Pages under Settings \textgreater{} Pages . You will
-  set pages to be made from the gh-pages branch and root directory.
+  Characterize and investigate linkages to their biotic and abiotic
+  environments
 \item
-  Turn on GitHub Actions under Settings \textgreater{} Actions
-  \textgreater{} General
+  Gather information regarding their life histories
 \item
-  Edit the repo description and Readme to add a link to the webpage.
-  When you edit the description, you will see the link url in the url
-  box or you can click on the Actions tab or the Settings \textgreater{}
-  Pages page to find the url.
-\end{itemize}
+  Compare the species composition and size distributions of trawls and
+  near shore vessel purse seine sets.
+\end{enumerate}
+
+\section{Survey History:}\label{survey-history}
+
+The SWFSC's ATM surveys of CPS in the CCE began in 2006 with a focus on
+the northern stock of Pacific Sardine. Since then, they have expanded in
+scope and objectives to include the larger forage-fsh assemblage and
+krill. This evolution, and the migratory behavior of Pacific Sardine,
+serve to explain the present survey region and design.
+
+\section{Code of Conduct}\label{code-of-conduct}
 
 \bookmarksetup{startatroot}
 
 \chapter{Data Acquisition}\label{data-acquisition}
-
-\section{Survey Design}\label{survey-design}
 
 \section{Survey Equipment}\label{survey-equipment}
 
@@ -737,116 +787,98 @@ Simrad-Kongsberg EK80 software for a WBT operated in CW mode is named
 
 \chapter{Data Workflow}\label{data-workflow}
 
+\subsection{Data pipeline from boat to shore to
+report}\label{data-pipeline-from-boat-to-shore-to-report}
+
 \bookmarksetup{startatroot}
 
-\chapter{Customize}\label{customize}
+\chapter{Data Preparation}\label{data-preparation}
 
-\section{Edit and add your pages}\label{edit-and-add-your-pages}
+\subsection{Select regions of
+interest}\label{select-regions-of-interest}
 
-Edit the qmd or md files in the \texttt{content} folder. qmd files can
-include code (R, Python, Julia) and lots of Quarto markdown bells and
-whistles (like call-outs, cross-references, auto-citations and much
-more).
+\subsubsection{Select data on transect
+lines}\label{select-data-on-transect-lines}
 
-Each page should start with
+\subsubsection{Integration stop and start
+lines}\label{integration-stop-and-start-lines}
 
-\begin{verbatim}
----
-title: your title
----
-\end{verbatim}
+\bookmarksetup{startatroot}
 
-and the first header will be the 2nd level, so \texttt{\#\#}. Note,
-there are situations where you leave off
+\chapter{Data Processing}\label{data-processing}
 
-\begin{verbatim}
----
-title: your title
----
-\end{verbatim}
+Echoes from schooling CPS were identified using a semi-automated data
+processing algorithm implemented using Echoview software (v13.1;
+Echoview Software Pty Ltd). The filters and thresholds were based on a
+subsample of echoes from randomly selected CPS schools. The aim of the
+filter criteria is to retain at least 95\% of the noise-free backscatter
+from CPS while rejecting at least 95\% of the non-CPS backscatter (Fig.
+7). Data from Lasker, Shimada, Lisa Marie, and Long Beach Carnage were
+processed using the following steps:
 
-and start the qmd file with a level header \texttt{\#}, but if using the
-default title yaml (in the \texttt{-\/-\/-} fence) is a good habit since
-it makes it easy for Quarto convert your qmd file to other formats (like
-into a presentation).
-
-\section{Add your pages the project}\label{add-your-pages-the-project}
-
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Add the files to \texttt{\_quarto.yml}
-\end{itemize}
-
-\bookmarksetup{startatroot}
-
-\chapter{Customization}\label{customization}
-
-\section{Quarto documentation}\label{quarto-documentation}
-
-Quarto allow many bells and whistles to make nice output. Read the
-documentation here \href{https://quarto.org/docs/guide/}{Quarto
-documentation}.
-
-\section{Examples}\label{examples}
-
-Looking at other people's Quarto code is a great way to figure out how
-to do stuff. Most will have a link to a GitHub repo where you can see
-the raw code. Look for a link to edit page or see source code. This will
-usually be on the right. Or look for the GitHub icon somewhere.
-
-\begin{itemize}
-\tightlist
+  Match geometry of all Sv variables to the 38-kHz Sv ;
 \item
-  \href{https://quarto.org/docs/gallery/}{Quarto gallery}
+  Remove passive-mode pings;
 \item
-  \href{https://nmfs-openscapes.github.io/}{nmfs-openscapes}
+  Estimate and subtract background noise using the background noise
+  removal function (De Robertis and Higginbottom, 2007) in Echoview
+  (Figs. 7b, e);
 \item
-  \href{https://thefaylab.github.io/lab-manual/}{Faye lab manual}
+  Average the noise-free Sv echograms using non-overlapping 11-sample by
+  3-ping bins;
 \item
-  \href{https://nmfs-opensci.github.io/quarto_titlepages/}{quarto-titlepages}
-  Note the link to edit is broken. Go to repo and look in
-  \texttt{documentation} directory.
-\end{itemize}
-
-\bookmarksetup{startatroot}
-
-\chapter{Rendering}\label{rendering}
-
-The repo includes a GitHub Action that will render (build) the website
-automatically when you make changes to the files. It will be pushed to
-the \texttt{gh-pages} branch.
-
-But when you are developing your content, you will want to render it
-locally.
-
-\section{Step 1. Make sure you have a recent
-RStudio}\label{step-1.-make-sure-you-have-a-recent-rstudio}
-
-Have you updated RStudio since about August 2022? No? Then update to a
-newer version of RStudio. In general, you want to keep RStudio updated
-and it is required to have a recent version to use Quarto.
-
-\section{Step 2. Clone and create RStudio
-project}\label{step-2.-clone-and-create-rstudio-project}
-
-First, clone the repo onto your local computer. How? You can click File
-\textgreater{} New Project and then select ``Version Control''. Paste in
-the url of the repository. That will clone the repo on to your local
-computer. When you make changes, you will need to push those up.
-
-\section{Step 3. Render within
-RStudio}\label{step-3.-render-within-rstudio}
-
-RStudio will recognize that this is a Quarto project by the presence of
-the \texttt{\_quarto.yml} file and will see the ``Build'' tab. Click the
-``Render website'' button to render to the \texttt{\_site} folder.
-
-\textbf{Previewing:} You can either click \texttt{index.html} in the
-\texttt{\_site} folder and specify ``preview in browser'' or set up
-RStudio to preview to the viewer panel. To do the latter, go to Tools
-\textgreater{} Global Options \textgreater{} R Markdown. Then select
-``Show output preview in: Viewer panel''.
+  Expand the averaged, noise-reduced Sv echograms with a 7 pixel x 7
+  pixel dilation;
+\item
+  For each pixel, compute: Sv,200kHz − Sv,38kHz, Sv,120kHz − Sv,38kHz,
+  and Sv,70kHz − Sv,38kHz;
+\item
+  Create a Boolean echogram for Sv differences in the CPS range: −13.85
+  \textless{} Sv,70kHz − Sv,38kHz \textless{} 9.89 and − 13.5
+  \textless{} Sv,120kHz − Sv,38kHz \textless{} 9.37 and − 13.51
+  \textless{} Sv,200kHz − Sv,38kHz \textless{} 12.53;
+\item
+  For 120 and 200 kHz, compute the squared difference between the
+  noise-filtered Sv (Step 3) and averaged Sv (Step 4), average the
+  results using an 11-sample by 3-ping window to derive variance, then
+  compute the square root to derive the 120- and 200-kHz standard
+  deviations (σ120kHz and σ200kHz, respectively);
+\item
+  Expand the standard deviation echograms with a 7 pixel x 7 pixel
+  dilation;
+\item
+  Create a Boolean echogram based on the standard deviations in the CPS
+  range: σ120kHz \textgreater{} -65 dB and σ200kHz \textgreater{} -65
+  dB. Diffuse backscattering layers have low σ (Zwolinski et al., 2010)
+  whereas fsh schools have high σ;
+\item
+  Intersect the two Boolean echograms to create an echogram with
+  ``TRUE'' samples for candidate CPS schools and ``FALSE'' elsewhere;
+\item
+  Mask the noise-reduced echograms using the CPS Boolean echogram (Figs.
+  7c, f );
+\item
+  Create an integration-start line 5 m below the transducer
+  (\textasciitilde10 m depth);
+\item
+  Create an integration-stop line 3 m above the estimated seabed (Demer
+  et al., 2009), or to the maximum logging range (e.g., 350 m),
+  whichever is shallowest;
+\item
+  Set the minimum Sv threshold to -60 dB (corresponding to a density of
+  approximately three 20-cm-long Pacific Sardine per 100 m3);
+\item
+  Integrate the volume backscattering coefficients (sV , m2 m-3)
+  attributed to CPS over 5-m depths and averaged over 100-m distances;
+\item
+  Output the resulting nautical area scattering coefficients (sA; m2
+  nmi-2) and associated information from each transect and frequency to
+  comma-delimited text (.csv) files.
+\end{enumerate}
 
 \bookmarksetup{startatroot}
 

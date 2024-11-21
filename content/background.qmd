@@ -2,16 +2,28 @@
 title: "Survey Background"
 ---
 
-This is a template for a simple Quarto book output to html, PDF or docx format. It includes a GitHub Action that will build the website automatically when you make changes to the files. The NOAA palette and fonts has been added to `theme.scss`. The webpage will be on the `gh-pages` branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch.
+## Who conducts the survey?
+The California Current Ecosystem Survey is conducted by researchers at the NOAA Southwest Fisheries Science Center from the Fisheries Resources Division. The survey is also made possible by volunteers from additional NOAA line offices and science centers, universities, international partners, NOAA interns, and inter-agency employees. 
 
-The GitHub Action installs R so you can have R code in your qmd or Rmd files. Note, you do not need to make changes to your Rmd files unless your need Quarto features like cross-references.
+## Where does the survey take place?
 
-## GitHub Set-up
+::: {#fig-survey layout-ncol="2"}
+![Sardine distribution](images/clipboard-1472872065.png){height="6in"}
 
--   Click the green "use template" button to make a repository with this content. Make sure to make your repo public (since GitHub Pages doesn't work on private repos unless you have a paid account) and check box to include all the branches (so that you get the gh-pages branch). <img src="https://user-images.githubusercontent.com/2545978/197051535-c43c62de-17e8-40bf-a536-3eea8db250c4.png" alt="image" width="637"/>
+![General sampling scheme](images/fig_survey_map.png){height="6in"}
 
--   Turn on GitHub Pages under Settings \> Pages . You will set pages to be made from the gh-pages branch and root directory. <img src="https://user-images.githubusercontent.com/2545978/196808262-3d2262be-b9b5-4897-bba5-fc2f056dd335.png" alt="image" width="540"/>
+On left, a conceptual spring (shaded region) and summer (hashed region) distributions of potential habitat for the northern stock of Pacific Sardine along the west coasts of Mexico, the United States, and Canada. On right, the general sampling scheme of planned core-region (solid black lines), adaptive (dashed red lines), and nearshore lines (pink).
+:::
 
--   Turn on GitHub Actions under Settings \> Actions \> General <img src="https://user-images.githubusercontent.com/2545978/196808404-0c075fcf-db03-4516-88dd-3143b9fca475.png" alt="image" width="719"/>
+## Research objectives:
 
--   Edit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the Settings \> Pages page to find the url.
+1.  Acoustically map the distributions, measure the species compositions and size-frequency distributions, and estimate the abundances and biomasses of CPS present in the survey area, e.g., Pacific Sardine Sardinops sagax, Northern Anchovy (*Engraulis mordax*), Pacifc Herring (*Clupea pallasii*), Round Herring (*Etrumeus acuminatus*), Pacific Mackerel (*Scomber japonicus*), and Jack Mackerel (*Trachurus symmetricus*)
+2.  Characterize and investigate linkages to their biotic and abiotic environments
+3.  Gather information regarding their life histories
+4.  Compare the species composition and size distributions of trawls and near shore vessel purse seine sets.
+
+## Survey History:
+
+The SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Since then, they have expanded in scope and objectives to include the larger forage-fsh assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.
+
+## Code of Conduct
