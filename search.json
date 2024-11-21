@@ -4,19 +4,29 @@
     "href": "index.html",
     "title": "CPS Acoustic Classification",
     "section": "",
-    "text": "How do we use sound to count fish?\nDocument Objective: This resource will serve as a tutorial to demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species from Baja, Mexico to Vancouver, Canada.",
+    "text": "Welcome\n[[[enter cool image of CPS survey]]]\nWest Coast coastal pelagic species play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries. The biomass and abundance estimates derived from this project are used in stock assessment models to support sustainable fisheries.",
     "crumbs": [
-      "How do we use sound to count fish?"
+      "Welcome"
     ]
   },
   {
-    "objectID": "index.html#short-and-sweet-overview-of-survey",
-    "href": "index.html#short-and-sweet-overview-of-survey",
+    "objectID": "index.html#document-objective",
+    "href": "index.html#document-objective",
     "title": "CPS Acoustic Classification",
-    "section": "Short and sweet overview of survey",
-    "text": "Short and sweet overview of survey\nThe SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Since then, we have expanded in scope and objectives to include the larger forage-fish assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.",
+    "section": "Document Objective:",
+    "text": "Document Objective:\nThis resource will serve as a tutorial to demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species from Baja, Mexico to Vancouver, Canada.\nAs part of our commitment to open science, reproducibility, and transparency, we provide this metadata guide to compliment our public-domain data.\n\nPlease consider this resource to be a Living Document. The code in this repository is regularly being updated and improved. \n\nDo not hesitate to reach out (to us at either alice.beittel@noaa.gov or GitHub issues, especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.",
     "crumbs": [
-      "How do we use sound to count fish?"
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#user-resources",
+    "href": "index.html#user-resources",
+    "title": "CPS Acoustic Classification",
+    "section": "User Resources",
+    "text": "User Resources",
+    "crumbs": [
+      "Welcome"
     ]
   },
   {
@@ -26,7 +36,7 @@
     "section": "Cite This Data",
     "text": "Cite This Data\n[enter text on how to do this]",
     "crumbs": [
-      "How do we use sound to count fish?"
+      "Welcome"
     ]
   },
   {
@@ -36,7 +46,7 @@
     "section": "NOAA README",
     "text": "NOAA README\nThis repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.",
     "crumbs": [
-      "How do we use sound to count fish?"
+      "Welcome"
     ]
   },
   {
@@ -46,7 +56,7 @@
     "section": "NOAA License",
     "text": "NOAA License\nSoftware code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.",
     "crumbs": [
-      "How do we use sound to count fish?"
+      "Welcome"
     ]
   },
   {
@@ -54,17 +64,47 @@
     "href": "content/background.html",
     "title": "Survey Background",
     "section": "",
-    "text": "GitHub Set-up",
+    "text": "Who conducts the survey?\nThe California Current Ecosystem Survey is conducted by researchers at the NOAA Southwest Fisheries Science Center from the Fisheries Resources Division. The survey is also made possible by volunteers from additional NOAA line offices and science centers, universities, international partners, NOAA interns, and inter-agency employees.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
     ]
   },
   {
-    "objectID": "content/background.html#github-set-up",
-    "href": "content/background.html#github-set-up",
+    "objectID": "content/background.html#where-does-the-survey-take-place",
+    "href": "content/background.html#where-does-the-survey-take-place",
     "title": "Survey Background",
-    "section": "",
-    "text": "Click the green “use template” button to make a repository with this content. Make sure to make your repo public (since GitHub Pages doesn’t work on private repos unless you have a paid account) and check box to include all the branches (so that you get the gh-pages branch). \nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and root directory. \nTurn on GitHub Actions under Settings &gt; Actions &gt; General \nEdit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the Settings &gt; Pages page to find the url.",
+    "section": "Where does the survey take place?",
+    "text": "Where does the survey take place?\n\n\n\n\n\n\n\n\nSardine distribution\n\n\n\n\n\n\n\nGeneral sampling scheme\n\n\n\n\n\n\nFigure 1.1: On left, a conceptual spring (shaded region) and summer (hashed region) distributions of potential habitat for the northern stock of Pacific Sardine along the west coasts of Mexico, the United States, and Canada. On right, the general sampling scheme of planned core-region (solid black lines), adaptive (dashed red lines), and nearshore lines (pink).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
+    ]
+  },
+  {
+    "objectID": "content/background.html#research-objectives",
+    "href": "content/background.html#research-objectives",
+    "title": "Survey Background",
+    "section": "Research objectives:",
+    "text": "Research objectives:\n\nAcoustically map the distributions, measure the species compositions and size-frequency distributions, and estimate the abundances and biomasses of CPS present in the survey area, e.g., Pacific Sardine Sardinops sagax, Northern Anchovy (Engraulis mordax), Pacifc Herring (Clupea pallasii), Round Herring (Etrumeus acuminatus), Pacific Mackerel (Scomber japonicus), and Jack Mackerel (Trachurus symmetricus)\nCharacterize and investigate linkages to their biotic and abiotic environments\nGather information regarding their life histories\nCompare the species composition and size distributions of trawls and near shore vessel purse seine sets.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
+    ]
+  },
+  {
+    "objectID": "content/background.html#survey-history",
+    "href": "content/background.html#survey-history",
+    "title": "Survey Background",
+    "section": "Survey History:",
+    "text": "Survey History:\nThe SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Since then, they have expanded in scope and objectives to include the larger forage-fsh assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
+    ]
+  },
+  {
+    "objectID": "content/background.html#code-of-conduct",
+    "href": "content/background.html#code-of-conduct",
+    "title": "Survey Background",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
     ]
@@ -74,7 +114,7 @@
     "href": "content/acquisition.html",
     "title": "Data Acquisition",
     "section": "",
-    "text": "Survey Design",
+    "text": "Survey Equipment",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Acquisition</span>"
     ]
@@ -83,8 +123,8 @@
     "objectID": "content/acquisition.html#survey-equipment",
     "href": "content/acquisition.html#survey-equipment",
     "title": "Data Acquisition",
-    "section": "Survey Equipment",
-    "text": "Survey Equipment\n\nAcoustic Instruments\n\n\n\nTransducer locations on the bottom of the centerboard aboard Lasker.\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard”. The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was re- tracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\nUnderway CTD\nOn Lasker and Shimada, conductivity and temperature profiles were measured down to 300 m using calibrated sensors on a probe cast from the vessel while underway (UnderwayCTD, or UCTD; Teledyne Ocean- science). Casts were typically conducted between two to four times along each transect. These data indicate the depth of the surface mixed layer, above which most epipelagic CPS reside during the day. These data were also used to estimate the time-averaged sound speed (Demer, 2004), for estimating ranges to the sound scatterers, and frequency-specifc sound absorption coefcients, for compensating signal attenuation of the sound pulse between the transducer and scatterers (Simmonds and MacLennan, 2005).",
+    "section": "",
+    "text": "Acoustic Instruments\n\n\n\nTransducer locations on the bottom of the centerboard aboard Lasker.\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard”. The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was re- tracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\nUnderway CTD\nOn Lasker and Shimada, conductivity and temperature profiles were measured down to 300 m using calibrated sensors on a probe cast from the vessel while underway (UnderwayCTD, or UCTD; Teledyne Ocean- science). Casts were typically conducted between two to four times along each transect. These data indicate the depth of the surface mixed layer, above which most epipelagic CPS reside during the day. These data were also used to estimate the time-averaged sound speed (Demer, 2004), for estimating ranges to the sound scatterers, and frequency-specifc sound absorption coefcients, for compensating signal attenuation of the sound pulse between the transducer and scatterers (Simmonds and MacLennan, 2005).",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Acquisition</span>"
     ]
@@ -110,83 +150,33 @@
     ]
   },
   {
-    "objectID": "content/add-content.html",
-    "href": "content/add-content.html",
-    "title": "Customize",
+    "objectID": "content/workflow.html",
+    "href": "content/workflow.html",
+    "title": "Data Workflow",
     "section": "",
-    "text": "Edit and add your pages\nEdit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation).",
+    "text": "Data pipeline from boat to shore to report",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Customize</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Workflow</span>"
     ]
   },
   {
-    "objectID": "content/add-content.html#edit-and-add-your-pages",
-    "href": "content/add-content.html#edit-and-add-your-pages",
-    "title": "Customize",
+    "objectID": "content/preparation.html",
+    "href": "content/preparation.html",
+    "title": "Data Preparation",
     "section": "",
-    "text": "---\ntitle: your title\n---\n\n---\ntitle: your title\n---",
+    "text": "Select regions of interest\n\nSelect data on transect lines\n\n\nIntegration stop and start lines",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Customize</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Preparation</span>"
     ]
   },
   {
-    "objectID": "content/add-content.html#add-your-pages-the-project",
-    "href": "content/add-content.html#add-your-pages-the-project",
-    "title": "Customize",
-    "section": "Add your pages the project",
-    "text": "Add your pages the project\n\nAdd the files to _quarto.yml",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Customize</span>"
-    ]
-  },
-  {
-    "objectID": "content/customizing.html",
-    "href": "content/customizing.html",
-    "title": "Customization",
+    "objectID": "content/processing.html",
+    "href": "content/processing.html",
+    "title": "Data Processing",
     "section": "",
-    "text": "Quarto documentation\nQuarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation.",
+    "text": "Echoes from schooling CPS were identified using a semi-automated data processing algorithm implemented using Echoview software (v13.1; Echoview Software Pty Ltd). The filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter (Fig. 7). Data from Lasker, Shimada, Lisa Marie, and Long Beach Carnage were processed using the following steps:\n\nMatch geometry of all Sv variables to the 38-kHz Sv ;\nRemove passive-mode pings;\nEstimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007) in Echoview (Figs. 7b, e);\nAverage the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins;\nExpand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation;\nFor each pixel, compute: Sv,200kHz − Sv,38kHz, Sv,120kHz − Sv,38kHz, and Sv,70kHz − Sv,38kHz;\nCreate a Boolean echogram for Sv differences in the CPS range: −13.85 &lt; Sv,70kHz − Sv,38kHz &lt; 9.89 and − 13.5 &lt; Sv,120kHz − Sv,38kHz &lt; 9.37 and − 13.51 &lt; Sv,200kHz − Sv,38kHz &lt; 12.53;\nFor 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (Step 3) and averaged Sv (Step 4), average the results using an 11-sample by 3-ping window to derive variance, then compute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively);\nExpand the standard deviation echograms with a 7 pixel x 7 pixel dilation;\nCreate a Boolean echogram based on the standard deviations in the CPS range: σ120kHz &gt; -65 dB and σ200kHz &gt; -65 dB. Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fsh schools have high σ;\nIntersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere;\nMask the noise-reduced echograms using the CPS Boolean echogram (Figs. 7c, f );\nCreate an integration-start line 5 m below the transducer (~10 m depth);\nCreate an integration-stop line 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest;\nSet the minimum Sv threshold to -60 dB (corresponding to a density of approximately three 20-cm-long Pacific Sardine per 100 m3);\nIntegrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;\nOutput the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Customization</span>"
-    ]
-  },
-  {
-    "objectID": "content/customizing.html#examples",
-    "href": "content/customizing.html#examples",
-    "title": "Customization",
-    "section": "Examples",
-    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFaye lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Customization</span>"
-    ]
-  },
-  {
-    "objectID": "content/rendering.html",
-    "href": "content/rendering.html",
-    "title": "Rendering",
-    "section": "",
-    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Rendering</span>"
-    ]
-  },
-  {
-    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "title": "Rendering",
-    "section": "Step 2. Clone and create RStudio project",
-    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Rendering</span>"
-    ]
-  },
-  {
-    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
-    "href": "content/rendering.html#step-3.-render-within-rstudio",
-    "title": "Rendering",
-    "section": "Step 3. Render within RStudio",
-    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Rendering</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Processing</span>"
     ]
   },
   {
@@ -196,7 +186,7 @@
     "section": "",
     "text": "Code\nYou can embed an R code chunk like this:\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Figures and Tables</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Figures and Tables</span>"
     ]
   },
   {
@@ -204,9 +194,9 @@
     "href": "content/figures_and_tables.html#including-plots",
     "title": "Figures and Tables",
     "section": "Including Plots",
-    "text": "Including Plots\nYou can also embed plots and reference them, like so Figure 7.1.\n\n\n\n\n\n\n\n\nFigure 7.1: Plot of pressure\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.",
+    "text": "Including Plots\nYou can also embed plots and reference them, like so Figure 6.1.\n\n\n\n\n\n\n\n\nFigure 6.1: Plot of pressure\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Figures and Tables</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Figures and Tables</span>"
     ]
   },
   {
@@ -214,9 +204,9 @@
     "href": "content/figures_and_tables.html#including-tables",
     "title": "Figures and Tables",
     "section": "Including Tables",
-    "text": "Including Tables\nYou can also embed tables and reference them with Table 7.1.\n\nlibrary(knitr)\nkable(head(iris))\n\n\n\nTable 7.1: Iris Data\n\n\n\n\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n5.0\n3.6\n1.4\n0.2\nsetosa\n\n\n5.4\n3.9\n1.7\n0.4\nsetosa",
+    "text": "Including Tables\nYou can also embed tables and reference them with Table 6.1.\n\nlibrary(knitr)\nkable(head(iris))\n\n\n\nTable 6.1: Iris Data\n\n\n\n\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n5.0\n3.6\n1.4\n0.2\nsetosa\n\n\n5.4\n3.9\n1.7\n0.4\nsetosa",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Figures and Tables</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Figures and Tables</span>"
     ]
   },
   {
@@ -226,7 +216,7 @@
     "section": "",
     "text": "Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Rendering with Code</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Rendering with Code</span>"
     ]
   },
   {
@@ -236,7 +226,7 @@
     "section": "",
     "text": "render-and-publish.old_yml",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Rendering with Code</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Rendering with Code</span>"
     ]
   },
   {
@@ -246,7 +236,7 @@
     "section": "Render locally and publish to gh-pages branch",
     "text": "Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Rendering with Code</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Rendering with Code</span>"
     ]
   },
   {
@@ -256,7 +246,7 @@
     "section": "",
     "text": "Quarto has powerful references functionality. You can easily insert citations from Zotero libraries that you maintain in the cloud (on Zotero). This allows the whole team to update the library and you can sync up to that library. Read about this on the Quarto documentation on citations. Google youtube videos on this also to see it in action.\nAdd a .bib file in to your project or add a linked Zotero library via RStudio in Visual mode with Tools &gt; Project Options… &gt; R Markdown &gt; select custom libraries from the Zotero dropdown.\nThe you can type @ and you will see a dropdown of the references in your libraries. You can then select the ones to add. If you don’t see the one you need, you can paste in the DOI and it will be added to your references file (with all the info). The references will be added to your references section of your book automatically.\nSee the references.qmd file for how to include the references.\n\n@ansley1981 will produce Ansley and Davis (1981)\n[@ansley1981] will produce (Ansley and Davis 1981).\n\n\n\n\n\nAnsley, H. L. H., and C. D. Davis. 1981. “Migration and Standing Stock of Fishes Associated with Artificial and Natural Reefs on Georgia’s Outer Continental Shelf.” Brunswick, Georgia, USA.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>References</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>References</span>"
     ]
   },
   {
