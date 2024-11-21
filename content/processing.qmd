@@ -2,23 +2,50 @@
 title: Data Processing
 ---
 
-Echoes from schooling CPS were identified using a semi-automated data processing algorithm implemented using Echoview software (v13.1; Echoview Software Pty Ltd). The filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter (Fig. 7). Data from Lasker, Shimada, Lisa Marie, and Long Beach Carnage were processed using the following steps:
+We identify acoustic echos of schooling CPS using a semi-automated data processing algorithm implemented using Echoview software and in-house `Posit` code in the `estimATM` [repository](https://github.com/kstierhoff/estimATM). The filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter .
 
-1.	Match geometry of all Sv variables to the 38-kHz Sv ;
-2.	Remove passive-mode pings;
-3.	Estimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007) in Echoview (Figs. 7b, e);
-4.	Average the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins;
-5.	Expand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation;
-6.	For each pixel, compute: Sv,200kHz − Sv,38kHz, Sv,120kHz − Sv,38kHz, and Sv,70kHz − Sv,38kHz;
-7.	Create a Boolean echogram for Sv differences in the CPS range: −13.85 < Sv,70kHz − Sv,38kHz <
-9.89 and − 13.5 < Sv,120kHz − Sv,38kHz < 9.37 and − 13.51 < Sv,200kHz − Sv,38kHz < 12.53;
-8.	For 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (Step 3) and averaged Sv (Step 4), average the results using an 11-sample by 3-ping window to derive variance, then compute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively);
-9.	Expand the standard deviation echograms with a 7 pixel x 7 pixel dilation;
-10.	Create a Boolean echogram based on the standard deviations in the CPS range: σ120kHz > -65 dB and σ200kHz > -65 dB. Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fsh schools have high σ;
-11.	Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere;
-12.	Mask the noise-reduced echograms using the CPS Boolean echogram (Figs. 7c, f );
-13.	Create an integration-start line 5 m below the transducer (~10 m depth);
-14.	Create an integration-stop line 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest;
-15.	Set the minimum Sv threshold to -60 dB (corresponding to a density of approximately three 20-cm-long Pacific Sardine per 100 m3);
-16.	Integrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;
-17.	Output the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.
+### ![Simplified dataflow of processing in Echoview](images/ev-processing.JPG)
+
+### Super Detailed Processing Steps
+
+#### ***Automated Processing in Echoview***
+
+#### Data Averaging and Cleaning:
+
+1.  Enter RAW EK80 acoustic data into Echoview and load ECS file.
+
+2.  Match geometry of all Sv variables to the 38-kHz Sv. This aligns pings from all transducers to 38-kHz.
+
+3.  Remove passive-mode pings and background noise:Estimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007) in Echoview (Figs. 7b, e).
+
+4.  Average the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.
+
+5.  Expand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation.
+
+#### Calculate Frequency Response:
+
+6a. For each pixel, compute: Sv,200kHz − Sv,38kHz, Sv,120kHz − Sv,38kHz, and Sv,70kHz − Sv,38kHz;
+
+7a. Create a Boolean echogram for Sv differences in the CPS range: −13.85 \< Sv,70kHz − Sv,38kHz \< 9.89 and − 13.5 \< Sv,120kHz − Sv,38kHz \< 9.37 and − 13.51 \< Sv,200kHz − Sv,38kHz \< 12.53
+
+6b. For 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (Step 3) and averaged Sv (Step 4)
+
+7b. Average the results using an 11-sample by 3-ping window to derive variance
+
+8b. Compute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively)
+
+9b. Expand the standard deviation echograms with a 7 pixel x 7 pixel dilation;
+
+10. Create a Boolean echogram based on the standard deviations in the CPS range: σ120kHz \> -65 dB and σ200kHz \> -65 dB. Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram (Figs. 7c, f );
+
+#### *Manual Processing in Echoview*
+
+13. Create an integration-start line 5 m below the transducer (\~10 m depth);
+
+14. Create an integration-stop line 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest;
+
+15. Set the minimum Sv threshold to -60 dB (corresponding to a density of approximately three 20-cm-long Pacific Sardine per 100 m3);
+
+16. Integrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;
+
+17. Output the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.
