@@ -30,9 +30,8 @@ book:
     - content/background.qmd
     - content/acquisition.qmd
     - content/workflow.qmd
-    - content/add-content.qmd
-    - content/customizing.qmd
-    - content/rendering.qmd
+    - content/preparation.qmd
+    - content/processing.qmd
     - content/figures_and_tables.qmd
     - content/code.qmd
     - content/adding-refs.qmd
