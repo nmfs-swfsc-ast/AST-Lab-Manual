@@ -187,8 +187,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#simplified-dataflow-of-processing-in-echoview" id="toc-simplified-dataflow-of-processing-in-echoview" class="nav-link active" data-scroll-target="#simplified-dataflow-of-processing-in-echoview"><img src="images/ev-processing.JPG" class="img-fluid" alt="Simplified dataflow of processing in Echoview"></a></li>
+  <li><a href="#super-detailed-processing-steps" id="toc-super-detailed-processing-steps" class="nav-link" data-scroll-target="#super-detailed-processing-steps">Super Detailed Processing Steps</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/edit/main/content/processing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/blob/main/content/processing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -212,28 +219,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Echoes from schooling CPS were identified using a semi-automated data processing algorithm implemented using Echoview software (v13.1; Echoview Software Pty Ltd). The filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter (Fig. 7). Data from Lasker, Shimada, Lisa Marie, and Long Beach Carnage were processed using the following steps:</p>
+<p>We identify acoustic echos of schooling CPS using a semi-automated data processing algorithm implemented using Echoview software and in-house <code>Posit</code> code in the <code>estimATM</code> <a href="https://github.com/kstierhoff/estimATM">repository</a>. The filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter .</p>
+<section id="simplified-dataflow-of-processing-in-echoview" class="level3">
+<h3 class="anchored" data-anchor-id="simplified-dataflow-of-processing-in-echoview"><img src="images/ev-processing.JPG" class="img-fluid" alt="Simplified dataflow of processing in Echoview"></h3>
+</section>
+<section id="super-detailed-processing-steps" class="level3">
+<h3 class="anchored" data-anchor-id="super-detailed-processing-steps">Super Detailed Processing Steps</h3>
+<section id="automated-processing-in-echoview" class="level4">
+<h4 class="anchored" data-anchor-id="automated-processing-in-echoview"><strong><em>Automated Processing in Echoview</em></strong></h4>
+</section>
+<section id="data-averaging-and-cleaning" class="level4">
+<h4 class="anchored" data-anchor-id="data-averaging-and-cleaning">Data Averaging and Cleaning:</h4>
 <ol type="1">
-<li>Match geometry of all Sv variables to the 38-kHz Sv ;</li>
-<li>Remove passive-mode pings;</li>
-<li>Estimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007) in Echoview (Figs. 7b, e);</li>
-<li>Average the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins;</li>
-<li>Expand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation;</li>
-<li>For each pixel, compute: Sv,200kHz − Sv,38kHz, Sv,120kHz − Sv,38kHz, and Sv,70kHz − Sv,38kHz;</li>
-<li>Create a Boolean echogram for Sv differences in the CPS range: −13.85 &lt; Sv,70kHz − Sv,38kHz &lt; 9.89 and − 13.5 &lt; Sv,120kHz − Sv,38kHz &lt; 9.37 and − 13.51 &lt; Sv,200kHz − Sv,38kHz &lt; 12.53;</li>
-<li>For 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (Step 3) and averaged Sv (Step 4), average the results using an 11-sample by 3-ping window to derive variance, then compute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively);</li>
-<li>Expand the standard deviation echograms with a 7 pixel x 7 pixel dilation;</li>
-<li>Create a Boolean echogram based on the standard deviations in the CPS range: σ120kHz &gt; -65 dB and σ200kHz &gt; -65 dB. Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fsh schools have high σ;</li>
-<li>Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere;</li>
-<li>Mask the noise-reduced echograms using the CPS Boolean echogram (Figs. 7c, f );</li>
-<li>Create an integration-start line 5 m below the transducer (~10 m depth);</li>
-<li>Create an integration-stop line 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest;</li>
-<li>Set the minimum Sv threshold to -60 dB (corresponding to a density of approximately three 20-cm-long Pacific Sardine per 100 m3);</li>
-<li>Integrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;</li>
-<li>Output the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.</li>
+<li><p>Enter RAW EK80 acoustic data into Echoview and load ECS file.</p></li>
+<li><p>Match geometry of all Sv variables to the 38-kHz Sv. This aligns pings from all transducers to 38-kHz.</p></li>
+<li><p>Remove passive-mode pings and background noise:Estimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007) in Echoview (Figs. 7b, e).</p></li>
+<li><p>Average the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.</p></li>
+<li><p>Expand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation.</p></li>
+</ol>
+</section>
+<section id="calculate-frequency-response" class="level4">
+<h4 class="anchored" data-anchor-id="calculate-frequency-response">Calculate Frequency Response:</h4>
+<p>6a. For each pixel, compute: Sv,200kHz − Sv,38kHz, Sv,120kHz − Sv,38kHz, and Sv,70kHz − Sv,38kHz;</p>
+<p>7a. Create a Boolean echogram for Sv differences in the CPS range: −13.85 &lt; Sv,70kHz − Sv,38kHz &lt; 9.89 and − 13.5 &lt; Sv,120kHz − Sv,38kHz &lt; 9.37 and − 13.51 &lt; Sv,200kHz − Sv,38kHz &lt; 12.53</p>
+<p>6b. For 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (Step 3) and averaged Sv (Step 4)</p>
+<p>7b. Average the results using an 11-sample by 3-ping window to derive variance</p>
+<p>8b. Compute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively)</p>
+<p>9b. Expand the standard deviation echograms with a 7 pixel x 7 pixel dilation;</p>
+<ol start="10" type="1">
+<li>Create a Boolean echogram based on the standard deviations in the CPS range: σ120kHz &gt; -65 dB and σ200kHz &gt; -65 dB. Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram (Figs. 7c, f );</li>
+</ol>
+</section>
+<section id="manual-processing-in-echoview" class="level4">
+<h4 class="anchored" data-anchor-id="manual-processing-in-echoview"><em>Manual Processing in Echoview</em></h4>
+<ol start="13" type="1">
+<li><p>Create an integration-start line 5 m below the transducer (~10 m depth);</p></li>
+<li><p>Create an integration-stop line 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest;</p></li>
+<li><p>Set the minimum Sv threshold to -60 dB (corresponding to a density of approximately three 20-cm-long Pacific Sardine per 100 m3);</p></li>
+<li><p>Integrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;</p></li>
+<li><p>Output the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.</p></li>
 </ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -676,7 +705,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/edit/main/content/processing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/blob/main/content/processing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/edit/main/content/processing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/blob/main/content/processing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
