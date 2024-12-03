@@ -1,0 +1,9 @@
+---
+title: Backscatter Identification
+---
+
+A picture guide for helping decipher tricky backscatter in the R script extract_CPS_NASC.R and Echoview processing.
+
+![](images/backscatter_decision_tree.JPG)
+
+Build out from [this google document](https://docs.google.com/document/d/1-YxJs1veotnSZJIWPH6vJjYOA5Dt1iETaqmNv8eNoTk/edit?tab=t.0).

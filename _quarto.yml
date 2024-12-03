@@ -32,10 +32,8 @@ book:
     - content/workflow.qmd
     - content/preparation.qmd
     - content/processing.qmd
-    - content/figures_and_tables.qmd
-    - content/code.qmd
-    - content/adding-refs.qmd
-    - content/references.qmd
+    - content/identification.qmd
+    - content/biomass.qmd
 
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
