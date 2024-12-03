@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "CPS Acoustic Classification",
     "section": "",
-    "text": "Welcome\n[[[enter cool image of CPS survey]]]\nWest Coast coastal pelagic species play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries. The biomass and abundance estimates derived from this project are used in stock assessment models to support sustainable fisheries.",
+    "text": "Welcome\nLast updated: 2024-12-03 22:49:55 UTC\n[[[enter cool image of CPS survey]]]\nWest Coast coastal pelagic species play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries. The biomass and abundance estimates derived from this project are used in stock assessment models to support sustainable fisheries.",
     "crumbs": [
       "Welcome"
     ]
@@ -174,89 +174,19 @@
     "href": "content/processing.html",
     "title": "Data Processing",
     "section": "",
-    "text": "We identify acoustic echos of schooling CPS using a semi-automated data processing algorithm implemented using Echoview software and in-house Posit code in the estimATM repository. The filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter .\n\n\n\n\nSuper Detailed Processing Steps\n\nAutomated Processing in Echoview\n\n\nData Averaging and Cleaning:\n\nEnter RAW EK80 acoustic data into Echoview and load ECS file.\nMatch geometry of all Sv variables to the 38-kHz Sv. This aligns pings from all transducers to 38-kHz.\nRemove passive-mode pings and background noise:Estimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007) in Echoview (Figs. 7b, e).\nAverage the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.\nExpand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation.\n\n\n\nCalculate Frequency Response:\n6a. For each pixel, compute: Sv,200kHz − Sv,38kHz, Sv,120kHz − Sv,38kHz, and Sv,70kHz − Sv,38kHz;\n7a. Create a Boolean echogram for Sv differences in the CPS range: −13.85 &lt; Sv,70kHz − Sv,38kHz &lt; 9.89 and − 13.5 &lt; Sv,120kHz − Sv,38kHz &lt; 9.37 and − 13.51 &lt; Sv,200kHz − Sv,38kHz &lt; 12.53\n6b. For 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (Step 3) and averaged Sv (Step 4)\n7b. Average the results using an 11-sample by 3-ping window to derive variance\n8b. Compute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively)\n9b. Expand the standard deviation echograms with a 7 pixel x 7 pixel dilation;\n\nCreate a Boolean echogram based on the standard deviations in the CPS range: σ120kHz &gt; -65 dB and σ200kHz &gt; -65 dB. Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram (Figs. 7c, f );\n\n\n\nManual Processing in Echoview\n\nCreate an integration-start line 5 m below the transducer (~10 m depth);\nCreate an integration-stop line 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest;\nSet the minimum Sv threshold to -60 dB (corresponding to a density of approximately three 20-cm-long Pacific Sardine per 100 m3);\nIntegrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;\nOutput the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.",
+    "text": "We identify acoustic echos of schooling CPS using a semi-automated data processing algorithm implemented using Echoview software and in-house Posit code in the estimATM repository. With Echoview we extract all non-seabed backscatter and backscatter of swim bladder fish. The Echoview filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.With the estimATM package in extract_CPS_NASC.R, we keep only the CPS backscatter and remove non-CPS backscatter.\n\nData Processing Overview\n[Insert image of overview workflow diagram]\n\n\nEchoview Processing Workflow\n\nAutomated Processing in Echoview\n\n\n\nSimplified dataflow of processing in Echoview\n\n\n\n\nData Averaging and Cleaning:\n\nEnter RAW EK80 acoustic data into Echoview and load ECS file.\nMatch geometry of all Sv variables to the 38-kHz Sv. This aligns pings from all transducers to 38-kHz.\nRemove passive-mode pings and background noise:Estimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007) in Echoview (Figs. 7b, e).\nAverage the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.\nExpand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation.\n\n\n\nCalculate Frequency Response:\n\nFor each pixel, compute: Sv,200kHz − Sv,38kHz, Sv,120kHz − Sv,38kHz, and Sv,70kHz − Sv,38kHz;\nCreate a Boolean echogram for Sv differences in the CPS range: −13.85 &lt; Sv,70kHz − Sv,38kHz &lt; 9.89 and − 13.5 &lt; Sv,120kHz − Sv,38kHz &lt; 9.37 and − 13.51 &lt; Sv,200kHz − Sv,38kHz &lt; 12.53\n\n\n\nCalculate Standard Deviation:\n\nFor 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (Step 3) and averaged Sv (Step 4)\nAverage the results using an 11-sample by 3-ping window to derive variance\nCompute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively)\nExpand the standard deviation echograms with a 7 pixel x 7 pixel dilation;\nCreate a Boolean echogram based on the standard deviations in the CPS range: σ120kHz &gt; -65 dB and σ200kHz &gt; -65 dB. Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram (Figs. 7c, f );\n\n\n\nManual Processing in Echoview\n\nCreate an integration-start line 5 m below the transducer (~10 m depth);\nCreate an integration-stop line 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest;\nSet the minimum Sv threshold to -60 dB (corresponding to a density of approximately three 20-cm-long Pacific Sardine per 100 m3);\nIntegrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;\nOutput the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.\n\n\n\n\nPosit Processing Workflow\nextract_CPS_NASC.R is an R-based tool in the estimATM package to retain only CPS backscatter from the integrated Echoview data.\n\nEchoes from fishes with swimbladders (blue points, scaled by backscatter intensity) along an example acoustic transect (top) and the corresponding echogram image (bottom). In this example, the upper (blue) and lower lines (green) indicate boundaries within which echoes were retained. When the lower boundary is deeper than the seabed (black line), echoes above the seabed are retained. Echoes from deep, bottom-dwelling schools of non-CPS fishes with swimbladders, and from diffuse scatters near the surface were excluded. The proximity of the echoes to the seabed was also used to define the lower limit for vertical integration.\nIn the plot window, you can now draw new integration stop (green) and start (blue) lines. Use the crosshair cursor to click along the plot to draw a new integration stop line, then right-click and select “Stop” to complete the line. Blue points that fall below this line will be excluded from the resulting CSV file. You want to remove backscatter that you believe are not CPS (e.g., rockfishes, hake) or possibly contain seabed. Next, draw a lnew top integration line (if desired) to remove any surface noise or diffuse scattering layers. If you say no to drawing this line, it will create a line at the surface and include all backscatter below. If you don’t like either line, you can respond “No” when it asks if the line looks good, and redraw the line. Rinse and repeat until you are satisfied.\n\nOnce you are happy with the two lines, an image will appear showing the results of your editing. If the backscatter needs to be removed, or put back, you can re-run the script and the results will be replaced.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data Processing</span>"
     ]
   },
   {
-    "objectID": "content/figures_and_tables.html",
-    "href": "content/figures_and_tables.html",
-    "title": "Figures and Tables",
+    "objectID": "content/identification.html",
+    "href": "content/identification.html",
+    "title": "Backscatter Identification",
     "section": "",
-    "text": "Code\nYou can embed an R code chunk like this:\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00",
+    "text": "A picture guide for helping decipher tricky backscatter in the R script extract_CPS_NASC.R and Echoview processing.\n\nBuild out from this google document.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Figures and Tables</span>"
-    ]
-  },
-  {
-    "objectID": "content/figures_and_tables.html#including-plots",
-    "href": "content/figures_and_tables.html#including-plots",
-    "title": "Figures and Tables",
-    "section": "Including Plots",
-    "text": "Including Plots\nYou can also embed plots and reference them, like so Figure 6.1.\n\n\n\n\n\n\n\n\nFigure 6.1: Plot of pressure\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Figures and Tables</span>"
-    ]
-  },
-  {
-    "objectID": "content/figures_and_tables.html#including-tables",
-    "href": "content/figures_and_tables.html#including-tables",
-    "title": "Figures and Tables",
-    "section": "Including Tables",
-    "text": "Including Tables\nYou can also embed tables and reference them with Table 6.1.\n\nlibrary(knitr)\nkable(head(iris))\n\n\n\nTable 6.1: Iris Data\n\n\n\n\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n5.0\n3.6\n1.4\n0.2\nsetosa\n\n\n5.4\n3.9\n1.7\n0.4\nsetosa",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Figures and Tables</span>"
-    ]
-  },
-  {
-    "objectID": "content/code.html",
-    "href": "content/code.html",
-    "title": "Rendering with Code",
-    "section": "",
-    "text": "Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it.",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Rendering with Code</span>"
-    ]
-  },
-  {
-    "objectID": "content/code.html#modify-the-github-action",
-    "href": "content/code.html#modify-the-github-action",
-    "title": "Rendering with Code",
-    "section": "",
-    "text": "render-and-publish.old_yml",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Rendering with Code</span>"
-    ]
-  },
-  {
-    "objectID": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
-    "href": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
-    "title": "Rendering with Code",
-    "section": "Render locally and publish to gh-pages branch",
-    "text": "Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Rendering with Code</span>"
-    ]
-  },
-  {
-    "objectID": "content/adding-refs.html",
-    "href": "content/adding-refs.html",
-    "title": "References",
-    "section": "",
-    "text": "Quarto has powerful references functionality. You can easily insert citations from Zotero libraries that you maintain in the cloud (on Zotero). This allows the whole team to update the library and you can sync up to that library. Read about this on the Quarto documentation on citations. Google youtube videos on this also to see it in action.\nAdd a .bib file in to your project or add a linked Zotero library via RStudio in Visual mode with Tools &gt; Project Options… &gt; R Markdown &gt; select custom libraries from the Zotero dropdown.\nThe you can type @ and you will see a dropdown of the references in your libraries. You can then select the ones to add. If you don’t see the one you need, you can paste in the DOI and it will be added to your references file (with all the info). The references will be added to your references section of your book automatically.\nSee the references.qmd file for how to include the references.\n\n@ansley1981 will produce Ansley and Davis (1981)\n[@ansley1981] will produce (Ansley and Davis 1981).\n\n\n\n\n\nAnsley, H. L. H., and C. D. Davis. 1981. “Migration and Standing Stock of Fishes Associated with Artificial and Natural Reefs on Georgia’s Outer Continental Shelf.” Brunswick, Georgia, USA.",
-    "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>References</span>"
-    ]
-  },
-  {
-    "objectID": "content/references.html",
-    "href": "content/references.html",
-    "title": "References",
-    "section": "",
-    "text": "Ansley, H. L. H., and C. D. Davis. 1981. “Migration and Standing\nStock of Fishes Associated with Artificial and Natural Reefs on\nGeorgia’s Outer Continental Shelf.” Brunswick,\nGeorgia, USA.",
-    "crumbs": [
-      "References"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Backscatter Identification</span>"
     ]
   }
 ]
