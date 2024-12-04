@@ -3,7 +3,8 @@ title: "Survey Background"
 ---
 
 ## Who conducts the survey?
-The California Current Ecosystem Survey is conducted by researchers at the NOAA Southwest Fisheries Science Center from the Fisheries Resources Division. The survey is also made possible by volunteers from additional NOAA line offices and science centers, universities, international partners, NOAA interns, and inter-agency employees. 
+
+The California Current Ecosystem Survey is conducted by researchers at the NOAA Southwest Fisheries Science Center from the Fisheries Resources Division. The survey is also made possible by volunteers from additional NOAA line offices and science centers, universities, international partners, NOAA interns, and inter-agency employees.
 
 ## Where does the survey take place?
 
@@ -24,6 +25,6 @@ On left, a conceptual spring (shaded region) and summer (hashed region) distribu
 
 ## Survey History:
 
-The SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Since then, they have expanded in scope and objectives to include the larger forage-fsh assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.
+The SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Since then, they have expanded in scope and objectives to include the larger forage-fish assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.
 
 ## Code of Conduct
