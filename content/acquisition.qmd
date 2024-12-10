@@ -6,9 +6,10 @@ title: "Data Acquisition"
 
 ### Acoustic Instruments
 
-![Transducer locations on the bottom of the centerboard aboard Lasker.](images/transducers.jpg){fig-align="left"}
+![Transducer locations on the bottom of the centerboard aboard Lasker.](images/transducers.jpg){#fig-transducers fig-align="left"}
 
-On *Lasker* and *Shimada*, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on *Lasker* and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on *Shimada*; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard”. The keel was retracted (transducers \~5-m depth) during calibration, and extended to the intermediate position (transducers \~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers \~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).
+
+On *Lasker* and *Shimada*, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on *Lasker* and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on *Shimada*; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard” (@fig-transducers). The keel was retracted (transducers \~5-m depth) during calibration, and extended to the intermediate position (transducers \~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers \~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).
 
 ### Underway CTD
 

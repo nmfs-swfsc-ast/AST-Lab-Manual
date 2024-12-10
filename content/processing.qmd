@@ -2,11 +2,11 @@
 title: Data Processing
 ---
 
-We identify acoustic echos of schooling CPS using a semi-automated data processing algorithm implemented using Echoview software and in-house `Posit` code in the `estimATM` [repository](https://github.com/kstierhoff/estimATM). With Echoview we extract all non-seabed backscatter and backscatter of swim bladder fish. The Echoview filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.With the `estimATM` package in `extract_CPS_NASC.R`, we keep only the CPS backscatter and remove non-CPS backscatter. 
+We identify acoustic echos of schooling CPS using a semi-automated data processing algorithm implemented using Echoview software and in-house `Posit` code in the `estimATM` [repository](https://github.com/kstierhoff/estimATM). With Echoview, we extract all non-seabed backscatter and backscatter of swim bladder fish. The Echoview filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.With the `estimATM` package in `extract_CPS_NASC.R`, we keep only the CPS backscatter and remove non-CPS backscatter.
 
 ### Data Processing Overview
 
-*\[Insert image of overview workflow diagram\]*
+![Overview of CPS Acoustic Processing](images/processing-overview.JPG)
 
 ### Echoview Processing Workflow
 
@@ -58,7 +58,7 @@ We identify acoustic echos of schooling CPS using a semi-automated data processi
 
 ### `Posit` Processing Workflow
 
-`extract_CPS_NASC.R` is an R-based tool in the `estimATM` package to retain only CPS backscatter from the integrated Echoview data. 
+`extract_CPS_NASC.R` is an R-based tool in the `estimATM` package to retain only CPS backscatter from the integrated Echoview data.
 
 ![](images/nascr_processing.JPG)
 
@@ -69,4 +69,3 @@ In the plot window, you can now draw new integration stop (green) and start (blu
 ![](images/nascr_processing_result.JPG)
 
 Once you are happy with the two lines, an image will appear showing the results of your editing. If the backscatter needs to be removed, or put back, you can re-run the script and the results will be replaced.
-
