@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5a12447fb582f422ce27c7d790f23dd2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1755250838a2061f06ed532a7bc778d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -209,10 +209,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>We identify acoustic echos of schooling CPS using a semi-automated data processing algorithm implemented using Echoview software and in-house <code>Posit</code> code in the <code>estimATM</code> <a href="https://github.com/kstierhoff/estimATM">repository</a>. With Echoview we extract all non-seabed backscatter and backscatter of swim bladder fish. The Echoview filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.With the <code>estimATM</code> package in <code>extract_CPS_NASC.R</code>, we keep only the CPS backscatter and remove non-CPS backscatter.</p>
+<p>We identify acoustic echos of schooling CPS using a semi-automated data processing algorithm implemented using Echoview software and in-house <code>Posit</code> code in the <code>estimATM</code> <a href="https://github.com/kstierhoff/estimATM">repository</a>. With Echoview, we extract all non-seabed backscatter and backscatter of swim bladder fish. The Echoview filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.With the <code>estimATM</code> package in <code>extract_CPS_NASC.R</code>, we keep only the CPS backscatter and remove non-CPS backscatter.</p>
 <section id="data-processing-overview" class="level3">
 <h3 class="anchored" data-anchor-id="data-processing-overview">Data Processing Overview</h3>
-<p><em>[Insert image of overview workflow diagram]</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/processing-overview.JPG" class="img-fluid figure-img"></p>
+<figcaption>Overview of CPS Acoustic Processing</figcaption>
+</figure>
+</div>
 </section>
 <section id="echoview-processing-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="echoview-processing-workflow">Echoview Processing Workflow</h3>
