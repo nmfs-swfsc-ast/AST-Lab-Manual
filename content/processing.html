@@ -209,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>We identify acoustic echos of schooling CPS using a semi-automated data processing algorithm implemented using Echoview software and in-house <code>Posit</code> code in the <code>estimATM</code> <a href="https://github.com/kstierhoff/estimATM">repository</a>. With Echoview, we extract all non-seabed backscatter and backscatter of swim bladder fish. The Echoview filters and thresholds were based on a subsample of echoes from randomly selected CPS schools. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.With the <code>estimATM</code> package in <code>extract_CPS_NASC.R</code>, we keep only the CPS backscatter and remove non-CPS backscatter.</p>
+<p>After data aqusition, we identify acoustic echos of schooling CPS using a semi-automated data processing algorithm using Echoview software and in-house <code>Posit</code> code in the <code>estimATM</code> <a href="https://github.com/kstierhoff/estimATM">repository</a>. With Echoview, we extract the backscatter of swim bladder fish and process using soundspeed and echosounder calibration values housed inside an Echoview Calibration Supplement (<code>.ecs)</code> file. The Echoview filters and thresholds were based on a sub-sample of echoes from randomly selected CPS schools. We complete the processing with the <code>estimATM</code> package in <code>extract_CPS_NASC.R</code>, where we further refine the backscatter selection to extract only CPS. Here we will cover the Echoview and <code>estimATM</code> semi-automated processing workflow.</p>
 <section id="data-processing-overview" class="level3">
 <h3 class="anchored" data-anchor-id="data-processing-overview">Data Processing Overview</h3>
 <div class="quarto-figure quarto-figure-center">
@@ -221,50 +221,63 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="echoview-processing-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="echoview-processing-workflow">Echoview Processing Workflow</h3>
-<section id="automated-processing-in-echoview" class="level4">
-<h4 class="anchored" data-anchor-id="automated-processing-in-echoview"><strong><em>Automated Processing in Echoview</em></strong></h4>
+<section id="semi-automated-processing-in-echoview" class="level4">
+<h4 class="anchored" data-anchor-id="semi-automated-processing-in-echoview"><strong><em>Semi-Automated Processing in Echoview</em></strong></h4>
+<p>In Echoview, we organize, clean, and extract acoustic backscatter of swim bladdered fish. There are three key steps to this process: 1) Data wrangling, cleaning, and noise removal (including surface noise and seabed removal), 2) Echo classification for swim-bladdred fish, and 3) Acoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ev-processing.JPG" class="img-fluid figure-img"></p>
-<figcaption>Simplified dataflow of processing in Echoview</figcaption>
+<figcaption>Simplified dataflow of processing in Echoview. *Surface noise and seabed removal replies on two manual inputs: the <code>Integration Start</code> and <code>Integration Stop</code> lines (not pictured, see step 5).</figcaption>
 </figure>
 </div>
 </section>
-<section id="data-averaging-and-cleaning" class="level4">
-<h4 class="anchored" data-anchor-id="data-averaging-and-cleaning">Data Averaging and Cleaning:</h4>
+<section id="section-1-data-wrangling-cleaning-and-noise-removal" class="level4">
+<h4 class="anchored" data-anchor-id="section-1-data-wrangling-cleaning-and-noise-removal">Section 1) Data Wrangling, Cleaning, and Noise Removal:</h4>
 <ol type="1">
-<li><p>Enter RAW EK80 acoustic data into Echoview and load ECS file.</p></li>
-<li><p>Match geometry of all Sv variables to the 38-kHz Sv. This aligns pings from all transducers to 38-kHz.</p></li>
-<li><p>Remove passive-mode pings and background noise:Estimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007) in Echoview (Figs. 7b, e).</p></li>
+<li><p>Load RAW EK80 acoustic data and Echoview Calibration Supplement (<code>.ecs</code>)file into Echoview. The <code>.ecs</code> file contains soundspeed information calculated from the nearest (temporally and spatially) Underway CTD cast and echosounder calibration parameters. This file is used at the very beginning to convert from power to <code>Sv</code> (volume-backscattering coefficient).</p></li>
+<li><p>Align sampling rate (time and geometery) from all transders to the 38 kHz <code>Sv</code>. Acousticians call this step ‘matching geometry’ of all <code>Sv</code> variables. Making sure pings are aligned from all echosounders is important for calculating the frequency response of backscatter in steps later on.</p></li>
+<li><p>Remove passive-mode pings.</p></li>
+<li><p>Noise removal: estimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007).</p></li>
+<li><p><strong>Surface noise and seabed removal</strong> is completed by manually drawing an <code>Integration Start</code> and <code>Integration Stop</code> line in Echoview. The <code>Integration Start</code> line is drawn at the shallowest depth to include surface CPS schools but exclude transducer ring down and surface noise due to sea state (typically around 5 meters below the transducer face or ~10m depth). The <code>Integration Stop</code> line is drawn closest to the seabed to include bottom dwelling animals but exclude any non-living seabed features (typically 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest). When drawing the lines, we set the color scale to a minimum Sv threshold of -60 dB which corresponds to a density of approximately three 20-cm-long Pacific Sardine per 100 m3). Doing this helps visually pick out schools from the seabed and from non-swim bladder animals that appear as diffuse scattering layers in the water column. The area of the water column between the two lines sets the depth range that will be integrated for swim bladder fish in steps later on.</p></li>
 <li><p>Average the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.</p></li>
-<li><p>Expand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation.</p></li>
+<li><p>Expand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation. This replaces each averaged datapoint from Step 6 with the maximum datapoint surrounding it in a 7x7 pixel region.</p></li>
 </ol>
 </section>
-<section id="calculate-frequency-response" class="level4">
-<h4 class="anchored" data-anchor-id="calculate-frequency-response">Calculate Frequency Response:</h4>
-<ol start="6" type="1">
-<li><p>For each pixel, compute: Sv,200kHz − Sv,38kHz, Sv,120kHz − Sv,38kHz, and Sv,70kHz − Sv,38kHz;</p></li>
-<li><p>Create a Boolean echogram for Sv differences in the CPS range: −13.85 &lt; Sv,70kHz − Sv,38kHz &lt; 9.89 and − 13.5 &lt; Sv,120kHz − Sv,38kHz &lt; 9.37 and − 13.51 &lt; Sv,200kHz − Sv,38kHz &lt; 12.53</p></li>
+<section id="section-2-echo-classification-for-swim-bladder-fish" class="level4">
+<h4 class="anchored" data-anchor-id="section-2-echo-classification-for-swim-bladder-fish">Section 2) Echo Classification for Swim Bladder Fish</h4>
+<section id="calculate-frequency-response" class="level5">
+<h5 class="anchored" data-anchor-id="calculate-frequency-response"><em>Calculate Frequency Response</em>:</h5>
+<ol type="1">
+<li><p>For each dilated pixel, compute:</p>
+<p><code>Sv</code> 200kHz − <code>Sv</code> 38kHz</p>
+<p><code>Sv</code> 120kHz − <code>Sv</code> 38kHz</p>
+<p><code>Sv</code> 70kHz − <code>Sv</code> 38kHz</p>
+<p>The difference between <code>Sv</code> values provides the frequency response for those pixels. Swim bladder fish have a unique frequency response which we can use extract those acoustic returns in the next step. Acoustic returns that fall within the <code>Sv</code> ranges below are flagged as meeting the criteria for typical swim bladder fish, including CPS.</p></li>
+<li><p>Create a Boolean echogram for <code>Sv</code> differences in the CPS range:</p>
+<p>−13.85 &lt; <code>Sv</code> 70kHz − <code>Sv</code> 38kHz &lt; 9.89</p>
+<p>− 13.5 &lt; <code>Sv</code> 120kHz −<code>Sv</code> 38kHz &lt; 9.37</p>
+<p>− 13.51 &lt; <code>Sv</code> 200kHz − <code>Sv</code> 38kHz &lt; 12.53</p></li>
 </ol>
 </section>
-<section id="calculate-standard-deviation" class="level4">
-<h4 class="anchored" data-anchor-id="calculate-standard-deviation">Calculate Standard Deviation:</h4>
-<ol start="8" type="1">
-<li><p>For 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (Step 3) and averaged Sv (Step 4)</p></li>
-<li><p>Average the results using an 11-sample by 3-ping window to derive variance</p></li>
-<li><p>Compute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively)</p></li>
-<li><p>Expand the standard deviation echograms with a 7 pixel x 7 pixel dilation;</p></li>
-<li><p>Create a Boolean echogram based on the standard deviations in the CPS range: σ120kHz &gt; -65 dB and σ200kHz &gt; -65 dB. Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram (Figs. 7c, f );</p></li>
+<section id="calculate-standard-deviation" class="level5">
+<h5 class="anchored" data-anchor-id="calculate-standard-deviation"><em>Calculate Standard Deviation</em>:</h5>
+<ol type="1">
+<li><p>For 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (remove passive pings) and averaged Sv (11-sample x 3 ping bin averages).</p></li>
+<li><p>Average the results using an 11-sample by 3-ping window to derive variance.</p></li>
+<li><p>Compute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively).</p></li>
+<li><p>Expand the standard deviation echograms with a 7 pixel x 7 pixel dilation (same step as Section 1, Step 7).</p></li>
+<li><p>Create a Boolean echogram based on the standard deviations in the CPS range:</p>
+<p>σ120kHz &gt; -65 dB</p>
+<p>σ200kHz &gt; -65 dB</p>
+<p>Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram .</p></li>
 </ol>
 </section>
-<section id="manual-processing-in-echoview" class="level4">
-<h4 class="anchored" data-anchor-id="manual-processing-in-echoview"><strong><em>Manual Processing in Echoview</em></strong></h4>
-<ol start="13" type="1">
-<li><p>Create an integration-start line 5 m below the transducer (~10 m depth);</p></li>
-<li><p>Create an integration-stop line 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest;</p></li>
-<li><p>Set the minimum Sv threshold to -60 dB (corresponding to a density of approximately three 20-cm-long Pacific Sardine per 100 m3);</p></li>
-<li><p>Integrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;</p></li>
-<li><p>Output the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.</p></li>
+</section>
+<section id="section-3-acoustic-backscatter-integration" class="level4">
+<h4 class="anchored" data-anchor-id="section-3-acoustic-backscatter-integration">Section 3) Acoustic Backscatter Integration</h4>
+<ol type="1">
+<li>Integrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;</li>
+<li>Output the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.</li>
 </ol>
 </section>
 </section>
