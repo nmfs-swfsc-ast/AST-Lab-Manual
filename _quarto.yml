@@ -29,11 +29,10 @@ book:
     - index.qmd
     - content/background.qmd
     - content/acquisition.qmd
-    - content/workflow.qmd
-    - content/preparation.qmd
     - content/processing.qmd
     - content/identification.qmd
     - content/biomass.qmd
+    - content/references.qmd
 
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."

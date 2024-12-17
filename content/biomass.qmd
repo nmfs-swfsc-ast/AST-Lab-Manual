@@ -1,3 +1,5 @@
 ---
 title: Biomass Calculation
 ---
+
+![](images/estimATM_dataflow.JPG)

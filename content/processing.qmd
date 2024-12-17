@@ -6,17 +6,17 @@ After data aqusition, we identify acoustic echos of schooling CPS using a semi-a
 
 ### Data Processing Overview
 
-![Overview of CPS Acoustic Processing](images/processing-overview.JPG)
+![Overview of CPS Acoustic Processing. Vessel position and attitude data is used from the POS MV (not shown). ](images/processing-overview.JPG)
+
+------------------------------------------------------------------------
 
 ### Echoview Processing Workflow
 
-#### ***Semi-Automated Processing in Echoview***
+In Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process: 1) Data wrangling, cleaning, and noise removal (including surface noise and seabed removal), 2) Echo classification for swim-bladdred fish, and 3) Acoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.
 
-In Echoview, we organize, clean, and extract acoustic backscatter of swim bladdered fish. There are three key steps to this process: 1) Data wrangling, cleaning, and noise removal (including surface noise and seabed removal), 2) Echo classification for swim-bladdred fish, and 3) Acoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.
+![Simplified dataflow of processing in Echoview. \*Surface noise and seabed removal replies on two manual inputs: the `Integration Start` and `Integration Stop` lines (not pictured, see step 5).](images/ev-processing.JPG)
 
-![Simplified dataflow of processing in Echoview. \*Surface noise and seabed removal replies on two manual inputs: the `Integration Start` and `Integration Stop` lines (not pictured, see step 5). ](images/ev-processing.JPG)
-
-#### Section 1) Data Wrangling, Cleaning, and Noise Removal: 
+#### **Section 1) Data Wrangling, Cleaning, and Noise Removal:**
 
 1.  Load RAW EK80 acoustic data and Echoview Calibration Supplement (`.ecs`)file into Echoview. The `.ecs` file contains soundspeed information calculated from the nearest (temporally and spatially) Underway CTD cast and echosounder calibration parameters. This file is used at the very beginning to convert from power to `Sv` (volume-backscattering coefficient).
 
@@ -24,15 +24,15 @@ In Echoview, we organize, clean, and extract acoustic backscatter of swim bladde
 
 3.  Remove passive-mode pings.
 
-4.  Noise removal: estimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007).
+4.  Noise removal: estimate and subtract background noise using the background noise removal function described in @derobertis2007.
 
-5.  **Surface noise and seabed removal** is completed by manually drawing an `Integration Start` and `Integration Stop` line in Echoview. The `Integration Start` line is drawn at the shallowest depth to include surface CPS schools but exclude transducer ring down and surface noise due to sea state (typically around 5 meters below the transducer face or \~10m depth). The `Integration Stop` line is drawn closest to the seabed to include bottom dwelling animals but exclude any non-living seabed features (typically 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest). When drawing the lines, we set the color scale to a minimum Sv threshold of -60 dB which corresponds to a density of approximately three 20-cm-long Pacific Sardine per 100 m3). Doing this helps visually pick out schools from the seabed and from non-swim bladder animals that appear as diffuse scattering layers in the water column. The area of the water column between the two lines sets the depth range that will be integrated for swim bladder fish in steps later on.
+5.  **Surface noise and seabed removal** is completed by manually drawing an `Integration Start` and `Integration Stop` line in Echoview. The `Integration Start` line is drawn at the shallowest depth to include surface CPS schools but exclude transducer ring down and surface noise due to sea state (typically around 5 meters below the transducer face or \~10m depth). The `Integration Stop` line is drawn closest to the seabed to include bottom dwelling animals but exclude any non-living seabed features (typically 3 m above the estimated seabed [@demer2009] or to the maximum logging range (e.g., 350 m), whichever is shallowest). When drawing the lines, we set the color scale to a minimum Sv threshold of -60 dB which corresponds to a density of approximately three 20-cm-long Pacific Sardine per 100 m3). Doing this helps visually pick out schools from the seabed and from non-swim bladder animals that appear as diffuse scattering layers in the water column. The area of the water column between the two lines sets the depth range that will be integrated for swim bladder fish in steps later on.
 
 6.  Average the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.
 
 7.  Expand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation. This replaces each averaged datapoint from Step 6 with the maximum datapoint surrounding it in a 7x7 pixel region.
 
-#### Section 2) Echo Classification for Swim Bladder Fish
+#### **Section 2) Echo Classification for Swim Bladder Fish**
 
 ##### *Calculate Frequency Response*:
 
@@ -70,23 +70,27 @@ In Echoview, we organize, clean, and extract acoustic backscatter of swim bladde
 
     σ200kHz \> -65 dB
 
-    Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram .
+    Diffuse backscattering layers have low σ [@zwolinski2010] whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram .
 
-#### Section 3) Acoustic Backscatter Integration 
+#### **Section 3) Acoustic Backscatter Integration**
 
 1.  Integrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;
 2.  Output the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.
 
+------------------------------------------------------------------------
+
 ### `Posit` Processing Workflow
 
-`extract_CPS_NASC.R` is an R-based tool in the `estimATM` package to retain only CPS backscatter from the integrated Echoview data.
+The exported `.csv` file from Echoview contains all swim bladder backscatter which can include non-target species such as rockfish. In order to further refine the acoustic classification to retain only CPS backscatter, the processed `.csv` file proceeds to the final semi-automated processing step in `Posit` using `extract_CPS_NASC.R`, an R-based tool in the `estimATM` package.
 
 ![](images/nascr_processing.JPG)
 
-Echoes from fishes with swimbladders (blue points, scaled by backscatter intensity) along an example acoustic transect (top) and the corresponding echogram image (bottom). In this example, the upper (blue) and lower lines (green) indicate boundaries within which echoes were retained. When the lower boundary is deeper than the seabed (black line), echoes above the seabed are retained. Echoes from deep, bottom-dwelling schools of non-CPS fishes with swimbladders, and from diffuse scatters near the surface were excluded. The proximity of the echoes to the seabed was also used to define the lower limit for vertical integration.
+Echoes from fishes with swimbladders (blue points, scaled by backscatter intensity) along an example acoustic transect (top) and the corresponding Echoview echogram image (bottom). In this example, the upper (blue) and lower lines (green) indicate boundaries within which echoes were retained. When the lower boundary is deeper than the seabed (black line), echoes above the seabed are retained. Echoes from deep, bottom-dwelling schools of non-CPS fishes with swimbladders, and from diffuse scatters near the surface are excluded.
 
-In the plot window, you can now draw new integration stop (green) and start (blue) lines. Use the crosshair cursor to click along the plot to draw a new integration stop line, then right-click and select “Stop” to complete the line. Blue points that fall below this line will be excluded from the resulting CSV file. You want to remove backscatter that you believe are not CPS (e.g., rockfishes, hake) or possibly contain seabed. Next, draw a lnew top integration line (if desired) to remove any surface noise or diffuse scattering layers. If you say no to drawing this line, it will create a line at the surface and include all backscatter below. If you don’t like either line, you can respond “No” when it asks if the line looks good, and redraw the line. Rinse and repeat until you are satisfied.
+The script will open a plot (top) where the acoustics technician can draw new integration start line (blue) and stop line (green). Blue points that fall below the stop line will be excluded while blue points below the start line will be included from the resulting `.csv` file. The goal is to visually review the Echoview exported echogram image (bottom) and remove backscatter that you believe are not CPS (e.g., rockfishes, hake), possibly contain accidental seabed, or any surface noise amd diffuse scattering layers. The process of picking out CPS from other swim-bladder fish can be tricky as CPS can have a range of characteristics. The [Backscatter Identification](https://nmfs-swfsc-ast.github.io/echo-class/content/identification.html) section goes into detail on this process.
 
 ![](images/nascr_processing_result.JPG)
 
 Once you are happy with the two lines, an image will appear showing the results of your editing. If the backscatter needs to be removed, or put back, you can re-run the script and the results will be replaced.
+
+**The result is a final `.csv` with only backscatter information for CPS targets.**

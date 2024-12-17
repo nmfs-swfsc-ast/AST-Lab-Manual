@@ -2,6 +2,28 @@
 title: Backscatter Identification
 ---
 
+![](images/processing-CPS.JPG){width="700"}
+
+When performing the final step in CPS backscatter processing, there are several assumptions and acoustic characteristics about CPS that allow us to refine our classification. This process aims to distinguish CPS from non-target species from mid-water, demersal, and benthic swim bladder fishes.
+
+#### Acoustic Characteristics of CPS
+
+While the acoustic properties of swimbladder fish depends on several factors, the most important are the acoustic wavelength, swimbladder size, and swimbladder orientation to the incident sound pulse. We use 39, 70, 120, and 200kHz to capture a range of swimbladder sizes and orientations. We estimate the dorsal surface area of a swimbladder (swimbladder size) based on a function of fish lengths sampled from nightly trawl catches. Knowing the approximate dorsal surface area of a swimbladder allows us to calcualte an acoustic backscattering coefficeint and derive a target strength for each CPS species. For this survey we calculate target strength as a logarithmic function of frequency and species-specific parameters obtained theoretically or experimentally and fish total length from trawl samples. Full details on species-specific target strength parameters can be found in the survey biomass report [here](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://swfsc-publications.fisheries.noaa.gov/publications/CR/2024/2024Stierhoff.pdf).
+
+When looking at Echoview echograms of acoustic transects, visually we look for how the volume backscattering strength (`Sv)` changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (cite image).
+
+::: {#frequency}
+![](images/CPS-freq-response.JPG)
+:::
+
+#### **Biological Characteristics of CPS**
+
+-   Temperature ranges from 8 deg C to 24 deg C and salinity from 30-38 psu [@zwolinski2010a]
+
+-   Diffuse schools observed offshore near the surface or deeper than \~250m
+
+-   Rockfish tend to be located in areas where the seabed is hard and rugged
+
 A picture guide for helping decipher tricky backscatter in the R script extract_CPS_NASC.R and Echoview processing.
 
 ![](images/backscatter_decision_tree.JPG)
