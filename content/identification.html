@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -148,16 +168,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/workflow.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Workflow</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/preparation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Preparation</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../content/processing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Processing</span></a>
   </div>
 </li>
@@ -169,6 +179,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/biomass.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomass Calculation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
@@ -201,11 +217,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><img src="images/processing-CPS.JPG" class="img-fluid" width="700"></p>
+<p>When performing the final step in CPS backscatter processing, there are several assumptions and acoustic characteristics about CPS that allow us to refine our classification. This process aims to distinguish CPS from non-target species from mid-water, demersal, and benthic swim bladder fishes.</p>
+<section id="acoustic-characteristics-of-cps" class="level4">
+<h4 class="anchored" data-anchor-id="acoustic-characteristics-of-cps">Acoustic Characteristics of CPS</h4>
+<p>While the acoustic properties of swimbladder fish depends on several factors, the most important are the acoustic wavelength, swimbladder size, and swimbladder orientation to the incident sound pulse. We use 39, 70, 120, and 200kHz to capture a range of swimbladder sizes and orientations. We estimate the dorsal surface area of a swimbladder (swimbladder size) based on a function of fish lengths sampled from nightly trawl catches. Knowing the approximate dorsal surface area of a swimbladder allows us to calcualte an acoustic backscattering coefficeint and derive a target strength for each CPS species. For this survey we calculate target strength as a logarithmic function of frequency and species-specific parameters obtained theoretically or experimentally and fish total length from trawl samples. Full details on species-specific target strength parameters can be found in the survey biomass report <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://swfsc-publications.fisheries.noaa.gov/publications/CR/2024/2024Stierhoff.pdf">here</a>.</p>
+<p>When looking at Echoview echograms of acoustic transects, visually we look for how the volume backscattering strength (<code>Sv)</code> changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (cite image).</p>
+<div id="frequency">
+<p><img src="images/CPS-freq-response.JPG" class="img-fluid"></p>
+</div>
+</section>
+<section id="biological-characteristics-of-cps" class="level4">
+<h4 class="anchored" data-anchor-id="biological-characteristics-of-cps"><strong>Biological Characteristics of CPS</strong></h4>
+<ul>
+<li><p>Temperature ranges from 8 deg C to 24 deg C and salinity from 30-38 psu <span class="citation" data-cites="zwolinski2010a">(<a href="references.html#ref-zwolinski2010a" role="doc-biblioref">Zwolinski et al. 2010</a>)</span></p></li>
+<li><p>Diffuse schools observed offshore near the surface or deeper than ~250m</p></li>
+<li><p>Rockfish tend to be located in areas where the seabed is hard and rugged</p></li>
+</ul>
 <p>A picture guide for helping decipher tricky backscatter in the R script extract_CPS_NASC.R and Echoview processing.</p>
 <p><img src="images/backscatter_decision_tree.JPG" class="img-fluid"></p>
 <p>Build out from <a href="https://docs.google.com/document/d/1-YxJs1veotnSZJIWPH6vJjYOA5Dt1iETaqmNv8eNoTk/edit?tab=t.0">this google document</a>.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-zwolinski2010a" class="csl-entry" role="listitem">
+Zwolinski, Juan P., Paulo B. Oliveira, Victor Quintino, and Yorgos Stratoudakis. 2010. <span>“Sardine Potential Habitat and Environmental Forcing Off Western Portugal.”</span> <em>ICES Journal of Marine Science</em> 67 (8): 1553–64. <a href="https://doi.org/10.1093/icesjms/fsq068">https://doi.org/10.1093/icesjms/fsq068</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

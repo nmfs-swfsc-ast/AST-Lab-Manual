@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../content/identification.html" rel="next">
-<link href="../content/preparation.html" rel="prev">
+<link href="../content/acquisition.html" rel="prev">
 <link href="../assets/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -148,16 +168,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/workflow.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Workflow</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/preparation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Preparation</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../content/processing.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Data Processing</span></a>
   </div>
 </li>
@@ -169,6 +179,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/biomass.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomass Calculation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
@@ -215,36 +231,34 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/processing-overview.JPG" class="img-fluid figure-img"></p>
-<figcaption>Overview of CPS Acoustic Processing</figcaption>
+<figcaption>Overview of CPS Acoustic Processing. Vessel position and attitude data is used from the POS MV (not shown).</figcaption>
 </figure>
 </div>
+<hr>
 </section>
 <section id="echoview-processing-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="echoview-processing-workflow">Echoview Processing Workflow</h3>
-<section id="semi-automated-processing-in-echoview" class="level4">
-<h4 class="anchored" data-anchor-id="semi-automated-processing-in-echoview"><strong><em>Semi-Automated Processing in Echoview</em></strong></h4>
-<p>In Echoview, we organize, clean, and extract acoustic backscatter of swim bladdered fish. There are three key steps to this process: 1) Data wrangling, cleaning, and noise removal (including surface noise and seabed removal), 2) Echo classification for swim-bladdred fish, and 3) Acoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.</p>
+<p>In Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process: 1) Data wrangling, cleaning, and noise removal (including surface noise and seabed removal), 2) Echo classification for swim-bladdred fish, and 3) Acoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ev-processing.JPG" class="img-fluid figure-img"></p>
 <figcaption>Simplified dataflow of processing in Echoview. *Surface noise and seabed removal replies on two manual inputs: the <code>Integration Start</code> and <code>Integration Stop</code> lines (not pictured, see step 5).</figcaption>
 </figure>
 </div>
-</section>
 <section id="section-1-data-wrangling-cleaning-and-noise-removal" class="level4">
-<h4 class="anchored" data-anchor-id="section-1-data-wrangling-cleaning-and-noise-removal">Section 1) Data Wrangling, Cleaning, and Noise Removal:</h4>
+<h4 class="anchored" data-anchor-id="section-1-data-wrangling-cleaning-and-noise-removal"><strong>Section 1) Data Wrangling, Cleaning, and Noise Removal:</strong></h4>
 <ol type="1">
 <li><p>Load RAW EK80 acoustic data and Echoview Calibration Supplement (<code>.ecs</code>)file into Echoview. The <code>.ecs</code> file contains soundspeed information calculated from the nearest (temporally and spatially) Underway CTD cast and echosounder calibration parameters. This file is used at the very beginning to convert from power to <code>Sv</code> (volume-backscattering coefficient).</p></li>
 <li><p>Align sampling rate (time and geometery) from all transders to the 38 kHz <code>Sv</code>. Acousticians call this step ‘matching geometry’ of all <code>Sv</code> variables. Making sure pings are aligned from all echosounders is important for calculating the frequency response of backscatter in steps later on.</p></li>
 <li><p>Remove passive-mode pings.</p></li>
-<li><p>Noise removal: estimate and subtract background noise using the background noise removal function (De Robertis and Higginbottom, 2007).</p></li>
-<li><p><strong>Surface noise and seabed removal</strong> is completed by manually drawing an <code>Integration Start</code> and <code>Integration Stop</code> line in Echoview. The <code>Integration Start</code> line is drawn at the shallowest depth to include surface CPS schools but exclude transducer ring down and surface noise due to sea state (typically around 5 meters below the transducer face or ~10m depth). The <code>Integration Stop</code> line is drawn closest to the seabed to include bottom dwelling animals but exclude any non-living seabed features (typically 3 m above the estimated seabed (Demer et al., 2009), or to the maximum logging range (e.g., 350 m), whichever is shallowest). When drawing the lines, we set the color scale to a minimum Sv threshold of -60 dB which corresponds to a density of approximately three 20-cm-long Pacific Sardine per 100 m3). Doing this helps visually pick out schools from the seabed and from non-swim bladder animals that appear as diffuse scattering layers in the water column. The area of the water column between the two lines sets the depth range that will be integrated for swim bladder fish in steps later on.</p></li>
+<li><p>Noise removal: estimate and subtract background noise using the background noise removal function described in <span class="citation" data-cites="derobertis2007">De Robertis and Higginbottom (<a href="references.html#ref-derobertis2007" role="doc-biblioref">2007</a>)</span>.</p></li>
+<li><p><strong>Surface noise and seabed removal</strong> is completed by manually drawing an <code>Integration Start</code> and <code>Integration Stop</code> line in Echoview. The <code>Integration Start</code> line is drawn at the shallowest depth to include surface CPS schools but exclude transducer ring down and surface noise due to sea state (typically around 5 meters below the transducer face or ~10m depth). The <code>Integration Stop</code> line is drawn closest to the seabed to include bottom dwelling animals but exclude any non-living seabed features (typically 3 m above the estimated seabed <span class="citation" data-cites="demer2009">(<a href="references.html#ref-demer2009" role="doc-biblioref">Demer et al. 2009</a>)</span> or to the maximum logging range (e.g., 350 m), whichever is shallowest). When drawing the lines, we set the color scale to a minimum Sv threshold of -60 dB which corresponds to a density of approximately three 20-cm-long Pacific Sardine per 100 m3). Doing this helps visually pick out schools from the seabed and from non-swim bladder animals that appear as diffuse scattering layers in the water column. The area of the water column between the two lines sets the depth range that will be integrated for swim bladder fish in steps later on.</p></li>
 <li><p>Average the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.</p></li>
 <li><p>Expand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation. This replaces each averaged datapoint from Step 6 with the maximum datapoint surrounding it in a 7x7 pixel region.</p></li>
 </ol>
 </section>
 <section id="section-2-echo-classification-for-swim-bladder-fish" class="level4">
-<h4 class="anchored" data-anchor-id="section-2-echo-classification-for-swim-bladder-fish">Section 2) Echo Classification for Swim Bladder Fish</h4>
+<h4 class="anchored" data-anchor-id="section-2-echo-classification-for-swim-bladder-fish"><strong>Section 2) Echo Classification for Swim Bladder Fish</strong></h4>
 <section id="calculate-frequency-response" class="level5">
 <h5 class="anchored" data-anchor-id="calculate-frequency-response"><em>Calculate Frequency Response</em>:</h5>
 <ol type="1">
@@ -269,28 +283,41 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Create a Boolean echogram based on the standard deviations in the CPS range:</p>
 <p>σ120kHz &gt; -65 dB</p>
 <p>σ200kHz &gt; -65 dB</p>
-<p>Diffuse backscattering layers have low σ (Zwolinski et al., 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram .</p></li>
+<p>Diffuse backscattering layers have low σ <span class="citation" data-cites="zwolinski2010">(<a href="references.html#ref-zwolinski2010" role="doc-biblioref">Zwolinski et al. 2010</a>)</span> whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram .</p></li>
 </ol>
 </section>
 </section>
 <section id="section-3-acoustic-backscatter-integration" class="level4">
-<h4 class="anchored" data-anchor-id="section-3-acoustic-backscatter-integration">Section 3) Acoustic Backscatter Integration</h4>
+<h4 class="anchored" data-anchor-id="section-3-acoustic-backscatter-integration"><strong>Section 3) Acoustic Backscatter Integration</strong></h4>
 <ol type="1">
 <li>Integrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;</li>
 <li>Output the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.</li>
 </ol>
+<hr>
 </section>
 </section>
 <section id="posit-processing-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="posit-processing-workflow"><code>Posit</code> Processing Workflow</h3>
-<p><code>extract_CPS_NASC.R</code> is an R-based tool in the <code>estimATM</code> package to retain only CPS backscatter from the integrated Echoview data.</p>
+<p>The exported <code>.csv</code> file from Echoview contains all swim bladder backscatter which can include non-target species such as rockfish. In order to further refine the acoustic classification to retain only CPS backscatter, the processed <code>.csv</code> file proceeds to the final semi-automated processing step in <code>Posit</code> using <code>extract_CPS_NASC.R</code>, an R-based tool in the <code>estimATM</code> package.</p>
 <p><img src="images/nascr_processing.JPG" class="img-fluid"></p>
-<p>Echoes from fishes with swimbladders (blue points, scaled by backscatter intensity) along an example acoustic transect (top) and the corresponding echogram image (bottom). In this example, the upper (blue) and lower lines (green) indicate boundaries within which echoes were retained. When the lower boundary is deeper than the seabed (black line), echoes above the seabed are retained. Echoes from deep, bottom-dwelling schools of non-CPS fishes with swimbladders, and from diffuse scatters near the surface were excluded. The proximity of the echoes to the seabed was also used to define the lower limit for vertical integration.</p>
-<p>In the plot window, you can now draw new integration stop (green) and start (blue) lines. Use the crosshair cursor to click along the plot to draw a new integration stop line, then right-click and select “Stop” to complete the line. Blue points that fall below this line will be excluded from the resulting CSV file. You want to remove backscatter that you believe are not CPS (e.g., rockfishes, hake) or possibly contain seabed. Next, draw a lnew top integration line (if desired) to remove any surface noise or diffuse scattering layers. If you say no to drawing this line, it will create a line at the surface and include all backscatter below. If you don’t like either line, you can respond “No” when it asks if the line looks good, and redraw the line. Rinse and repeat until you are satisfied.</p>
+<p>Echoes from fishes with swimbladders (blue points, scaled by backscatter intensity) along an example acoustic transect (top) and the corresponding Echoview echogram image (bottom). In this example, the upper (blue) and lower lines (green) indicate boundaries within which echoes were retained. When the lower boundary is deeper than the seabed (black line), echoes above the seabed are retained. Echoes from deep, bottom-dwelling schools of non-CPS fishes with swimbladders, and from diffuse scatters near the surface are excluded.</p>
+<p>The script will open a plot (top) where the acoustics technician can draw new integration start line (blue) and stop line (green). Blue points that fall below the stop line will be excluded while blue points below the start line will be included from the resulting <code>.csv</code> file. The goal is to visually review the Echoview exported echogram image (bottom) and remove backscatter that you believe are not CPS (e.g., rockfishes, hake), possibly contain accidental seabed, or any surface noise amd diffuse scattering layers. The process of picking out CPS from other swim-bladder fish can be tricky as CPS can have a range of characteristics. The <a href="https://nmfs-swfsc-ast.github.io/echo-class/content/identification.html">Backscatter Identification</a> section goes into detail on this process.</p>
 <p><img src="images/nascr_processing_result.JPG" class="img-fluid"></p>
 <p>Once you are happy with the two lines, an image will appear showing the results of your editing. If the backscatter needs to be removed, or put back, you can re-run the script and the results will be replaced.</p>
+<p><strong>The result is a final <code>.csv</code> with only backscatter information for CPS targets.</strong></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-derobertis2007" class="csl-entry" role="listitem">
+De Robertis, Alex, and Ian Higginbottom. 2007. <span>“A Post-Processing Technique to Estimate the Signal-to-Noise Ratio and Remove Echosounder Background Noise.”</span> <em>ICES Journal of Marine Science</em> 64 (6): 1282–91. <a href="https://doi.org/10.1093/icesjms/fsm112">https://doi.org/10.1093/icesjms/fsm112</a>.
+</div>
+<div id="ref-demer2009" class="csl-entry" role="listitem">
+Demer, David A., George R. Cutter, Josiah S. Renfree, and John L. Butler. 2009. <span>“A Statistical-Spectral Method for Echo Classification.”</span> <em>ICES Journal of Marine Science</em> 66 (6): 1081–90. <a href="https://doi.org/10.1093/icesjms/fsp054">https://doi.org/10.1093/icesjms/fsp054</a>.
+</div>
+<div id="ref-zwolinski2010" class="csl-entry" role="listitem">
+Zwolinski, Juan P., Paulo B. Oliveira, Victor Quintino, and Yorgos Stratoudakis. 2010. <span>“Sardine Potential Habitat and Environmental Forcing Off Western Portugal.”</span> <em>ICES Journal of Marine Science</em> 67 (8): 1553–64. <a href="https://doi.org/10.1093/icesjms/fsq068">https://doi.org/10.1093/icesjms/fsq068</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -713,8 +740,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/preparation.html" class="pagination-link" aria-label="Data Preparation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Data Preparation</span></span>
+      <a href="../content/acquisition.html" class="pagination-link" aria-label="Data Acquisition">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Data Acquisition</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
