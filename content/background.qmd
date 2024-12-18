@@ -25,6 +25,25 @@ On left, a conceptual spring (shaded region) and summer (hashed region) distribu
 
 ## Survey History:
 
-The SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Since then, they have expanded in scope and objectives to include the larger forage-fish assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.
+The SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Quickly the annual surveys demonstrated valuable ecosystem insights. Since then, they have expanded in scope and objectives to include the larger forage-fish assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.
+
+"Collectively, these annual or bi-annual ATM surveys provide a unique insight into the dynamics of forage fshes in the CCE, including their distributions, abundances, interactions, and environments. For example, results from 2006 through 2013 indicate that Pacifc Sardine dominated the CPS assemblage, but their biomass was declining (Demer and Zwolinski, 2012; Zwolinski and Demer, 2012) and their seasonal migration was contracting (Zwolinski et al., 2014). Meanwhile, harvest rates for the declining stock increased (Demer and Zwolinski, 2017), and the total forage-fsh biomass decreased to less than 200,000 t in 2014 and 2015 (Figs. 36, 37). The U.S. fshery for Pacifc Sardine was closed in 2015 (National Marine Fisheries Service, 2015), and there were reports of mass strandings, deaths, and reproductive failures in Brown Pelicans (Pelecanus occidentalis3), Common Murres (Uria aalge), Brandt’s Cormorants (Phalacrocorax penicillatus), and California sea lions (Zalophus californianus4) (McClatchie et al., 2016), all of which depend on forage species. Since 2016, the forage-fsh biomass has increased, mainly due to resurgences of Jack Mackerel and the now dominant central stock of Northern Anchovy (Figs. 36, 37), whose biomass primarily (2,466,108 t, or 94% of the total estimate biomass) occurred in U.S. waters. Between the summers of 2018 and 2021, the biomass of the southern stock of Pacifc Sardine in U.S. waters has increased from 33,093 to 45,332 t."[@stierhoff2024]
 
 ## Code of Conduct
+
+```{r setup, include=FALSE}
+```
+
+### What are Codes of Conduct?
+
+Codes of Conduct are voluntary sets of rules that assist creators, developers, and users of code and data with data protection compliance and accountability in specific sectors or relating to particular processing operations.
+
+Codes can help organizations to ensure all participants follow best practices and rules designed specifically for their sector or processing operations, thus enhancing compliance and collaboration. They are developed and managed by an association or other body (the ‘Code Owner’) which is representative of a sector (or category of data controllers or processors), with the expert and sectoral knowledge of how to enhance data protection in their area.
+
+### [Code of Conduct](https://github.com/nmfs-opensci/.github/blob/main/CODE_OF_CONDUCT.md) from the [nmfs-opensci GitHub](https://nmfs-opensci.github.io/).
+
+```{r}
+str0 <- paste0(readLines(con = "https://raw.githubusercontent.com/nmfs-opensci/.github/main/.github/CODE_OF_CONDUCT.md"), collapse = "\n")
+```
+
+`r str0`

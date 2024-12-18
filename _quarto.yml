@@ -31,6 +31,7 @@ book:
     - content/acquisition.qmd
     - content/processing.qmd
     - content/identification.qmd
+    - content/trawl-selection.qmd
     - content/biomass.qmd
     - content/references.qmd
 

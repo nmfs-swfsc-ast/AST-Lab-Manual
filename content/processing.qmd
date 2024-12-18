@@ -12,7 +12,13 @@ After data aqusition, we identify acoustic echos of schooling CPS using a semi-a
 
 ### Echoview Processing Workflow
 
-In Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process: 1) Data wrangling, cleaning, and noise removal (including surface noise and seabed removal), 2) Echo classification for swim-bladdred fish, and 3) Acoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.
+In Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process:
+
+1.  Data wrangling, cleaning, and noise removal (including surface noise and seabed removal)
+
+2.  Echo classification for swim-bladdred fish
+
+3.  Acoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.
 
 ![Simplified dataflow of processing in Echoview. \*Surface noise and seabed removal replies on two manual inputs: the `Integration Start` and `Integration Stop` lines (not pictured, see step 5).](images/ev-processing.JPG)
 

@@ -18,7 +18,7 @@ When looking at Echoview echograms of acoustic transects, visually we look for h
 
 #### **Biological Characteristics of CPS**
 
--   Temperature ranges from 8 deg C to 24 deg C and salinity from 30-38 psu [@zwolinski2010a]
+-   Temperature ranges from 8 deg C to 24 deg C and salinity from 30-38 psu [@zwolinski2010]
 
 -   Diffuse schools observed offshore near the surface or deeper than \~250m
 

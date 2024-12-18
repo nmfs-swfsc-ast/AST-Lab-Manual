@@ -6,21 +6,23 @@ render.date <- format(Sys.time(), format = "%F %T", usetz = TRUE)
 
 # Welcome {.unnumbered}
 
-\[\[\[enter cool image of CPS survey\]\]\]
+[West Coast coastal pelagic species](https://www.fisheries.noaa.gov/species/west-coast-coastal-pelagic-species) play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries [@Zwolinski2014]. Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: [Pacific Sardine](https://www.fisheries.noaa.gov/species/pacific-sardine#:~:text=Baja%20California%2C%20Mexico.-,Habitat,schools%20near%20the%20ocean%20surface.) *Sardinops sagax*, Northern Anchovy *Engraulis mordax*, Pacific Mackerel *Scomber japonicus,* Jack Mackerel *Trachurus symmetricus,* Pacific Herring *Clupea pallasii,* and Round Herring *Etrumeus acuminatus*. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.
 
-[West Coast coastal pelagic species](https://www.fisheries.noaa.gov/species/west-coast-coastal-pelagic-species) play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries. The biomass and abundance estimates derived from this project are used in stock assessment models to support sustainable fisheries.
+![Survey work typically takes place on the NOAA Ship Reuben Lasker with acoustic sampling during the day and trawl sampling at night. Here is the back deck of the NOAA Ship Reuben Lasker at sunset . Inside the ship the biosampling team is getting ready for a night of trawling.](content/images/lasker-sunset.jpg){fig-align="left" width="788"}
 
 ## Document Objective:
 
-This resource will serve as a tutorial to demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species from Baja, Mexico to Vancouver, Canada.
+This resource demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species. As part of our commitment to open science, reproducibility, and transparency, we provide this metadata guide to compliment our public-domain data. Please consider this resource to be a **Living Document**. The code in this repository is regularly being updated and improved. 
 
-| As part of our commitment to open science, reproducibility, and transparency, we provide this metadata guide to compliment our public-domain data.
-| 
-| Please consider this resource to be a **Living Document**. The code in this repository is regularly being updated and improved. 
-| 
-| Do not hesitate to reach out (to us at either alice.beittel\@noaa.gov or [GitHub issues](https://github.com/nmfs-swfsc-ast/echo-class/issues), especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.
+Do not hesitate to reach out (to us at either alice.beittel\@noaa.gov or [GitHub issues](https://github.com/nmfs-swfsc-ast/echo-class/issues), especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.
 
 ## User Resources
+
+The survey produces two reports each year: A Survey Report and a Biomass Report. Each can be found at the NOAA Institutional Repository online
+
+-   [2023 Biomass Report](https://repository.library.noaa.gov/view/noaa/61651): *Distribution, biomass, and demographics of coastal pelagic fishes in the California Current Ecosystem during summer 2023 based on acoustic-trawl sampling*
+
+-   [2023 Survey Report](https://repository.library.noaa.gov/view/noaa/61647): *Report on the Summer 2023 California Current Ecosystem Survey (CCES) (2307RL), 17 July to 3 November 2023, conducted aboard NOAA Ships Reuben Lasker and Bell M. Shimada, fishing vessels Lisa Marie and Long Beach Carnage, and three uncrewed surface vessels*
 
 ## Cite This Data
 
@@ -33,6 +35,12 @@ This repository is a scientific product and is not official communication of the
 ## NOAA License
 
 Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.
+
+Copyright 2024 SWFSC Advanced Survey Technology Program\
+\
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <http://www.apache.org/licenses/LICENSE-2.0>\
+\
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
