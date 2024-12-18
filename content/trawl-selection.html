@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Biomass Calculation – CPS Acoustic Classification</title>
+<title>Trawl Selection – CPS Acoustic Classification</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -29,8 +49,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/references.html" rel="next">
-<link href="../content/trawl-selection.html" rel="prev">
+<link href="../content/biomass.html" rel="next">
+<link href="../content/identification.html" rel="prev">
 <link href="../assets/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -81,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/biomass.html"><span class="chapter-title">Biomass Calculation</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/trawl-selection.html"><span class="chapter-title">Trawl Selection</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -158,12 +178,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/trawl-selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Trawl Selection</span></a>
+  <a href="../content/trawl-selection.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Trawl Selection</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/biomass.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Biomass Calculation</span></a>
+  <a href="../content/biomass.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomass Calculation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -177,15 +197,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#visual-comparison" id="toc-visual-comparison" class="nav-link active" data-scroll-target="#visual-comparison"><strong>1. Visual Comparison</strong></a></li>
+  <li><a href="#best-judgement" id="toc-best-judgement" class="nav-link" data-scroll-target="#best-judgement">2. Best Judgement</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/edit/main/content/trawl-selection.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/blob/main/content/trawl-selection.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Biomass Calculation</span></h1>
+<h1 class="title"><span class="chapter-title">Trawl Selection</span></h1>
 </div>
 
 
@@ -202,9 +229,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="images/estimATM_dataflow.JPG" class="img-fluid"></p>
+<p>Acoustic transects are processed for CPS backscatter on the day of acquisition and used to determine nightly trawl locations. This page will walk through the process of trawl selection.</p>
+<section id="visual-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="visual-comparison"><strong>1. Visual Comparison</strong></h3>
+<p>The acoustics technician on watch completes a visual comparison between an in-house published map (plotSurvey) of backscatter results and the transect acoustic echogram. Dense schools of CPS seen in the echogram will correlate to colorful bubbles on plotSurvey.</p>
+<p><img src="images/trawl-selection-plotsurvey-056C.JPG" class="img-fluid" width="541"></p>
+<p>Clicking on summarized acoustic points shows a popup that contains the time and distance interval over which those data were summarized, allowing you to scrutinize the results of Echoview processing. We make sure to cross-reference backscatter spots on plotSurvey with the exported image from Echoview to make an informed trawl-location decision.</p>
+<p><img src="images/trawl-selection-plotsurvey-backscatter.JPG" class="img-fluid" width="337"></p>
+</section>
+<section id="best-judgement" class="level3">
+<h3 class="anchored" data-anchor-id="best-judgement">2. Best Judgement</h3>
+<p>The acoustics technician will select 2-3 trawls each night based on the backscatter observed during the daytime acoustic transect, operational efficiency, and expected CPS habitat. If no CPS backscatter is observed, trawl locations will default to using expected CPS habitat information and operational efficiency.</p>
+<p><img src="images/trawl-selection.JPG" class="img-fluid" width="642"></p>
+<p>Expected CPS habitat is derived from prior survey results and models:</p>
+<ul>
+<li><p>Sardine habitat based on a 12-year data set of sardine eggs, remotely sensed oceanographic variables, sea surface temperature, chlorophyll <em>a</em> concentrations, sea surface altitude <span class="citation" data-cites="zwolinski2011">(<a href="references.html#ref-zwolinski2011" role="doc-biblioref">Zwolinski, Emmett, and Demer 2011</a>)</span>.</p></li>
+<li><p>Charted bathymetry – Pacific sardines can be found from the ocean surface to ~350m in depth and typically reside around smoother (less rocky) bottom types.</p></li>
+<li><p>Sardine eggs are most abundant at sea-surface temperatures of 13 to 15 ∘C, and larvae are most abundant at 13 to 16 ∘C. Temperature is a primary driver of the spatial and seasonal distribution of spawning. During warm ocean conditions, sardine spawning shifts northward concentrating in offshore regions and north of Point Conception to San Francisco and in some years is observed as far north as Oregon <span class="citation" data-cites="kuriyama2020">(<a href="references.html#ref-kuriyama2020" role="doc-biblioref">Kuriyama, Zwolinski, and Hill 2020</a>)</span>.</p></li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-kuriyama2020" class="csl-entry" role="listitem">
+Kuriyama, Peter T., Juan P. Zwolinski, and Kevin T. Hill. 2020. <span>“Assessment of the Pacific Sardine Resource in 2020 for u.s. Management in 2020-2021.”</span> <em>Southwest Fisheries Science Center (U.S.)</em>. <a href="https://doi.org/10.25923/R2FZ-4Y79">https://doi.org/10.25923/R2FZ-4Y79</a>.
+</div>
+<div id="ref-zwolinski2011" class="csl-entry" role="listitem">
+Zwolinski, Juan P., Robert L. Emmett, and David A. Demer. 2011. <span>“Predicting Habitat to Optimize Sampling of Pacific Sardine (Sardinops Sagax).”</span> <em>ICES Journal of Marine Science</em> 68 (5): 867–79. <a href="https://doi.org/10.1093/icesjms/fsr038">https://doi.org/10.1093/icesjms/fsr038</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -626,13 +679,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/trawl-selection.html" class="pagination-link" aria-label="Trawl Selection">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Trawl Selection</span></span>
+      <a href="../content/identification.html" class="pagination-link" aria-label="Backscatter Identification">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Backscatter Identification</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/biomass.html" class="pagination-link" aria-label="Biomass Calculation">
+        <span class="nav-page-text"><span class="chapter-title">Biomass Calculation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -644,7 +697,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/edit/main/content/biomass.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/blob/main/content/biomass.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/edit/main/content/trawl-selection.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/blob/main/content/trawl-selection.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/echo-class/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

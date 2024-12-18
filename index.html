@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -158,6 +178,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./content/trawl-selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Trawl Selection</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./content/biomass.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomass Calculation</span></a>
   </div>
 </li>
@@ -223,22 +248,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Last updated:</strong> 2024-12-17 23:50:46 UTC</p>
+<p><strong>Last updated:</strong> 2024-12-18 19:01:37 UTC</p>
 <section id="welcome" class="level1 unnumbered">
 <h1 class="unnumbered">Welcome</h1>
-<p>[[[enter cool image of CPS survey]]]</p>
-<p><a href="https://www.fisheries.noaa.gov/species/west-coast-coastal-pelagic-species">West Coast coastal pelagic species</a> play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries. The biomass and abundance estimates derived from this project are used in stock assessment models to support sustainable fisheries.</p>
+<p><a href="https://www.fisheries.noaa.gov/species/west-coast-coastal-pelagic-species">West Coast coastal pelagic species</a> play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries <span class="citation" data-cites="Zwolinski2014">(<a href="content/references.html#ref-Zwolinski2014" role="doc-biblioref">Zwolinski et al. 2014</a>)</span>. Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: <a href="https://www.fisheries.noaa.gov/species/pacific-sardine#:~:text=Baja%20California%2C%20Mexico.-,Habitat,schools%20near%20the%20ocean%20surface.">Pacific Sardine</a> <em>Sardinops sagax</em>, Northern Anchovy <em>Engraulis mordax</em>, Pacific Mackerel <em>Scomber japonicus,</em> Jack Mackerel <em>Trachurus symmetricus,</em> Pacific Herring <em>Clupea pallasii,</em> and Round Herring <em>Etrumeus acuminatus</em>. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="content/images/lasker-sunset.jpg" class="img-fluid figure-img" width="788"></p>
+<figcaption>Survey work typically takes place on the NOAA Ship Reuben Lasker with acoustic sampling during the day and trawl sampling at night. Here is the back deck of the NOAA Ship Reuben Lasker at sunset . Inside the ship the biosampling team is getting ready for a night of trawling.</figcaption>
+</figure>
+</div>
 <section id="document-objective" class="level2">
 <h2 class="anchored" data-anchor-id="document-objective">Document Objective:</h2>
-<p>This resource will serve as a tutorial to demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species from Baja, Mexico to Vancouver, Canada.</p>
-<div class="line-block">As part of our commitment to open science, reproducibility, and transparency, we provide this metadata guide to compliment our public-domain data.<br>
-<br>
-Please consider this resource to be a&nbsp;<strong>Living Document</strong>. The code in this repository is regularly being updated and improved.&nbsp;<br>
-<br>
-Do not hesitate to reach out (to us at either&nbsp;alice.beittel@noaa.gov&nbsp;or&nbsp;<a href="https://github.com/nmfs-swfsc-ast/echo-class/issues">GitHub issues</a>, especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.</div>
+<p>This resource demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species. As part of our commitment to open science, reproducibility, and transparency, we provide this metadata guide to compliment our public-domain data. Please consider this resource to be a&nbsp;<strong>Living Document</strong>. The code in this repository is regularly being updated and improved.&nbsp;</p>
+<p>Do not hesitate to reach out (to us at either&nbsp;alice.beittel@noaa.gov&nbsp;or&nbsp;<a href="https://github.com/nmfs-swfsc-ast/echo-class/issues">GitHub issues</a>, especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.</p>
 </section>
 <section id="user-resources" class="level2">
 <h2 class="anchored" data-anchor-id="user-resources">User Resources</h2>
+<p>The survey produces two reports each year: A Survey Report and a Biomass Report. Each can be found at the NOAA Institutional Repository online</p>
+<ul>
+<li><p><a href="https://repository.library.noaa.gov/view/noaa/61651">2023 Biomass Report</a>: <em>Distribution, biomass, and demographics of coastal pelagic fishes in the California Current Ecosystem during summer 2023 based on acoustic-trawl sampling</em></p></li>
+<li><p><a href="https://repository.library.noaa.gov/view/noaa/61647">2023 Survey Report</a>: <em>Report on the Summer 2023 California Current Ecosystem Survey (CCES) (2307RL), 17 July to 3 November 2023, conducted aboard NOAA Ships Reuben Lasker and Bell M. Shimada, fishing vessels Lisa Marie and Long Beach Carnage, and three uncrewed surface vessels</em></p></li>
+</ul>
 </section>
 <section id="cite-this-data" class="level2">
 <h2 class="anchored" data-anchor-id="cite-this-data">Cite This Data</h2>
@@ -251,8 +282,18 @@ Do not hesitate to reach out (to us at either&nbsp;alice.beittel@noaa.gov&nbsp;o
 <section id="noaa-license" class="level2">
 <h2 class="anchored" data-anchor-id="noaa-license">NOAA License</h2>
 <p>Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.</p>
+<p>Copyright 2024 SWFSC Advanced Survey Technology Program<br>
+<br>
+Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="http://www.apache.org/licenses/LICENSE-2.0" class="uri">http://www.apache.org/licenses/LICENSE-2.0</a><br>
+<br>
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Zwolinski2014" class="csl-entry" role="listitem">
+Zwolinski, Juan, David Demer, George Cutter, Kevin Stierhoff, and Beverly Macewicz. 2014. <span>“Building on Fisheries Acoustics for Marine Ecosystem Surveys.”</span> <em>Oceanography</em> 27 (4): 68–79. <a href="https://doi.org/10.5670/oceanog.2014.87">https://doi.org/10.5670/oceanog.2014.87</a>.
+</div>
+</div>
 </section>
 </section>
 
