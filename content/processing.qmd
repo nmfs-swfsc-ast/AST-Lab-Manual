@@ -6,7 +6,7 @@ After data aqusition, we identify acoustic echos of schooling CPS using a semi-a
 
 ### Data Processing Overview
 
-![Overview of CPS Acoustic Processing. Vessel position and attitude data is used from the POS MV (not shown). ](images/processing-overview.JPG)
+![Overview of CPS Acoustic Processing. Vessel position and attitude data is used from the POS MV (not shown).](images/processing-overview.JPG)
 
 ------------------------------------------------------------------------
 
