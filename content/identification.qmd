@@ -12,7 +12,7 @@ While the acoustic properties of swimbladder fish depends on several factors, th
 
 When looking at Echoview echograms of acoustic transects, visually we look for how the volume backscattering strength (`Sv)` changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (@fig-frequency).
 
-![](images/CPS-freq-response.JPG){#fig-frequency}
+![](images/CPS-freq-response.JPG){#fig-frequency width="904"}
 
 #### **Biological Characteristics of CPS**
 
