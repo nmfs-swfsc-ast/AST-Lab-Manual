@@ -2,30 +2,48 @@
 title: Backscatter Identification
 ---
 
-When performing the final step in CPS backscatter processing, there are several assumptions and acoustic characteristics about CPS that allow us to refine our classification. This process aims to distinguish CPS from non-target species from mid-water, demersal, and benthic swim bladder fishes.
-
-![](images/clipboard-1812046072.jpeg){width="510"}
-
 #### Acoustic Characteristics of CPS
 
-While the acoustic properties of swimbladder fish depends on several factors, the most important are the acoustic wavelength, swimbladder size, and swimbladder orientation to the incident sound pulse. We use 39, 70, 120, and 200kHz to capture a range of swimbladder sizes and orientations. We estimate the dorsal surface area of a swimbladder (swimbladder size) based on a function of fish lengths sampled from nightly trawl catches. Knowing the approximate dorsal surface area of a swimbladder allows us to calculate an acoustic backscattering coefficeint and derive a target strength for each CPS species. For this survey we calculate target strength as a logarithmic function of frequency and species-specific parameters obtained theoretically or experimentally and fish total length from trawl samples. Full details on species-specific target strength parameters can be found in the survey biomass report [here](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://swfsc-publications.fisheries.noaa.gov/publications/CR/2024/2024Stierhoff.pdf).
+While the acoustic properties of swimbladder fish depends on several factors, the most important are the acoustic wavelength, swimbladder size, and swimbladder orientation to the incident sound pulse. We use 39, 70, 120, and 200kHz to capture a range of swimbladder sizes and orientations. During our nightly trawl catches, we measure the standard length for a collection of fish. Using the standard length we estimate the dorsal surface area of a swimbladder (swimbladder size). Knowing the approximate dorsal surface area of a swimbladder allows us to calculate the backscattering cross-section of one bladder and in turn the **volume backscattering coefficient** (many swim bladders together such as a school of fish). We are able to calculate backscattering coefficients for each CPS species. You may also hear the word Target Strength, which is a logrithmic function of the backscattering cross-section and describes how sound reflects off the swim bladder depending on its size. For this survey we calculate target strength as a logarithmic function of frequency and species-specific parameters obtained theoretically or experimentally and fish total length from trawl samples. Full details on species-specific target strength parameters can be found in the survey biomass report [here](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://swfsc-publications.fisheries.noaa.gov/publications/CR/2024/2024Stierhoff.pdf).
 
-When looking at Echoview echograms of acoustic transects, visually we look for how the volume backscattering strength (`Sv)` changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (@fig-frequency).
+![](images/Sv.JPG){fig-align="center"}
 
-![](images/CPS-freq-response.JPG){#fig-frequency width="904"}
+**`Sv` differences in the CPS range:**
 
-#### **Biological Characteristics of CPS**
+−13.85 \< `Sv` 70kHz − `Sv` 38kHz \< 9.89
 
--   Temperature ranges from 15 deg C and 17 deg C salinity from 30-38 psu [@zwolinski2010]
+− 13.5 \< `Sv` 120kHz −`Sv` 38kHz \< 9.37
 
-**Characteristics of other swim bladder fish that are not CPS:**
+− 13.51 \< `Sv` 200kHz − `Sv` 38kHz \< 12.53
 
--   Diffuse schools observed offshore near the surface or deeper than \~250m
+#### **The automated CPS processing in 'Echoview' filters for all CPS meeting the criteria above, however some non-CPS targets still pass through the filter, specifically fishes like rockfish. To remove these CPS-like targets, we manually review each exported Echoview echogram.** 
 
--   Rockfish tend to be located in areas where the seabed is hard and rugged
+#### **Below is how we do that.** 
 
-A picture guide for helping decipher tricky backscatter in the R script extract_CPS_NASC.R and Echoview processing.
+Using the 'extract_CPS_NASC.R', an R-based tool in the 'estimATM' package, we remove non-CPS targets from final echograms. This process aims to distinguish CPS from non-target species from mid-water, demersal, and benthic swim bladder fishes.
 
-![](images/backscatter_decision_tree.JPG)
+![](images/clipboard-1812046072.jpeg){fig-align="center" width="402"}
 
-Build out from [this google document](https://docs.google.com/document/d/1-YxJs1veotnSZJIWPH6vJjYOA5Dt1iETaqmNv8eNoTk/edit?tab=t.0).
+We follow a decision guide to help distinguish CPS and retain the backscatter that meets the criteria in green.
+
+![](images/clipboard-2573637158.jpeg){fig-align="center"}
+
+Below is an example of a well defined school with high Sv. CPS schools can occur in near the surface, mid-water column, or compressed to the seabed (especially in shallow waters during the day).
+
+![CPS near sea surface](images/CPS-surface.JPG){fig-align="left"}
+
+![CPS near seafloor](images/CPS-bottom.JPG){fig-align="left"}
+
+Below are examples of non-CPS that we manually using 'extract_CPS_NASC.R'.
+
+![Diffuse biological layer. Diffuse schools will often be observed offshore near the surface, near a shelf break, or deeper than \~250m](images/Diffuse.JPG){fig-align="left" width="353"}
+
+![Rockfish on a seamount. Rockfish often will be observed near rugged or rocky seabed.](images/Rockfish.JPG){fig-align="left" width="355"}
+
+![The hake snake. Hake tend to be mid-water column and in a snaking schooling behavior.](images/Hake.JPG){fig-align="left" width="508"}
+
+When looking at Echoview echograms of acoustic transects, if there are areas where we are unsure if the backscatter is CPS or not CPS based on visual inspection, we dig deeper and examine how the **volume backscattering coefficient (`Sv)`** changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (@fig-frequency) with the decrease or flattening occurring between 120kHz and 200kHz.
+
+![](images/CPS-freq-response.JPG){#fig-frequency fig-align="left" width="904"}
+
+*Reference: Content is adapted from [this google document: Name that Backscatter!](https://docs.google.com/document/d/1-YxJs1veotnSZJIWPH6vJjYOA5Dt1iETaqmNv8eNoTk/edit?tab=t.0)*

@@ -24,9 +24,21 @@ The survey produces two reports each year: A Survey Report and a Biomass Report.
 
 -   [2023 Survey Report](https://repository.library.noaa.gov/view/noaa/61647): *Report on the Summer 2023 California Current Ecosystem Survey (CCES) (2307RL), 17 July to 3 November 2023, conducted aboard NOAA Ships Reuben Lasker and Bell M. Shimada, fishing vessels Lisa Marie and Long Beach Carnage, and three uncrewed surface vessels*
 
-## Cite This Data
+## How to Access Our Data
 
-\[enter text on how to do this\]
+**NOAA Coast Watch ERDDAP:**
+
+[CPS Trawl Haul Catch Data](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/FRDCPSTrawlLHHaulCatch.html)
+
+[CPS Trawl Specimen Data](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/FRDCPSTrawlLHSpecimen.html)
+
+[NOAA Ship Reuben Lasker Underway Meteorological Data](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/fsuNoaaShipWTEG.html)
+
+**NOAA National Centers for Environmental Information (NCE):**
+
+Locate raw acoustic data using the [NCEI Water Column Sonar Data Viewer](https://www.ncei.noaa.gov/maps/water-column-sonar/).
+
+Download raw acoustic data via the viewer or the [AWS NCEI bucket](https://noaa-wcsd-pds.s3.amazonaws.com/index.html#data/raw/).
 
 ## NOAA README
 

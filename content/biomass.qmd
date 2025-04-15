@@ -1,5 +1,7 @@
 ---
-title: Biomass Calculation
+title: Reporting
 ---
+
+Using the r package 'estimATM' several reports are generating using the final processed acoustic data.
 
 ![](images/estimATM_dataflow.JPG)
