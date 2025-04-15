@@ -1,6 +1,4 @@
-This resource will serve as a tutorial to demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species from Baja, Mexico to Vancouver, Canada.
-
-As part of our commitment to open science, reproducibility, and transparency, we provide this metadata guide to compliment our public-domain data.
+This resource will serve as a tutorial to serve as a one-stop-shop for all AST needs.
 
 Please consider this resource to be a Living Document. The code in this repository is regularly being updated and improved. 
 
