@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -57,10 +37,10 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1755250838a2061f06ed532a7bc778d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-206f8245a227ada7226b6ba55fd4dbfa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -183,7 +163,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/biomass.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Biomass Calculation</span></a>
+  <a href="../content/biomass.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reporting</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -222,43 +202,82 @@ div.csl-indent {
 </header>
 
 
-<p>When performing the final step in CPS backscatter processing, there are several assumptions and acoustic characteristics about CPS that allow us to refine our classification. This process aims to distinguish CPS from non-target species from mid-water, demersal, and benthic swim bladder fishes.</p>
-<p><img src="images/clipboard-1812046072.jpeg" class="img-fluid" width="510"></p>
 <section id="acoustic-characteristics-of-cps" class="level4">
 <h4 class="anchored" data-anchor-id="acoustic-characteristics-of-cps">Acoustic Characteristics of CPS</h4>
-<p>While the acoustic properties of swimbladder fish depends on several factors, the most important are the acoustic wavelength, swimbladder size, and swimbladder orientation to the incident sound pulse. We use 39, 70, 120, and 200kHz to capture a range of swimbladder sizes and orientations. We estimate the dorsal surface area of a swimbladder (swimbladder size) based on a function of fish lengths sampled from nightly trawl catches. Knowing the approximate dorsal surface area of a swimbladder allows us to calculate an acoustic backscattering coefficeint and derive a target strength for each CPS species. For this survey we calculate target strength as a logarithmic function of frequency and species-specific parameters obtained theoretically or experimentally and fish total length from trawl samples. Full details on species-specific target strength parameters can be found in the survey biomass report <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://swfsc-publications.fisheries.noaa.gov/publications/CR/2024/2024Stierhoff.pdf">here</a>.</p>
-<p>When looking at Echoview echograms of acoustic transects, visually we look for how the volume backscattering strength (<code>Sv)</code> changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (<a href="#fig-frequency" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>).</p>
-<div id="fig-frequency" class="quarto-float quarto-figure quarto-figure-center anchored" width="904">
+<p>While the acoustic properties of swimbladder fish depends on several factors, the most important are the acoustic wavelength, swimbladder size, and swimbladder orientation to the incident sound pulse. We use 39, 70, 120, and 200kHz to capture a range of swimbladder sizes and orientations. During our nightly trawl catches, we measure the standard length for a collection of fish. Using the standard length we estimate the dorsal surface area of a swimbladder (swimbladder size). Knowing the approximate dorsal surface area of a swimbladder allows us to calculate the backscattering cross-section of one bladder and in turn the <strong>volume backscattering coefficient</strong> (many swim bladders together such as a school of fish). We are able to calculate backscattering coefficients for each CPS species. You may also hear the word Target Strength, which is a logrithmic function of the backscattering cross-section and describes how sound reflects off the swim bladder depending on its size. For this survey we calculate target strength as a logarithmic function of frequency and species-specific parameters obtained theoretically or experimentally and fish total length from trawl samples. Full details on species-specific target strength parameters can be found in the survey biomass report <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://swfsc-publications.fisheries.noaa.gov/publications/CR/2024/2024Stierhoff.pdf">here</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Sv.JPG" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p><strong><code>Sv</code> differences in the CPS range:</strong></p>
+<p>−13.85 &lt; <code>Sv</code> 70kHz − <code>Sv</code> 38kHz &lt; 9.89</p>
+<p>− 13.5 &lt; <code>Sv</code> 120kHz −<code>Sv</code> 38kHz &lt; 9.37</p>
+<p>− 13.51 &lt; <code>Sv</code> 200kHz − <code>Sv</code> 38kHz &lt; 12.53</p>
+</section>
+<section id="the-automated-cps-processing-in-echoview-filters-for-all-cps-meeting-the-criteria-above-however-some-non-cps-targets-still-pass-through-the-filter-specifically-fishes-like-rockfish.-to-remove-these-cps-like-targets-we-manually-review-each-exported-echoview-echogram." class="level4">
+<h4 class="anchored" data-anchor-id="the-automated-cps-processing-in-echoview-filters-for-all-cps-meeting-the-criteria-above-however-some-non-cps-targets-still-pass-through-the-filter-specifically-fishes-like-rockfish.-to-remove-these-cps-like-targets-we-manually-review-each-exported-echoview-echogram."><strong>The automated CPS processing in ‘Echoview’ filters for all CPS meeting the criteria above, however some non-CPS targets still pass through the filter, specifically fishes like rockfish. To remove these CPS-like targets, we manually review each exported Echoview echogram.</strong></h4>
+</section>
+<section id="below-is-how-we-do-that." class="level4">
+<h4 class="anchored" data-anchor-id="below-is-how-we-do-that."><strong>Below is how we do that.</strong></h4>
+<p>Using the ‘extract_CPS_NASC.R’, an R-based tool in the ‘estimATM’ package, we remove non-CPS targets from final echograms. This process aims to distinguish CPS from non-target species from mid-water, demersal, and benthic swim bladder fishes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1812046072.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="402"></p>
+</figure>
+</div>
+<p>We follow a decision guide to help distinguish CPS and retain the backscatter that meets the criteria in green.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2573637158.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Below is an example of a well defined school with high Sv. CPS schools can occur in near the surface, mid-water column, or compressed to the seabed (especially in shallow waters during the day).</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/CPS-surface.JPG" class="img-fluid figure-img"></p>
+<figcaption>CPS near sea surface</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/CPS-bottom.JPG" class="img-fluid figure-img"></p>
+<figcaption>CPS near seafloor</figcaption>
+</figure>
+</div>
+<p>Below are examples of non-CPS that we manually using ‘extract_CPS_NASC.R’.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/Diffuse.JPG" class="img-fluid figure-img" width="353"></p>
+<figcaption>Diffuse biological layer. Diffuse schools will often be observed offshore near the surface, near a shelf break, or deeper than ~250m</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/Rockfish.JPG" class="img-fluid figure-img" width="355"></p>
+<figcaption>Rockfish on a seamount. Rockfish often will be observed near rugged or rocky seabed.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/Hake.JPG" class="img-fluid figure-img" width="508"></p>
+<figcaption>The hake snake. Hake tend to be mid-water column and in a snaking schooling behavior.</figcaption>
+</figure>
+</div>
+<p>When looking at Echoview echograms of acoustic transects, if there are areas where we are unsure if the backscatter is CPS or not CPS based on visual inspection, we dig deeper and examine how the <strong>volume backscattering coefficient (<code>Sv)</code></strong> changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (<a href="#fig-frequency" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>) with the decrease or flattening occurring between 120kHz and 200kHz.</p>
+<div id="fig-frequency" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" width="904">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-frequency-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/CPS-freq-response.JPG" id="fig-frequency" class="img-fluid figure-img" width="904">
+<img src="images/CPS-freq-response.JPG" id="fig-frequency" class="img-fluid quarto-figure quarto-figure-left anchored figure-img" width="904">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-frequency-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;4.1
 </figcaption>
 </figure>
 </div>
-</section>
-<section id="biological-characteristics-of-cps" class="level4">
-<h4 class="anchored" data-anchor-id="biological-characteristics-of-cps"><strong>Biological Characteristics of CPS</strong></h4>
-<ul>
-<li>Temperature ranges from 15 deg C and 17 deg C salinity from 30-38 psu <span class="citation" data-cites="zwolinski2010">(<a href="references.html#ref-zwolinski2010" role="doc-biblioref">Zwolinski et al. 2010</a>)</span></li>
-</ul>
-<p><strong>Characteristics of other swim bladder fish that are not CPS:</strong></p>
-<ul>
-<li><p>Diffuse schools observed offshore near the surface or deeper than ~250m</p></li>
-<li><p>Rockfish tend to be located in areas where the seabed is hard and rugged</p></li>
-</ul>
-<p>A picture guide for helping decipher tricky backscatter in the R script extract_CPS_NASC.R and Echoview processing.</p>
-<p><img src="images/backscatter_decision_tree.JPG" class="img-fluid"></p>
-<p>Build out from <a href="https://docs.google.com/document/d/1-YxJs1veotnSZJIWPH6vJjYOA5Dt1iETaqmNv8eNoTk/edit?tab=t.0">this google document</a>.</p>
+<p><em>Reference: Content is adapted from <a href="https://docs.google.com/document/d/1-YxJs1veotnSZJIWPH6vJjYOA5Dt1iETaqmNv8eNoTk/edit?tab=t.0">this google document: Name that Backscatter!</a></em></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-zwolinski2010" class="csl-entry" role="listitem">
-Zwolinski, Juan P., Paulo B. Oliveira, Victor Quintino, and Yorgos Stratoudakis. 2010. <span>“Sardine Potential Habitat and Environmental Forcing Off Western Portugal.”</span> <em>ICES Journal of Marine Science</em> 67 (8): 1553–64. <a href="https://doi.org/10.1093/icesjms/fsq068">https://doi.org/10.1093/icesjms/fsq068</a>.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
