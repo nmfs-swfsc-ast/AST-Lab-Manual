@@ -3,9 +3,9 @@ project:
 
 book: 
   page-navigation: true
-  title: "CPS Acoustic Classification" 
-  site-url: "https://nmfs-swfsc-ast.github.io/echo-class/" 
-  repo-url: "https://github.com/nmfs-swfsc-ast/echo-class"
+  title: "AST Lab Manual" 
+  site-url: "https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/" 
+  repo-url: "https://github.com/nmfs-swfsc-ast/AST-Lab_Manual"
   repo-actions: [edit, source, issue]
   favicon: assets/favicon.ico
   downloads: [pdf, docx]
