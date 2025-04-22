@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "CPS Acoustic Classification",
+    "title": "AST Lab Manual",
     "section": "",
-    "text": "Welcome\nLast updated: 2025-04-15 23:56:30 UTC\nWest Coast coastal pelagic species play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries (Zwolinski et al. 2014). Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: Pacific Sardine Sardinops sagax, Northern Anchovy Engraulis mordax, Pacific Mackerel Scomber japonicus, Jack Mackerel Trachurus symmetricus, Pacific Herring Clupea pallasii, and Round Herring Etrumeus acuminatus. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.",
+    "text": "Welcome\nLast updated: 2025-04-22 18:48:33 UTC\nWest Coast coastal pelagic species play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries (Zwolinski et al. 2014). Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: Pacific Sardine Sardinops sagax, Northern Anchovy Engraulis mordax, Pacific Mackerel Scomber japonicus, Jack Mackerel Trachurus symmetricus, Pacific Herring Clupea pallasii, and Round Herring Etrumeus acuminatus. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.",
     "crumbs": [
       "Welcome"
     ]
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#document-objective",
     "href": "index.html#document-objective",
-    "title": "CPS Acoustic Classification",
+    "title": "AST Lab Manual",
     "section": "Document Objective:",
     "text": "Document Objective:\nThis resource demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species. As part of our commitment to open science, reproducibility, and transparency, we provide this metadata guide to compliment our public-domain data. Please consider this resource to be a Living Document. The code in this repository is regularly being updated and improved. \nDo not hesitate to reach out (to us at either alice.beittel@noaa.gov or GitHub issues, especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#user-resources",
     "href": "index.html#user-resources",
-    "title": "CPS Acoustic Classification",
+    "title": "AST Lab Manual",
     "section": "User Resources",
     "text": "User Resources\nThe survey produces two reports each year: A Survey Report and a Biomass Report. Each can be found at the NOAA Institutional Repository online\n\n2023 Biomass Report: Distribution, biomass, and demographics of coastal pelagic fishes in the California Current Ecosystem during summer 2023 based on acoustic-trawl sampling\n2023 Survey Report: Report on the Summer 2023 California Current Ecosystem Survey (CCES) (2307RL), 17 July to 3 November 2023, conducted aboard NOAA Ships Reuben Lasker and Bell M. Shimada, fishing vessels Lisa Marie and Long Beach Carnage, and three uncrewed surface vessels",
     "crumbs": [
@@ -32,7 +32,7 @@
   {
     "objectID": "index.html#how-to-access-our-data",
     "href": "index.html#how-to-access-our-data",
-    "title": "CPS Acoustic Classification",
+    "title": "AST Lab Manual",
     "section": "How to Access Our Data",
     "text": "How to Access Our Data\nNOAA Coast Watch ERDDAP:\nCPS Trawl Haul Catch Data\nCPS Trawl Specimen Data\nNOAA Ship Reuben Lasker Underway Meteorological Data\nNOAA National Centers for Environmental Information (NCE):\nLocate raw acoustic data using the NCEI Water Column Sonar Data Viewer.\nDownload raw acoustic data via the viewer or the AWS NCEI bucket.",
     "crumbs": [
@@ -42,7 +42,7 @@
   {
     "objectID": "index.html#noaa-readme",
     "href": "index.html#noaa-readme",
-    "title": "CPS Acoustic Classification",
+    "title": "AST Lab Manual",
     "section": "NOAA README",
     "text": "NOAA README\nThis repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.",
     "crumbs": [
@@ -52,7 +52,7 @@
   {
     "objectID": "index.html#noaa-license",
     "href": "index.html#noaa-license",
-    "title": "CPS Acoustic Classification",
+    "title": "AST Lab Manual",
     "section": "NOAA License",
     "text": "NOAA License\nSoftware code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.\nCopyright 2024 SWFSC Advanced Survey Technology Program\n\nLicensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n\n\n\n\nZwolinski, Juan, David Demer, George Cutter, Kevin Stierhoff, and Beverly Macewicz. 2014. “Building on Fisheries Acoustics for Marine Ecosystem Surveys.” Oceanography 27 (4): 68–79. https://doi.org/10.5670/oceanog.2014.87.",
     "crumbs": [

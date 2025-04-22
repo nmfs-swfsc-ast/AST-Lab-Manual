@@ -1,1 +1,1 @@
-Sitemap: https://nmfs-swfsc-ast.github.io/echo-class/sitemap.xml
+Sitemap: https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/sitemap.xml
