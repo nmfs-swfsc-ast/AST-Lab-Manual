@@ -1,0 +1,10 @@
+---
+title: "Daily Acoustic Operations"
+editor: visual
+---
+
+### **AST’s 18-kHz WBT PC**
+
+**NOTE**: There is a bug in the EK80 software that prevents the EC150 from changing its operating mode via a user profile. That is, during the day and night the EC150 operates in ADCP and echosounder mode, respectively, but, for example, if loading the “2407RL_Night” user profile, it will not correctly change the EC150 from ADCP to echosounder mode. Therefore, after loading a user profile, you must click on the “Normal Operation” button then toggle between the EC150 modes. For example, if it’s daytime and we want the EC150 in ADCP mode, open Normal Operation, select EC150 Echosounder mode, click Apply, select EC150 ADCP mode, then click OK.
+
+EAL instructions  - not a night

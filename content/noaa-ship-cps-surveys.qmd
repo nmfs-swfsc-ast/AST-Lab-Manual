@@ -1,0 +1,5 @@
+---
+title: "NOAA Ship CPS Surveys"
+---
+
+![Draft of dataflow for IWCPS on a NOAA Ship.](images/Dataflow.JPG)

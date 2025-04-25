@@ -1,40 +1,31 @@
 project: 
-  type: book
+  type: website #book
 
-book: 
+website: #book: 
   page-navigation: true
   title: "AST Lab Manual" 
   site-url: "https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/" 
   repo-url: "https://github.com/nmfs-swfsc-ast/AST-Lab_Manual"
   repo-actions: [edit, source, issue]
   favicon: assets/favicon.ico
-  downloads: [pdf, docx]
+#  downloads: [pdf, docx]
   search: true
-  author:
-    - name: Alice Beittel
-      affiliations:
-        - name: NOAA Southwest Fisheres Science Center
-          department: Southwest Fisheries Science Center
-   # - name: Eva Nováková
-   #   institute: test
-   #   affiliations:
-   #     - name: NOAA Fisheries
-   #       department: West Coast Regional Office
-   #       institute: test
-   # - name: Matti Meikäläinen
-   #   affiliations:
-   #     - name: NOAA Fisheries
-   #       department: Southwest Fisheries Science Center
-  chapters:
-    - index.qmd
-    - content/background.qmd
-    - content/acquisition.qmd
-    - content/processing.qmd
-    - content/identification.qmd
-    - content/trawl-selection.qmd
-    - content/biomass.qmd
-    - content/references.qmd
-
+#  author:
+#    - name: Alice Beittel
+#      affiliations:
+#        - name: NOAA Southwest Fisheres Science Center
+#          department: Southwest Fisheries Science Center
+#
+#  chapters:
+#    - index.qmd
+#    - content/orientation.qmd
+#    - content/acoustic-trawl.qmd
+#    - content/noaa-ship-cps-surveys.qmd
+#    - content/nearshore-cps-surveys.qmd
+#    - content/calibrations-overview.qmd
+#    - content/tech-tank-calibrations.qmd
+#    - content/references.qmd
+  
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
     left: "&copy; CC-1.0"
@@ -49,9 +40,27 @@ book:
       - icon: globe
         href: "https://www.fisheries.noaa.gov/west-coast/science-data/advanced-survey-technologies-assessments-california-current-ecosystem"
         text: "SWFSC AST"
+    
     style: "docked"
     search: true
-    collapse-level: 1
+    collapse-level: 2
+    contents:
+      - href: index.qmd #welcome page 
+        text: Welcome
+      - href: content/orientation.qmd
+      - text: Program Orientation
+      - section: content/acoustic-trawl.qmd
+        contents:
+        - section: content/noaa-ship-cps-surveys.qmd
+          contents:
+          - href: content/cps-setup.qmd
+          - href: content/cps-dailyops.qmd
+        - section: content/nearshore-cps-surveys.qmd
+      - section: content/calibrations-overview.qmd
+        contents:
+        - href: content/tech-tank-calibrations.qmd
+          text: Tech Tank Calibration Set Up
+      - href: references.qmd
 
 bibliography: [content/references.bib]
 
@@ -60,16 +69,16 @@ execute:
   code-overflow: wrap
 
 format:
-  titlepage-pdf:
-    documentclass: scrbook
-    classoption: ["oneside", "open=any"]
-    titlepage: "plain"
-    keep-tex: true
-  docx:
-    toc: true
-    toc-depth: 2
-    reference-doc: template.docx
-    always_allow_html: true
+#  titlepage-pdf:
+#    documentclass: scrbook
+#    classoption: ["oneside", "open=any"]
+#    titlepage: "plain"
+#    keep-tex: true
+#  docx:
+#    toc: true
+#    toc-depth: 2
+#    reference-doc: template.docx
+#    always_allow_html: true
   html:
     theme: [cosmo, assets/theme.scss] 
     toc: true
@@ -81,6 +90,6 @@ filters:
   - quarto
 
 # Comment next 2 lines if the PDF is having trouble
-metadata-files:
-  - _frontmatter.yml
+#metadata-files:
+#  - _frontmatter.yml
  

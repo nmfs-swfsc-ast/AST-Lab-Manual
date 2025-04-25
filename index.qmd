@@ -4,41 +4,39 @@ render.date <- format(Sys.time(), format = "%F %T", usetz = TRUE)
 
 **Last updated:** `{r} render.date`
 
-# Welcome {.unnumbered}
+---
+title: "AST Lab Manual"
+subtitle: "This is a training and field manual describing methods used in the SWFSC Advanced Survey Technologies Program."
+page-layout: full
+---
 
-[West Coast coastal pelagic species](https://www.fisheries.noaa.gov/species/west-coast-coastal-pelagic-species) play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries [@Zwolinski2014]. Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: [Pacific Sardine](https://www.fisheries.noaa.gov/species/pacific-sardine#:~:text=Baja%20California%2C%20Mexico.-,Habitat,schools%20near%20the%20ocean%20surface.) *Sardinops sagax*, Northern Anchovy *Engraulis mordax*, Pacific Mackerel *Scomber japonicus,* Jack Mackerel *Trachurus symmetricus,* Pacific Herring *Clupea pallasii,* and Round Herring *Etrumeus acuminatus*. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.
+![During the SWFSC Coastal Pelagics Species Survey, AST and LHP staff conduct acoustic sampling during the day and trawl sampling at night. Here is the back deck of the NOAA Ship Reuben Lasker at sunset . Inside the ship the biosampling team is getting ready for a night of trawling.](content/images/lasker-sunset.jpg){fig-align="left" width="788"}
 
-![Survey work typically takes place on the NOAA Ship Reuben Lasker with acoustic sampling during the day and trawl sampling at night. Here is the back deck of the NOAA Ship Reuben Lasker at sunset . Inside the ship the biosampling team is getting ready for a night of trawling.](content/images/lasker-sunset.jpg){fig-align="left" width="788"}
+## Top Links
+
+-   AST Calendar
+
+-   SWFSC Tech Tank Reservation Request
+
+-   AST Shared Drive Link
+
+-   AST Surveys Google Drive Link
+
+-   AST SOP Google Drive Link
+
+## Who are we?
+
+The Advanced Survey Technologies program supports ecosystem-based fisheries management through new or innovative uses of sampling technologies, including: multi-frequency acoustic systems, remotely operated vehicles, instrumented buoys, and instrumented small craft. [Read more about our objectives on the SWFSC website](https://www.fisheries.noaa.gov/west-coast/science-data/advanced-survey-technologies-assessments-california-current-ecosystem). We work routinely work closely with the SWFSC Life History Program and the Fish Population Dynamics and Modeling Program.
+
+Our primary project is to manage an annual acoustic-trawl survey for [West Coast coastal pelagic species](https://www.fisheries.noaa.gov/species/west-coast-coastal-pelagic-species) (CPS). CPS play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries [@Zwolinski2014]. Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: [Pacific Sardine](https://www.fisheries.noaa.gov/species/pacific-sardine#:~:text=Baja%20California%2C%20Mexico.-,Habitat,schools%20near%20the%20ocean%20surface.) *Sardinops sagax*, Northern Anchovy *Engraulis mordax*, Pacific Mackerel *Scomber japonicus,* Jack Mackerel *Trachurus symmetricus,* Pacific Herring *Clupea pallasii,* and Round Herring *Etrumeus acuminatus*. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.
 
 ## Document Objective:
 
-This resource demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species. As part of our commitment to open science, reproducibility, and transparency, we provide this metadata guide to compliment our public-domain data. Please consider this resource to be a **Living Document**. The code in this repository is regularly being updated and improved. 
+This document serves to be a record of standard operating procedures and methods used in supporting AST projects. As part of our commitment to open science, reproducibility, and transparency, we provide this guide to compliment our public-domain data. Please consider this resource to be a **Living Document**. The code in this repository is regularly being updated and improved. 
+
+Use the left hand panel to navigate through various projects and methodologies. Staff must have access to the AST Google Drive in order to view most google drive links.
 
 Do not hesitate to reach out (to us at either alice.beittel\@noaa.gov or [GitHub issues](https://github.com/nmfs-swfsc-ast/echo-class/issues), especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.
-
-## User Resources
-
-The survey produces two reports each year: A Survey Report and a Biomass Report. Each can be found at the NOAA Institutional Repository online
-
--   [2023 Biomass Report](https://repository.library.noaa.gov/view/noaa/61651): *Distribution, biomass, and demographics of coastal pelagic fishes in the California Current Ecosystem during summer 2023 based on acoustic-trawl sampling*
-
--   [2023 Survey Report](https://repository.library.noaa.gov/view/noaa/61647): *Report on the Summer 2023 California Current Ecosystem Survey (CCES) (2307RL), 17 July to 3 November 2023, conducted aboard NOAA Ships Reuben Lasker and Bell M. Shimada, fishing vessels Lisa Marie and Long Beach Carnage, and three uncrewed surface vessels*
-
-## How to Access Our Data
-
-**NOAA Coast Watch ERDDAP:**
-
-[CPS Trawl Haul Catch Data](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/FRDCPSTrawlLHHaulCatch.html)
-
-[CPS Trawl Specimen Data](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/FRDCPSTrawlLHSpecimen.html)
-
-[NOAA Ship Reuben Lasker Underway Meteorological Data](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/fsuNoaaShipWTEG.html)
-
-**NOAA National Centers for Environmental Information (NCE):**
-
-Locate raw acoustic data using the [NCEI Water Column Sonar Data Viewer](https://www.ncei.noaa.gov/maps/water-column-sonar/).
-
-Download raw acoustic data via the viewer or the [AWS NCEI bucket](https://noaa-wcsd-pds.s3.amazonaws.com/index.html#data/raw/).
 
 ## NOAA README
 
