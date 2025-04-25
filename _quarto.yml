@@ -10,6 +10,11 @@ website: #book:
   favicon: assets/favicon.ico
 #  downloads: [pdf, docx]
   search: true
+  page-navigation: true
+  page-footer:
+    right:
+      text: "Edit this page"
+      href: "https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/content/"
 #  author:
 #    - name: Alice Beittel
 #      affiliations:
