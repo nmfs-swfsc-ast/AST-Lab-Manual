@@ -1,10 +1,449 @@
 [
   {
+    "objectID": "images/Readme.html",
+    "href": "images/Readme.html",
+    "title": "AST Lab Manual",
+    "section": "",
+    "text": "Add images to this folder"
+  },
+  {
+    "objectID": "content/cps-dailyops.html",
+    "href": "content/cps-dailyops.html",
+    "title": "Daily Acoustic Operations",
+    "section": "",
+    "text": "AST’s 18-kHz WBT PC\nNOTE: There is a bug in the EK80 software that prevents the EC150 from changing its operating mode via a user profile. That is, during the day and night the EC150 operates in ADCP and echosounder mode, respectively, but, for example, if loading the “2407RL_Night” user profile, it will not correctly change the EC150 from ADCP to echosounder mode. Therefore, after loading a user profile, you must click on the “Normal Operation” button then toggle between the EC150 modes. For example, if it’s daytime and we want the EC150 in ADCP mode, open Normal Operation, select EC150 Echosounder mode, click Apply, select EC150 ADCP mode, then click OK.\nEAL instructions - not a night",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Daily Acoustic Operations"
+    ]
+  },
+  {
+    "objectID": "content/references.html",
+    "href": "content/references.html",
+    "title": "References",
+    "section": "",
+    "text": "References"
+  },
+  {
+    "objectID": "content/trawl-selection.html",
+    "href": "content/trawl-selection.html",
+    "title": "Trawl Selection",
+    "section": "",
+    "text": "Acoustic transects are processed for CPS backscatter on the day of acquisition and used to determine nightly trawl locations. This page will walk through the process of trawl selection.\n\n1. Visual Comparison\nThe acoustics technician on watch completes a visual comparison between an in-house published map (plotSurvey) of backscatter results and the transect acoustic echogram. Dense schools of CPS seen in the echogram will correlate to colorful bubbles on plotSurvey.\n\nClicking on summarized acoustic points shows a popup that contains the time and distance interval over which those data were summarized, allowing you to scrutinize the results of Echoview processing. We make sure to cross-reference backscatter spots on plotSurvey with the exported image from Echoview to make an informed trawl-location decision.\n\n\n\n2. Best Judgement\nThe acoustics technician will select 2-3 trawls each night based on the backscatter observed during the daytime acoustic transect, operational efficiency, and expected CPS habitat. If no CPS backscatter is observed, trawl locations will default to using expected CPS habitat information and operational efficiency.\n\nExpected CPS habitat is derived from prior survey results and models:\n\nSardine habitat based on a 12-year data set of sardine eggs, remotely sensed oceanographic variables, sea surface temperature, chlorophyll a concentrations, sea surface altitude (Zwolinski, Emmett, and Demer 2011).\nCharted bathymetry – Pacific sardines can be found from the ocean surface to ~350m in depth and typically reside around smoother (less rocky) bottom types.\nSardine eggs are most abundant at sea-surface temperatures of 13 to 15 ∘C, and larvae are most abundant at 13 to 16 ∘C. Temperature is a primary driver of the spatial and seasonal distribution of spawning. During warm ocean conditions, sardine spawning shifts northward concentrating in offshore regions and north of Point Conception to San Francisco and in some years is observed as far north as Oregon (Kuriyama, Zwolinski, and Hill 2020).\n\n\n\n\n\n\nReferences\n\nKuriyama, Peter T., Juan P. Zwolinski, and Kevin T. Hill. 2020. “Assessment of the Pacific Sardine Resource in 2020 for u.s. Management in 2020-2021.” Southwest Fisheries Science Center (U.S.). https://doi.org/10.25923/R2FZ-4Y79.\n\n\nZwolinski, Juan P., Robert L. Emmett, and David A. Demer. 2011. “Predicting Habitat to Optimize Sampling of Pacific Sardine (Sardinops Sagax).” ICES Journal of Marine Science 68 (5): 867–79. https://doi.org/10.1093/icesjms/fsr038."
+  },
+  {
+    "objectID": "content/orientation.html",
+    "href": "content/orientation.html",
+    "title": "Orientation",
+    "section": "",
+    "text": "Codes of Conduct are voluntary sets of rules that assist creators, developers, and users of code and data with data protection compliance and accountability in specific sectors or relating to particular processing operations.\nCodes can help organizations to ensure all participants follow best practices and rules designed specifically for their sector or processing operations, thus enhancing compliance and collaboration. They are developed and managed by an association or other body (the ‘Code Owner’) which is representative of a sector (or category of data controllers or processors), with the expert and sectoral knowledge of how to enhance data protection in their area.",
+    "crumbs": [
+      "Orientation"
+    ]
+  },
+  {
+    "objectID": "content/orientation.html#code-of-conduct",
+    "href": "content/orientation.html#code-of-conduct",
+    "title": "Orientation",
+    "section": "",
+    "text": "Codes of Conduct are voluntary sets of rules that assist creators, developers, and users of code and data with data protection compliance and accountability in specific sectors or relating to particular processing operations.\nCodes can help organizations to ensure all participants follow best practices and rules designed specifically for their sector or processing operations, thus enhancing compliance and collaboration. They are developed and managed by an association or other body (the ‘Code Owner’) which is representative of a sector (or category of data controllers or processors), with the expert and sectoral knowledge of how to enhance data protection in their area.",
+    "crumbs": [
+      "Orientation"
+    ]
+  },
+  {
+    "objectID": "content/orientation.html#our-pledge",
+    "href": "content/orientation.html#our-pledge",
+    "title": "Orientation",
+    "section": "Our Pledge",
+    "text": "Our Pledge\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.",
+    "crumbs": [
+      "Orientation"
+    ]
+  },
+  {
+    "objectID": "content/orientation.html#our-standards",
+    "href": "content/orientation.html#our-standards",
+    "title": "Orientation",
+    "section": "Our Standards",
+    "text": "Our Standards\nExamples of behavior that contributes to creating a positive environment include:\n\nUsing welcoming and inclusive language\nBeing respectful of differing viewpoints and experiences\nGracefully accepting constructive criticism\nFocusing on what is best for the community\nShowing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\nThe use of sexualized language or imagery and unwelcome sexual attention or advances\nTrolling, insulting/derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or electronic address, without explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting",
+    "crumbs": [
+      "Orientation"
+    ]
+  },
+  {
+    "objectID": "content/orientation.html#our-responsibilities",
+    "href": "content/orientation.html#our-responsibilities",
+    "title": "Orientation",
+    "section": "Our Responsibilities",
+    "text": "Our Responsibilities\nProject maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.\nProject maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.",
+    "crumbs": [
+      "Orientation"
+    ]
+  },
+  {
+    "objectID": "content/orientation.html#scope",
+    "href": "content/orientation.html#scope",
+    "title": "Orientation",
+    "section": "Scope",
+    "text": "Scope\nThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.",
+    "crumbs": [
+      "Orientation"
+    ]
+  },
+  {
+    "objectID": "content/orientation.html#enforcement",
+    "href": "content/orientation.html#enforcement",
+    "title": "Orientation",
+    "section": "Enforcement",
+    "text": "Enforcement\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. Further details of specific enforcement policies may be posted separately.",
+    "crumbs": [
+      "Orientation"
+    ]
+  },
+  {
+    "objectID": "content/orientation.html#attribution",
+    "href": "content/orientation.html#attribution",
+    "title": "Orientation",
+    "section": "Attribution",
+    "text": "Attribution\nThis Code of Conduct is adapted from the Contributor Covenant, version 1.4, available at https://contributor-covenant.org/version/1/4",
+    "crumbs": [
+      "Orientation"
+    ]
+  },
+  {
+    "objectID": "content/identification.html",
+    "href": "content/identification.html",
+    "title": "Backscatter Identification",
+    "section": "",
+    "text": "Acoustic Characteristics of CPS\nWhile the acoustic properties of swimbladder fish depends on several factors, the most important are the acoustic wavelength, swimbladder size, and swimbladder orientation to the incident sound pulse. We use 39, 70, 120, and 200kHz to capture a range of swimbladder sizes and orientations. During our nightly trawl catches, we measure the standard length for a collection of fish. Using the standard length we estimate the dorsal surface area of a swimbladder (swimbladder size). Knowing the approximate dorsal surface area of a swimbladder allows us to calculate the backscattering cross-section of one bladder and in turn the volume backscattering coefficient (many swim bladders together such as a school of fish). We are able to calculate backscattering coefficients for each CPS species. You may also hear the word Target Strength, which is a logrithmic function of the backscattering cross-section and describes how sound reflects off the swim bladder depending on its size. For this survey we calculate target strength as a logarithmic function of frequency and species-specific parameters obtained theoretically or experimentally and fish total length from trawl samples. Full details on species-specific target strength parameters can be found in the survey biomass report here.\n\n\n\n\n\nSv differences in the CPS range:\n−13.85 &lt; Sv 70kHz − Sv 38kHz &lt; 9.89\n− 13.5 &lt; Sv 120kHz −Sv 38kHz &lt; 9.37\n− 13.51 &lt; Sv 200kHz − Sv 38kHz &lt; 12.53\n\n\nThe automated CPS processing in ‘Echoview’ filters for all CPS meeting the criteria above, however some non-CPS targets still pass through the filter, specifically fishes like rockfish. To remove these CPS-like targets, we manually review each exported Echoview echogram.\n\n\nBelow is how we do that.\nUsing the ‘extract_CPS_NASC.R’, an R-based tool in the ‘estimATM’ package, we remove non-CPS targets from final echograms. This process aims to distinguish CPS from non-target species from mid-water, demersal, and benthic swim bladder fishes.\n\n\n\n\n\nWe follow a decision guide to help distinguish CPS and retain the backscatter that meets the criteria in green.\n\n\n\n\n\nBelow is an example of a well defined school with high Sv. CPS schools can occur in near the surface, mid-water column, or compressed to the seabed (especially in shallow waters during the day).\n\n\n\nCPS near sea surface\n\n\n\n\n\nCPS near seafloor\n\n\nBelow are examples of non-CPS that we manually using ‘extract_CPS_NASC.R’.\n\n\n\nDiffuse biological layer. Diffuse schools will often be observed offshore near the surface, near a shelf break, or deeper than ~250m\n\n\n\n\n\nRockfish on a seamount. Rockfish often will be observed near rugged or rocky seabed.\n\n\n\n\n\nThe hake snake. Hake tend to be mid-water column and in a snaking schooling behavior.\n\n\nWhen looking at Echoview echograms of acoustic transects, if there are areas where we are unsure if the backscatter is CPS or not CPS based on visual inspection, we dig deeper and examine how the volume backscattering coefficient (Sv) changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (Figure 1) with the decrease or flattening occurring between 120kHz and 200kHz.\n\n\n\n\n\n\nFigure 1\n\n\n\nReference: Content is adapted from this google document: Name that Backscatter!"
+  },
+  {
+    "objectID": "content/add-content.html",
+    "href": "content/add-content.html",
+    "title": "Customize",
+    "section": "",
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "content/add-content.html#edit-and-add-your-pages",
+    "href": "content/add-content.html#edit-and-add-your-pages",
+    "title": "Customize",
+    "section": "",
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "content/add-content.html#add-your-pages-the-project",
+    "href": "content/add-content.html#add-your-pages-the-project",
+    "title": "Customize",
+    "section": "Add your pages the project",
+    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
+  },
+  {
+    "objectID": "content/cps-setup.html",
+    "href": "content/cps-setup.html",
+    "title": "Acoustics Set Up",
+    "section": "",
+    "text": "Most science systems will be on a Science network provided by the ship and use an IP address of 192.168.123.XXX. The following systems will be on the Science network:\n\nNAS storage devices\nEchoview Processing Computer – Ideally this computer will have the capability to access SCS.\n\nThere are some ship systems that we need access to which are hosted on a Mission network and use an IP address of 10.48.23.XXX. We need access to the following systems on the Mission network:\n\nScientific Computer System (SCS).\nComputers in the Chemical Lab. – Ideally this computer would have the capability to put files on the Science network too. These computers will be used for entering trawl biological data.\nThe time server. Most sounder computers have NetTime installed on them, and set to sync with the ship’s time server using the following settings:",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Acoustics Set Up"
+    ]
+  },
+  {
+    "objectID": "content/cps-setup.html#networking-overview",
+    "href": "content/cps-setup.html#networking-overview",
+    "title": "Acoustics Set Up",
+    "section": "",
+    "text": "Most science systems will be on a Science network provided by the ship and use an IP address of 192.168.123.XXX. The following systems will be on the Science network:\n\nNAS storage devices\nEchoview Processing Computer – Ideally this computer will have the capability to access SCS.\n\nThere are some ship systems that we need access to which are hosted on a Mission network and use an IP address of 10.48.23.XXX. We need access to the following systems on the Mission network:\n\nScientific Computer System (SCS).\nComputers in the Chemical Lab. – Ideally this computer would have the capability to put files on the Science network too. These computers will be used for entering trawl biological data.\nThe time server. Most sounder computers have NetTime installed on them, and set to sync with the ship’s time server using the following settings:",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Acoustics Set Up"
+    ]
+  },
+  {
+    "objectID": "content/cps-setup.html#setting-up-the-echoview-pc",
+    "href": "content/cps-setup.html#setting-up-the-echoview-pc",
+    "title": "Acoustics Set Up",
+    "section": "2. Setting up the Echoview PC:",
+    "text": "2. Setting up the Echoview PC:\n\n2.1. Networking\n\nMapping to the Synology NAS Device\nIn order to connect the NAS (Network Attached Storage) Synology Device, you will need to map to the Synology and enter in a username and password. If the NAS becomes disconnected, you would follow this same process to reconnect it. In PC File Explorer, click on This PC on the left hand navigation column –&gt; navigate to Computer at the top navigation bar –&gt; Map network drive -&gt; Drive: choose an empty drive with no name; Folder: type in the address for the appropriate NAS device below -&gt; check Connect using different credentials –&gt; Finish -&gt; You will be prompted to enter a username and password. Enter in the corresponding credentials for your chosen NAS device below.\nAddress (NAS1): \\\\192.168.123.23\\ast-data\n\nUsername: swc-ast-nas\\astnasmin\nPassword: BvKUazyaQcNDB6oH\n\nAddress (NAS2): \\\\192.168.123.24\\ast-data\n\nUsername: swc-ast-nas2\\astnasmin\nPassword: BvKUazyaQcNDB6oH\n\n\n\nMapping to the ship SCS computer\nIf CTD data on the ship’s SCS server (called log40). On the Echoview PC, this directory is mapped using the following:\nAddress: \\\\10.48.23.223\\log40\n\nUsername: omao\\survey.rl\nPassword: SouthernSun1\n\n\n\nSet up Syncback Profiles:\nData is automatically backed up from echosounder acquisition computers to the NAS via a set of Syncback profiles that do the following. Last year’s Syncback profile can be located here [add GD link].\n\nMirrors the survey directory (C:\\SURVEY\\2407RL) to the NAS\nBacks up all the EK80 data (both 18 kHz PC and 38-200 kHz PC) to the NAS\nBacks up select SURVEY files to a Cloud Storage Drive (TBD)\n\n\n\nSet up Navigation:\n\nCoastal Explorer (aka Rose Point) is operated on the Echoview PC is used for monitoring real-time progress, maintaining a record of the cruise track, and planning out nightly trawls. A GPS input is needed for Rose Point to track the boat. On the Lasker, the GPS input comes from a gray cable hanging from the black box located above the Echoview PC. Plug it into the COM1 of the Echoview PC.\n\n\n\nSet up Licenses:\n\nPlug the Echoview license thumb drive into the Echoview PC.\n\n\n\nSet up UCTD bluetooth:\n\nPlug the UCTD Valeport Blue Soleil thumb drive into the Echoview PC.\n\n\n\n\n2.2. Computer File Set Up:\n\n[Kevin add details on how to set up estimATM on the Echoview PC. Do you clone the github repository?]\nDownload the most recent ENC charts for CA, OR, WA, and AK from Office of Coast Survey and put them in a folder called Charts on the C:\\ Drive.\nDownload the pre-made Coastal Explorer .nob file for the survey from the shared AST Google Drive and put it under C:\\SURVEYS\\[SURVEY DATE AND NAME]\\PLANNING\\NAV.",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Acoustics Set Up"
+    ]
+  },
+  {
+    "objectID": "content/cps-setup.html#setting-up-the-ek80",
+    "href": "content/cps-setup.html#setting-up-the-ek80",
+    "title": "Acoustics Set Up",
+    "section": "3. Setting up the EK80:",
+    "text": "3. Setting up the EK80:\nEK80 software is run on two computers: (1) The ship’s EK80 PC, located in server rack, and (2) AST’s PC, located on the port side of the Acoustic’s Lab across from ship EK80 PC. The ship’s EK80 PC operates the non-18-kHz WBTs. AST’s EK80 PC is operating the 18-kHz WBT and the EC150-3C. Confirm version of EK80 software is the most recent version on both computers.\n\n3.1. Networking:\nA SyncbackFree profile on the Echoview PC backs up data from both PCs to the NAS drive (\\\\192.168.123.24\\ast-data\\2407RL\\ACOUSTIC_DATA) every 15 minutes.\n\n\n3.2. Settings for both the Ship EK80 PC and the AST EK80 PC:\n\nPing Mode set to maximum.\nRecording Range set to on.\nDrop Keel sensor configuration should reflect the centerboard’s current position. Confirm with the ship Survey Tech that drop keep is updated.\nSet files to save as the maximum allowable file size (Output -&gt; File Setup -&gt; File Size -&gt; check Maximum).\n\n\n\n3.3. Settings for AST EK80 PC - 18 kHz WBT PC:\n\nSet Save Location:\n\nThe AST 18-kHz PC is set save files directly to an external 4-TB HDD.\n\n\n\nInstallation Settings:\n\nTransducer Installation:\nThe 18-kHz transducer is set to a “Drop Keel” mounting installation, then the X and Y-Offset parameters set to the Translated Frame as specified in the IMTEC survey. The Drop Keel depth is manually specified in the Sensor Configuration menu (see further below), which effectively sets the Z-Offset coordinate for the 18-kHz transducer relative to the waterline.\n\n\n\n18 kHz Transducer Installation Settings\n\n\n\n\n\nEC150-3C Transducer Installation Settings\n\n\n\n\nI/O Set Up:\n\n\n\n\n\n\n\n\n\nDevice\nCOM Port\nBaud Rate\nNotes\n\n\nK-Sync Trigger\n1\n4800\nRS232 trigger from K-Sync  “EK 60” Module, split off the serial cable to the ship’s EK80 PC\n\n\nPOS-MV\n8\n57600\nKM Binary from COM2 on POSMV\n\n\nDepth Output\n11\n4800\nOutputs DBT telegram to SCS, primarily so SCS can relay to EAL for false bottom removal\n\n\n\n\n\nSensor Installation:\n\n\n\nType\nPort\n\n\nKM Binary\nPOS-MV (COM4)\n\n\n\n\n\nSensor Configuration:\n\n\n\n\n\n\n\nSensor\nSource\n\n\nDrop Keel\n[CONFIRM]\nManual depth of:\nRetracted = 5.9 m\nIntermediate = 7.35 m\nExtended = 9.1 m\n\n\nHeading\nMotionBinaryEx from KM Binary From POSMV\n\n\nCourse\nSpeedGround from KM Binary From POSMV\n\n\nPosition\nPosition from KM Binary from POS MV\n\n\nSpeed\nSpeedGround from KM Binary from POS MV\n\n\n\n\n\nSet up User Setting Profiles:\nCreate two user setting profiles. One called [SURVEY NAME]_Dayand one called [SURVEY NAME]_Night (2407RL_Night). Set up all day user settings then save as a user profile. Set up all night settings then save as a user profile.\nDay User Settings:\n\n18-kHz EK80: \n\nCW mode \n100-m display range\nAuto recording range\nBottom detection enabled down to 4000 m\n\nEC150-3C: \n\nADCP mode\nFM pulses\nLogging range = 300 m\n\n\n\nNight User Settings:\n18-kHz EK80: \n\nCW mode \n100-m display range\nAuto recording range\nBottom detection enabled down to 4000 m\n\nEC150-3C: \n\nEchosounder mode\nCW pulses\nLogging range = 100 m\n\n\n\n\nSet up the EAL on the AST 18-kHz PC:\nOpen the EAL .exe file. For daytime, the EAL will be used to detect the seabed and adjust the logging and display range, but will not correct false bottoms.\nThis has been working pretty well, and the EAL has been able to track the seabed pretty consistently, although sometimes it’s good to periodically verify that it’s detecting the bottom correctly. If not, the EAL’s Settings.txt file should be open in Notepad++, so open that and temporarily change the 18-kHz Max Logging Range to just below the actual seabed depth and save the text file. Once the EAL detects the correct depth, change the Max Logging Range back to 4000 m and save the text file.\n\n\n\nEAL Settings for the AST 18 kHz PC\n\n\n\n\n\n3.4. Settings for the Ship EK80 PC:\nThe ship’s EK80 PC is used to operate the 38, 70, 120, 200, and 333-kHz WBTs. Create two user setting profiles. One called [SURVEY NAME]_Dayand one called [SURVEY NAME]_Night (2407RL_Night).\n\nSet Save Location:\nThe Ship EK80 PC is set to save files to the largest local computer dive. The EK80 software is set to record to the ship’s “Big Data” drive (E:\\2407RL\\RAW\\).\n\n\nInstallation Settings:\n\nTransducer Installation:\nAll transducers are set to a “Drop Keel” mounting installation, then the X and Y-Offset parameters set to the Translated Frame as specified in the IMTEC survey:\n\n\n\nTransducer\nX Offset\nY Offset\nZ Offset\n\n\nES38-7 (SN 337)\n-8.65\n0.02\n0.00\n\n\nES70-7C (SN 233)\n-9.82\n-0.10\n0.00\n\n\nES120-7C (SN 783)\n-9.72\n0.20\n0.00\n\n\nES200-7C (SN 513)\n-9.97\n0.19\n0.00\n\n\nES333-7C (SN 124)\n-8.27\n0.02\n0.00\n\n\nEC150-3C (SN 120)\n-10.28\n0.02\n0.00\n\n\n\n\n\nI/O Setup:\n\n\n\n\n\n\n\n\n\nDevice\nCOM Port\nBaud Rate\nNotes\n\n\nK-Sync\n1\n4800\n\n\n\nGyro\n2\n4800\nFast setting from Gyro\n\n\nGPS in\n3\n4800\n\n\n\nPOS MV\n4\n57600\nKM Binary from COM2 on POSMV\n\n\n\n\n\nSensor Installation\n\n\n\n\n\n\n\n\nType\nPort/IP Address\nBaud Rate\n\n\nITI-FS\nITI From SCS (ethernet input)\nNA\n\n\nKM Binary\nPOS-MV (COM4)\n57600\n\n\nGyro\nGyro (COM2)\n4800\n\n\nSound Velocity from SCS\nLocal port: 20004\nLocal IP Address:\n192.168.123.20\nRemote IP Address,\n10.48.23.223\n\n\n\n\n\n\nSensor Configuration\n\n\n\n\n\n\n\nSensor\nSource\n\n\nAttitude\nMotionBinaryEx from KM Binary From POSmv\n\n\nDrop Keel\nManual depth of:\nRetracted = 5.9 m;\nIntermediate = 7.35 m;\nExtended = 9.1 m.\n\n\nHeading\nMotionBinaryEx from KM Binary From POSmv\n\n\nCourse\nSpeedGround from KM Binary From POSmv\n\n\nPosition\nPosition from KM Binary from POS MV\n\n\nSpeed\nSpeedGround from KM Binary from POS MV\n\n\n\n\n\nSet up User Setting Profiles:\nCreate two user setting profiles. One called [SURVEY NAME]_Dayand one called [SURVEY NAME]_Night (2407RL_Night). Set up all day user settings then save as a user profile. Set up all night settings then save as a user profile.\nDay User Settings:\n\nDisplay colors: -70 dB (top) and -50dB (bottom)\nPing Mode: Maximum\nCW Mode\nIndividual ranges: Output -&gt; File Setup -&gt; Raw Data -&gt; Channel Recording Range -&gt; select Individual\nLogging Ranges:\n\n\n\nFrequency (kHz)\n38\n70\n120\n200\n333\n\n\nMax Logging Range (m)\n500\n500\n500\n300\n200\n\n\n\nNormal Operation Settings:\n\n\n\n\nEK80 Day Settings on Ship PC\n\n\nNight User Settings:\n\nDisplay colors: -70 dB (top) and -50dB (bottom)\nPing Mode: Maximum\nFM Mode\nLogging Range set to 100 m. The EK80s will not be controlled by the EAL during nighttime operations, as will be recording data to 100 m, independent of the bottom depth.\n\n\n\n\nSet up the EAL on the Ship EK80 PC:\nDuring daytime, the EK80 software is remotely controlled by the EAL on the ASUS5 laptop (aft desk in Acoustic’s Lab), and as such is configured to act as a server (Installation → Remote Control → As Server → Local IP Address → select IP of adapter connected to ship’s Science network). The EAL will adjust the frequency-dependent display and logging ranges based on the seabed depth, and the ping rate via the depth input to the K-Sync.\n\n\n\nEAL Settings on ASUS 5 Laptop for the Ship EK80 PC.",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Acoustics Set Up"
+    ]
+  },
+  {
+    "objectID": "content/cps-setup.html#setting-up-k-sync",
+    "href": "content/cps-setup.html#setting-up-k-sync",
+    "title": "Acoustics Set Up",
+    "section": "4. Setting up K-Sync:",
+    "text": "4. Setting up K-Sync:\nThe K-Sync is sending trigger signals to the EK80s, ME70, MS70, SX90, and ADCP. All sounders are placed into a single group, and thus should transmit simultaneously. However some sounders may not transmit on every trigger depending on logging and display range settings. \nThe K-Sync modules can be configured by going to Settings–&gt;Installation then entering ‘simrad0’ as the password. In there, the KSync modules are configured as:\n\n\n\n\n\n\n\n\n\nModule #\nModule Name\nOutput Type\nEchosounder\n\n\n1\nEK 60\nRS232\n18-kHz EK80 PC\n\n\n2\nME70\nRS232\nME70 PC\n\n\n3\nEK 80 & MS 70\nRS232\nMS70 PC\n\n\n4\nSX 90\nRS232\nSX90 PC\n\n\n5\nOS 75\nTTL\nOS 75\n\n\n6\nEK80 Mux\nTTL\nEK80 WBT Auxiliary\n\n\n7\nEK60 Mux\nTTL\n\n\n\n8 \nEK60_Aux\nTTL\n\n\n\n\nThe K-Sync will adjust the trigger period based on a depth value sent by the EAL, which should be indicated by the “Current depth” reading. If the EAL is not on (e.g., nighttime), the K-Sync should be set for “Use manual depth” with a specified depth of 150 m.\nThe EK80s are triggered via RS-232 signals input to their respective operating PCs.",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Acoustics Set Up"
+    ]
+  },
+  {
+    "objectID": "content/cps-setup.html#setting-up-the-trawl-pc",
+    "href": "content/cps-setup.html#setting-up-the-trawl-pc",
+    "title": "Acoustics Set Up",
+    "section": "5. Setting up the Trawl PC:",
+    "text": "5. Setting up the Trawl PC:\nThe trawl database is located on the ship’s computer on the forward-starboard wall in the Chem lab. That computer has a SyncBack profile which backs up the trawl database and TDR data to the SURVEY directory on our Echoview PC (C:\\SURVEY\\2407RL). It also backs up plotSurvey and checkTrawls from the Echoview PC to their trawl PC, so that they can see the latest results after we knit those scripts.\n\nSet up Syncback Profiles to do the following:\n\nBacks up trawl database and TDR data to SURVEY drive on Echoview PC\nBacks up plotSurvey and checkTrawls from Echoview PC to Trawl PC",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Acoustics Set Up"
+    ]
+  },
+  {
+    "objectID": "content/cps-setup.html#draft-setting-up-td50",
+    "href": "content/cps-setup.html#draft-setting-up-td50",
+    "title": "Acoustics Set Up",
+    "section": "6. [DRAFT] Setting up TD50",
+    "text": "6. [DRAFT] Setting up TD50",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Acoustics Set Up"
+    ]
+  },
+  {
+    "objectID": "content/cps-setup.html#draft-setting-up-sx90",
+    "href": "content/cps-setup.html#draft-setting-up-sx90",
+    "title": "Acoustics Set Up",
+    "section": "7. [DRAFT] Setting up SX90",
+    "text": "7. [DRAFT] Setting up SX90\n\nSyncback backs up SX90 data from 4-TB external HDD to the NAS",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Acoustics Set Up"
+    ]
+  },
+  {
+    "objectID": "content/cps-setup.html#draft-setting-up-me70",
+    "href": "content/cps-setup.html#draft-setting-up-me70",
+    "title": "Acoustics Set Up",
+    "section": "8. [DRAFT] Setting up ME70",
+    "text": "8. [DRAFT] Setting up ME70\n\nSyncback backs up ME70 data from 4-TB external HDD to the NAS",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Acoustics Set Up"
+    ]
+  },
+  {
+    "objectID": "content/cps-setup.html#draft-setting-up-ms70",
+    "href": "content/cps-setup.html#draft-setting-up-ms70",
+    "title": "Acoustics Set Up",
+    "section": "9. [DRAFT] Setting up MS70",
+    "text": "9. [DRAFT] Setting up MS70",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys",
+      "Acoustics Set Up"
+    ]
+  },
+  {
+    "objectID": "content/code.html",
+    "href": "content/code.html",
+    "title": "Rendering with Code",
+    "section": "",
+    "text": "You can have code (R, Python or Julia) in your qmd file. You will need to have these installed on your local computer, but presumably you do already if you are adding code to your qmd files.\nx &lt;- c(5, 15, 25, 35, 45, 55)\ny &lt;- c(5, 20, 14, 32, 22, 38)\nlm(x ~ y)\n\n\nCall:\nlm(formula = x ~ y)\n\nCoefficients:\n(Intercept)            y  \n      1.056        1.326"
+  },
+  {
+    "objectID": "content/code.html#modify-the-github-action",
+    "href": "content/code.html#modify-the-github-action",
+    "title": "Rendering with Code",
+    "section": "Modify the GitHub Action",
+    "text": "Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nrender-and-publish.old_yml\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it."
+  },
+  {
+    "objectID": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
+    "href": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
+    "title": "Rendering with Code",
+    "section": "Render locally and publish to gh-pages branch",
+    "text": "Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages"
+  },
+  {
+    "objectID": "content/publishing.html",
+    "href": "content/publishing.html",
+    "title": "Publishing",
+    "section": "",
+    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
+  },
+  {
+    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "title": "Publishing",
+    "section": "Turn on GitHub Pages for your repo",
+    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
+  },
+  {
+    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "title": "Publishing",
+    "section": "Do your first publish to gh-pages",
+    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
+  },
+  {
+    "objectID": "content/publishing.html#dont-like-using-gh-pages",
+    "href": "content/publishing.html#dont-like-using-gh-pages",
+    "title": "Publishing",
+    "section": "Don’t like using gh-pages?",
+    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
+  },
+  {
+    "objectID": "content/biomass.html",
+    "href": "content/biomass.html",
+    "title": "Reporting",
+    "section": "",
+    "text": "Using the r package ‘estimATM’ several reports are generating using the final processed acoustic data."
+  },
+  {
+    "objectID": "content/noaa-ship-cps-surveys.html",
+    "href": "content/noaa-ship-cps-surveys.html",
+    "title": "NOAA Ship CPS Surveys",
+    "section": "",
+    "text": "Draft of dataflow for IWCPS on a NOAA Ship.",
+    "crumbs": [
+      "Acoustic Trawl Surveys",
+      "NOAA Ship CPS Surveys"
+    ]
+  },
+  {
+    "objectID": "content/acknowledgements.html",
+    "href": "content/acknowledgements.html",
+    "title": "Acknowledgments",
+    "section": "",
+    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
+  },
+  {
+    "objectID": "content/figures_and_tables.html",
+    "href": "content/figures_and_tables.html",
+    "title": "Figures and Tables",
+    "section": "",
+    "text": "Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com."
+  },
+  {
+    "objectID": "content/figures_and_tables.html#code",
+    "href": "content/figures_and_tables.html#code",
+    "title": "Figures and Tables",
+    "section": "Code",
+    "text": "Code\nYou can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "content/figures_and_tables.html#including-plots",
+    "href": "content/figures_and_tables.html#including-plots",
+    "title": "Figures and Tables",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots and reference them, like so Figure 1.\n\n\n\n\n\n\n\n\nFigure 1: Plot of pressure\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "content/figures_and_tables.html#including-tables",
+    "href": "content/figures_and_tables.html#including-tables",
+    "title": "Figures and Tables",
+    "section": "Including Tables",
+    "text": "Including Tables\nYou can also embed tables and reference them with Table 1.\n\nlibrary(knitr)\nkable(head(iris))\n\n\n\nTable 1: Iris Data\n\n\n\n\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n5.0\n3.6\n1.4\n0.2\nsetosa\n\n\n5.4\n3.9\n1.7\n0.4\nsetosa"
+  },
+  {
+    "objectID": "content/processing.html",
+    "href": "content/processing.html",
+    "title": "Data Processing",
+    "section": "",
+    "text": "After data aqusition, we identify acoustic echos of schooling CPS using a semi-automated data processing algorithm using Echoview software and in-house Posit code in the estimATM repository. With Echoview, we extract the backscatter of swim bladder fish and process using soundspeed and echosounder calibration values housed inside an Echoview Calibration Supplement (.ecs) file. The Echoview filters and thresholds were based on a sub-sample of echoes from randomly selected CPS schools. We complete the processing with the estimATM package in extract_CPS_NASC.R, where we further refine the backscatter selection to extract only CPS. Here we will cover the Echoview and estimATM semi-automated processing workflow.\n\nData Processing Overview\n\n\n\nOverview of CPS Acoustic Processing. Vessel position and attitude data is used from the POS MV (not shown).\n\n\n\n\n\nEchoview Processing Workflow\nIn Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process:\n\nData wrangling, cleaning, and noise removal (including surface noise and seabed removal)\nEcho classification for swim-bladdred fish\nAcoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.\n\n\n\n\nSimplified dataflow of processing in Echoview. *Surface noise and seabed removal replies on two manual inputs: the Integration Start and Integration Stop lines (not pictured, see step 5).\n\n\n\nSection 1) Data Wrangling, Cleaning, and Noise Removal:\n\nLoad RAW EK80 acoustic data and Echoview Calibration Supplement (.ecs)file into Echoview. The .ecs file contains soundspeed information calculated from the nearest (temporally and spatially) Underway CTD cast and echosounder calibration parameters. This file is used at the very beginning to convert from power to Sv (volume-backscattering coefficient).\nAlign sampling rate (time and geometery) from all transders to the 38 kHz Sv. Acousticians call this step ‘matching geometry’ of all Sv variables. Making sure pings are aligned from all echosounders is important for calculating the frequency response of backscatter in steps later on.\nRemove passive-mode pings.\nNoise removal: estimate and subtract background noise using the background noise removal function described in De Robertis and Higginbottom (2007).\nSurface noise and seabed removal is completed by manually drawing an Integration Start and Integration Stop line in Echoview. The Integration Start line is drawn at the shallowest depth to include surface CPS schools but exclude transducer ring down and surface noise due to sea state (typically around 5 meters below the transducer face or ~10m depth). The Integration Stop line is drawn closest to the seabed to include bottom dwelling animals but exclude any non-living seabed features (typically 3 m above the estimated seabed (Demer et al. 2009) or to the maximum logging range (e.g., 350 m), whichever is shallowest). When drawing the lines, we set the color scale to a minimum Sv threshold of -60 dB which corresponds to a density of approximately three 20-cm-long Pacific Sardine per 100 m3). Doing this helps visually pick out schools from the seabed and from non-swim bladder animals that appear as diffuse scattering layers in the water column. The area of the water column between the two lines sets the depth range that will be integrated for swim bladder fish in steps later on.\nAverage the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.\nExpand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation. This replaces each averaged datapoint from Step 6 with the maximum datapoint surrounding it in a 7x7 pixel region.\n\n\n\nSection 2) Echo Classification for Swim Bladder Fish\n\nCalculate Frequency Response:\n\nFor each dilated pixel, compute:\nSv 200kHz − Sv 38kHz\nSv 120kHz − Sv 38kHz\nSv 70kHz − Sv 38kHz\nThe difference between Sv values provides the frequency response for those pixels. Swim bladder fish have a unique frequency response which we can use extract those acoustic returns in the next step. Acoustic returns that fall within the Sv ranges below are flagged as meeting the criteria for typical swim bladder fish, including CPS.\nCreate a Boolean echogram for Sv differences in the CPS range:\n−13.85 &lt; Sv 70kHz − Sv 38kHz &lt; 9.89\n− 13.5 &lt; Sv 120kHz −Sv 38kHz &lt; 9.37\n− 13.51 &lt; Sv 200kHz − Sv 38kHz &lt; 12.53\n\n\n\nCalculate Standard Deviation:\n\nFor 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (remove passive pings) and averaged Sv (11-sample x 3 ping bin averages).\nAverage the results using an 11-sample by 3-ping window to derive variance.\nCompute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively).\nExpand the standard deviation echograms with a 7 pixel x 7 pixel dilation (same step as Section 1, Step 7).\nCreate a Boolean echogram based on the standard deviations in the CPS range:\nσ120kHz &gt; -65 dB\nσ200kHz &gt; -65 dB\nDiffuse backscattering layers have low σ (Zwolinski et al. 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram .\n\n\n\n\nSection 3) Acoustic Backscatter Integration\n\nIntegrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;\nOutput the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.\n\n\n\n\n\nPosit Processing Workflow\nThe exported .csv file from Echoview contains all swim bladder backscatter which can include non-target species such as rockfish. In order to further refine the acoustic classification to retain only CPS backscatter, the processed .csv file proceeds to the final semi-automated processing step in Posit using extract_CPS_NASC.R, an R-based tool in the estimATM package.\n\nEchoes from fishes with swimbladders (blue points, scaled by backscatter intensity) along an example acoustic transect (top) and the corresponding Echoview echogram image (bottom). In this example, the upper (blue) and lower lines (green) indicate boundaries within which echoes were retained. When the lower boundary is deeper than the seabed (black line), echoes above the seabed are retained. Echoes from deep, bottom-dwelling schools of non-CPS fishes with swimbladders, and from diffuse scatters near the surface are excluded.\nThe script will open a plot (top) where the acoustics technician can draw new integration start line (blue) and stop line (green). Blue points that fall below the stop line will be excluded while blue points below the start line will be included from the resulting .csv file. The goal is to visually review the Echoview exported echogram image (bottom) and remove backscatter that you believe are not CPS (e.g., rockfishes, hake), possibly contain accidental seabed, or any surface noise amd diffuse scattering layers. The process of picking out CPS from other swim-bladder fish can be tricky as CPS can have a range of characteristics. The Backscatter Identification section goes into detail on this process.\n\nOnce you are happy with the two lines, an image will appear showing the results of your editing. If the backscatter needs to be removed, or put back, you can re-run the script and the results will be replaced.\nThe result is a final .csv with only backscatter information for CPS targets.\n\n\n\n\n\nReferences\n\nDe Robertis, Alex, and Ian Higginbottom. 2007. “A Post-Processing Technique to Estimate the Signal-to-Noise Ratio and Remove Echosounder Background Noise.” ICES Journal of Marine Science 64 (6): 1282–91. https://doi.org/10.1093/icesjms/fsm112.\n\n\nDemer, David A., George R. Cutter, Josiah S. Renfree, and John L. Butler. 2009. “A Statistical-Spectral Method for Echo Classification.” ICES Journal of Marine Science 66 (6): 1081–90. https://doi.org/10.1093/icesjms/fsp054.\n\n\nZwolinski, Juan P., Paulo B. Oliveira, Victor Quintino, and Yorgos Stratoudakis. 2010. “Sardine Potential Habitat and Environmental Forcing Off Western Portugal.” ICES Journal of Marine Science 67 (8): 1553–64. https://doi.org/10.1093/icesjms/fsq068."
+  },
+  {
+    "objectID": "content/workflow.html",
+    "href": "content/workflow.html",
+    "title": "Data Workflow",
+    "section": "",
+    "text": "Data pipeline from boat to shore to report"
+  },
+  {
+    "objectID": "content/preparation.html",
+    "href": "content/preparation.html",
+    "title": "Data Preparation",
+    "section": "",
+    "text": "Select regions of interest\n\nSelect data on transect lines\n\n\nIntegration stop and start lines"
+  },
+  {
+    "objectID": "content/acquisition.html",
+    "href": "content/acquisition.html",
+    "title": "Data Acquisition",
+    "section": "",
+    "text": "Figure 1: Transducer locations on the bottom of the centerboard aboard Lasker.\n\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard” (Figure 1). The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\n\nOn Lasker and Shimada, conductivity and temperature profiles were measured down to 300 m using calibrated sensors on a probe cast from the vessel while underway (UnderwayCTD, or UCTD; Teledyne Ocean- science). Casts were typically conducted between two to four times along each transect. These data indicate the depth of the surface mixed layer, above which most pelagic CPS reside during the day. These data were also used to estimate the time-averaged sound speed (Demer, 2004), for estimating ranges to the sound scatterers, and frequency-specific sound absorption coefficients, for compensating signal attenuation of the sound pulse between the transducer and scatterers (Simmonds and MacLennan, 2005)."
+  },
+  {
+    "objectID": "content/acquisition.html#survey-equipment",
+    "href": "content/acquisition.html#survey-equipment",
+    "title": "Data Acquisition",
+    "section": "",
+    "text": "Figure 1: Transducer locations on the bottom of the centerboard aboard Lasker.\n\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard” (Figure 1). The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\n\nOn Lasker and Shimada, conductivity and temperature profiles were measured down to 300 m using calibrated sensors on a probe cast from the vessel while underway (UnderwayCTD, or UCTD; Teledyne Ocean- science). Casts were typically conducted between two to four times along each transect. These data indicate the depth of the surface mixed layer, above which most pelagic CPS reside during the day. These data were also used to estimate the time-averaged sound speed (Demer, 2004), for estimating ranges to the sound scatterers, and frequency-specific sound absorption coefficients, for compensating signal attenuation of the sound pulse between the transducer and scatterers (Simmonds and MacLennan, 2005)."
+  },
+  {
+    "objectID": "content/acquisition.html#software",
+    "href": "content/acquisition.html#software",
+    "title": "Data Acquisition",
+    "section": "Software",
+    "text": "Software\n\nEchosounder Software\nEK80\n\n\nNetTime\nOn Lasker and Shimada, the computer clocks were synchronized with the GPS clock (UTC) using a synchronization software called NetTime.\n\n\nEAL\nThe 38-, 70-, 120-, 200-, and 333-kHz echosounders were controlled by the EK80 Adaptive Logger (EAL2, Renfree and Demer, 2016). The EAL optimizes the pulse interval based on the seabed depth, while avoiding aliased seabed echoes, and was programmed such that once an hour the echosounders would record three pings in passive mode, for obtaining estimates of the background noise level.\n\n\nK Sync\nTo minimize acoustic interference on Lasker and Shimada, transmit pulses from the EK80s, acoustic Doppler current profiler and echosounder (Simrad-Kongsberg EC150-3C), multibeam echosounder (Simrad- Kongsberg ME70), imaging sonar (Simrad-Kongsberg MS70), scanning sonar (Simrad-Kongsberg SX90), and a separate acoustic Doppler current profiler (Teledyne RD Instruments OS75 ADCP) were triggered using a synchronization system (Simrad K-Sync; Kongsberg). The K-Sync trigger rate, and thus the echosounder ping interval, was modulated by the EAL using the 18-kHz seabed depth provided by the Scientific Computing System (SCS)."
+  },
+  {
+    "objectID": "content/acquisition.html#raw-acoustic-data-format",
+    "href": "content/acquisition.html#raw-acoustic-data-format",
+    "title": "Data Acquisition",
+    "section": "Raw Acoustic Data Format",
+    "text": "Raw Acoustic Data Format\nMeasurements of volume backscattering strength (Sv; dB re 1 m2 m-3) and target strength (TS; dB re 1 m2), indexed by time and geographic positions provided by GPS receivers, were stored in Simrad-Kongsberg .raw format with a 1-GB maximum file size. During daytime, the echosounders operated in CW mode and logged to 60 m beyond the detected seabed range or to a maximum range of 500, 500, 500, 300, and 150 m for 38, 70, 120, 200, and 333 kHz, respectively. During nighttime, the echosounders operated in FM mode and logged to 100 m. For each acoustic instrument, the prefix for each fle name is a concatenation of the survey name (e.g., 2307RL), the operational mode (CW or FM), and the logging commencement date and time from the EK80 software (v21.15.1). For example, a file generated by the Simrad-Kongsberg EK80 software for a WBT operated in CW mode is named 2307RL_CW-D20220826-T155651.raw."
+  },
+  {
+    "objectID": "content/adding-refs.html",
+    "href": "content/adding-refs.html",
+    "title": "References",
+    "section": "",
+    "text": "Quarto has powerful references functionality. You can easily insert citations from Zotero libraries that you maintain in the cloud (on Zotero). This allows the whole team to update the library and you can sync up to that library. Read about this on the Quarto documentation on citations. Google youtube videos on this also to see it in action.\nAdd a .bib file in to your project or add a linked Zotero library via RStudio in Visual mode with Tools &gt; Project Options… &gt; R Markdown &gt; select custom libraries from the Zotero dropdown.\nThe you can type @ and you will see a dropdown of the references in your libraries. You can then select the ones to add. If you don’t see the one you need, you can paste in the DOI and it will be added to your references file (with all the info). The references will be added to your references section of your book automatically.\nSee the references.qmd file for how to include the references.\n\n@ansley1981 will produce Ansley and Davis (1981)\n[@ansley1981] will produce (Ansley and Davis 1981).\n\n\n\n\n\nReferences\n\nAnsley, H. L. H., and C. D. Davis. 1981. “Migration and Standing Stock of Fishes Associated with Artificial and Natural Reefs on Georgia’s Outer Continental Shelf.” Brunswick, Georgia, USA."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "AST Lab Manual",
     "section": "",
-    "text": "Welcome\nLast updated: 2025-04-22 18:48:33 UTC\nWest Coast coastal pelagic species play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries (Zwolinski et al. 2014). Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: Pacific Sardine Sardinops sagax, Northern Anchovy Engraulis mordax, Pacific Mackerel Scomber japonicus, Jack Mackerel Trachurus symmetricus, Pacific Herring Clupea pallasii, and Round Herring Etrumeus acuminatus. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.",
+    "text": "Last updated: 2025-04-25 00:52:02 UTC",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#top-links",
+    "href": "index.html#top-links",
+    "title": "AST Lab Manual",
+    "section": "Top Links",
+    "text": "Top Links\n\nAST Calendar\nSWFSC Tech Tank Reservation Request\nAST Shared Drive Link\nAST Surveys Google Drive Link\nAST SOP Google Drive Link",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#who-are-we",
+    "href": "index.html#who-are-we",
+    "title": "AST Lab Manual",
+    "section": "Who are we?",
+    "text": "Who are we?\nThe Advanced Survey Technologies program supports ecosystem-based fisheries management through new or innovative uses of sampling technologies, including: multi-frequency acoustic systems, remotely operated vehicles, instrumented buoys, and instrumented small craft. Read more about our objectives on the SWFSC website. We work routinely work closely with the SWFSC Life History Program and the Fish Population Dynamics and Modeling Program.\nOur primary project is to manage an annual acoustic-trawl survey for West Coast coastal pelagic species (CPS). CPS play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries (Zwolinski et al. 2014). Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: Pacific Sardine Sardinops sagax, Northern Anchovy Engraulis mordax, Pacific Mackerel Scomber japonicus, Jack Mackerel Trachurus symmetricus, Pacific Herring Clupea pallasii, and Round Herring Etrumeus acuminatus. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.",
     "crumbs": [
       "Welcome"
     ]
@@ -14,27 +453,7 @@
     "href": "index.html#document-objective",
     "title": "AST Lab Manual",
     "section": "Document Objective:",
-    "text": "Document Objective:\nThis resource demonstrate how the SWFSC uses acoustic data generate biomass estimates of Coastal Pelagic Species. As part of our commitment to open science, reproducibility, and transparency, we provide this metadata guide to compliment our public-domain data. Please consider this resource to be a Living Document. The code in this repository is regularly being updated and improved. \nDo not hesitate to reach out (to us at either alice.beittel@noaa.gov or GitHub issues, especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#user-resources",
-    "href": "index.html#user-resources",
-    "title": "AST Lab Manual",
-    "section": "User Resources",
-    "text": "User Resources\nThe survey produces two reports each year: A Survey Report and a Biomass Report. Each can be found at the NOAA Institutional Repository online\n\n2023 Biomass Report: Distribution, biomass, and demographics of coastal pelagic fishes in the California Current Ecosystem during summer 2023 based on acoustic-trawl sampling\n2023 Survey Report: Report on the Summer 2023 California Current Ecosystem Survey (CCES) (2307RL), 17 July to 3 November 2023, conducted aboard NOAA Ships Reuben Lasker and Bell M. Shimada, fishing vessels Lisa Marie and Long Beach Carnage, and three uncrewed surface vessels",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#how-to-access-our-data",
-    "href": "index.html#how-to-access-our-data",
-    "title": "AST Lab Manual",
-    "section": "How to Access Our Data",
-    "text": "How to Access Our Data\nNOAA Coast Watch ERDDAP:\nCPS Trawl Haul Catch Data\nCPS Trawl Specimen Data\nNOAA Ship Reuben Lasker Underway Meteorological Data\nNOAA National Centers for Environmental Information (NCE):\nLocate raw acoustic data using the NCEI Water Column Sonar Data Viewer.\nDownload raw acoustic data via the viewer or the AWS NCEI bucket.",
+    "text": "Document Objective:\nThis document serves to be a record of standard operating procedures and methods used in supporting AST projects. As part of our commitment to open science, reproducibility, and transparency, we provide this guide to compliment our public-domain data. Please consider this resource to be a Living Document. The code in this repository is regularly being updated and improved. \nUse the left hand panel to navigate through various projects and methodologies. Staff must have access to the AST Google Drive in order to view most google drive links.\nDo not hesitate to reach out (to us at either alice.beittel@noaa.gov or GitHub issues, especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.",
     "crumbs": [
       "Welcome"
     ]
@@ -54,209 +473,9 @@
     "href": "index.html#noaa-license",
     "title": "AST Lab Manual",
     "section": "NOAA License",
-    "text": "NOAA License\nSoftware code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.\nCopyright 2024 SWFSC Advanced Survey Technology Program\n\nLicensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n\n\n\n\nZwolinski, Juan, David Demer, George Cutter, Kevin Stierhoff, and Beverly Macewicz. 2014. “Building on Fisheries Acoustics for Marine Ecosystem Surveys.” Oceanography 27 (4): 68–79. https://doi.org/10.5670/oceanog.2014.87.",
+    "text": "NOAA License\nSoftware code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.\nCopyright 2024 SWFSC Advanced Survey Technology Program\n\nLicensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.",
     "crumbs": [
       "Welcome"
-    ]
-  },
-  {
-    "objectID": "content/background.html",
-    "href": "content/background.html",
-    "title": "Survey Background",
-    "section": "",
-    "text": "Who conducts the survey?\nThe California Current Ecosystem Survey is conducted by researchers at the NOAA Southwest Fisheries Science Center from the Fisheries Resources Division. The survey is also made possible by volunteers from additional NOAA line offices and science centers, universities, international partners, NOAA interns, and inter-agency employees.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/background.html#where-does-the-survey-take-place",
-    "href": "content/background.html#where-does-the-survey-take-place",
-    "title": "Survey Background",
-    "section": "Where does the survey take place?",
-    "text": "Where does the survey take place?\n\n\n\n\n\n\n\n\nSardine distribution\n\n\n\n\n\n\n\nGeneral sampling scheme\n\n\n\n\n\n\nFigure 1.1: On left, a conceptual spring (shaded region) and summer (hashed region) distributions of potential habitat for the northern stock of Pacific Sardine along the west coasts of Mexico, the United States, and Canada. On right, the general sampling scheme of planned core-region (solid black lines), adaptive (dashed red lines), and nearshore lines (pink).",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/background.html#research-objectives",
-    "href": "content/background.html#research-objectives",
-    "title": "Survey Background",
-    "section": "Research objectives:",
-    "text": "Research objectives:\n\nAcoustically map the distributions, measure the species compositions and size-frequency distributions, and estimate the abundances and biomasses of CPS present in the survey area, e.g., Pacific Sardine Sardinops sagax, Northern Anchovy (Engraulis mordax), Pacifc Herring (Clupea pallasii), Round Herring (Etrumeus acuminatus), Pacific Mackerel (Scomber japonicus), and Jack Mackerel (Trachurus symmetricus)\nCharacterize and investigate linkages to their biotic and abiotic environments\nGather information regarding their life histories\nCompare the species composition and size distributions of trawls and near shore vessel purse seine sets.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/background.html#survey-history",
-    "href": "content/background.html#survey-history",
-    "title": "Survey Background",
-    "section": "Survey History:",
-    "text": "Survey History:\nThe SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Quickly the annual surveys demonstrated valuable ecosystem insights. Since then, they have expanded in scope and objectives to include the larger forage-fish assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.\n“Collectively, these annual or bi-annual ATM surveys provide a unique insight into the dynamics of forage fshes in the CCE, including their distributions, abundances, interactions, and environments. For example, results from 2006 through 2013 indicate that Pacifc Sardine dominated the CPS assemblage, but their biomass was declining (Demer and Zwolinski, 2012; Zwolinski and Demer, 2012) and their seasonal migration was contracting (Zwolinski et al., 2014). Meanwhile, harvest rates for the declining stock increased (Demer and Zwolinski, 2017), and the total forage-fsh biomass decreased to less than 200,000 t in 2014 and 2015 (Figs. 36, 37). The U.S. fshery for Pacifc Sardine was closed in 2015 (National Marine Fisheries Service, 2015), and there were reports of mass strandings, deaths, and reproductive failures in Brown Pelicans (Pelecanus occidentalis3), Common Murres (Uria aalge), Brandt’s Cormorants (Phalacrocorax penicillatus), and California sea lions (Zalophus californianus4) (McClatchie et al., 2016), all of which depend on forage species. Since 2016, the forage-fsh biomass has increased, mainly due to resurgences of Jack Mackerel and the now dominant central stock of Northern Anchovy (Figs. 36, 37), whose biomass primarily (2,466,108 t, or 94% of the total estimate biomass) occurred in U.S. waters. Between the summers of 2018 and 2021, the biomass of the southern stock of Pacifc Sardine in U.S. waters has increased from 33,093 to 45,332 t.”(Stierhoff et al. 2024)",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/background.html#code-of-conduct",
-    "href": "content/background.html#code-of-conduct",
-    "title": "Survey Background",
-    "section": "Code of Conduct",
-    "text": "Code of Conduct\n\nWhat are Codes of Conduct?\nCodes of Conduct are voluntary sets of rules that assist creators, developers, and users of code and data with data protection compliance and accountability in specific sectors or relating to particular processing operations.\nCodes can help organizations to ensure all participants follow best practices and rules designed specifically for their sector or processing operations, thus enhancing compliance and collaboration. They are developed and managed by an association or other body (the ‘Code Owner’) which is representative of a sector (or category of data controllers or processors), with the expert and sectoral knowledge of how to enhance data protection in their area.\n\n\nCode of Conduct from the nmfs-opensci GitHub.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/background.html#our-pledge",
-    "href": "content/background.html#our-pledge",
-    "title": "Survey Background",
-    "section": "Our Pledge",
-    "text": "Our Pledge\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/background.html#our-standards",
-    "href": "content/background.html#our-standards",
-    "title": "Survey Background",
-    "section": "Our Standards",
-    "text": "Our Standards\nExamples of behavior that contributes to creating a positive environment include:\n\nUsing welcoming and inclusive language\nBeing respectful of differing viewpoints and experiences\nGracefully accepting constructive criticism\nFocusing on what is best for the community\nShowing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\nThe use of sexualized language or imagery and unwelcome sexual attention or advances\nTrolling, insulting/derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or electronic address, without explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/background.html#our-responsibilities",
-    "href": "content/background.html#our-responsibilities",
-    "title": "Survey Background",
-    "section": "Our Responsibilities",
-    "text": "Our Responsibilities\nProject maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.\nProject maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/background.html#scope",
-    "href": "content/background.html#scope",
-    "title": "Survey Background",
-    "section": "Scope",
-    "text": "Scope\nThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/background.html#enforcement",
-    "href": "content/background.html#enforcement",
-    "title": "Survey Background",
-    "section": "Enforcement",
-    "text": "Enforcement\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. Further details of specific enforcement policies may be posted separately.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/background.html#attribution",
-    "href": "content/background.html#attribution",
-    "title": "Survey Background",
-    "section": "Attribution",
-    "text": "Attribution\nThis Code of Conduct is adapted from the Contributor Covenant, version 1.4, available at https://contributor-covenant.org/version/1/4\n\n\n\n\nStierhoff, Kevin L., Juan P. Zwolinski, Josiah S. Renfree, and David A. Demer. 2024. “Distribution, Biomass, and Demographics of Coastal Pelagic Fishes in the California Current Ecosystem During Summer 2023 Based on Acoustic Trawl Sampling.” NOAA National Marine Fisheries Service Southwest Fisheries Science Center. https://doi.org/10.25923/1VGS-SF98.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Survey Background</span>"
-    ]
-  },
-  {
-    "objectID": "content/acquisition.html",
-    "href": "content/acquisition.html",
-    "title": "Data Acquisition",
-    "section": "",
-    "text": "Survey Equipment",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Acquisition</span>"
-    ]
-  },
-  {
-    "objectID": "content/acquisition.html#survey-equipment",
-    "href": "content/acquisition.html#survey-equipment",
-    "title": "Data Acquisition",
-    "section": "",
-    "text": "Acoustic Instruments\n\n\n\n\n\n\nFigure 2.1: Transducer locations on the bottom of the centerboard aboard Lasker.\n\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard” (Figure 2.1). The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\nUnderway CTD\nOn Lasker and Shimada, conductivity and temperature profiles were measured down to 300 m using calibrated sensors on a probe cast from the vessel while underway (UnderwayCTD, or UCTD; Teledyne Ocean- science). Casts were typically conducted between two to four times along each transect. These data indicate the depth of the surface mixed layer, above which most pelagic CPS reside during the day. These data were also used to estimate the time-averaged sound speed (Demer, 2004), for estimating ranges to the sound scatterers, and frequency-specific sound absorption coefficients, for compensating signal attenuation of the sound pulse between the transducer and scatterers (Simmonds and MacLennan, 2005).",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Acquisition</span>"
-    ]
-  },
-  {
-    "objectID": "content/acquisition.html#software",
-    "href": "content/acquisition.html#software",
-    "title": "Data Acquisition",
-    "section": "Software",
-    "text": "Software\n\nEchosounder Software\nEK80\n\n\nNetTime\nOn Lasker and Shimada, the computer clocks were synchronized with the GPS clock (UTC) using a synchronization software called NetTime.\n\n\nEAL\nThe 38-, 70-, 120-, 200-, and 333-kHz echosounders were controlled by the EK80 Adaptive Logger (EAL2, Renfree and Demer, 2016). The EAL optimizes the pulse interval based on the seabed depth, while avoiding aliased seabed echoes, and was programmed such that once an hour the echosounders would record three pings in passive mode, for obtaining estimates of the background noise level.\n\n\nK Sync\nTo minimize acoustic interference on Lasker and Shimada, transmit pulses from the EK80s, acoustic Doppler current profiler and echosounder (Simrad-Kongsberg EC150-3C), multibeam echosounder (Simrad- Kongsberg ME70), imaging sonar (Simrad-Kongsberg MS70), scanning sonar (Simrad-Kongsberg SX90), and a separate acoustic Doppler current profiler (Teledyne RD Instruments OS75 ADCP) were triggered using a synchronization system (Simrad K-Sync; Kongsberg). The K-Sync trigger rate, and thus the echosounder ping interval, was modulated by the EAL using the 18-kHz seabed depth provided by the Scientific Computing System (SCS).",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Acquisition</span>"
-    ]
-  },
-  {
-    "objectID": "content/acquisition.html#raw-acoustic-data-format",
-    "href": "content/acquisition.html#raw-acoustic-data-format",
-    "title": "Data Acquisition",
-    "section": "Raw Acoustic Data Format",
-    "text": "Raw Acoustic Data Format\nMeasurements of volume backscattering strength (Sv; dB re 1 m2 m-3) and target strength (TS; dB re 1 m2), indexed by time and geographic positions provided by GPS receivers, were stored in Simrad-Kongsberg .raw format with a 1-GB maximum file size. During daytime, the echosounders operated in CW mode and logged to 60 m beyond the detected seabed range or to a maximum range of 500, 500, 500, 300, and 150 m for 38, 70, 120, 200, and 333 kHz, respectively. During nighttime, the echosounders operated in FM mode and logged to 100 m. For each acoustic instrument, the prefix for each fle name is a concatenation of the survey name (e.g., 2307RL), the operational mode (CW or FM), and the logging commencement date and time from the EK80 software (v21.15.1). For example, a file generated by the Simrad-Kongsberg EK80 software for a WBT operated in CW mode is named 2307RL_CW-D20220826-T155651.raw.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Acquisition</span>"
-    ]
-  },
-  {
-    "objectID": "content/processing.html",
-    "href": "content/processing.html",
-    "title": "Data Processing",
-    "section": "",
-    "text": "After data aqusition, we identify acoustic echos of schooling CPS using a semi-automated data processing algorithm using Echoview software and in-house Posit code in the estimATM repository. With Echoview, we extract the backscatter of swim bladder fish and process using soundspeed and echosounder calibration values housed inside an Echoview Calibration Supplement (.ecs) file. The Echoview filters and thresholds were based on a sub-sample of echoes from randomly selected CPS schools. We complete the processing with the estimATM package in extract_CPS_NASC.R, where we further refine the backscatter selection to extract only CPS. Here we will cover the Echoview and estimATM semi-automated processing workflow.\n\nData Processing Overview\n\n\n\nOverview of CPS Acoustic Processing. Vessel position and attitude data is used from the POS MV (not shown).\n\n\n\n\n\nEchoview Processing Workflow\nIn Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process:\n\nData wrangling, cleaning, and noise removal (including surface noise and seabed removal)\nEcho classification for swim-bladdred fish\nAcoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.\n\n\n\n\nSimplified dataflow of processing in Echoview. *Surface noise and seabed removal replies on two manual inputs: the Integration Start and Integration Stop lines (not pictured, see step 5).\n\n\n\nSection 1) Data Wrangling, Cleaning, and Noise Removal:\n\nLoad RAW EK80 acoustic data and Echoview Calibration Supplement (.ecs)file into Echoview. The .ecs file contains soundspeed information calculated from the nearest (temporally and spatially) Underway CTD cast and echosounder calibration parameters. This file is used at the very beginning to convert from power to Sv (volume-backscattering coefficient).\nAlign sampling rate (time and geometery) from all transders to the 38 kHz Sv. Acousticians call this step ‘matching geometry’ of all Sv variables. Making sure pings are aligned from all echosounders is important for calculating the frequency response of backscatter in steps later on.\nRemove passive-mode pings.\nNoise removal: estimate and subtract background noise using the background noise removal function described in De Robertis and Higginbottom (2007).\nSurface noise and seabed removal is completed by manually drawing an Integration Start and Integration Stop line in Echoview. The Integration Start line is drawn at the shallowest depth to include surface CPS schools but exclude transducer ring down and surface noise due to sea state (typically around 5 meters below the transducer face or ~10m depth). The Integration Stop line is drawn closest to the seabed to include bottom dwelling animals but exclude any non-living seabed features (typically 3 m above the estimated seabed (Demer et al. 2009) or to the maximum logging range (e.g., 350 m), whichever is shallowest). When drawing the lines, we set the color scale to a minimum Sv threshold of -60 dB which corresponds to a density of approximately three 20-cm-long Pacific Sardine per 100 m3). Doing this helps visually pick out schools from the seabed and from non-swim bladder animals that appear as diffuse scattering layers in the water column. The area of the water column between the two lines sets the depth range that will be integrated for swim bladder fish in steps later on.\nAverage the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.\nExpand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation. This replaces each averaged datapoint from Step 6 with the maximum datapoint surrounding it in a 7x7 pixel region.\n\n\n\nSection 2) Echo Classification for Swim Bladder Fish\n\nCalculate Frequency Response:\n\nFor each dilated pixel, compute:\nSv 200kHz − Sv 38kHz\nSv 120kHz − Sv 38kHz\nSv 70kHz − Sv 38kHz\nThe difference between Sv values provides the frequency response for those pixels. Swim bladder fish have a unique frequency response which we can use extract those acoustic returns in the next step. Acoustic returns that fall within the Sv ranges below are flagged as meeting the criteria for typical swim bladder fish, including CPS.\nCreate a Boolean echogram for Sv differences in the CPS range:\n−13.85 &lt; Sv 70kHz − Sv 38kHz &lt; 9.89\n− 13.5 &lt; Sv 120kHz −Sv 38kHz &lt; 9.37\n− 13.51 &lt; Sv 200kHz − Sv 38kHz &lt; 12.53\n\n\n\nCalculate Standard Deviation:\n\nFor 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (remove passive pings) and averaged Sv (11-sample x 3 ping bin averages).\nAverage the results using an 11-sample by 3-ping window to derive variance.\nCompute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively).\nExpand the standard deviation echograms with a 7 pixel x 7 pixel dilation (same step as Section 1, Step 7).\nCreate a Boolean echogram based on the standard deviations in the CPS range:\nσ120kHz &gt; -65 dB\nσ200kHz &gt; -65 dB\nDiffuse backscattering layers have low σ (Zwolinski et al. 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram .\n\n\n\n\nSection 3) Acoustic Backscatter Integration\n\nIntegrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;\nOutput the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.\n\n\n\n\n\nPosit Processing Workflow\nThe exported .csv file from Echoview contains all swim bladder backscatter which can include non-target species such as rockfish. In order to further refine the acoustic classification to retain only CPS backscatter, the processed .csv file proceeds to the final semi-automated processing step in Posit using extract_CPS_NASC.R, an R-based tool in the estimATM package.\n\nEchoes from fishes with swimbladders (blue points, scaled by backscatter intensity) along an example acoustic transect (top) and the corresponding Echoview echogram image (bottom). In this example, the upper (blue) and lower lines (green) indicate boundaries within which echoes were retained. When the lower boundary is deeper than the seabed (black line), echoes above the seabed are retained. Echoes from deep, bottom-dwelling schools of non-CPS fishes with swimbladders, and from diffuse scatters near the surface are excluded.\nThe script will open a plot (top) where the acoustics technician can draw new integration start line (blue) and stop line (green). Blue points that fall below the stop line will be excluded while blue points below the start line will be included from the resulting .csv file. The goal is to visually review the Echoview exported echogram image (bottom) and remove backscatter that you believe are not CPS (e.g., rockfishes, hake), possibly contain accidental seabed, or any surface noise amd diffuse scattering layers. The process of picking out CPS from other swim-bladder fish can be tricky as CPS can have a range of characteristics. The Backscatter Identification section goes into detail on this process.\n\nOnce you are happy with the two lines, an image will appear showing the results of your editing. If the backscatter needs to be removed, or put back, you can re-run the script and the results will be replaced.\nThe result is a final .csv with only backscatter information for CPS targets.\n\n\n\n\nDe Robertis, Alex, and Ian Higginbottom. 2007. “A Post-Processing Technique to Estimate the Signal-to-Noise Ratio and Remove Echosounder Background Noise.” ICES Journal of Marine Science 64 (6): 1282–91. https://doi.org/10.1093/icesjms/fsm112.\n\n\nDemer, David A., George R. Cutter, Josiah S. Renfree, and John L. Butler. 2009. “A Statistical-Spectral Method for Echo Classification.” ICES Journal of Marine Science 66 (6): 1081–90. https://doi.org/10.1093/icesjms/fsp054.\n\n\nZwolinski, Juan P., Paulo B. Oliveira, Victor Quintino, and Yorgos Stratoudakis. 2010. “Sardine Potential Habitat and Environmental Forcing Off Western Portugal.” ICES Journal of Marine Science 67 (8): 1553–64. https://doi.org/10.1093/icesjms/fsq068.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Processing</span>"
-    ]
-  },
-  {
-    "objectID": "content/identification.html",
-    "href": "content/identification.html",
-    "title": "Backscatter Identification",
-    "section": "",
-    "text": "Acoustic Characteristics of CPS\nWhile the acoustic properties of swimbladder fish depends on several factors, the most important are the acoustic wavelength, swimbladder size, and swimbladder orientation to the incident sound pulse. We use 39, 70, 120, and 200kHz to capture a range of swimbladder sizes and orientations. During our nightly trawl catches, we measure the standard length for a collection of fish. Using the standard length we estimate the dorsal surface area of a swimbladder (swimbladder size). Knowing the approximate dorsal surface area of a swimbladder allows us to calculate the backscattering cross-section of one bladder and in turn the volume backscattering coefficient (many swim bladders together such as a school of fish). We are able to calculate backscattering coefficients for each CPS species. You may also hear the word Target Strength, which is a logrithmic function of the backscattering cross-section and describes how sound reflects off the swim bladder depending on its size. For this survey we calculate target strength as a logarithmic function of frequency and species-specific parameters obtained theoretically or experimentally and fish total length from trawl samples. Full details on species-specific target strength parameters can be found in the survey biomass report here.\n\n\n\n\n\nSv differences in the CPS range:\n−13.85 &lt; Sv 70kHz − Sv 38kHz &lt; 9.89\n− 13.5 &lt; Sv 120kHz −Sv 38kHz &lt; 9.37\n− 13.51 &lt; Sv 200kHz − Sv 38kHz &lt; 12.53\n\n\nThe automated CPS processing in ‘Echoview’ filters for all CPS meeting the criteria above, however some non-CPS targets still pass through the filter, specifically fishes like rockfish. To remove these CPS-like targets, we manually review each exported Echoview echogram.\n\n\nBelow is how we do that.\nUsing the ‘extract_CPS_NASC.R’, an R-based tool in the ‘estimATM’ package, we remove non-CPS targets from final echograms. This process aims to distinguish CPS from non-target species from mid-water, demersal, and benthic swim bladder fishes.\n\n\n\n\n\nWe follow a decision guide to help distinguish CPS and retain the backscatter that meets the criteria in green.\n\n\n\n\n\nBelow is an example of a well defined school with high Sv. CPS schools can occur in near the surface, mid-water column, or compressed to the seabed (especially in shallow waters during the day).\n\n\n\nCPS near sea surface\n\n\n\n\n\nCPS near seafloor\n\n\nBelow are examples of non-CPS that we manually using ‘extract_CPS_NASC.R’.\n\n\n\nDiffuse biological layer. Diffuse schools will often be observed offshore near the surface, near a shelf break, or deeper than ~250m\n\n\n\n\n\nRockfish on a seamount. Rockfish often will be observed near rugged or rocky seabed.\n\n\n\n\n\nThe hake snake. Hake tend to be mid-water column and in a snaking schooling behavior.\n\n\nWhen looking at Echoview echograms of acoustic transects, if there are areas where we are unsure if the backscatter is CPS or not CPS based on visual inspection, we dig deeper and examine how the volume backscattering coefficient (Sv) changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (Figure 4.1) with the decrease or flattening occurring between 120kHz and 200kHz.\n\n\n\n\n\n\nFigure 4.1\n\n\n\nReference: Content is adapted from this google document: Name that Backscatter!",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Backscatter Identification</span>"
-    ]
-  },
-  {
-    "objectID": "content/trawl-selection.html",
-    "href": "content/trawl-selection.html",
-    "title": "Trawl Selection",
-    "section": "",
-    "text": "Acoustic transects are processed for CPS backscatter on the day of acquisition and used to determine nightly trawl locations. This page will walk through the process of trawl selection.\n\n1. Visual Comparison\nThe acoustics technician on watch completes a visual comparison between an in-house published map (plotSurvey) of backscatter results and the transect acoustic echogram. Dense schools of CPS seen in the echogram will correlate to colorful bubbles on plotSurvey.\n\nClicking on summarized acoustic points shows a popup that contains the time and distance interval over which those data were summarized, allowing you to scrutinize the results of Echoview processing. We make sure to cross-reference backscatter spots on plotSurvey with the exported image from Echoview to make an informed trawl-location decision.\n\n\n\n2. Best Judgement\nThe acoustics technician will select 2-3 trawls each night based on the backscatter observed during the daytime acoustic transect, operational efficiency, and expected CPS habitat. If no CPS backscatter is observed, trawl locations will default to using expected CPS habitat information and operational efficiency.\n\nExpected CPS habitat is derived from prior survey results and models:\n\nSardine habitat based on a 12-year data set of sardine eggs, remotely sensed oceanographic variables, sea surface temperature, chlorophyll a concentrations, sea surface altitude (Zwolinski, Emmett, and Demer 2011).\nCharted bathymetry – Pacific sardines can be found from the ocean surface to ~350m in depth and typically reside around smoother (less rocky) bottom types.\nSardine eggs are most abundant at sea-surface temperatures of 13 to 15 ∘C, and larvae are most abundant at 13 to 16 ∘C. Temperature is a primary driver of the spatial and seasonal distribution of spawning. During warm ocean conditions, sardine spawning shifts northward concentrating in offshore regions and north of Point Conception to San Francisco and in some years is observed as far north as Oregon (Kuriyama, Zwolinski, and Hill 2020).\n\n\n\n\n\nKuriyama, Peter T., Juan P. Zwolinski, and Kevin T. Hill. 2020. “Assessment of the Pacific Sardine Resource in 2020 for u.s. Management in 2020-2021.” Southwest Fisheries Science Center (U.S.). https://doi.org/10.25923/R2FZ-4Y79.\n\n\nZwolinski, Juan P., Robert L. Emmett, and David A. Demer. 2011. “Predicting Habitat to Optimize Sampling of Pacific Sardine (Sardinops Sagax).” ICES Journal of Marine Science 68 (5): 867–79. https://doi.org/10.1093/icesjms/fsr038.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Trawl Selection</span>"
-    ]
-  },
-  {
-    "objectID": "content/biomass.html",
-    "href": "content/biomass.html",
-    "title": "Reporting",
-    "section": "",
-    "text": "Using the r package ‘estimATM’ several reports are generating using the final processed acoustic data.",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Reporting</span>"
-    ]
-  },
-  {
-    "objectID": "content/references.html",
-    "href": "content/references.html",
-    "title": "References",
-    "section": "",
-    "text": "De Robertis, Alex, and Ian Higginbottom. 2007. “A Post-Processing\nTechnique to Estimate the Signal-to-Noise Ratio and Remove Echosounder\nBackground Noise.” ICES Journal of Marine Science 64\n(6): 1282–91. https://doi.org/10.1093/icesjms/fsm112.\n\n\nDemer, David A., George R. Cutter, Josiah S. Renfree, and John L.\nButler. 2009. “A Statistical-Spectral Method for Echo\nClassification.” ICES Journal of Marine Science 66 (6):\n1081–90. https://doi.org/10.1093/icesjms/fsp054.\n\n\nKuriyama, Peter T., Juan P. Zwolinski, and Kevin T. Hill. 2020.\n“Assessment of the Pacific Sardine Resource in 2020 for u.s.\nManagement in 2020-2021.” Southwest Fisheries Science Center\n(U.S.). https://doi.org/10.25923/R2FZ-4Y79.\n\n\nStierhoff, Kevin L., Juan P. Zwolinski, Josiah S. Renfree, and David A.\nDemer. 2024. “Distribution, Biomass, and Demographics of Coastal\nPelagic Fishes in the California Current Ecosystem During Summer 2023\nBased on Acoustic Trawl Sampling.” NOAA National Marine\nFisheries Service Southwest Fisheries Science Center. https://doi.org/10.25923/1VGS-SF98.\n\n\nZwolinski, Juan P., Robert L. Emmett, and David A. Demer. 2011.\n“Predicting Habitat to Optimize Sampling of Pacific Sardine\n(Sardinops Sagax).” ICES Journal of Marine Science 68\n(5): 867–79. https://doi.org/10.1093/icesjms/fsr038.\n\n\nZwolinski, Juan P., Paulo B. Oliveira, Victor Quintino, and Yorgos\nStratoudakis. 2010. “Sardine Potential Habitat and Environmental\nForcing Off Western Portugal.” ICES Journal of Marine\nScience 67 (8): 1553–64. https://doi.org/10.1093/icesjms/fsq068.\n\n\nZwolinski, Juan, David Demer, George Cutter, Kevin Stierhoff, and\nBeverly Macewicz. 2014. “Building on Fisheries Acoustics for\nMarine Ecosystem Surveys.” Oceanography 27 (4): 68–79.\nhttps://doi.org/10.5670/oceanog.2014.87.",
-    "crumbs": [
-      "References"
     ]
   }
 ]

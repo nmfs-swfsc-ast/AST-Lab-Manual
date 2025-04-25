@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Acoustics Set Up – AST Lab Manual</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../content/cps-dailyops.html" rel="next">
+<link href="../content/noaa-ship-cps-surveys.html" rel="prev">
+<link href="../assets/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d56b5d7ed9843feede178ee1bedb3dd0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/acoustic-trawl.html">Acoustic Trawl Surveys</a></li><li class="breadcrumb-item"><a href="../content/noaa-ship-cps-surveys.html">NOAA Ship CPS Surveys</a></li><li class="breadcrumb-item"><a href="../content/cps-setup.html">Acoustics Set Up</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="https://media.fisheries.noaa.gov/dam-migration-miss/md_YPyChZ2sgSi5.png?1595971802" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://www.fisheries.noaa.gov/west-coast/science-data/advanced-survey-technologies-assessments-california-current-ecosystem" title="SWFSC AST" class="quarto-navigation-tool px-1" aria-label="SWFSC AST"><i class="bi bi-globe"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/orientation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Orientation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+ <span class="menu-text">Program Orientation</span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../content/acoustic-trawl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acoustic Trawl Surveys</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../content/noaa-ship-cps-surveys.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NOAA Ship CPS Surveys</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/cps-setup.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Acoustics Set Up</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/cps-dailyops.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Daily Acoustic Operations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Nearshore CPS Surveys</span></span>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../content/calibrations-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Calibrations Overview</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/tech-tank-calibrations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tech Tank Calibration Set Up</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#networking-overview" id="toc-networking-overview" class="nav-link active" data-scroll-target="#networking-overview">1. Networking Overview:</a></li>
+  <li><a href="#setting-up-the-echoview-pc" id="toc-setting-up-the-echoview-pc" class="nav-link" data-scroll-target="#setting-up-the-echoview-pc">2. Setting up the Echoview PC:</a>
+  <ul class="collapse">
+  <li><a href="#networking" id="toc-networking" class="nav-link" data-scroll-target="#networking">2.1. Networking</a></li>
+  <li><a href="#computer-file-set-up" id="toc-computer-file-set-up" class="nav-link" data-scroll-target="#computer-file-set-up">2.2. Computer File Set Up:</a></li>
+  </ul></li>
+  <li><a href="#setting-up-the-ek80" id="toc-setting-up-the-ek80" class="nav-link" data-scroll-target="#setting-up-the-ek80">3. Setting up the EK80:</a>
+  <ul class="collapse">
+  <li><a href="#networking-1" id="toc-networking-1" class="nav-link" data-scroll-target="#networking-1">3.1. Networking:</a></li>
+  <li><a href="#settings-for-both-the-ship-ek80-pc-and-the-ast-ek80-pc" id="toc-settings-for-both-the-ship-ek80-pc-and-the-ast-ek80-pc" class="nav-link" data-scroll-target="#settings-for-both-the-ship-ek80-pc-and-the-ast-ek80-pc">3.2. Settings for both the Ship EK80 PC and the AST EK80 PC:</a></li>
+  <li><a href="#settings-for-ast-ek80-pc---18-khz-wbt-pc" id="toc-settings-for-ast-ek80-pc---18-khz-wbt-pc" class="nav-link" data-scroll-target="#settings-for-ast-ek80-pc---18-khz-wbt-pc">3.3. Settings for AST EK80 PC - 18 kHz WBT PC:</a></li>
+  <li><a href="#settings-for-the-ship-ek80-pc" id="toc-settings-for-the-ship-ek80-pc" class="nav-link" data-scroll-target="#settings-for-the-ship-ek80-pc">3.4. Settings for the Ship EK80 PC:</a></li>
+  </ul></li>
+  <li><a href="#setting-up-k-sync" id="toc-setting-up-k-sync" class="nav-link" data-scroll-target="#setting-up-k-sync">4. Setting up K-Sync:</a></li>
+  <li><a href="#setting-up-the-trawl-pc" id="toc-setting-up-the-trawl-pc" class="nav-link" data-scroll-target="#setting-up-the-trawl-pc">5. Setting up the Trawl PC:</a></li>
+  <li><a href="#draft-setting-up-td50" id="toc-draft-setting-up-td50" class="nav-link" data-scroll-target="#draft-setting-up-td50">6. [DRAFT] Setting up TD50</a></li>
+  <li><a href="#draft-setting-up-sx90" id="toc-draft-setting-up-sx90" class="nav-link" data-scroll-target="#draft-setting-up-sx90">7. [DRAFT] Setting up SX90</a></li>
+  <li><a href="#draft-setting-up-me70" id="toc-draft-setting-up-me70" class="nav-link" data-scroll-target="#draft-setting-up-me70">8. [DRAFT] Setting up ME70</a></li>
+  <li><a href="#draft-setting-up-ms70" id="toc-draft-setting-up-ms70" class="nav-link" data-scroll-target="#draft-setting-up-ms70">9. [DRAFT] Setting up MS70</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/edit/main/content/cps-setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/blob/main/content/cps-setup.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/acoustic-trawl.html">Acoustic Trawl Surveys</a></li><li class="breadcrumb-item"><a href="../content/noaa-ship-cps-surveys.html">NOAA Ship CPS Surveys</a></li><li class="breadcrumb-item"><a href="../content/cps-setup.html">Acoustics Set Up</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Acoustics Set Up</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="networking-overview" class="level2">
+<h2 class="anchored" data-anchor-id="networking-overview">1. Networking Overview:</h2>
+<p>Most science systems will be on a <code>Science</code> network provided by the ship and use an IP address of 192.168.123.XXX. The following systems will be on the <code>Science</code> network:</p>
+<ul>
+<li>NAS storage devices</li>
+<li>Echoview Processing Computer – Ideally this computer will have the capability to access SCS.</li>
+</ul>
+<p>There are some ship systems that we need access to which are hosted on a <code>Mission</code> network and use an IP address of 10.48.23.XXX. We need access to the following systems on the <code>Mission</code> network:</p>
+<ul>
+<li>Scientific Computer System (SCS).</li>
+<li>Computers in the Chemical Lab. – Ideally this computer would have the capability to put files on the <code>Science</code> network too. These computers will be used for entering trawl biological data.</li>
+<li>The time server. Most sounder computers have <code>NetTime</code> installed on them, and set to sync with the ship’s time server using the following settings:</li>
+</ul>
+<p><img src="images/nettime.JPG" class="img-fluid" width="387"></p>
+</section>
+<section id="setting-up-the-echoview-pc" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-the-echoview-pc">2. Setting up the Echoview PC:</h2>
+<section id="networking" class="level3">
+<h3 class="anchored" data-anchor-id="networking">2.1. Networking</h3>
+<section id="mapping-to-the-synology-nas-device" class="level4">
+<h4 class="anchored" data-anchor-id="mapping-to-the-synology-nas-device">Mapping to the Synology NAS Device</h4>
+<p>In order to connect the NAS (Network Attached Storage) Synology Device, you will need to map to the Synology and enter in a username and password. If the NAS becomes disconnected, you would follow this same process to reconnect it. In PC File Explorer, click on <code>This PC</code> on the left hand navigation column –&gt; navigate to <code>Computer</code> at the top navigation bar –&gt; <code>Map network drive</code> -&gt; <code>Drive</code>: choose an empty drive with no name; <code>Folder</code>: type in the address for the appropriate NAS device below -&gt; check <code>Connect using different credentials</code> –&gt; <code>Finish</code> -&gt; You will be prompted to enter a username and password. Enter in the corresponding credentials for your chosen NAS device below.</p>
+<p><strong>Address (NAS1)</strong>: \\192.168.123.23\ast-data</p>
+<ul>
+<li><strong>Username</strong>: swc-ast-nas\astnasmin</li>
+<li><strong>Password</strong>: BvKUazyaQcNDB6oH</li>
+</ul>
+<p><strong>Address (NAS2):</strong> \\192.168.123.24\ast-data</p>
+<ul>
+<li><strong>Username:</strong> swc-ast-nas2\astnasmin</li>
+<li><strong>Password:</strong> BvKUazyaQcNDB6oH</li>
+</ul>
+</section>
+<section id="mapping-to-the-ship-scs-computer" class="level4">
+<h4 class="anchored" data-anchor-id="mapping-to-the-ship-scs-computer">Mapping to the ship SCS computer</h4>
+<p>If CTD data on the ship’s SCS server (called log40). On the Echoview PC, this directory is mapped using the following:</p>
+<p><strong>Address:</strong> \\10.48.23.223\log40</p>
+<ul>
+<li><strong>Username:</strong> omao\survey.rl</li>
+<li><strong>Password:</strong> SouthernSun1</li>
+</ul>
+</section>
+<section id="set-up-syncback-profiles" class="level4">
+<h4 class="anchored" data-anchor-id="set-up-syncback-profiles">Set up <code>Syncback</code> Profiles:</h4>
+<p>Data is automatically backed up from echosounder acquisition computers to the NAS via a set of <code>Syncback</code> profiles that do the following. Last year’s <code>Syncback</code> profile can be located here [add GD link].</p>
+<ul>
+<li>Mirrors the survey directory (C:\SURVEY\2407RL) to the NAS</li>
+<li>Backs up all the EK80 data (both 18 kHz PC and 38-200 kHz PC) to the NAS</li>
+<li>Backs up select SURVEY files to a Cloud Storage Drive (TBD)</li>
+</ul>
+</section>
+<section id="set-up-navigation" class="level4">
+<h4 class="anchored" data-anchor-id="set-up-navigation">Set up Navigation:</h4>
+<ul>
+<li>Coastal Explorer (aka Rose Point) is operated on the Echoview PC is used for monitoring real-time progress, maintaining a record of the cruise track, and planning out nightly trawls. A GPS input is needed for Rose Point to track the boat. On the <em>Lasker</em>, the GPS input comes from a gray cable hanging from the black box located above the Echoview PC. Plug it into the COM1 of the Echoview PC.</li>
+</ul>
+</section>
+<section id="set-up-licenses" class="level4">
+<h4 class="anchored" data-anchor-id="set-up-licenses">Set up Licenses:</h4>
+<ul>
+<li>Plug the Echoview license thumb drive into the Echoview PC.</li>
+</ul>
+</section>
+<section id="set-up-uctd-bluetooth" class="level4">
+<h4 class="anchored" data-anchor-id="set-up-uctd-bluetooth">Set up UCTD bluetooth:</h4>
+<ul>
+<li>Plug the UCTD Valeport Blue Soleil thumb drive into the Echoview PC.</li>
+</ul>
+</section>
+</section>
+<section id="computer-file-set-up" class="level3">
+<h3 class="anchored" data-anchor-id="computer-file-set-up">2.2. Computer File Set Up:</h3>
+<ul>
+<li>[Kevin add details on how to set up estimATM on the Echoview PC. Do you clone the github repository?]</li>
+<li>Download the most recent ENC charts for CA, OR, WA, and AK from <a href="https://charts.noaa.gov/ENCs/ENCs.shtml">Office of Coast Survey</a> and put them in a folder called <code>Charts</code> on the C:\ Drive.</li>
+<li>Download the pre-made Coastal Explorer .nob file for the survey from the shared <a href="https://drive.google.com/drive/folders/0APMOIPPoAUQqUk9PVA">AST Google Drive</a> and put it under C:\SURVEYS\[SURVEY DATE AND NAME]\PLANNING\NAV.</li>
+</ul>
+</section>
+</section>
+<section id="setting-up-the-ek80" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-the-ek80">3. Setting up the EK80:</h2>
+<p>EK80 software is run on two computers: (1) The ship’s EK80 PC, located in server rack, and (2) AST’s PC, located on the port side of the Acoustic’s Lab across from ship EK80 PC. The ship’s EK80 PC operates the non-18-kHz WBTs. AST’s EK80 PC is operating the 18-kHz WBT and the EC150-3C. <strong>Confirm version of EK80 software is the most recent version on both computers.</strong></p>
+<section id="networking-1" class="level3">
+<h3 class="anchored" data-anchor-id="networking-1">3.1. Networking:</h3>
+<p>A SyncbackFree profile on the Echoview PC backs up data from both PCs to the NAS drive (\\192.168.123.24\ast-data\2407RL\ACOUSTIC_DATA) every 15 minutes.</p>
+</section>
+<section id="settings-for-both-the-ship-ek80-pc-and-the-ast-ek80-pc" class="level3">
+<h3 class="anchored" data-anchor-id="settings-for-both-the-ship-ek80-pc-and-the-ast-ek80-pc">3.2. Settings for both the Ship EK80 PC and the AST EK80 PC:</h3>
+<ul>
+<li><code>Ping Mode</code> set to <strong>maximum</strong>.</li>
+<li><code>Recording Range</code> set to <strong>on</strong>.</li>
+<li><code>Drop Keel</code> sensor configuration should reflect the centerboard’s current position. Confirm with the ship Survey Tech that drop keep is updated.</li>
+<li>Set files to save as the maximum allowable file size (Output -&gt; File Setup -&gt; File Size -&gt; check <code>Maximum</code>).</li>
+</ul>
+</section>
+<section id="settings-for-ast-ek80-pc---18-khz-wbt-pc" class="level3">
+<h3 class="anchored" data-anchor-id="settings-for-ast-ek80-pc---18-khz-wbt-pc">3.3. Settings for AST EK80 PC - 18 kHz WBT PC:</h3>
+<section id="set-save-location" class="level4">
+<h4 class="anchored" data-anchor-id="set-save-location">Set Save Location:</h4>
+<ul>
+<li>The AST 18-kHz PC is set save files directly to an external 4-TB HDD.</li>
+</ul>
+</section>
+<section id="installation-settings" class="level4">
+<h4 class="anchored" data-anchor-id="installation-settings">Installation Settings:</h4>
+<section id="transducer-installation" class="level5">
+<h5 class="anchored" data-anchor-id="transducer-installation"><strong>Transducer Installation:</strong></h5>
+<p>The 18-kHz transducer is set to a “Drop Keel” mounting installation, then the X and Y-Offset parameters set to the Translated Frame as specified in the IMTEC survey. The Drop Keel depth is manually specified in the <strong>Sensor Configuration</strong> menu (see further below), which effectively sets the Z-Offset coordinate for the 18-kHz transducer relative to the waterline.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18 kHz-Transducer Installation.JPG" class="img-fluid figure-img"></p>
+<figcaption>18 kHz Transducer Installation Settings</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/EC150 -Transducer Installation.JPG" class="img-fluid figure-img"></p>
+<figcaption>EC150-3C Transducer Installation Settings</figcaption>
+</figure>
+</div>
+</section>
+<section id="io-set-up" class="level5">
+<h5 class="anchored" data-anchor-id="io-set-up"><strong>I/O Set Up:</strong></h5>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Device</strong></td>
+<td><strong>COM Port</strong></td>
+<td><strong>Baud Rate</strong></td>
+<td><strong>Notes</strong></td>
+</tr>
+<tr class="even">
+<td>K-Sync Trigger</td>
+<td>1</td>
+<td>4800</td>
+<td>RS232 trigger from K-Sync&nbsp; “EK 60” Module, split off the serial cable to the ship’s EK80 PC</td>
+</tr>
+<tr class="odd">
+<td>POS-MV</td>
+<td>8</td>
+<td>57600</td>
+<td>KM Binary from COM2 on POSMV</td>
+</tr>
+<tr class="even">
+<td>Depth Output</td>
+<td>11</td>
+<td>4800</td>
+<td>Outputs DBT telegram to SCS, primarily so SCS can relay to EAL for false bottom removal</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sensor-installation" class="level5">
+<h5 class="anchored" data-anchor-id="sensor-installation"><strong>Sensor Installation:</strong></h5>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td><strong>Port</strong></td>
+</tr>
+<tr class="even">
+<td>KM Binary</td>
+<td>POS-MV (COM4)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sensor-configuration" class="level5">
+<h5 class="anchored" data-anchor-id="sensor-configuration"><strong>Sensor Configuration:</strong></h5>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 59%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Sensor</strong></td>
+<td><strong>Source</strong></td>
+</tr>
+<tr class="even">
+<td>Drop Keel<br>
+[CONFIRM]</td>
+<td><p>Manual depth of:<br>
+Retracted = 5.9 m</p>
+<p>Intermediate = 7.35 m</p>
+<p>Extended = 9.1 m</p></td>
+</tr>
+<tr class="odd">
+<td>Heading</td>
+<td>MotionBinaryEx from KM Binary From POSMV</td>
+</tr>
+<tr class="even">
+<td>Course</td>
+<td>SpeedGround from KM Binary From POSMV</td>
+</tr>
+<tr class="odd">
+<td>Position</td>
+<td>Position from KM Binary from POS MV</td>
+</tr>
+<tr class="even">
+<td>Speed</td>
+<td>SpeedGround from KM Binary from POS MV</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="set-up-user-setting-profiles" class="level5">
+<h5 class="anchored" data-anchor-id="set-up-user-setting-profiles">Set up User Setting Profiles:</h5>
+<p>Create two user setting profiles. One called <strong><code>[SURVEY NAME]_Day</code></strong>and one called <strong><code>[SURVEY NAME]_Night</code></strong> (2407RL_Night). Set up all day user settings then save as a user profile. Set up all night settings then save as a user profile.</p>
+<p><strong>Day User Settings:</strong></p>
+<ul>
+<li><p>18-kHz EK80:&nbsp;</p>
+<ul>
+<li>CW mode&nbsp;</li>
+<li>100-m display range</li>
+<li>Auto recording range</li>
+<li>Bottom detection enabled down to 4000 m</li>
+</ul></li>
+<li><p>EC150-3C:&nbsp;</p>
+<ul>
+<li><p>ADCP mode</p></li>
+<li><p>FM pulses</p></li>
+<li><p>Logging range = 300 m</p></li>
+</ul></li>
+</ul>
+<p><img src="images/18 kHz Day.JPG" class="img-fluid"></p>
+<p><strong>Night User Settings:</strong></p>
+<p>18-kHz EK80:&nbsp;</p>
+<ul>
+<li>CW mode&nbsp;</li>
+<li>100-m display range</li>
+<li>Auto recording range</li>
+<li>Bottom detection enabled down to 4000 m</li>
+</ul>
+<p>EC150-3C:&nbsp;</p>
+<ul>
+<li>Echosounder mode</li>
+<li>CW pulses</li>
+<li>Logging range = 100 m</li>
+</ul>
+</section>
+</section>
+<section id="set-up-the-eal-on-the-ast-18-khz-pc" class="level4">
+<h4 class="anchored" data-anchor-id="set-up-the-eal-on-the-ast-18-khz-pc">Set up the EAL on the AST 18-kHz PC:</h4>
+<p>Open the EAL .exe file. For daytime, the EAL will be used to detect the seabed and adjust the logging and display range, but will not correct false bottoms.</p>
+<p><em>This has been working pretty well, and the EAL has been able to track the seabed pretty consistently, although sometimes it’s good to periodically verify that it’s detecting the bottom correctly. If not, the EAL’s Settings.txt file should be open in Notepad++, so open that and temporarily change the 18-kHz Max Logging Range to just below the <strong>actual seabed depth</strong> and save the text file. Once the EAL detects the correct depth, change the Max Logging Range back to 4000 m and save the text file.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/18 kHz EAL.JPG" class="img-fluid figure-img" width="611"></p>
+<figcaption>EAL Settings for the AST 18 kHz PC</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="settings-for-the-ship-ek80-pc" class="level3">
+<h3 class="anchored" data-anchor-id="settings-for-the-ship-ek80-pc">3.4. Settings for the Ship EK80 PC:</h3>
+<p>The ship’s EK80 PC is used to operate the 38, 70, 120, 200, and 333-kHz WBTs. Create two user setting profiles. One called <strong><code>[SURVEY NAME]_Day</code></strong>and one called <strong><code>[SURVEY NAME]_Night</code></strong> (2407RL_Night).</p>
+<section id="set-save-location-1" class="level4">
+<h4 class="anchored" data-anchor-id="set-save-location-1">Set Save Location:</h4>
+<p>The Ship EK80 PC is set to save files to the largest local computer dive. The EK80 software is set to record to the ship’s “Big Data” drive (E:\2407RL\RAW\).</p>
+</section>
+<section id="installation-settings-1" class="level4">
+<h4 class="anchored" data-anchor-id="installation-settings-1"><strong>Installation Settings:</strong></h4>
+<section id="transducer-installation-1" class="level5">
+<h5 class="anchored" data-anchor-id="transducer-installation-1"><strong>Transducer Installation:</strong></h5>
+<p>All transducers are set to a “Drop Keel” mounting installation, then the X and Y-Offset parameters set to the Translated Frame as specified in the IMTEC survey:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong>Transducer</strong></td>
+<td><strong>X Offset</strong></td>
+<td><strong>Y Offset</strong></td>
+<td><strong>Z Offset</strong></td>
+</tr>
+<tr class="even">
+<td>ES38-7 (SN 337)</td>
+<td>-8.65</td>
+<td>0.02</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>ES70-7C (SN 233)</td>
+<td>-9.82</td>
+<td>-0.10</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>ES120-7C (SN 783)</td>
+<td>-9.72</td>
+<td>0.20</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>ES200-7C (SN 513)</td>
+<td>-9.97</td>
+<td>0.19</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>ES333-7C (SN 124)</td>
+<td>-8.27</td>
+<td>0.02</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>EC150-3C (SN 120)</td>
+<td>-10.28</td>
+<td>0.02</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="io-setup" class="level5">
+<h5 class="anchored" data-anchor-id="io-setup"><strong>I/O Setup:</strong></h5>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 19%">
+<col style="width: 21%">
+<col style="width: 42%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Device</strong></td>
+<td><strong>COM Port</strong></td>
+<td><strong>Baud Rate</strong></td>
+<td><strong>Notes</strong></td>
+</tr>
+<tr class="even">
+<td>K-Sync</td>
+<td>1</td>
+<td>4800</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Gyro</td>
+<td>2</td>
+<td>4800</td>
+<td>Fast setting from Gyro</td>
+</tr>
+<tr class="even">
+<td>GPS in</td>
+<td>3</td>
+<td>4800</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>POS MV</td>
+<td>4</td>
+<td>57600</td>
+<td>KM Binary from COM2 on POSMV</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sensor-installation-1" class="level5">
+<h5 class="anchored" data-anchor-id="sensor-installation-1"><strong>Sensor Installation</strong></h5>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 42%">
+<col style="width: 21%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td><strong>Port/IP Address</strong></td>
+<td><strong>Baud Rate</strong></td>
+</tr>
+<tr class="even">
+<td>ITI-FS</td>
+<td>ITI From SCS (ethernet input)</td>
+<td>NA</td>
+</tr>
+<tr class="odd">
+<td>KM Binary</td>
+<td>POS-MV (COM4)</td>
+<td>57600</td>
+</tr>
+<tr class="even">
+<td>Gyro</td>
+<td>Gyro (COM2)</td>
+<td>4800</td>
+</tr>
+<tr class="odd">
+<td>Sound Velocity from SCS</td>
+<td><p>Local port: 20004</p>
+<p>Local IP Address:</p>
+<p>192.168.123.20</p>
+<p>Remote IP Address,</p>
+<p>10.48.23.223</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sensor-configuration-1" class="level5">
+<h5 class="anchored" data-anchor-id="sensor-configuration-1">Sensor Configuration</h5>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 59%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Sensor</strong></td>
+<td><strong>Source</strong></td>
+</tr>
+<tr class="even">
+<td>Attitude</td>
+<td>MotionBinaryEx from KM Binary From POSmv</td>
+</tr>
+<tr class="odd">
+<td>Drop Keel</td>
+<td><p>Manual depth of:</p>
+<p>Retracted = 5.9 m;</p>
+<p>Intermediate = 7.35 m;</p>
+<p>Extended = 9.1 m.</p></td>
+</tr>
+<tr class="even">
+<td>Heading</td>
+<td>MotionBinaryEx from KM Binary From POSmv</td>
+</tr>
+<tr class="odd">
+<td>Course</td>
+<td>SpeedGround from KM Binary From POSmv</td>
+</tr>
+<tr class="even">
+<td>Position</td>
+<td>Position from KM Binary from POS MV</td>
+</tr>
+<tr class="odd">
+<td>Speed</td>
+<td>SpeedGround from KM Binary from POS MV</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="set-up-user-setting-profiles-1" class="level5">
+<h5 class="anchored" data-anchor-id="set-up-user-setting-profiles-1">Set up User Setting Profiles:</h5>
+<p>Create two user setting profiles. One called <strong><code>[SURVEY NAME]_Day</code></strong>and one called <strong><code>[SURVEY NAME]_Night</code></strong> (2407RL_Night). Set up all day user settings then save as a user profile. Set up all night settings then save as a user profile.</p>
+<p><strong>Day User Settings:</strong></p>
+<ul>
+<li><p>Display colors: -70 dB (top) and -50dB (bottom)</p></li>
+<li><p>Ping Mode: Maximum</p></li>
+<li><p>CW Mode</p></li>
+<li><p>Individual ranges: Output -&gt; File Setup -&gt; Raw Data -&gt; Channel Recording Range -&gt; select <code>Individual</code></p></li>
+<li><p>Logging Ranges:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong>Frequency (kHz)</strong></td>
+<td>38</td>
+<td>70</td>
+<td>120</td>
+<td>200</td>
+<td>333</td>
+</tr>
+<tr class="even">
+<td><strong>Max Logging Range (m)</strong></td>
+<td>500</td>
+<td>500</td>
+<td>500</td>
+<td>300</td>
+<td>200</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Normal Operation Settings:</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/EK80 Day.JPG" class="img-fluid figure-img"></p>
+<figcaption>EK80 Day Settings on Ship PC</figcaption>
+</figure>
+</div>
+<p><strong>Night User Settings:</strong></p>
+<ul>
+<li><p>Display colors: -70 dB (top) and -50dB (bottom)</p></li>
+<li><p>Ping Mode: Maximum</p></li>
+<li><p>FM Mode</p></li>
+<li><p>Logging Range set to 100 m. The EK80s will not be controlled by the EAL during nighttime operations, as will be recording data to 100 m, independent of the bottom depth.</p></li>
+</ul>
+</section>
+</section>
+<section id="set-up-the-eal-on-the-ship-ek80-pc" class="level4">
+<h4 class="anchored" data-anchor-id="set-up-the-eal-on-the-ship-ek80-pc">Set up the EAL on the Ship EK80 PC:</h4>
+<p>During daytime, the EK80 software is remotely controlled by the EAL on the ASUS5 laptop (aft desk in Acoustic’s Lab), and as such is configured to act as a server (Installation → Remote Control → As Server → Local IP Address → select IP of adapter connected to ship’s Science network). The EAL will adjust the frequency-dependent display and logging ranges based on the seabed depth, and the ping rate via the depth input to the K-Sync.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/EK80 EAL.JPG" class="img-fluid figure-img" width="569"></p>
+<figcaption>EAL Settings on ASUS 5 Laptop for the Ship EK80 PC.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+</section>
+<section id="setting-up-k-sync" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-k-sync">4. Setting up K-Sync:</h2>
+<p>The K-Sync is sending trigger signals to the EK80s, ME70, MS70, SX90, and ADCP. All sounders are placed into a single group, and thus should transmit simultaneously. However some sounders may not transmit on every trigger depending on logging and display range settings.&nbsp;</p>
+<p>The K-Sync modules can be configured by going to Settings–&gt;Installation then entering ‘simrad0’ as the password. In there, the KSync modules are configured as:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 28%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Module #</strong></td>
+<td><strong>Module Name</strong></td>
+<td><strong>Output Type</strong></td>
+<td><strong>Echosounder</strong></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>EK 60</td>
+<td>RS232</td>
+<td>18-kHz EK80 PC</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>ME70</td>
+<td>RS232</td>
+<td>ME70 PC</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>EK 80 &amp; MS 70</td>
+<td>RS232</td>
+<td>MS70 PC</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>SX 90</td>
+<td>RS232</td>
+<td>SX90 PC</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>OS 75</td>
+<td>TTL</td>
+<td>OS 75</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>EK80 Mux</td>
+<td>TTL</td>
+<td>EK80 WBT Auxiliary</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>EK60 Mux</td>
+<td>TTL</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>8&nbsp;</td>
+<td>EK60_Aux</td>
+<td>TTL</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The K-Sync will adjust the trigger period based on a depth value sent by the EAL, which should be indicated by the “Current depth” reading. If the EAL is not on (e.g., nighttime), the K-Sync should be set for “Use manual depth” with a specified depth of <strong>150 m</strong>.</p>
+<p>The EK80s are triggered via RS-232 signals input to their respective operating PCs.</p>
+</section>
+<section id="setting-up-the-trawl-pc" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-the-trawl-pc">5. Setting up the Trawl PC:</h2>
+<p>The trawl database is located on the ship’s computer on the forward-starboard wall in the Chem lab. That computer has a SyncBack profile which backs up the trawl database and TDR data to the SURVEY directory on our Echoview PC (C:\SURVEY\2407RL). It also backs up plotSurvey and checkTrawls from the Echoview PC to their trawl PC, so that they can see the latest results after we knit those scripts.</p>
+<ul>
+<li><p>Set up Syncback Profiles to do the following:</p>
+<ul>
+<li><p>Backs up trawl database and TDR data to SURVEY drive on Echoview PC</p></li>
+<li><p>Backs up plotSurvey and checkTrawls from Echoview PC to Trawl PC</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="draft-setting-up-td50" class="level2">
+<h2 class="anchored" data-anchor-id="draft-setting-up-td50">6. [DRAFT] Setting up TD50</h2>
+</section>
+<section id="draft-setting-up-sx90" class="level2">
+<h2 class="anchored" data-anchor-id="draft-setting-up-sx90">7. [DRAFT] Setting up SX90</h2>
+<ul>
+<li>Syncback backs up SX90 data from 4-TB external HDD to the NAS</li>
+</ul>
+</section>
+<section id="draft-setting-up-me70" class="level2">
+<h2 class="anchored" data-anchor-id="draft-setting-up-me70">8. [DRAFT] Setting up ME70</h2>
+<ul>
+<li>Syncback backs up ME70 data from 4-TB external HDD to the NAS</li>
+</ul>
+</section>
+<section id="draft-setting-up-ms70" class="level2">
+<h2 class="anchored" data-anchor-id="draft-setting-up-ms70">9. [DRAFT] Setting up MS70</h2>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/nmfs-swfsc-ast\.github\.io\/AST-Lab-Manual\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/noaa-ship-cps-surveys.html" class="pagination-link" aria-label="NOAA Ship CPS Surveys">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">NOAA Ship CPS Surveys</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/cps-dailyops.html" class="pagination-link" aria-label="Daily Acoustic Operations">
+        <span class="nav-page-text">Daily Acoustic Operations</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-1.0</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/edit/main/content/cps-setup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/blob/main/content/cps-setup.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

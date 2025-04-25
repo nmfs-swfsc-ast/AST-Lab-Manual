@@ -1,43 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/index.html</loc>
-    <lastmod>2025-04-22T18:44:28.164Z</lastmod>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/images/Readme.html</loc>
+    <lastmod>2025-04-25T00:47:36.498Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/background.html</loc>
-    <lastmod>2025-04-22T18:44:28.143Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/acquisition.html</loc>
-    <lastmod>2025-04-22T18:44:28.143Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/processing.html</loc>
-    <lastmod>2025-04-22T18:44:28.160Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/identification.html</loc>
-    <lastmod>2025-04-22T18:44:28.144Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/trawl-selection.html</loc>
-    <lastmod>2025-04-22T18:44:28.160Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/biomass.html</loc>
-    <lastmod>2025-04-22T18:44:28.144Z</lastmod>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/cps-dailyops.html</loc>
+    <lastmod>2025-04-25T00:47:36.479Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/references.html</loc>
-    <lastmod>2025-04-22T18:44:28.160Z</lastmod>
+    <lastmod>2025-04-25T00:47:36.498Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/AST-Lab-Manual.pdf</loc>
-    <lastmod>2025-04-22T18:49:50.877Z</lastmod>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/trawl-selection.html</loc>
+    <lastmod>2025-04-25T00:47:36.498Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/AST-Lab-Manual.docx</loc>
-    <lastmod>2025-04-22T18:49:53.434Z</lastmod>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/orientation.html</loc>
+    <lastmod>2025-04-25T00:47:36.497Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/identification.html</loc>
+    <lastmod>2025-04-25T00:47:36.480Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/nearshore-cps-surveys.html</loc>
+    <lastmod>2025-04-25T00:47:36.497Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/tech-tank-calibrations.html</loc>
+    <lastmod>2025-04-25T00:47:36.498Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/add-content.html</loc>
+    <lastmod>2025-04-25T00:47:36.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/cps-setup.html</loc>
+    <lastmod>2025-04-25T00:47:36.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/code.html</loc>
+    <lastmod>2025-04-25T00:47:36.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/publishing.html</loc>
+    <lastmod>2025-04-25T00:47:36.498Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/biomass.html</loc>
+    <lastmod>2025-04-25T00:47:36.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/noaa-ship-cps-surveys.html</loc>
+    <lastmod>2025-04-25T00:47:36.497Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/acknowledgements.html</loc>
+    <lastmod>2025-04-25T00:47:36.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/figures_and_tables.html</loc>
+    <lastmod>2025-04-25T00:47:36.480Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/processing.html</loc>
+    <lastmod>2025-04-25T00:47:36.497Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/workflow.html</loc>
+    <lastmod>2025-04-25T00:47:36.498Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/calibrations-overview.html</loc>
+    <lastmod>2025-04-25T00:47:36.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/preparation.html</loc>
+    <lastmod>2025-04-25T00:47:36.497Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/acquisition.html</loc>
+    <lastmod>2025-04-25T00:47:36.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/adding-refs.html</loc>
+    <lastmod>2025-04-25T00:47:36.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/acoustic-trawl.html</loc>
+    <lastmod>2025-04-25T00:47:36.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/index.html</loc>
+    <lastmod>2025-04-25T00:47:36.502Z</lastmod>
   </url>
 </urlset>

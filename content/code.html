@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Survey Background – AST Lab Manual</title>
+<title>Rendering with Code – AST Lab Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
 }
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,8 +63,6 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/acquisition.html" rel="next">
-<link href="../index.html" rel="prev">
 <link href="../assets/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -60,7 +72,7 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-206f8245a227ada7226b6ba55fd4dbfa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d56b5d7ed9843feede178ee1bedb3dd0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -101,7 +113,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/background.html"><span class="chapter-title">Survey Background</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Rendering with Code</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,34 +126,13 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
       <img src="https://media.fisheries.noaa.gov/dam-migration-miss/md_YPyChZ2sgSi5.png?1595971802" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-    <div class="sidebar-title mb-0 py-0">
-      <a href="../">AST Lab Manual</a> 
-        <div class="sidebar-tools-main tools-wide">
+      <div class="sidebar-tools-main">
     <a href="https://www.fisheries.noaa.gov/west-coast/science-data/advanced-survey-technologies-assessments-california-current-ecosystem" title="SWFSC AST" class="quarto-navigation-tool px-1" aria-label="SWFSC AST"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="../AST-Lab-Manual.pdf">
-              <i class="bi bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="../AST-Lab-Manual.docx">
-              <i class="bi bi-file-word pe-1"></i>
-            Download Docx
-            </a>
-          </li>
-      </ul>
-    </div>
 </div>
-    </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -158,40 +149,68 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/background.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Survey Background</span></a>
+  <a href="../content/orientation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Orientation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
+ <span class="menu-text">Program Orientation</span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../content/acoustic-trawl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acoustic Trawl Surveys</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../content/noaa-ship-cps-surveys.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NOAA Ship CPS Surveys</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/acquisition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Acquisition</span></a>
+  <a href="../content/cps-setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acoustics Set Up</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/processing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Processing</span></a>
+  <a href="../content/cps-dailyops.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Daily Acoustic Operations</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Nearshore CPS Surveys</span></span>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../content/calibrations-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Calibrations Overview</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/identification.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Backscatter Identification</span></a>
+  <a href="../content/tech-tank-calibrations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tech Tank Calibration Set Up</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/trawl-selection.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Trawl Selection</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/biomass.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reporting</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -199,36 +218,20 @@ div.csl-indent {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#who-conducts-the-survey" id="toc-who-conducts-the-survey" class="nav-link active" data-scroll-target="#who-conducts-the-survey">Who conducts the survey?</a></li>
-  <li><a href="#where-does-the-survey-take-place" id="toc-where-does-the-survey-take-place" class="nav-link" data-scroll-target="#where-does-the-survey-take-place">Where does the survey take place?</a></li>
-  <li><a href="#research-objectives" id="toc-research-objectives" class="nav-link" data-scroll-target="#research-objectives">Research objectives:</a></li>
-  <li><a href="#survey-history" id="toc-survey-history" class="nav-link" data-scroll-target="#survey-history">Survey History:</a></li>
-  <li><a href="#code-of-conduct" id="toc-code-of-conduct" class="nav-link" data-scroll-target="#code-of-conduct">Code of Conduct</a>
-  <ul class="collapse">
-  <li><a href="#what-are-codes-of-conduct" id="toc-what-are-codes-of-conduct" class="nav-link" data-scroll-target="#what-are-codes-of-conduct">What are Codes of Conduct?</a></li>
-  <li><a href="#code-of-conduct-from-the-nmfs-opensci-github." id="toc-code-of-conduct-from-the-nmfs-opensci-github." class="nav-link" data-scroll-target="#code-of-conduct-from-the-nmfs-opensci-github.">Code of Conduct from the nmfs-opensci GitHub.</a></li>
-  </ul></li>
-  <li><a href="#noaa-fisheries-open-science-code-of-conduct" id="toc-noaa-fisheries-open-science-code-of-conduct" class="nav-link" data-scroll-target="#noaa-fisheries-open-science-code-of-conduct">NOAA Fisheries Open Science Code of Conduct</a>
-  <ul class="collapse">
-  <li><a href="#our-pledge" id="toc-our-pledge" class="nav-link" data-scroll-target="#our-pledge">Our Pledge</a></li>
-  <li><a href="#our-standards" id="toc-our-standards" class="nav-link" data-scroll-target="#our-standards">Our Standards</a></li>
-  <li><a href="#our-responsibilities" id="toc-our-responsibilities" class="nav-link" data-scroll-target="#our-responsibilities">Our Responsibilities</a></li>
-  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a></li>
-  <li><a href="#enforcement" id="toc-enforcement" class="nav-link" data-scroll-target="#enforcement">Enforcement</a></li>
-  <li><a href="#attribution" id="toc-attribution" class="nav-link" data-scroll-target="#attribution">Attribution</a></li>
-  </ul></li>
+  <li><a href="#modify-the-github-action" id="toc-modify-the-github-action" class="nav-link active" data-scroll-target="#modify-the-github-action">Modify the GitHub Action</a></li>
+  <li><a href="#render-locally-and-publish-to-gh-pages-branch" id="toc-render-locally-and-publish-to-gh-pages-branch" class="nav-link" data-scroll-target="#render-locally-and-publish-to-gh-pages-branch">Render locally and publish to gh-pages branch</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/edit/main/content/background.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/blob/main/content/background.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/edit/main/content/code.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/blob/main/content/code.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Survey Background</span></h1>
+<h1 class="title">Rendering with Code</h1>
 </div>
 
 
@@ -245,115 +248,34 @@ div.csl-indent {
 </header>
 
 
-<section id="who-conducts-the-survey" class="level2">
-<h2 class="anchored" data-anchor-id="who-conducts-the-survey">Who conducts the survey?</h2>
-<p>The California Current Ecosystem Survey is conducted by researchers at the NOAA Southwest Fisheries Science Center from the Fisheries Resources Division. The survey is also made possible by volunteers from additional NOAA line offices and science centers, universities, international partners, NOAA interns, and inter-agency employees.</p>
-</section>
-<section id="where-does-the-survey-take-place" class="level2">
-<h2 class="anchored" data-anchor-id="where-does-the-survey-take-place">Where does the survey take place?</h2>
-<div id="fig-survey" class="quarto-layout-panel">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-survey-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/clipboard-1472872065.png" style="height:6in" class="figure-img"></p>
-<figcaption>Sardine distribution</figcaption>
-</figure>
+<p>You can have code (R, Python or Julia) in your qmd file. You will need to have these installed on your local computer, but presumably you do already if you are adding code to your qmd files.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">35</span>, <span class="dv">45</span>, <span class="dv">55</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">20</span>, <span class="dv">14</span>, <span class="dv">32</span>, <span class="dv">22</span>, <span class="dv">38</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(x <span class="sc">~</span> y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = x ~ y)
+
+Coefficients:
+(Intercept)            y  
+      1.056        1.326  </code></pre>
 </div>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/fig_survey_map.png" style="height:6in" class="figure-img"></p>
-<figcaption>General sampling scheme</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-survey-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.1: On left, a conceptual spring (shaded region) and summer (hashed region) distributions of potential habitat for the northern stock of Pacific Sardine along the west coasts of Mexico, the United States, and Canada. On right, the general sampling scheme of planned core-region (solid black lines), adaptive (dashed red lines), and nearshore lines (pink).
-</figcaption>
-</figure>
-</div>
+<section id="modify-the-github-action" class="level2">
+<h2 class="anchored" data-anchor-id="modify-the-github-action">Modify the GitHub Action</h2>
+<p>You will need to change the GitHub Action in <code>.github/workflows</code> to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in <code>code.qmd</code>. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.</p>
+<p>If getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the <code>gh-pages</code> branch. If you do this, make sure to delete or rename the GitHub Action to something like</p>
+<pre><code>render-and-publish.old_yml</code></pre>
+<p>so GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it.</p>
 </section>
-<section id="research-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="research-objectives">Research objectives:</h2>
-<ol type="1">
-<li>Acoustically map the distributions, measure the species compositions and size-frequency distributions, and estimate the abundances and biomasses of CPS present in the survey area, e.g., Pacific Sardine Sardinops sagax, Northern Anchovy (<em>Engraulis mordax</em>), Pacifc Herring (<em>Clupea pallasii</em>), Round Herring (<em>Etrumeus acuminatus</em>), Pacific Mackerel (<em>Scomber japonicus</em>), and Jack Mackerel (<em>Trachurus symmetricus</em>)</li>
-<li>Characterize and investigate linkages to their biotic and abiotic environments</li>
-<li>Gather information regarding their life histories</li>
-<li>Compare the species composition and size distributions of trawls and near shore vessel purse seine sets.</li>
-</ol>
-</section>
-<section id="survey-history" class="level2">
-<h2 class="anchored" data-anchor-id="survey-history">Survey History:</h2>
-<p>The SWFSC’s ATM surveys of CPS in the CCE began in 2006 with a focus on the northern stock of Pacific Sardine. Quickly the annual surveys demonstrated valuable ecosystem insights. Since then, they have expanded in scope and objectives to include the larger forage-fish assemblage and krill. This evolution, and the migratory behavior of Pacific Sardine, serve to explain the present survey region and design.</p>
-<p>“Collectively, these annual or bi-annual ATM surveys provide a unique insight into the dynamics of forage fshes in the CCE, including their distributions, abundances, interactions, and environments. For example, results from 2006 through 2013 indicate that Pacifc Sardine dominated the CPS assemblage, but their biomass was declining (Demer and Zwolinski, 2012; Zwolinski and Demer, 2012) and their seasonal migration was contracting (Zwolinski et al., 2014). Meanwhile, harvest rates for the declining stock increased (Demer and Zwolinski, 2017), and the total forage-fsh biomass decreased to less than 200,000 t in 2014 and 2015 (Figs. 36, 37). The U.S. fshery for Pacifc Sardine was closed in 2015 (National Marine Fisheries Service, 2015), and there were reports of mass strandings, deaths, and reproductive failures in Brown Pelicans (Pelecanus occidentalis3), Common Murres (Uria aalge), Brandt’s Cormorants (Phalacrocorax penicillatus), and California sea lions (Zalophus californianus4) (McClatchie et al., 2016), all of which depend on forage species. Since 2016, the forage-fsh biomass has increased, mainly due to resurgences of Jack Mackerel and the now dominant central stock of Northern Anchovy (Figs. 36, 37), whose biomass primarily (2,466,108 t, or 94% of the total estimate biomass) occurred in U.S. waters. Between the summers of 2018 and 2021, the biomass of the southern stock of Pacifc Sardine in U.S. waters has increased from 33,093 to 45,332 t.”<span class="citation" data-cites="stierhoff2024">(<a href="references.html#ref-stierhoff2024" role="doc-biblioref">Stierhoff et al. 2024</a>)</span></p>
-</section>
-<section id="code-of-conduct" class="level2">
-<h2 class="anchored" data-anchor-id="code-of-conduct">Code of Conduct</h2>
-<section id="what-are-codes-of-conduct" class="level3">
-<h3 class="anchored" data-anchor-id="what-are-codes-of-conduct">What are Codes of Conduct?</h3>
-<p>Codes of Conduct are voluntary sets of rules that assist creators, developers, and users of code and data with data protection compliance and accountability in specific sectors or relating to particular processing operations.</p>
-<p>Codes can help organizations to ensure all participants follow best practices and rules designed specifically for their sector or processing operations, thus enhancing compliance and collaboration. They are developed and managed by an association or other body (the ‘Code Owner’) which is representative of a sector (or category of data controllers or processors), with the expert and sectoral knowledge of how to enhance data protection in their area.</p>
-</section>
-<section id="code-of-conduct-from-the-nmfs-opensci-github." class="level3">
-<h3 class="anchored" data-anchor-id="code-of-conduct-from-the-nmfs-opensci-github."><a href="https://github.com/nmfs-opensci/.github/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> from the <a href="https://nmfs-opensci.github.io/">nmfs-opensci GitHub</a>.</h3>
-</section>
-</section>
-<section id="noaa-fisheries-open-science-code-of-conduct" class="level1">
-<h1>NOAA Fisheries Open Science Code of Conduct</h1>
-<p>This code of conduct was developed and adapted from the Atom code of conduct in October 2021.</p>
-<section id="our-pledge" class="level2">
-<h2 class="anchored" data-anchor-id="our-pledge">Our Pledge</h2>
-<p>In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>
-</section>
-<section id="our-standards" class="level2">
-<h2 class="anchored" data-anchor-id="our-standards">Our Standards</h2>
-<p>Examples of behavior that contributes to creating a positive environment include:</p>
-<ul>
-<li>Using welcoming and inclusive language</li>
-<li>Being respectful of differing viewpoints and experiences</li>
-<li>Gracefully accepting constructive criticism</li>
-<li>Focusing on what is best for the community</li>
-<li>Showing empathy towards other community members</li>
-</ul>
-<p>Examples of unacceptable behavior by participants include:</p>
-<ul>
-<li>The use of sexualized language or imagery and unwelcome sexual attention or advances</li>
-<li>Trolling, insulting/derogatory comments, and personal or political attacks</li>
-<li>Public or private harassment</li>
-<li>Publishing others’ private information, such as a physical or electronic address, without explicit permission</li>
-<li>Other conduct which could reasonably be considered inappropriate in a professional setting</li>
-</ul>
-</section>
-<section id="our-responsibilities" class="level2">
-<h2 class="anchored" data-anchor-id="our-responsibilities">Our Responsibilities</h2>
-<p>Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.</p>
-<p>Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.</p>
-</section>
-<section id="scope" class="level2">
-<h2 class="anchored" data-anchor-id="scope">Scope</h2>
-<p>This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.</p>
-</section>
-<section id="enforcement" class="level2">
-<h2 class="anchored" data-anchor-id="enforcement">Enforcement</h2>
-<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. Further details of specific enforcement policies may be posted separately.</p>
-</section>
-<section id="attribution" class="level2">
-<h2 class="anchored" data-anchor-id="attribution">Attribution</h2>
-<p>This Code of Conduct is adapted from the <a href="https://contributor-covenant.org">Contributor Covenant</a>, version 1.4, available at <a href="https://contributor-covenant.org/version/1/4/">https://contributor-covenant.org/version/1/4</a></p>
+<section id="render-locally-and-publish-to-gh-pages-branch" class="level2">
+<h2 class="anchored" data-anchor-id="render-locally-and-publish-to-gh-pages-branch">Render locally and publish to gh-pages branch</h2>
+<p>To render locally and push up to the <code>gh-pages</code> branch, open a terminal window and then <code>cd</code> to the directory with the Quarto project. Type this in the terminal:</p>
+<pre><code>quarto render gh-pages</code></pre>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-stierhoff2024" class="csl-entry" role="listitem">
-Stierhoff, Kevin L., Juan P. Zwolinski, Josiah S. Renfree, and David A. Demer. 2024. <span>“Distribution, Biomass, and Demographics of Coastal Pelagic Fishes in the California Current Ecosystem During Summer 2023 Based on Acoustic Trawl Sampling.”</span> <em>NOAA National Marine Fisheries Service Southwest Fisheries Science Center</em>. <a href="https://doi.org/10.25923/1VGS-SF98">https://doi.org/10.25923/1VGS-SF98</a>.
-</div>
-</div>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -774,18 +696,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Welcome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../content/acquisition.html" class="pagination-link" aria-label="Data Acquisition">
-        <span class="nav-page-text"><span class="chapter-title">Data Acquisition</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -794,7 +704,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/edit/main/content/background.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/blob/main/content/background.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/edit/main/content/code.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/blob/main/content/code.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
