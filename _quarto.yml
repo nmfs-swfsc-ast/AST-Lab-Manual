@@ -6,18 +6,18 @@ website: #book:
   title: "AST Lab Manual" 
   site-url: "https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/" 
   repo-url: "https://github.com/nmfs-swfsc-ast/AST-Lab_Manual"
-  repo-actions: [] #[edit, source, issue]
+  repo-actions: [edit, source, issue]
   favicon: assets/favicon.ico
 #  downloads: [pdf, docx]
   search: true
-  page-footer:
-    right:
-      - text: "Edit this page"
-        href: "https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/content/"
-      - text: "View source"
-        href: "https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/content/"
-      - text: "Report an issue"
-        href: "https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/issues/new"
+#  page-footer:
+#    right:
+#      - text: "Edit this page"
+#        href: "https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/content/"
+#      - text: "View source"
+#        href: "https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/content/"
+#      - text: "Report an issue"
+#        href: "https://github.com/nmfs-swfsc-ast/AST-Lab_Manual/issues/new"
         
 #  author:
 #    - name: Alice Beittel
@@ -49,6 +49,8 @@ website: #book:
       - icon: globe
         href: "https://www.fisheries.noaa.gov/west-coast/science-data/advanced-survey-technologies-assessments-california-current-ecosystem"
         text: "SWFSC AST"
+      - icon: github
+        href: "https://github.com/nmfs-swfsc-ast/AST-Lab-Manual" 
     
     style: "docked"
     search: true
