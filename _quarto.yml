@@ -78,20 +78,16 @@ bibliography: [content/references.bib]
 execute:
   echo: false
   code-overflow: wrap
-
+    
 format:
-#  titlepage-pdf:
-#    documentclass: scrbook
-#    classoption: ["oneside", "open=any"]
-#    titlepage: "plain"
-#    keep-tex: true
-#  docx:
-#    toc: true
-#    toc-depth: 2
-#    reference-doc: template.docx
-#    always_allow_html: true
   html:
-    theme: [cosmo, assets/theme.scss] 
+    link-external-icon: false
+    link-external-newwindow: true
+    theme:
+      light: [cosmo, theme.scss] 
+      dark: [cosmo, theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
     toc: true
     toc-depth: 3
     number-sections: false
