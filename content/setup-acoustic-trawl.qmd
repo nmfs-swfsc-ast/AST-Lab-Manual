@@ -4,12 +4,12 @@ title: "Set Up for Acoustic Trawl Surveys"
 
 In this section you will find operating instructions for setting up the acoustic systems on NOAA Ships and chartered fishing vessels to conduct CPS acoustic-trawl survey work.
 
-### Shipboard Acoustic Systems 
+### [Shipboard Acoustic Systems](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-shipacoustics.html) 
 
-### Shipboard UCTD System
+### [Shipboard UCTD System](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-shipUCTD.html)
 
-### Shipboard Trawling
+### [Shipboard Trawling](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-shiptrawling.html)
 
-### Nearshore Acoustic Systems
+### [Nearshore Acoustic Systems](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-nearshoreacoustics.html)
 
-### Nearshore UCTD System
+### [Nearshore UCTD System](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-nearshoreUCTD.html)
