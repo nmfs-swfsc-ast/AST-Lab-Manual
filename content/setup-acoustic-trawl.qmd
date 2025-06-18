@@ -1,0 +1,15 @@
+---
+title: "Set Up for Acoustic Trawl Surveys"
+---
+
+In this section you will find operating instructions for setting up the acoustic systems on NOAA Ships and chartered fishing vessels to conduct CPS acoustic-trawl survey work.
+
+### Shipboard Acoustic Systems 
+
+### Shipboard UCTD System
+
+### Shipboard Trawling
+
+### Nearshore Acoustic Systems
+
+### Nearshore UCTD System

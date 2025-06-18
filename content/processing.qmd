@@ -1,16 +1,36 @@
 ---
-title: Data Processing
+title: Acoustic Data Processing
 ---
 
-After data aqusition, we identify acoustic echos of schooling CPS using a semi-automated data processing algorithm using Echoview software and in-house `Posit` code in the `estimATM` [repository](https://github.com/kstierhoff/estimATM). With Echoview, we extract the backscatter of swim bladder fish and process using soundspeed and echosounder calibration values housed inside an Echoview Calibration Supplement (`.ecs)` file. The Echoview filters and thresholds were based on a sub-sample of echoes from randomly selected CPS schools. We complete the processing with the `estimATM` package in `extract_CPS_NASC.R`, where we further refine the backscatter selection to extract only CPS. Here we will cover the Echoview and `estimATM` semi-automated processing workflow.
+After data acquisition, we identify acoustic echos of schooling CPS using a semi-automated data processing algorithm using Echoview software and in-house `Posit` code in the `estimATM` [repository](https://github.com/kstierhoff/estimATM). With Echoview, we extract the backscatter of swim bladder fish and process using soundspeed and echosounder calibration values housed inside an Echoview Calibration Supplement (`.ecs)` file. The Echoview filters and thresholds were based on a sub-sample of echoes from randomly selected CPS schools. We complete the processing with the `estimATM` package in `extract_CPS_NASC.R`, where we further refine the backscatter selection to extract only CPS.
 
-### Data Processing Overview
+This page has two parts. **Part 1: How to Process** details the steps acousticians should follow to process raw acoustic data for CPS. **Part 2: What Happens During Processing** details the concepts and behind the scenes technical steps that happen during processing. Here we will cover the Echoview and `estimATM` semi-automated processing workflow.
+
+### Part 1: How to Process
+
+To process acoustic data for CPS, follow the steps in the [Acoustic Processing for CPS](https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?tab=t.0) document.
+
+The first portion of acoustic processing will take place in Echoview. As acoustician's we will do the following tasks in Echoview:
+
+-   Add data (.raw acoustic data, add Echoivew calibration files created from UCTD/CTD casts)
+
+-   Remove bad data regions
+
+-   Create Integration Stop/Start lines
+
+-   Produce csv and echogram image files containing swim bladdered fish backscatter
+
+The second portion of acoustic processing will take place using the nasc.R script in RStudio. As acoustician's we will do the following in RStudio :
+
+-   Select backscatter specific to CPS and remove non-CPS backscatter
+
+-   Produce csv containing CPS-only backscatter and generalized echogram plots displaying regions removed/retained.
 
 ![Overview of CPS Acoustic Processing. Vessel position and attitude data is used from the POS MV (not shown).](images/processing-overview.JPG)
 
 ------------------------------------------------------------------------
 
-### Echoview Processing Workflow
+### **Part 2: What Happens During Processing**
 
 In Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process:
 
@@ -26,7 +46,7 @@ In Echoview, we organize, clean, and extract acoustic backscatter of swim bladde
 
 1.  Load RAW EK80 acoustic data and Echoview Calibration Supplement (`.ecs`)file into Echoview. The `.ecs` file contains soundspeed information calculated from the nearest (temporally and spatially) Underway CTD cast and echosounder calibration parameters. This file is used at the very beginning to convert from power to `Sv` (volume-backscattering coefficient).
 
-2.  Align sampling rate (time and geometery) from all transders to the 38 kHz `Sv`. Acousticians call this step 'matching geometry' of all `Sv` variables. Making sure pings are aligned from all echosounders is important for calculating the frequency response of backscatter in steps later on.
+2.  Align sampling rate (time and geometry) from all transducers to the 38 kHz `Sv`. Acousticians call this step 'matching geometry' of all `Sv` variables. Making sure pings are aligned from all echosounders is important for calculating the frequency response of backscatter in steps later on.
 
 3.  Remove passive-mode pings.
 
@@ -85,7 +105,7 @@ In Echoview, we organize, clean, and extract acoustic backscatter of swim bladde
 
 ------------------------------------------------------------------------
 
-### `Posit` Processing Workflow
+### `RStudio` Processing Workflow
 
 The exported `.csv` file from Echoview contains all swim bladder backscatter which can include non-target species such as rockfish. In order to further refine the acoustic classification to retain only CPS backscatter, the processed `.csv` file proceeds to the final semi-automated processing step in `Posit` using `extract_CPS_NASC.R`, an R-based tool in the `estimATM` package.
 

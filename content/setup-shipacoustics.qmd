@@ -1,0 +1,20 @@
+---
+title: "Shipboard Acoustic Systems"
+editor: visual
+---
+
+When arriving to the ship, the following systems will need to be configured for Coastal Pelagic Species survey work. Each link goes to a Google document that will contain the latest procedures. Any updates and changes to configurations should be made inside the Google document.
+
+### [Setting up the Echoview PC](https://docs.google.com/document/d/1Y5CusFhDtzmXd9uSKsmuxuv1_e89IZr_s9OJnlTO2bo/edit?tab=t.0)
+
+### [Setting up the EK80](https://docs.google.com/document/d/1gSM3gncXs9ib9nw_bhjDMKNhckJLiIoCP-6190KaKYw/edit?tab=t.0#heading=h.6lvb5klh6mga)
+
+### [Setting up K-Sync](https://docs.google.com/document/d/11Ju1Brnex81VLBV8OgXiM5tBz53O4Sp1SVi2GZ-nL0U/edit?tab=t.0)
+
+### [Setting up the SX90](https://docs.google.com/document/d/1xpK0V3BOowT4-tYYqCGjt3ZFu-4nDNDYrgcB812NmpE/edit?tab=t.0#heading=h.urmdmushrac6)
+
+### [Setting up the ME70](https://docs.google.com/document/d/1TgGsbRrscdD-WT3vjXsU-4lgMSGlYuhyzr5X2OQWEa8/edit?tab=t.0#heading=h.bp883fy6wafz)
+
+### [Setting up the MS70](https://docs.google.com/document/d/1_t72M_saCPSwSqS34yKpLjNTntlIcZF4ZPTUtmI2tTE/edit?tab=t.0#heading=h.s7w2kbfstp75)
+
+### [Setting up the TD50](https://docs.google.com/document/d/1TkTWt9I8nTIFthEA0Uye8jIfkkdUR4_NraJv81-_xLg/edit?tab=t.0#heading=h.yg0bv1i6n7c7)

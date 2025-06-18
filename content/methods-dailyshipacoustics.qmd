@@ -1,0 +1,14 @@
+---
+title: "Daily Shipboard Acoustic Operations"
+editor: visual
+---
+
+The Acoustician on watch should follow the daily tasks detailed in the [Daily Ship Acoustic Operations document](https://docs.google.com/document/d/1PiaZtjqStg0TtknSAm8bVK0JXxvjO31eomtCiPnFvgA/edit?tab=t.0).
+
+Troubleshooting:
+
+-   For issues on echosounder software, refer to the Set Up for Acoustic Trawl page and instillation settings for the echosounder.
+
+-   For issues on ship networking, contact the ship ET and ship survey technician
+
+-   The AST group chat is always available for additional techinical and emotional support :)

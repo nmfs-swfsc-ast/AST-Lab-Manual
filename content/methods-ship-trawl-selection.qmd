@@ -1,0 +1,31 @@
+---
+title: "Ship Trawl Selection"
+editor: visual
+bibliography: references.bib
+---
+
+Acoustic transects are processed for CPS backscatter on the day of acquisition and used to determine nightly trawl locations. This page will walk through the process of trawl selection.
+
+### **1. Visual Comparison**
+
+The acoustics technician on watch completes a visual comparison between an in-house published map (plotSurvey) of backscatter results and the transect acoustic echogram. Dense schools of CPS seen in the echogram will correlate to colorful bubbles on plotSurvey.
+
+![](images/trawl-selection-plotsurvey-056C.JPG){width="541"}
+
+Clicking on summarized acoustic points shows a popup that contains the time and distance interval over which those data were summarized, allowing you to scrutinize the results of Echoview processing. We make sure to cross-reference backscatter spots on plotSurvey with the exported image from Echoview to make an informed trawl-location decision.
+
+![](images/trawl-selection-plotsurvey-backscatter.JPG){width="337"}
+
+### 2. Best Judgement
+
+The acoustics technician will select 2-3 trawls each night based on the backscatter observed during the daytime acoustic transect, operational efficiency, and expected CPS habitat. If no CPS backscatter is observed, trawl locations will default to using expected CPS habitat information and operational efficiency.
+
+![](images/trawl-selection.JPG){width="642"}
+
+Expected CPS habitat is derived from prior survey results and models:
+
+-   Sardine habitat based on a 12-year data set of sardine eggs, remotely sensed oceanographic variables, sea surface temperature, chlorophyll *a* concentrations, sea surface altitude [@zwolinski2011].
+
+-   Charted bathymetry – Pacific sardines can be found from the ocean surface to \~350m in depth and typically reside around smoother (less rocky) bottom types.
+
+-   Sardine eggs are most abundant at sea-surface temperatures of 13 to 15 ∘C, and larvae are most abundant at 13 to 16 ∘C. Temperature is a primary driver of the spatial and seasonal distribution of spawning. During warm ocean conditions, sardine spawning shifts northward concentrating in offshore regions and north of Point Conception to San Francisco and in some years is observed as far north as Oregon [@kuriyama2020].

@@ -60,17 +60,25 @@ website: #book:
         text: Welcome
       - href: content/orientation.qmd
       - text: Program Orientation
-      - section: content/acoustic-trawl.qmd
+      - section: content/setup-acoustic-trawl.qmd
         contents:
-        - section: content/noaa-ship-cps-surveys.qmd
-          contents:
-          - href: content/cps-setup.qmd
-          - href: content/cps-dailyops.qmd
-        - section: content/nearshore-cps-surveys.qmd
+        - href: content/setup-shipacoustics.qmd
+        - href: content/setup-shipUCTD.qmd
+        - href: content/setup-shiptrawling.qmd
+        - href: content/setup-nearshoreacoustics.qmd
+        - href: content/setup-nearshoreUCTD.qmd
+      - section: content/methods.qmd
+        contents:
+        - href: content/methods-dailyshipacoustics.qmd
+        - href: content/methods-ship-trawl-selection.qmd
+        - href: content/methods-dailynearshoreacoustics.qmd
+      - section: content/processing.qmd
+      - section: content/surveyupdates.qmd
       - section: content/calibrations-overview.qmd
         contents:
         - href: content/tech-tank-calibrations.qmd
           text: Tech Tank Calibration Set Up
+      - section: content/sop.qmd
       - href: references.qmd
 
 bibliography: [content/references.bib]

@@ -104,15 +104,12 @@ The 18-kHz transducer is set to a “Drop Keel” mounting installation, then th
 
 **I/O Set Up:**
 
-+----------------+--------------+---------------+---------------------------------------------------------------------------------------------+
-| **Device**     | **COM Port** | **Baud Rate** | **Notes**                                                                                   |
-+----------------+--------------+---------------+---------------------------------------------------------------------------------------------+
-| K-Sync Trigger | 1            | 4800          | RS232 trigger from K-Sync  “EK 60” Module, split off the serial cable to the ship’s EK80 PC |
-+----------------+--------------+---------------+---------------------------------------------------------------------------------------------+
-| POS-MV         | 8            | 57600         | KM Binary from COM2 on POSMV                                                                |
-+----------------+--------------+---------------+---------------------------------------------------------------------------------------------+
-| Depth Output   | 11           | 4800          | Outputs DBT telegram to SCS, primarily so SCS can relay to EAL for false bottom removal     |
-+----------------+--------------+---------------+---------------------------------------------------------------------------------------------+
+|  |  |  |  |
+|----|----|----|----|
+| **Device** | **COM Port** | **Baud Rate** | **Notes** |
+| K-Sync Trigger | 1 | 4800 | RS232 trigger from K-Sync  “EK 60” Module, split off the serial cable to the ship’s EK80 PC |
+| POS-MV | 8 | 57600 | KM Binary from COM2 on POSMV |
+| Depth Output | 11 | 4800 | Outputs DBT telegram to SCS, primarily so SCS can relay to EAL for false bottom removal |
 
 \
 
@@ -127,24 +124,24 @@ The 18-kHz transducer is set to a “Drop Keel” mounting installation, then th
 
 **Sensor Configuration:**
 
-+---------------+------------------------------------------+
-| **Sensor**    | **Source**                               |
-+---------------+------------------------------------------+
-| Drop Keel\    | Manual depth of:\                        |
-| \[CONFIRM\]   | Retracted = 5.9 m                        |
-|               |                                          |
-|               | Intermediate = 7.35 m                    |
-|               |                                          |
-|               | Extended = 9.1 m                         |
-+---------------+------------------------------------------+
-| Heading       | MotionBinaryEx from KM Binary From POSMV |
-+---------------+------------------------------------------+
-| Course        | SpeedGround from KM Binary From POSMV    |
-+---------------+------------------------------------------+
-| Position      | Position from KM Binary from POS MV      |
-+---------------+------------------------------------------+
-| Speed         | SpeedGround from KM Binary from POS MV   |
-+---------------+------------------------------------------+
++-------------+------------------------------------------+
+| **Sensor**  | **Source**                               |
++-------------+------------------------------------------+
+| Drop Keel\  | Manual depth of:\                        |
+| \[CONFIRM\] | Retracted = 5.9 m                        |
+|             |                                          |
+|             | Intermediate = 7.35 m                    |
+|             |                                          |
+|             | Extended = 9.1 m                         |
++-------------+------------------------------------------+
+| Heading     | MotionBinaryEx from KM Binary From POSMV |
++-------------+------------------------------------------+
+| Course      | SpeedGround from KM Binary From POSMV    |
++-------------+------------------------------------------+
+| Position    | Position from KM Binary from POS MV      |
++-------------+------------------------------------------+
+| Speed       | SpeedGround from KM Binary from POS MV   |
++-------------+------------------------------------------+
 
 \
 
@@ -222,67 +219,63 @@ All transducers are set to a “Drop Keel” mounting installation, then the X a
 
 **I/O Setup:**
 
-+-------------+--------------+---------------+------------------------------+
-| **Device**  | **COM Port** | **Baud Rate** | **Notes**                    |
-+-------------+--------------+---------------+------------------------------+
-| K-Sync      | 1            | 4800          |                              |
-+-------------+--------------+---------------+------------------------------+
-| Gyro        | 2            | 4800          | Fast setting from Gyro       |
-+-------------+--------------+---------------+------------------------------+
-| GPS in      | 3            | 4800          |                              |
-+-------------+--------------+---------------+------------------------------+
-| POS MV      | 4            | 57600         | KM Binary from COM2 on POSMV |
-+-------------+--------------+---------------+------------------------------+
+|            |              |               |                              |
+|------------|--------------|---------------|------------------------------|
+| **Device** | **COM Port** | **Baud Rate** | **Notes**                    |
+| K-Sync     | 1            | 4800          |                              |
+| Gyro       | 2            | 4800          | Fast setting from Gyro       |
+| GPS in     | 3            | 4800          |                              |
+| POS MV     | 4            | 57600         | KM Binary from COM2 on POSMV |
 
 \
 
 **Sensor Installation**
 
-+-------------------------+-------------------------------+----------------+
-| **Type**                | **Port/IP Address**           | **Baud Rate**  |
-+-------------------------+-------------------------------+----------------+
-| ITI-FS                  | ITI From SCS (ethernet input) | NA             |
-+-------------------------+-------------------------------+----------------+
-| KM Binary               | POS-MV (COM4)                 | 57600          |
-+-------------------------+-------------------------------+----------------+
-| Gyro                    | Gyro (COM2)                   | 4800           |
-+-------------------------+-------------------------------+----------------+
-| Sound Velocity from SCS | Local port: 20004             |                |
-|                         |                               |                |
-|                         | Local IP Address:             |                |
-|                         |                               |                |
-|                         | 192.168.123.20                |                |
-|                         |                               |                |
-|                         | Remote IP Address,            |                |
-|                         |                               |                |
-|                         | 10.48.23.223                  |                |
-+-------------------------+-------------------------------+----------------+
++-------------------------+-------------------------------+---------------+
+| **Type**                | **Port/IP Address**           | **Baud Rate** |
++-------------------------+-------------------------------+---------------+
+| ITI-FS                  | ITI From SCS (ethernet input) | NA            |
++-------------------------+-------------------------------+---------------+
+| KM Binary               | POS-MV (COM4)                 | 57600         |
++-------------------------+-------------------------------+---------------+
+| Gyro                    | Gyro (COM2)                   | 4800          |
++-------------------------+-------------------------------+---------------+
+| Sound Velocity from SCS | Local port: 20004             |               |
+|                         |                               |               |
+|                         | Local IP Address:             |               |
+|                         |                               |               |
+|                         | 192.168.123.20                |               |
+|                         |                               |               |
+|                         | Remote IP Address,            |               |
+|                         |                               |               |
+|                         | 10.48.23.223                  |               |
++-------------------------+-------------------------------+---------------+
 
 \
 
 **Sensor Configuration**
 
-+---------------+------------------------------------------+
-| **Sensor**    | **Source**                               |
-+---------------+------------------------------------------+
-| Attitude      | MotionBinaryEx from KM Binary From POSmv |
-+---------------+------------------------------------------+
-| Drop Keel     | Manual depth of:                         |
-|               |                                          |
-|               | Retracted = 5.9 m;                       |
-|               |                                          |
-|               | Intermediate = 7.35 m;                   |
-|               |                                          |
-|               | Extended = 9.1 m.                        |
-+---------------+------------------------------------------+
-| Heading       | MotionBinaryEx from KM Binary From POSmv |
-+---------------+------------------------------------------+
-| Course        | SpeedGround from KM Binary From POSmv    |
-+---------------+------------------------------------------+
-| Position      | Position from KM Binary from POS MV      |
-+---------------+------------------------------------------+
-| Speed         | SpeedGround from KM Binary from POS MV   |
-+---------------+------------------------------------------+
++------------+------------------------------------------+
+| **Sensor** | **Source**                               |
++------------+------------------------------------------+
+| Attitude   | MotionBinaryEx from KM Binary From POSmv |
++------------+------------------------------------------+
+| Drop Keel  | Manual depth of:                         |
+|            |                                          |
+|            | Retracted = 5.9 m;                       |
+|            |                                          |
+|            | Intermediate = 7.35 m;                   |
+|            |                                          |
+|            | Extended = 9.1 m.                        |
++------------+------------------------------------------+
+| Heading    | MotionBinaryEx from KM Binary From POSmv |
++------------+------------------------------------------+
+| Course     | SpeedGround from KM Binary From POSmv    |
++------------+------------------------------------------+
+| Position   | Position from KM Binary from POS MV      |
++------------+------------------------------------------+
+| Speed      | SpeedGround from KM Binary from POS MV   |
++------------+------------------------------------------+
 
 \
 
@@ -333,25 +326,17 @@ The K-Sync is sending trigger signals to the EK80s, ME70, MS70, SX90, and ADCP. 
 
 The K-Sync modules can be configured by going to Settings--\>Installation then entering ‘simrad0’ as the password. In there, the KSync modules are configured as:
 
-+---------------+-----------------+-----------------+--------------------+
+|               |                 |                 |                    |
+|---------------|-----------------|-----------------|--------------------|
 | **Module \#** | **Module Name** | **Output Type** | **Echosounder**    |
-+---------------+-----------------+-----------------+--------------------+
 | 1             | EK 60           | RS232           | 18-kHz EK80 PC     |
-+---------------+-----------------+-----------------+--------------------+
 | 2             | ME70            | RS232           | ME70 PC            |
-+---------------+-----------------+-----------------+--------------------+
 | 3             | EK 80 & MS 70   | RS232           | MS70 PC            |
-+---------------+-----------------+-----------------+--------------------+
 | 4             | SX 90           | RS232           | SX90 PC            |
-+---------------+-----------------+-----------------+--------------------+
 | 5             | OS 75           | TTL             | OS 75              |
-+---------------+-----------------+-----------------+--------------------+
 | 6             | EK80 Mux        | TTL             | EK80 WBT Auxiliary |
-+---------------+-----------------+-----------------+--------------------+
 | 7             | EK60 Mux        | TTL             |                    |
-+---------------+-----------------+-----------------+--------------------+
 | 8             | EK60_Aux        | TTL             |                    |
-+---------------+-----------------+-----------------+--------------------+
 
 The K-Sync will adjust the trigger period based on a depth value sent by the EAL, which should be indicated by the “Current depth” reading. If the EAL is not on (e.g., nighttime), the K-Sync should be set for “Use manual depth” with a specified depth of **150 m**.
 
