@@ -229,7 +229,7 @@
     "href": "index.html",
     "title": "AST Lab Manual",
     "section": "",
-    "text": "Last updated: 2025-06-18 22:28:31 UTC",
+    "text": "Last updated: 2025-06-18 22:39:30 UTC",
     "crumbs": [
       "Welcome"
     ]
@@ -290,6 +290,16 @@
     "title": "Reporting",
     "section": "",
     "text": "Using the r package ‘estimATM’ several reports are generating using the final processed acoustic data."
+  },
+  {
+    "objectID": "content/surveyupdates.html",
+    "href": "content/surveyupdates.html",
+    "title": "Real Time Survey Updates",
+    "section": "",
+    "text": "Real Time Survey visualizations are available on the RPubs website. Contact Kevin Stierhoff for access.\n\nplotSurvey\nplotSurvey is an R-based tool in the estimATM repository used to visualize preliminary trawl and acoustic backscatter data. It is recommended to run plotSurvey AT LEAST daily. Not only will the visualizations be available to you and others on the ship for decision making and error checking, but the results will be available for folks ashore. plotSurvey is in the estimATM Doc folder, as it is an .Rmd file.\nOnce configured properly, files used by plotSurvey are automatically copied to the appropriate locations using SyncBack. If recent changes have been made to the trawl database, manually run the SyncBack profile on the Chem Lab Trawl PC to collect the most recent data (we could not map to the Trawl PC from the EV PC, but we could map in the opposite direction). plotSurvey produces all of the interactive and static figures.\nAny of the tools described below can be run by making plotSurvey.Rmd the active tab, then “knitting” the file (i.e., pressing “Knit”):\n\nYou can publish the output from plotSurvey to Rpubs by pressing the Publish/Republish button in the upper right of the Rstudio Browser: \n\nThe result is a GIS-like interactive map that may be viewed in a web browser.\n\nOne useful addition is the ability to match the backscatter from interactive plotSurvey maps with exported echograms. Clicking on summarized acoustic points shows a popup that contains the time and distance interval over which those data were summarized, allowing you to scrutinize the results of Echoview processing. Make sure to cross-reference your backscatter spots on plotSurvey with the exported image from Echoview to make an informed trawl-location decision. For example:\n\nFurther, figures that are included in reports and Weekly Updates are created here: \nC:\\SURVEY\\2506SH\\ANALYSIS\\2506SH\\Figs, for example: \n\n\n\ncheckTrawls\nTrawl data is examined using checkTrawls.Rmd. This tool looks for missing data and input errors in the trawl database by mapping trawl paths and comparing length-weight data to historic growth models (from Palance et al. 2019), and also identifying specimens with extreme condition factors (K, ~L/W3), indicating an erroneous length or weight value.\nIt’s recommended to run checkTrawls daily and then report suspected errors to the trawl data entry person for review and correction. The Trawl PC in the Chem Lab is running a SyncBack profile that will obtain the output from checkTrawls. Errors that can later cause problems in the biomass estimation, such as measuring the FL instead of SL for anchovy or sardine, can be caught early and corrected.\n\n\nplotCTD\nProcessed CTD and UCTD casts can be scrutinized and visualized using plotCTD.Rmd. The results include cast summary tables (depth, deployment time, location), location maps, and interactive profiles of temperature and salinity, and for UCTD casts, descent rate, depth vs. time (for estimating deployment times), and sound velocity. \nIt is not necessary to run this, but you may find it informative to monitor and predict deployment times, water column properties, or easily identify casts that have not yet been processed to create ECS files (e.g., .asc files with no corresponding -results.txt file get identified for processing).\n\n\nUpdating and bug fixing\nBefore running, it is helpful to apply any recent updates/bug fixes by pressing “Pull” in the Git tab (upper right of the Rstudio GUI):\n\n(If you get an error message, right-click plotSurvey.Rmd file in the Git panel, or any other files that show-up there, and select “Revert”, then Pull again. This will discard any changes made on the ship and apply the latest updates from Github.)\n\nIf you’d like further instructions/assistance, or encounter any errors, or would like to request any improvements or changes, please contact Kevin.",
+    "crumbs": [
+      "Real Time Survey Updates"
+    ]
   },
   {
     "objectID": "content/orientation.html",

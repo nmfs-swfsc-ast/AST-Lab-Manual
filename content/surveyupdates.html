@@ -397,8 +397,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#plotsurvey" id="toc-plotsurvey" class="nav-link active" data-scroll-target="#plotsurvey">plotSurvey</a></li>
+  <li><a href="#checktrawls" id="toc-checktrawls" class="nav-link" data-scroll-target="#checktrawls"><strong>checkTrawls</strong></a></li>
+  <li><a href="#plotctd" id="toc-plotctd" class="nav-link" data-scroll-target="#plotctd">plotCTD</a></li>
+  <li><a href="#updating-and-bug-fixing" id="toc-updating-and-bug-fixing" class="nav-link" data-scroll-target="#updating-and-bug-fixing">Updating and bug fixing</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/edit/main/content/surveyupdates.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/blob/main/content/surveyupdates.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -423,8 +432,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><strong>Real Time Survey visualizations are available on the RPubs website. Contact Kevin Stierhoff for access.</strong></p>
+<section id="plotsurvey" class="level3">
+<h3 class="anchored" data-anchor-id="plotsurvey">plotSurvey</h3>
+<p><strong>plotSurvey</strong> is an R-based tool in the estimATM repository used to visualize preliminary trawl and acoustic backscatter data. It is recommended to run plotSurvey <strong>AT LEAST</strong> daily. Not only will the visualizations be available to you and others on the ship for decision making and error checking, but the results will be available for folks ashore. plotSurvey is in the estimATM Doc folder, as it is an .Rmd file.</p>
+<p>Once configured properly, files used by plotSurvey are automatically copied to the appropriate locations using SyncBack. If recent changes have been made to the trawl database, manually run the SyncBack profile on the Chem Lab Trawl PC to collect the most recent data (we could not map to the Trawl PC from the EV PC, but we could map in the opposite direction). <strong>plotSurvey</strong> produces all of the interactive and static figures.</p>
+<p>Any of the tools described below can be run by making plotSurvey.Rmd the active tab, then “knitting” the file (i.e., pressing “Knit”):</p>
+<p><img src="images/clipboard-979343844.png" class="img-fluid"></p>
+<p>You can publish the output from plotSurvey to Rpubs by pressing the Publish/Republish button in the upper right of the Rstudio Browser:&nbsp;</p>
+<p><img src="images/clipboard-1392308446.png" class="img-fluid"></p>
+<p>The result is a GIS-like interactive map that may be viewed in a web browser.</p>
+<p><img src="images/clipboard-2080216854.png" class="img-fluid"></p>
+<p>One useful addition is the ability to match the backscatter from interactive plotSurvey maps with exported echograms. Clicking on summarized acoustic points shows a popup that contains the time and distance interval over which those data were summarized, allowing you to scrutinize the results of Echoview processing. Make sure to cross-reference your backscatter spots on plotSurvey with the exported image from Echoview to make an informed trawl-location decision. For example:</p>
+<p><img src="images/clipboard-4245242717.png" class="img-fluid"></p>
+<p>Further, figures that are included in reports and Weekly Updates are created here:&nbsp;</p>
+<p>C:\SURVEY\2506SH\ANALYSIS\2506SH\Figs, for example:&nbsp;</p>
+<p><img src="images/clipboard-1808093208.png" class="img-fluid"></p>
+</section>
+<section id="checktrawls" class="level3">
+<h3 class="anchored" data-anchor-id="checktrawls"><strong>checkTrawls</strong></h3>
+<p>Trawl data is examined using <strong>checkTrawls.Rmd</strong>. This tool looks for missing data and input errors in the trawl database by mapping trawl paths and comparing length-weight data to historic growth models (from Palance et al.&nbsp;2019), and also identifying specimens with extreme condition factors (K, ~L/W3), indicating an erroneous length or weight value.</p>
+<p>It’s recommended to run checkTrawls daily and then report suspected errors to the trawl data entry person for review and correction. The Trawl PC in the Chem Lab is running a SyncBack profile that will obtain the output from checkTrawls. <strong>Errors that can later cause problems in the biomass estimation, such as measuring the FL instead of SL for anchovy or sardine, can be caught early and corrected.</strong><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcAHnQgbvWTVbgdJVxLelYtSDWGwdu-gPzomlWeHfVH-pIYkIYa7fr8nyuojAItX-nU4bVK5CgNvzuK_1ENjQ9yZR9aOHVc9a08BZ42I05-JcwjTTYNBr6Rv8pbqEpf9QTcud_bpg?key=v4i50QTXnabLObIC-UOWXA.png" class="img-fluid"></p>
+</section>
+<section id="plotctd" class="level3">
+<h3 class="anchored" data-anchor-id="plotctd">plotCTD</h3>
+<p>Processed CTD and UCTD casts can be scrutinized and visualized using <strong>plotCTD.Rmd</strong>. The results include cast summary tables (depth, deployment time, location), location maps, and interactive profiles of temperature and salinity, and for UCTD casts, descent rate, depth vs.&nbsp;time (for estimating deployment times), and sound velocity.&nbsp;</p>
+<p>It is not necessary to run this, but you may find it informative to monitor and predict deployment times, water column properties, or easily identify casts that have not yet been processed to create ECS files (e.g., .asc files with no corresponding -results.txt file get identified for processing).</p>
+</section>
+<section id="updating-and-bug-fixing" class="level3">
+<h3 class="anchored" data-anchor-id="updating-and-bug-fixing">Updating and bug fixing</h3>
+<p>Before running, it is helpful to apply any recent updates/bug fixes by pressing “Pull” in the Git tab (upper right of the Rstudio GUI):</p>
+<p><img src="images/clipboard-4199207699.png" class="img-fluid"></p>
+<p>(If you get an error message, right-click plotSurvey.Rmd file in the Git panel, or any other files that show-up there, and select “Revert”, then Pull again. This will discard any changes made on the ship and apply the latest updates from Github.)</p>
+<p><img src="images/clipboard-2942454216.png" class="img-fluid"></p>
+<p>If you’d like further instructions/assistance, or encounter any errors, or would like to request any improvements or changes, please contact Kevin.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -864,7 +908,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/edit/main/content/surveyupdates.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/blob/main/content/surveyupdates.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/edit/main/content/surveyupdates.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/blob/main/content/surveyupdates.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
