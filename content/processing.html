@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Processing – AST Lab Manual</title>
+<title>Acoustic Data Processing – AST Lab Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -49,6 +49,8 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/surveyupdates.html" rel="next">
+<link href="../content/methods-dailynearshoreacoustics.html" rel="prev">
 <link href="../assets/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -56,14 +58,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-748b535e376f14d4692bf2b2e5fd6380.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c1d337819f3ac2b0397a022af9e8144e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8367c8b2524fa41b854692582a7903cf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-c1d337819f3ac2b0397a022af9e8144e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-415af80b9251e762d6fac308c5d7446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-894000b0ab7b91f01332d20673007561.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-415af80b9251e762d6fac308c5d7446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -249,6 +251,7 @@ div.csl-indent {
       toggleColorMode(toAlternate);
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
     };
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
@@ -265,7 +268,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data Processing</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/processing.html">Acoustic Data Processing</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -312,51 +315,91 @@ div.csl-indent {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../content/acoustic-trawl.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Acoustic Trawl Surveys</span></a>
+            <a href="../content/setup-acoustic-trawl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Set Up for Acoustic Trawl Surveys</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/setup-shipacoustics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shipboard Acoustic Systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/setup-shipUCTD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shipboard UCTD System</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/setup-shiptrawling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shipboard Trawling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/setup-nearshoreacoustics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nearshore Acoustic Systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/setup-nearshoreUCTD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nearshore UCTD System</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../content/noaa-ship-cps-surveys.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">NOAA Ship CPS Surveys</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a href="../content/methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Methods for Acoustic Trawl Surveys</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/cps-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Acoustics Set Up</span></a>
+  <a href="../content/methods-dailyshipacoustics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Daily Shipboard Acoustic Operations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/cps-dailyops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Daily Acoustic Operations</span></a>
+  <a href="../content/methods-ship-trawl-selection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ship Trawl Selection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/methods-dailynearshoreacoustics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Daily Nearshore Acoustic Operations</span></a>
   </div>
 </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Nearshore CPS Surveys</span></span>
+ <span class="menu-text">Acoustic Data Processing</span></span>
   </li>
-      </ul>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Real Time Survey Updates</span></span>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/calibrations-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Calibrations Overview</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/tech-tank-calibrations.html" class="sidebar-item-text sidebar-link">
@@ -364,6 +407,10 @@ div.csl-indent {
   </div>
 </li>
       </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Relevant SOPs</span></span>
   </li>
     </ul>
     </div>
@@ -375,9 +422,9 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-processing-overview" id="toc-data-processing-overview" class="nav-link active" data-scroll-target="#data-processing-overview">Data Processing Overview</a></li>
-  <li><a href="#echoview-processing-workflow" id="toc-echoview-processing-workflow" class="nav-link" data-scroll-target="#echoview-processing-workflow">Echoview Processing Workflow</a></li>
-  <li><a href="#posit-processing-workflow" id="toc-posit-processing-workflow" class="nav-link" data-scroll-target="#posit-processing-workflow"><code>Posit</code> Processing Workflow</a></li>
+  <li><a href="#part-1-how-to-process" id="toc-part-1-how-to-process" class="nav-link active" data-scroll-target="#part-1-how-to-process">Part 1: How to Process</a></li>
+  <li><a href="#part-2-what-happens-during-processing" id="toc-part-2-what-happens-during-processing" class="nav-link" data-scroll-target="#part-2-what-happens-during-processing"><strong>Part 2: What Happens During Processing</strong></a></li>
+  <li><a href="#rstudio-processing-workflow" id="toc-rstudio-processing-workflow" class="nav-link" data-scroll-target="#rstudio-processing-workflow"><code>RStudio</code> Processing Workflow</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/edit/main/content/processing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/blob/main/content/processing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -387,7 +434,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Processing</h1>
+<h1 class="title">Acoustic Data Processing</h1>
 </div>
 
 
@@ -404,9 +451,23 @@ div.csl-indent {
 </header>
 
 
-<p>After data aqusition, we identify acoustic echos of schooling CPS using a semi-automated data processing algorithm using Echoview software and in-house <code>Posit</code> code in the <code>estimATM</code> <a href="https://github.com/kstierhoff/estimATM">repository</a>. With Echoview, we extract the backscatter of swim bladder fish and process using soundspeed and echosounder calibration values housed inside an Echoview Calibration Supplement (<code>.ecs)</code> file. The Echoview filters and thresholds were based on a sub-sample of echoes from randomly selected CPS schools. We complete the processing with the <code>estimATM</code> package in <code>extract_CPS_NASC.R</code>, where we further refine the backscatter selection to extract only CPS. Here we will cover the Echoview and <code>estimATM</code> semi-automated processing workflow.</p>
-<section id="data-processing-overview" class="level3">
-<h3 class="anchored" data-anchor-id="data-processing-overview">Data Processing Overview</h3>
+<p>After data acquisition, we identify acoustic echos of schooling CPS using a semi-automated data processing algorithm using Echoview software and in-house <code>Posit</code> code in the <code>estimATM</code> <a href="https://github.com/kstierhoff/estimATM">repository</a>. With Echoview, we extract the backscatter of swim bladder fish and process using soundspeed and echosounder calibration values housed inside an Echoview Calibration Supplement (<code>.ecs)</code> file. The Echoview filters and thresholds were based on a sub-sample of echoes from randomly selected CPS schools. We complete the processing with the <code>estimATM</code> package in <code>extract_CPS_NASC.R</code>, where we further refine the backscatter selection to extract only CPS.</p>
+<p>This page has two parts. <strong>Part 1: How to Process</strong> details the steps acousticians should follow to process raw acoustic data for CPS. <strong>Part 2: What Happens During Processing</strong> details the concepts and behind the scenes technical steps that happen during processing. Here we will cover the Echoview and <code>estimATM</code> semi-automated processing workflow.</p>
+<section id="part-1-how-to-process" class="level3">
+<h3 class="anchored" data-anchor-id="part-1-how-to-process">Part 1: How to Process</h3>
+<p>To process acoustic data for CPS, follow the steps in the <a href="https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?tab=t.0">Acoustic Processing for CPS</a> document.</p>
+<p>The first portion of acoustic processing will take place in Echoview. As acoustician’s we will do the following tasks in Echoview:</p>
+<ul>
+<li><p>Add data (.raw acoustic data, add Echoivew calibration files created from UCTD/CTD casts)</p></li>
+<li><p>Remove bad data regions</p></li>
+<li><p>Create Integration Stop/Start lines</p></li>
+<li><p>Produce csv and echogram image files containing swim bladdered fish backscatter</p></li>
+</ul>
+<p>The second portion of acoustic processing will take place using the nasc.R script in RStudio. As acoustician’s we will do the following in RStudio :</p>
+<ul>
+<li><p>Select backscatter specific to CPS and remove non-CPS backscatter</p></li>
+<li><p>Produce csv containing CPS-only backscatter and generalized echogram plots displaying regions removed/retained.</p></li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/processing-overview.JPG" class="img-fluid figure-img"></p>
@@ -415,8 +476,8 @@ div.csl-indent {
 </div>
 <hr>
 </section>
-<section id="echoview-processing-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="echoview-processing-workflow">Echoview Processing Workflow</h3>
+<section id="part-2-what-happens-during-processing" class="level3">
+<h3 class="anchored" data-anchor-id="part-2-what-happens-during-processing"><strong>Part 2: What Happens During Processing</strong></h3>
 <p>In Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process:</p>
 <ol type="1">
 <li><p>Data wrangling, cleaning, and noise removal (including surface noise and seabed removal)</p></li>
@@ -433,7 +494,7 @@ div.csl-indent {
 <h4 class="anchored" data-anchor-id="section-1-data-wrangling-cleaning-and-noise-removal"><strong>Section 1) Data Wrangling, Cleaning, and Noise Removal:</strong></h4>
 <ol type="1">
 <li><p>Load RAW EK80 acoustic data and Echoview Calibration Supplement (<code>.ecs</code>)file into Echoview. The <code>.ecs</code> file contains soundspeed information calculated from the nearest (temporally and spatially) Underway CTD cast and echosounder calibration parameters. This file is used at the very beginning to convert from power to <code>Sv</code> (volume-backscattering coefficient).</p></li>
-<li><p>Align sampling rate (time and geometery) from all transders to the 38 kHz <code>Sv</code>. Acousticians call this step ‘matching geometry’ of all <code>Sv</code> variables. Making sure pings are aligned from all echosounders is important for calculating the frequency response of backscatter in steps later on.</p></li>
+<li><p>Align sampling rate (time and geometry) from all transducers to the 38 kHz <code>Sv</code>. Acousticians call this step ‘matching geometry’ of all <code>Sv</code> variables. Making sure pings are aligned from all echosounders is important for calculating the frequency response of backscatter in steps later on.</p></li>
 <li><p>Remove passive-mode pings.</p></li>
 <li><p>Noise removal: estimate and subtract background noise using the background noise removal function described in <span class="citation" data-cites="derobertis2007">De Robertis and Higginbottom (<a href="#ref-derobertis2007" role="doc-biblioref">2007</a>)</span>.</p></li>
 <li><p><strong>Surface noise and seabed removal</strong> is completed by manually drawing an <code>Integration Start</code> and <code>Integration Stop</code> line in Echoview. The <code>Integration Start</code> line is drawn at the shallowest depth to include surface CPS schools but exclude transducer ring down and surface noise due to sea state (typically around 5 meters below the transducer face or ~10m depth). The <code>Integration Stop</code> line is drawn closest to the seabed to include bottom dwelling animals but exclude any non-living seabed features (typically 3 m above the estimated seabed <span class="citation" data-cites="demer2009">(<a href="#ref-demer2009" role="doc-biblioref">Demer et al. 2009</a>)</span> or to the maximum logging range (e.g., 350 m), whichever is shallowest). When drawing the lines, we set the color scale to a minimum Sv threshold of -60 dB which corresponds to a density of approximately three 20-cm-long Pacific Sardine per 100 m3). Doing this helps visually pick out schools from the seabed and from non-swim bladder animals that appear as diffuse scattering layers in the water column. The area of the water column between the two lines sets the depth range that will be integrated for swim bladder fish in steps later on.</p></li>
@@ -480,8 +541,8 @@ div.csl-indent {
 <hr>
 </section>
 </section>
-<section id="posit-processing-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="posit-processing-workflow"><code>Posit</code> Processing Workflow</h3>
+<section id="rstudio-processing-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-processing-workflow"><code>RStudio</code> Processing Workflow</h3>
 <p>The exported <code>.csv</code> file from Echoview contains all swim bladder backscatter which can include non-target species such as rockfish. In order to further refine the acoustic classification to retain only CPS backscatter, the processed <code>.csv</code> file proceeds to the final semi-automated processing step in <code>Posit</code> using <code>extract_CPS_NASC.R</code>, an R-based tool in the <code>estimATM</code> package.</p>
 <p><img src="images/nascr_processing.JPG" class="img-fluid"></p>
 <p>Echoes from fishes with swimbladders (blue points, scaled by backscatter intensity) along an example acoustic transect (top) and the corresponding Echoview echogram image (bottom). In this example, the upper (blue) and lower lines (green) indicate boundaries within which echoes were retained. When the lower boundary is deeper than the seabed (black line), echoes above the seabed are retained. Echoes from deep, bottom-dwelling schools of non-CPS fishes with swimbladders, and from diffuse scatters near the surface are excluded.</p>
@@ -922,6 +983,18 @@ Zwolinski, Juan P., Paulo B. Oliveira, Victor Quintino, and Yorgos Stratoudakis.
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/methods-dailynearshoreacoustics.html" class="pagination-link" aria-label="Daily Nearshore Acoustic Operations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Daily Nearshore Acoustic Operations</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/surveyupdates.html" class="pagination-link" aria-label="Real Time Survey Updates">
+        <span class="nav-page-text">Real Time Survey Updates</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
