@@ -230,7 +230,7 @@
     "href": "index.html",
     "title": "AST Lab Manual",
     "section": "",
-    "text": "Last updated: 2025-06-18 23:14:54 UTC",
+    "text": "Last updated: 2025-06-24 00:38:01 UTC",
     "crumbs": [
       "Welcome"
     ]
@@ -251,6 +251,16 @@
     "title": "AST Lab Manual",
     "section": "Who are we?",
     "text": "Who are we?\nThe Advanced Survey Technologies program supports ecosystem-based fisheries management through new or innovative uses of sampling technologies, including: multi-frequency acoustic systems, remotely operated vehicles, instrumented buoys, and instrumented small craft. Read more about our objectives on the SWFSC website. We work routinely work closely with the SWFSC Life History Program and the Fish Population Dynamics and Modeling Program.\nOur primary project is to manage an annual acoustic-trawl survey for West Coast coastal pelagic species (CPS). CPS play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries (Zwolinski et al. 2014). Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: Pacific Sardine Sardinops sagax, Northern Anchovy Engraulis mordax, Pacific Mackerel Scomber japonicus, Jack Mackerel Trachurus symmetricus, Pacific Herring Clupea pallasii, and Round Herring Etrumeus acuminatus. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-access-our-data",
+    "href": "index.html#how-to-access-our-data",
+    "title": "AST Lab Manual",
+    "section": "How to Access Our Data",
+    "text": "How to Access Our Data\nNOAA Coast Watch ERDDAP:\nCPS Trawl Haul Catch Data\nCPS Trawl Specimen Data\nNOAA Ship Reuben Lasker Underway Meteorological Data\nNOAA National Centers for Environmental Information (NCE):\nLocate raw acoustic data using the NCEI Water Column Sonar Data Viewer.\nDownload raw acoustic data via the viewer or the AWS NCEI bucket.",
     "crumbs": [
       "Welcome"
     ]
