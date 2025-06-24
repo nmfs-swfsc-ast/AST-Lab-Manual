@@ -5,7 +5,18 @@ editor: visual
 
 The Acoustician on watch should follow the daily tasks detailed in the [Daily Ship Acoustic Operations document](https://docs.google.com/document/d/1PiaZtjqStg0TtknSAm8bVK0JXxvjO31eomtCiPnFvgA/edit?tab=t.0).
 
-Troubleshooting:
+### **Orientation to the Echoview PC:**
+
+The main survey directory is **C:\\SURVEY\\\[Survey Name Code\].** *For example for 2025 the directory is: `C:\SURVEY\2506SH`.* All work by the acoustician must be done inside of this folder. DO NOT work with data sotred in the `Survey_Backup` folder on the NAS Drive – this folder is mirrored from the C:\\ drive and will be overwritten during subsequent backups.
+
+\
+The **C:\\SURVEY\\\[Survey Name Code\]** directory contains all survey-related items excluding sounder data. Sounder data is instead recorded to local (or external) hard drives on each individual system and/or backed up to the NAS drive.
+
+### Leg Summaries and Passdown Notes:
+
+Throughout each leg acousticians will record issues, progress notes, and information to pass to the next crew in [this google doc](https://docs.google.com/document/d/1brlI4uXMfdw5mfewRfdAoZAE4WgbCdjrjqkhapuuV6U/edit?tab=t.0).
+
+### Troubleshooting:
 
 -   For issues on echosounder software, refer to the Set Up for Acoustic Trawl page and instillation settings for the echosounder.
 
