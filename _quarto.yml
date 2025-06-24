@@ -59,7 +59,6 @@ website: #book:
       - href: index.qmd #welcome page 
         text: Welcome
       - href: content/orientation.qmd
-      - text: Program Orientation
       - section: content/setup-acoustic-trawl.qmd
         contents:
         - href: content/setup-shipacoustics.qmd
@@ -74,6 +73,8 @@ website: #book:
         - href: content/methods-dailynearshoreacoustics.qmd
         - href: content/processing.qmd
       - section: content/surveyupdates.qmd
+        contents:
+        - href: content/surveyupdates.qmd
       - section: content/calibrations-overview.qmd
         contents:
         - href: content/tech-tank-calibrations.qmd
