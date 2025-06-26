@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NOAA Ship CPS Surveys – AST Lab Manual</title>
+<title>Data Management – AST Lab Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/data-access.html" rel="next">
+<link href="../content/orientation.html" rel="prev">
 <link href="../assets/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -246,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">NOAA Ship CPS Surveys</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/data-management.html">Data Management</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -290,7 +292,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/data-management.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/data-management.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Data Management</span></a>
   </div>
 </li>
@@ -422,8 +424,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#quick-links" id="toc-quick-links" class="nav-link active" data-scroll-target="#quick-links">Quick Links:</a></li>
+  <li><a href="#ast-google-shared-drive-structure" id="toc-ast-google-shared-drive-structure" class="nav-link" data-scroll-target="#ast-google-shared-drive-structure">AST Google Shared Drive Structure:</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/edit/main/content/data-management.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/blob/main/content/data-management.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -431,7 +440,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">NOAA Ship CPS Surveys</h1>
+<h1 class="title">Data Management</h1>
 </div>
 
 
@@ -448,14 +457,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Dataflow.JPG" class="img-fluid figure-img"></p>
-<figcaption>Draft of dataflow for IWCPS on a NOAA Ship.</figcaption>
-</figure>
-</div>
+<p>Acoustic data management is a complex endeavor. There are many moving parts, and can collect terabytes of data in a survey. This page outlines the AST data management efforts, including directory structures and storage locations for different types of data.</p>
+<p>This page provides the in-the-weeds data management details, which will likely only be relevant for AST program members. Users looking for more general information about acoustic-trawl data products should go to the Accessing Our Data page.</p>
+<section id="quick-links" class="level3">
+<h3 class="anchored" data-anchor-id="quick-links">Quick Links:</h3>
+<ul>
+<li><p>AST Google Shared Drive (<a href="https://drive.google.com/drive/folders/0APMOIPPoAUQqUk9PVA">NMFS SWFSC FRD AST</a>)</p></li>
+<li><p><a href="https://drive.google.com/drive/folders/0B2xNfvuUAsokSFk0NEpQb1BaaVE?resourcekey=0-4bYMERpNwZmqt06JdHd0XA&amp;usp=drive_link">AST Surveys Google Folder</a> - *Content will be migrated to AST Shared Google Drive*</p></li>
+<li><p><a href="https://drive.google.com/drive/folders/0BznMmMAGS5MZTFpCdEd3bVpwUHc?resourcekey=0-zQPTAvNNK_SUM-cI3jDZRA&amp;usp=drive_link">AST Standard Operating Procedures</a> - *Content will be migrated to AST Shared Google Drive*</p></li>
+<li><p><a href="https://drive.google.com/drive/folders/0B1VIXHAS-cwMTDFmdU5rZUczWHM?resourcekey=0-gk1iTN3zgiQmYBHp3-QmzQ&amp;usp=drive_link">SWFSC Small Boats</a> - Content managed by SWFSC VOC Steve Sessions and AST NOAA Corps Officer</p></li>
+</ul>
+</section>
+<section id="ast-google-shared-drive-structure" class="level3">
+<h3 class="anchored" data-anchor-id="ast-google-shared-drive-structure">AST Google Shared Drive Structure:</h3>
+<section id="equipment-documentation" class="level4">
+<h4 class="anchored" data-anchor-id="equipment-documentation">Equipment Documentation</h4>
+<pre><code>Add folder structure</code></pre>
+</section>
+<section id="calibrations" class="level4">
+<h4 class="anchored" data-anchor-id="calibrations">Calibrations</h4>
+<p>The structure of an individual GDrive Calibration folder:</p>
+<pre><code>Survey Code-Calibration [2506LBC-Calibration]
+├── transceiver type [EK80]
+  ├── RAW
+  ├── RESULTS
+├── ECS 
+  ├── Survey Code_UCTD Cast Number.ecs [2506LBC_UCTD001-1.ecs] </code></pre>
+</section>
+<section id="cce-moorings-and-landers" class="level4">
+<h4 class="anchored" data-anchor-id="cce-moorings-and-landers">CCE Moorings and Landers</h4>
+<pre><code>Add folder structure</code></pre>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -875,6 +910,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/orientation.html" class="pagination-link" aria-label="Orientation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Orientation</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/data-access.html" class="pagination-link" aria-label="How to Access Our Data">
+        <span class="nav-page-text">How to Access Our Data</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -883,7 +930,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/edit/main/content/noaa-ship-cps-surveys.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/blob/main/content/noaa-ship-cps-surveys.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/edit/main/content/data-management.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/blob/main/content/data-management.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

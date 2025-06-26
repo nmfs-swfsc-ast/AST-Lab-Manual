@@ -310,6 +310,18 @@ div.csl-indent {
  <span class="menu-text">Orientation</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Management</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/data-access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Access Our Data</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/setup-acoustic-trawl.html" class="sidebar-item-text sidebar-link">
@@ -386,32 +398,27 @@ div.csl-indent {
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../content/surveyupdates.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Real Time Survey Updates</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/surveyupdates.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Real Time Survey Updates</span></a>
   </div>
 </li>
-      </ul>
-  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/reporting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Survey Reporting and Final Products</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../content/calibrations-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Calibrations Overview</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/tech-tank-calibrations.html" class="sidebar-item-text sidebar-link">
@@ -420,10 +427,18 @@ div.csl-indent {
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Relevant SOPs</span></span>
-  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/sop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">List of Links</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -467,8 +482,12 @@ div.csl-indent {
 <p>This page has two parts. <strong>Part 1: How to Process</strong> details the steps acousticians should follow to process raw acoustic data for CPS. <strong>Part 2: What Happens During Processing</strong> details the concepts and behind the scenes technical steps that happen during processing. Here we will cover the Echoview and <code>estimATM</code> semi-automated processing workflow.</p>
 <section id="part-1-how-to-process" class="level3">
 <h3 class="anchored" data-anchor-id="part-1-how-to-process">Part 1: How to Process</h3>
-<p>To process acoustic data for CPS, follow the steps in the <a href="https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?tab=t.0">Acoustic Processing for CPS</a> document.</p>
-<p>The first portion of acoustic processing will take place in Echoview. As acoustician’s we will do the following tasks in Echoview:</p>
+<p>Below are google drive links to procedures for processing acoustic data (internal NOAA only):</p>
+<ul>
+<li><p><a href="https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?usp=drive_link">Acoustic Processing Procedure</a> - Steps to process data in Echoview and using nasc.R script.</p></li>
+<li><p><a href="https://docs.google.com/document/d/1fWika7Z1LAe0QYnfdJnMMnfD950439AhpqRl94DVfvk/edit?tab=t.0">Nearshore Vessel Acoustic Processing Procedure</a> - Additional steps specific for nearshore vessels.</p></li>
+</ul>
+<p><em>A Quick Overview:</em> The first portion of acoustic processing will take place in Echoview. As acoustician’s we will do the following tasks in Echoview:</p>
 <ul>
 <li><p>Add data (.raw acoustic data, add Echoivew calibration files created from UCTD/CTD casts)</p></li>
 <li><p>Remove bad data regions</p></li>
