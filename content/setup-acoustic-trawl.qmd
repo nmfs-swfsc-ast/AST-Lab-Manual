@@ -2,14 +2,22 @@
 title: "Set Up for Acoustic Trawl Surveys"
 ---
 
-In this section you will find operating instructions for setting up the acoustic systems on NOAA Ships and chartered fishing vessels to conduct CPS acoustic-trawl survey work.
+Set up for an acoustic trawl survey involved many moving pieces. This page serves as an orientation on all details related to mobilizing on vessels for acoustic trawl surveys.
 
-### [Shipboard Acoustic Systems](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-shipacoustics.html) 
+**Survey Preparation Task List:**
 
-### [Shipboard UCTD System](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-shipUCTD.html)
+-   [NOAA Ship Survey Equipment List](https://docs.google.com/spreadsheets/d/1R30kuYmnvcmGABcBs5LVE5uG77VHtPi5/edit?gid=1393502436#gid=1393502436) - this Google Spreadsheet should be updated annually when preparing for survey mobilization
 
-### [Shipboard Trawling](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-shiptrawling.html)
+-   Work with ship to confirm ship transducers are cleaned before calibration
 
-### [Nearshore Acoustic Systems](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-nearshoreacoustics.html)
+Below are links to pages inside this Quarto Website for setting up the acoustic systems on NOAA Ships and chartered fishing vessels to conduct CPS acoustic-trawl survey work.
 
-### [Nearshore UCTD System](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-nearshoreUCTD.html)
+-   [Shipboard Acoustic Systems](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-shipacoustics.html) 
+
+-   [Shipboard UCTD System](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-shipUCTD.html)
+
+-   [Shipboard Trawling](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-shiptrawling.html)
+
+-   [Nearshore Acoustic Systems](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-nearshoreacoustics.html)
+
+-   [Nearshore UCTD System](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/setup-nearshoreUCTD.html)

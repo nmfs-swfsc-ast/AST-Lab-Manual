@@ -14,37 +14,21 @@ page-layout: full
 
 ## Top Links
 
--   AST Calendar
+-   [AST Cruises Calendar](https://calendar.google.com/calendar/embed?src=noaa.gov_au9mfdskv6phiu3v3o0l2tq81s%40group.calendar.google.com&ctz=America%2FLos_Angeles)
 
--   SWFSC Tech Tank Reservation Request
+-   [SWFSC Tech Tank Reservation Request](https://sites.google.com/noaa.gov/swfsc-technology-tank/swfsc-user-request)
 
--   AST Shared Drive Link
+-   [AST Shared Drive Link](https://drive.google.com/drive/folders/0APMOIPPoAUQqUk9PVA)
 
--   AST Surveys Google Drive Link
+-   [AST Surveys Google Drive Link](https://drive.google.com/drive/folders/0B2xNfvuUAsokSFk0NEpQb1BaaVE?resourcekey=0-4bYMERpNwZmqt06JdHd0XA&usp=drive_link)
 
--   AST SOP Google Drive Link
+-   [AST SOP Google Drive Link](https://drive.google.com/drive/folders/0BznMmMAGS5MZTFpCdEd3bVpwUHc?resourcekey=0-zQPTAvNNK_SUM-cI3jDZRA&usp=drive_link)
 
 ## Who are we?
 
 The Advanced Survey Technologies program supports ecosystem-based fisheries management through new or innovative uses of sampling technologies, including: multi-frequency acoustic systems, remotely operated vehicles, instrumented buoys, and instrumented small craft. [Read more about our objectives on the SWFSC website](https://www.fisheries.noaa.gov/west-coast/science-data/advanced-survey-technologies-assessments-california-current-ecosystem). We work routinely work closely with the SWFSC Life History Program and the Fish Population Dynamics and Modeling Program.
 
 Our primary project is to manage an annual acoustic-trawl survey for [West Coast coastal pelagic species](https://www.fisheries.noaa.gov/species/west-coast-coastal-pelagic-species) (CPS). CPS play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries [@Zwolinski2014]. Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: [Pacific Sardine](https://www.fisheries.noaa.gov/species/pacific-sardine#:~:text=Baja%20California%2C%20Mexico.-,Habitat,schools%20near%20the%20ocean%20surface.) *Sardinops sagax*, Northern Anchovy *Engraulis mordax*, Pacific Mackerel *Scomber japonicus,* Jack Mackerel *Trachurus symmetricus,* Pacific Herring *Clupea pallasii,* and Round Herring *Etrumeus acuminatus*. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.
-
-## How to Access Our Data
-
-**NOAA Coast Watch ERDDAP:**
-
-[CPS Trawl Haul Catch Data](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/FRDCPSTrawlLHHaulCatch.html)
-
-[CPS Trawl Specimen Data](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/FRDCPSTrawlLHSpecimen.html)
-
-[NOAA Ship Reuben Lasker Underway Meteorological Data](https://coastwatch.pfeg.noaa.gov/erddap/tabledap/fsuNoaaShipWTEG.html)
-
-**NOAA National Centers for Environmental Information (NCE):**
-
-Locate raw acoustic data using the [NCEI Water Column Sonar Data Viewer](https://www.ncei.noaa.gov/maps/water-column-sonar/).
-
-Download raw acoustic data via the viewer or the [AWS NCEI bucket](https://noaa-wcsd-pds.s3.amazonaws.com/index.html#data/raw/).
 
 ## Document Objective:
 

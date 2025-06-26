@@ -3,11 +3,15 @@ title: "Real Time Survey Updates"
 editor: visual
 ---
 
-**Real Time Survey visualizations are available on the RPubs website. Contact Kevin Stierhoff for access.**
+***\*\*Page In Development***
+
+### **Real Time Survey visualizations are available on the [RPubs website](https://docs.google.com/document/d/1kre1jBTgWYkK9RLLY2TniHPGULI2tXEUwV3dnzZtlsY/edit?tab=t.0).** 
+
+### **Contact Kevin Stierhoff for access.**
 
 ### plotSurvey
 
-**plotSurvey** is an R-based tool in the estimATM repository used to visualize preliminary trawl and acoustic backscatter data. It is recommended to run plotSurvey **AT LEAST** daily. Not only will the visualizations be available to you and others on the ship for decision making and error checking, but the results will be available for folks ashore. plotSurvey is in the estimATM Doc folder, as it is an .Rmd file.
+**plotSurvey** is an R-based tool in the estimATM repository used to visualize preliminary trawl and acoustic backscatter data. Visualizations are critical for not only for you and others on the ship for decision making and error checking, but the results will be also be available for folks ashore. plotSurvey is in the estimATM Doc folder, as it is an .Rmd file.
 
 Once configured properly, files used by plotSurvey are automatically copied to the appropriate locations using SyncBack. If recent changes have been made to the trawl database, manually run the SyncBack profile on the Chem Lab Trawl PC to collect the most recent data (we could not map to the Trawl PC from the EV PC, but we could map in the opposite direction). **plotSurvey** produces all of the interactive and static figures.
 

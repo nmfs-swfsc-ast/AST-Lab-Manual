@@ -3,6 +3,14 @@ title: "Nearshore Acoustic Systems"
 editor: visual
 ---
 
-![](images/clipboard-2865850959.png){width="506"}
+NOAA Ships are used to survey the distributions and abundances of coastal pelagic fish species (CPS), herring, and hake, their prey, and their biotic and abiotic environments in the California Current between San Diego and Cape Flattery. Routinely, NOAA Ships will only survey in water depths greater than \~ 20 to 30 m, and therefore may potentially under-sample CPS, herring, or hake aggregations in the shallower, nearshore area. Therefore, to extend the sampling closer to shore, chartered nearshore fishing vessels will be used to conduct echosounder and purse-seine sampling as close to shore as safely navigable. The echosounder sampling will be conducted using the SWFSC’s four Simrad EK80 Wide-band Transceivers (WBTs) operating 38-, 70-, 120- and 200-kHz transducers installed in AST’s four-transducer array (MTA-4).
 
-![](images/clipboard-3941567936.png){width="504"}
+![The MTA-4 four-transducer array connected to the *F/V Long Beach Carnage* via a pole-mount.](images/clipboard-2865850959.png){width="506"}
+
+![The wheelhouse of *F/V Lisa Marie*. The EK80 transducer suite is hull mounted. The EK80 controlling laptop is located on a table to the port side of the helm station, behind the array of instrumentation and monitors. The EK80 WBTs are installed in the ship’s engine room and connected to the EK80 laptop in the wheelhouse via an ethernet cable.](images/LM-acousticstation.JPG){width="508"}
+
+### Preparing for Mobilization on a Nearshore Vessel:
+
+-   All gear needed for the F/V Long Beach Carnage is located on the [LBC Equipment List](https://docs.google.com/spreadsheets/d/18zsZ5UQq4NUE3vw_DC-vSBqIIWQnz0FzN23DPl2C66M/edit?gid=0#gid=0). This list should be updated annually with each mobilization.
+
+![Acoustic Transceiver and Computer Station Setup on F/V Long Beach Carnage](images/clipboard-3941567936.png){width="335"}

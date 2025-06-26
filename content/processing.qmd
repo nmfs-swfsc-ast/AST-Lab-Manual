@@ -8,9 +8,13 @@ This page has two parts. **Part 1: How to Process** details the steps acousticia
 
 ### Part 1: How to Process
 
-To process acoustic data for CPS, follow the steps in the [Acoustic Processing for CPS](https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?tab=t.0) document.
+Below are google drive links to procedures for processing acoustic data (internal NOAA only):
 
-The first portion of acoustic processing will take place in Echoview. As acoustician's we will do the following tasks in Echoview:
+-   [Acoustic Processing Procedure](https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?usp=drive_link) - Steps to process data in Echoview and using nasc.R script.
+
+-   [Nearshore Vessel Acoustic Processing Procedure](https://docs.google.com/document/d/1fWika7Z1LAe0QYnfdJnMMnfD950439AhpqRl94DVfvk/edit?tab=t.0) - Additional steps specific for nearshore vessels.
+
+*A Quick Overview:* The first portion of acoustic processing will take place in Echoview. As acoustician's we will do the following tasks in Echoview:
 
 -   Add data (.raw acoustic data, add Echoivew calibration files created from UCTD/CTD casts)
 

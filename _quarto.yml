@@ -59,6 +59,8 @@ website: #book:
       - href: index.qmd #welcome page 
         text: Welcome
       - href: content/orientation.qmd
+      - href: content/data-management.qmd
+      - href: content/data-access.qmd
       - section: content/setup-acoustic-trawl.qmd
         contents:
         - href: content/setup-shipacoustics.qmd
@@ -72,15 +74,14 @@ website: #book:
         - href: content/methods-ship-trawl-selection.qmd
         - href: content/methods-dailynearshoreacoustics.qmd
         - href: content/processing.qmd
-      - section: content/surveyupdates.qmd
-        contents:
-        - href: content/surveyupdates.qmd
+      - href: content/surveyupdates.qmd
+      - href: content/reporting.qmd
       - section: content/calibrations-overview.qmd
         contents:
         - href: content/tech-tank-calibrations.qmd
           text: Tech Tank Calibration Set Up
-      - section: content/sop.qmd
-      - href: references.qmd
+      - href: content/sop.qmd
+      - href: content/references.qmd
 
 bibliography: [content/references.bib]
 

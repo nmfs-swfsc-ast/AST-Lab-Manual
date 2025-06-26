@@ -1,4 +1,30 @@
 ---
-title: "Relevant SOPs"
+title: "List of Links"
 editor: visual
 ---
+
+Google Documents linked in the Lab Manual are located in the [NMFS SWFSC FRD AST Google Shared Drive](https://drive.google.com/drive/folders/0APMOIPPoAUQqUk9PVA) which is restricted in access to AST members. For access contact Josiah Renfree.
+
+Below is a list of relevant and high-use documents and resources related to AST lab projects:
+
+-   [RPubs Website](https://docs.google.com/document/d/1kre1jBTgWYkK9RLLY2TniHPGULI2tXEUwV3dnzZtlsY/edit?tab=t.0) - Kevin's maps of real time survey updates and data visualization charts
+
+-   [Daily Ship Acoustic Operations document](https://docs.google.com/document/d/1PiaZtjqStg0TtknSAm8bVK0JXxvjO31eomtCiPnFvgA/edit?tab=t.0) - Daily Acoustician responsibilities while conducting acoustic operations out at sea on NOAA ships.
+
+-   [Acoustic Processing Procedure](https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?usp=drive_link) - Echoview processing and nasc.r acoustic processing steps.
+
+-   [Nearshore Vessel Acoustic Processing Procedure](https://docs.google.com/document/d/1fWika7Z1LAe0QYnfdJnMMnfD950439AhpqRl94DVfvk/edit?tab=t.0) - Additional steps specific to processing acoustic data acquired on nearshore survey vessels.
+
+-   [Setting up the Echoview PC](https://docs.google.com/document/d/1Y5CusFhDtzmXd9uSKsmuxuv1_e89IZr_s9OJnlTO2bo/edit?tab=t.0) - How to set up the Echoview PC on a NOAA Ship.
+
+-   [Setting up the EK80](https://docs.google.com/document/d/1gSM3gncXs9ib9nw_bhjDMKNhckJLiIoCP-6190KaKYw/edit?tab=t.0#heading=h.6lvb5klh6mga) - How to set up the EK80 for running acoustic trawl survey lines. Includes set up for EAL.
+
+-   [Setting up K-Sync](https://docs.google.com/document/d/11Ju1Brnex81VLBV8OgXiM5tBz53O4Sp1SVi2GZ-nL0U/edit?tab=t.0) - How to set up the K-Sync software for running acoustic trawl survey lines.
+
+-   [Setting up the SX90](https://docs.google.com/document/d/1xpK0V3BOowT4-tYYqCGjt3ZFu-4nDNDYrgcB812NmpE/edit?tab=t.0#heading=h.urmdmushrac6) - How to set up the EK80 for running acoustic trawl survey lines.
+
+-   [Setting up the ME70](https://docs.google.com/document/d/1TgGsbRrscdD-WT3vjXsU-4lgMSGlYuhyzr5X2OQWEa8/edit?tab=t.0#heading=h.bp883fy6wafz) - How to set up the ME70 for running acoustic trawl survey lines.
+
+-   [Setting up the MS70](https://docs.google.com/document/d/1_t72M_saCPSwSqS34yKpLjNTntlIcZF4ZPTUtmI2tTE/edit?tab=t.0#heading=h.s7w2kbfstp75) - How to set up the MS70 for running acoustic trawl survey lines.
+
+-   [Setting up the TD50](https://docs.google.com/document/d/1TkTWt9I8nTIFthEA0Uye8jIfkkdUR4_NraJv81-_xLg/edit?tab=t.0#heading=h.yg0bv1i6n7c7) - How to set up the TD50 software for visualizing acoustic data .

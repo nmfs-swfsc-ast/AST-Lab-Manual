@@ -1,0 +1,45 @@
+---
+title: "Data Management"
+editor: visual
+---
+
+Acoustic data management is a complex endeavor. There are many moving parts, and can collect terabytes of data in a survey. This page outlines the AST data management efforts, including directory structures and storage locations for different types of data.
+
+This page provides the in-the-weeds data management details, which will likely only be relevant for AST program members. Users looking for more general information about acoustic-trawl data products should go to the Accessing Our Data page.
+
+### Quick Links:
+
+-   AST Google Shared Drive ([NMFS SWFSC FRD AST](https://drive.google.com/drive/folders/0APMOIPPoAUQqUk9PVA))
+
+-   [AST Surveys Google Folder](https://drive.google.com/drive/folders/0B2xNfvuUAsokSFk0NEpQb1BaaVE?resourcekey=0-4bYMERpNwZmqt06JdHd0XA&usp=drive_link) - \*Content will be migrated to AST Shared Google Drive\*
+
+-   [AST Standard Operating Procedures](https://drive.google.com/drive/folders/0BznMmMAGS5MZTFpCdEd3bVpwUHc?resourcekey=0-zQPTAvNNK_SUM-cI3jDZRA&usp=drive_link) - \*Content will be migrated to AST Shared Google Drive\*
+
+-   [SWFSC Small Boats](https://drive.google.com/drive/folders/0B1VIXHAS-cwMTDFmdU5rZUczWHM?resourcekey=0-gk1iTN3zgiQmYBHp3-QmzQ&usp=drive_link) - Content managed by SWFSC VOC Steve Sessions and AST NOAA Corps Officer
+
+### AST Google Shared Drive Structure:
+
+#### Equipment Documentation
+
+```         
+Add folder structure
+```
+
+#### Calibrations
+
+The structure of an individual GDrive Calibration folder:
+
+```         
+Survey Code-Calibration [2506LBC-Calibration]
+├── transceiver type [EK80]
+  ├── RAW
+  ├── RESULTS
+├── ECS 
+  ├── Survey Code_UCTD Cast Number.ecs [2506LBC_UCTD001-1.ecs] 
+```
+
+#### CCE Moorings and Landers
+
+```         
+Add folder structure
+```

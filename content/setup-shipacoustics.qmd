@@ -18,3 +18,19 @@ When arriving to the ship, the following systems will need to be configured for 
 ### [Setting up the MS70](https://docs.google.com/document/d/1_t72M_saCPSwSqS34yKpLjNTntlIcZF4ZPTUtmI2tTE/edit?tab=t.0#heading=h.s7w2kbfstp75)
 
 ### [Setting up the TD50](https://docs.google.com/document/d/1TkTWt9I8nTIFthEA0Uye8jIfkkdUR4_NraJv81-_xLg/edit?tab=t.0#heading=h.yg0bv1i6n7c7)
+
+Ship Centerboard Drop Keel Depths
+
+Anytime that the ship changes the centerboard depth, the manual depth in the EK80 software should be updated accordingly:
+
+| Reuben Lasker Centerboard Configuration | Manual Depth (meters) |
+|-----------------------------------------|-----------------------|
+| Retracted                               | 5.9 m                 |
+| Intermediate                            | 7.35 m                |
+| Extended                                | 9.1 m                 |
+
+| Bell M. Shimada Centerboard Configuration | Manual Depth (meters) |
+|-------------------------------------------|-----------------------|
+| Retracted                                 | 6.1 m                 |
+| Intermediate                              | 7 m                   |
+| Extended                                  | 9.15 m                |
