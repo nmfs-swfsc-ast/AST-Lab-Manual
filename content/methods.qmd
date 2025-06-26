@@ -2,3 +2,15 @@
 title: "Methods for Acoustic Trawl Surveys"
 editor: visual
 ---
+
+Daily operations at sea for acoustic trawl survey are fast paced and constantly changing. This section serves as an orientation on all details related to underway activities on acoustic trawl surveys.
+
+Below are links to pages inside this Quarto Website:
+
+-   [Daily Shipboard Acoustic Operations](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/methods-dailyshipacoustics.html)
+
+-   [Ship Trawl Selection](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/methods-ship-trawl-selection.html)
+
+-   [Daily Nearshore Acoustic Operations](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/methods-dailynearshoreacoustics.html)
+
+-   [Acoustic Data Processing](https://nmfs-swfsc-ast.github.io/AST-Lab-Manual/content/processing.html)

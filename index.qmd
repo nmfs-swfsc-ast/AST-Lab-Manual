@@ -36,13 +36,31 @@ This document serves to be a record of standard operating procedures and methods
 
 Use the left hand panel to navigate through various projects and methodologies. Staff must have access to the AST Google Drive in order to view most google drive links.
 
-Do not hesitate to reach out (to us at either alice.beittel\@noaa.gov or [GitHub issues](https://github.com/nmfs-swfsc-ast/echo-class/issues), especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.
+Do not hesitate to reach out (to us at either alice.beittel\@noaa.gov or [GitHub issues](https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues), especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.
 
-## NOAA README
+## Open Science Resources:
+
+-   [NMFS Open Science Intranet Site](https://sites.google.com/noaa.gov/nmfs-hq-st-open-science/open-science) - NMFS Workshops, Help Desk, Trainings, Tutorials
+
+-   [NMFS Openscapes Program](https://github.com/nmfs-openscapes)
+
+-   Quarto Site Inspirations:
+
+    -   Alaska Fisheries Science Center [Groundfish Assessment Program Production Data and Documentation](https://afsc-gap-products.github.io/gap_products/) (AFSC GAP Products)
+
+    -   Southwest Fisheries Science Center Ecosystem Science Division's [Glider Lab Manual](https://swfsc.github.io/glider-lab-manual/)
+
+    -   Southwest Fisheries Science Center [Acoustics Ecology Lab's Lab Manual](https://sael-swfsc.github.io/SAEL-lab-manual/)
+
+    -   Southwest Fisheries Science Center Passive Acoustic Monitoring Program's [Lab Manual Template](https://nmfs-ost.github.io/PAM_template_lab_manual/)
+
+    -   NMFS NOAA [Quarto Book Template](https://github.com/nmfs-opensci/NOAA-quarto-book)
+
+#### NOAA README
 
 This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
 
-## NOAA License
+#### NOAA License
 
 Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.
 

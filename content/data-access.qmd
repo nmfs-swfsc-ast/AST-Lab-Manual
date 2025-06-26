@@ -3,8 +3,6 @@ title: "How to Access Our Data"
 editor: visual
 ---
 
-## How to Access Our Data
-
 ### Public Access to Acoustic-Trawl Data:
 
 **NOAA Coast Watch ERDDAP:**

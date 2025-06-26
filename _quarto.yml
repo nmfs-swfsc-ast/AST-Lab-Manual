@@ -74,6 +74,7 @@ website: #book:
         - href: content/methods-ship-trawl-selection.qmd
         - href: content/methods-dailynearshoreacoustics.qmd
         - href: content/processing.qmd
+        - href: content/identification.qmd
       - href: content/surveyupdates.qmd
       - href: content/reporting.qmd
       - section: content/calibrations-overview.qmd

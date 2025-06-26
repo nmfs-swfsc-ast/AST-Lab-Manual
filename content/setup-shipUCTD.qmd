@@ -3,10 +3,14 @@ title: "Shipboard UCTD System"
 editor: visual
 ---
 
-We have used several UCTD systems on NOAA Ships. The most recent system is the [Valeport rapidPro UCTD](https://www.valeport.co.uk/products/rapidpro-svt/).
+We have used several UCTD systems on NOAA Ships. The most recent system is the [Valeport rapidPro UCTD](https://www.valeport.co.uk/products/rapidpro-svt/). The UCTD winch is deployed off the stern while the ship is underway at 7-8 knots via a winch.
+
+### Quick Links:
+
+-   [Valeport UCTD Operating Instructions](https://docs.google.com/document/d/1id6BKzOnGaiIXUzBsbpGF7rn54h-Gky2Ws3Y4HaVMUk/edit?tab=t.0) - charging, cast methods, data download
+
+-   [UCTD Deployment and Data Processing Procedures](https://docs.google.com/document/d/10ZPTXW3FQhb6y-FjbgErZf4UQ8RjJotSzzESQ89SWPg/edit?tab=t.0#heading=h.9wragufxa6bt) - processing data via an R Script
+
+-   Operating Manuals and set up files can be found on the [UCTD Google Drive Folder](https://drive.google.com/drive/folders/1HNvgLVGcTItjX1VedqBfNyO5nVk_3XKW?usp=drive_link).
 
 ![](images/clipboard-1300689794.png){width="499"}
-
-[Operating Instructions for Valeport UCTD](https://docs.google.com/document/d/1id6BKzOnGaiIXUzBsbpGF7rn54h-Gky2Ws3Y4HaVMUk/edit?tab=t.0) - charging, cast methods, data download.
-
-Operating Manuals and set up files can be found on the [UCTD Google Drive Folder](https://drive.google.com/drive/folders/1HNvgLVGcTItjX1VedqBfNyO5nVk_3XKW?usp=drive_link).

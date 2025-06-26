@@ -3,8 +3,6 @@ title: "Survey Reporting and Final Products"
 editor: visual
 ---
 
-[Leg Summaries and Passdown Notes](https://docs.google.com/document/d/1brlI4uXMfdw5mfewRfdAoZAE4WgbCdjrjqkhapuuV6U/edit?usp=drive_link)
-
 Using the r package 'estimATM' several reports are generating using the final processed acoustic data.
 
 ![](images/estimATM_dataflow.JPG){width="605"}

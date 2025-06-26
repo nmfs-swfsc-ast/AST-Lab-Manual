@@ -9,7 +9,9 @@ Below is a list of relevant and high-use documents and resources related to AST 
 
 -   [RPubs Website](https://docs.google.com/document/d/1kre1jBTgWYkK9RLLY2TniHPGULI2tXEUwV3dnzZtlsY/edit?tab=t.0) - Kevin's maps of real time survey updates and data visualization charts
 
--   [Daily Ship Acoustic Operations document](https://docs.google.com/document/d/1PiaZtjqStg0TtknSAm8bVK0JXxvjO31eomtCiPnFvgA/edit?tab=t.0) - Daily Acoustician responsibilities while conducting acoustic operations out at sea on NOAA ships.
+-   [Daily Ship Acoustic Operations document](https://docs.google.com/document/d/1PiaZtjqStg0TtknSAm8bVK0JXxvjO31eomtCiPnFvgA/edit?tab=t.0) - Acoustics team's daily responsibilities while conducting acoustic operations out at sea on NOAA ships. Updated each leg.
+
+-   [Leg Summaries and Passdown Notes](https://docs.google.com/document/d/1brlI4uXMfdw5mfewRfdAoZAE4WgbCdjrjqkhapuuV6U/edit?usp=drive_link) - Active document with all leg summaries and passdown notes. Updated each leg.
 
 -   [Acoustic Processing Procedure](https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?usp=drive_link) - Echoview processing and nasc.r acoustic processing steps.
 

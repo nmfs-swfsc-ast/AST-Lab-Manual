@@ -6,13 +6,13 @@ After data acquisition, we identify acoustic echos of schooling CPS using a semi
 
 This page has two parts. **Part 1: How to Process** details the steps acousticians should follow to process raw acoustic data for CPS. **Part 2: What Happens During Processing** details the concepts and behind the scenes technical steps that happen during processing. Here we will cover the Echoview and `estimATM` semi-automated processing workflow.
 
-### Part 1: How to Process
+## Part 1: How to Process
 
 Below are google drive links to procedures for processing acoustic data (internal NOAA only):
 
--   [Acoustic Processing Procedure](https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?usp=drive_link) - Steps to process data in Echoview and using nasc.R script.
+-   [**Acoustic Processing Procedure**](https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?usp=drive_link) - Steps to process data in Echoview and using nasc.R script.
 
--   [Nearshore Vessel Acoustic Processing Procedure](https://docs.google.com/document/d/1fWika7Z1LAe0QYnfdJnMMnfD950439AhpqRl94DVfvk/edit?tab=t.0) - Additional steps specific for nearshore vessels.
+-   [**Nearshore Vessel Acoustic Processing Procedure**](https://docs.google.com/document/d/1fWika7Z1LAe0QYnfdJnMMnfD950439AhpqRl94DVfvk/edit?tab=t.0) - Additional steps specific for nearshore vessels.
 
 *A Quick Overview:* The first portion of acoustic processing will take place in Echoview. As acoustician's we will do the following tasks in Echoview:
 
@@ -34,7 +34,7 @@ The second portion of acoustic processing will take place using the nasc.R scrip
 
 ------------------------------------------------------------------------
 
-### **Part 2: What Happens During Processing**
+## **Part 2: What Happens During Processing**
 
 In Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process:
 

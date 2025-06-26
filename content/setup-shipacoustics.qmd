@@ -3,23 +3,31 @@ title: "Shipboard Acoustic Systems"
 editor: visual
 ---
 
-When arriving to the ship, the following systems will need to be configured for Coastal Pelagic Species survey work. Each link goes to a Google document that will contain the latest procedures. Any updates and changes to configurations should be made inside the Google document.
+When arriving to the ship, the following systems will need to be configured for Coastal Pelagic Species survey work. Each link goes to a Google document that will contain the latest procedures. Any updates and changes to configurations should be made inside the Google Document.
 
-### [Setting up the Echoview PC](https://docs.google.com/document/d/1Y5CusFhDtzmXd9uSKsmuxuv1_e89IZr_s9OJnlTO2bo/edit?tab=t.0)
+-   [Setting up the Echoview PC](https://docs.google.com/document/d/1Y5CusFhDtzmXd9uSKsmuxuv1_e89IZr_s9OJnlTO2bo/edit?tab=t.0)
 
-### [Setting up the EK80](https://docs.google.com/document/d/1gSM3gncXs9ib9nw_bhjDMKNhckJLiIoCP-6190KaKYw/edit?tab=t.0#heading=h.6lvb5klh6mga)
+-   [Setting up the EK80](https://docs.google.com/document/d/1gSM3gncXs9ib9nw_bhjDMKNhckJLiIoCP-6190KaKYw/edit?tab=t.0#heading=h.6lvb5klh6mga) - A suite of transcievers, transducers, and software (ranges from 18-333 kHz). Includes set up of EAL (EK80 Adaptive Logger).
 
-### [Setting up K-Sync](https://docs.google.com/document/d/11Ju1Brnex81VLBV8OgXiM5tBz53O4Sp1SVi2GZ-nL0U/edit?tab=t.0)
+-   [Setting up K-Sync](https://docs.google.com/document/d/11Ju1Brnex81VLBV8OgXiM5tBz53O4Sp1SVi2GZ-nL0U/edit?tab=t.0) - A synchronization system (Simrad K-Sync; Kongsberg) that staggers the triggering of separate transducers to minimize interference across frequencies.
 
-### [Setting up the SX90](https://docs.google.com/document/d/1xpK0V3BOowT4-tYYqCGjt3ZFu-4nDNDYrgcB812NmpE/edit?tab=t.0#heading=h.urmdmushrac6)
+-   [Setting up the SX90](https://docs.google.com/document/d/1xpK0V3BOowT4-tYYqCGjt3ZFu-4nDNDYrgcB812NmpE/edit?tab=t.0#heading=h.urmdmushrac6)
 
-### [Setting up the ME70](https://docs.google.com/document/d/1TgGsbRrscdD-WT3vjXsU-4lgMSGlYuhyzr5X2OQWEa8/edit?tab=t.0#heading=h.bp883fy6wafz)
+-   [Setting up the ME70](https://docs.google.com/document/d/1TgGsbRrscdD-WT3vjXsU-4lgMSGlYuhyzr5X2OQWEa8/edit?tab=t.0#heading=h.bp883fy6wafz)
 
-### [Setting up the MS70](https://docs.google.com/document/d/1_t72M_saCPSwSqS34yKpLjNTntlIcZF4ZPTUtmI2tTE/edit?tab=t.0#heading=h.s7w2kbfstp75)
+-   [Setting up the MS70](https://docs.google.com/document/d/1_t72M_saCPSwSqS34yKpLjNTntlIcZF4ZPTUtmI2tTE/edit?tab=t.0#heading=h.s7w2kbfstp75)
 
-### [Setting up the TD50](https://docs.google.com/document/d/1TkTWt9I8nTIFthEA0Uye8jIfkkdUR4_NraJv81-_xLg/edit?tab=t.0#heading=h.yg0bv1i6n7c7)
+-   [Setting up the TD50](https://docs.google.com/document/d/1TkTWt9I8nTIFthEA0Uye8jIfkkdUR4_NraJv81-_xLg/edit?tab=t.0#heading=h.yg0bv1i6n7c7)
 
-Ship Centerboard Drop Keel Depths
+### Ship Acoustic System Orientation:
+
+#### Kongsberg EK80 Scientific Echo Sounders
+
+![EK80 transducer locations on the bottom of the centerboard aboard R/V Reuben Lasker.](images/transducers.jpg){#fig-transducers alt="Transducer locations on the bottom of the centerboard aboard Lasker." fig-align="left" width="551"}
+
+On *Lasker* and *Shimada*, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on *Lasker* and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on *Shimada*; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard” (@fig-transducers). The keel was retracted (transducers \~5-m depth) during calibration, and extended to the intermediate position (transducers \~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers \~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).
+
+### **Ship Centerboard Drop Keel Depths**
 
 Anytime that the ship changes the centerboard depth, the manual depth in the EK80 software should be updated accordingly:
 

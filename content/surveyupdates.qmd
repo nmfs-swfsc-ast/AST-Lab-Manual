@@ -5,7 +5,7 @@ editor: visual
 
 ***\*\*Page In Development***
 
-### **Real Time Survey visualizations are available on the [RPubs website](https://docs.google.com/document/d/1kre1jBTgWYkK9RLLY2TniHPGULI2tXEUwV3dnzZtlsY/edit?tab=t.0).** 
+### **Real Time Survey visualizations are available on the [RPubs website](https://docs.google.com/document/d/1kre1jBTgWYkK9RLLY2TniHPGULI2tXEUwV3dnzZtlsY/edit?tab=t.0).**
 
 ### **Contact Kevin Stierhoff for access.**
 
