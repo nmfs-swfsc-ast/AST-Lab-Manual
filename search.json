@@ -7,38 +7,113 @@
     "text": "Add images to this folder"
   },
   {
-    "objectID": "content/data-access.html",
-    "href": "content/data-access.html",
-    "title": "How to Access Our Data",
-    "section": "",
-    "text": "NOAA Coast Watch ERDDAP:\nCPS Trawl Haul Catch Data\nCPS Trawl Specimen Data\nNOAA Ship Reuben Lasker Underway Meteorological Data\nNOAA National Centers for Environmental Information (NCEI):\nLocate raw acoustic data using the NCEI Water Column Sonar Data Viewer.\nDownload raw acoustic data via the viewer or the AWS NCEI bucket.\n\n\n\nAcoustic data is located on AST servers located at SWFSC and on the Google Cloud Platform. The following links are only available to AST program members at SWFSC.\nAST Servers:\n\n\\\\swc-storage4-s\\AST1\n\\\\swc-storage4-s\\AST2\n\\\\swc-storage3-s\\AST3\n\\\\swc-storage4-s\\AST4\n\\\\swc-storage4-s\\AST5\n\nAST Google Cloud Buckets:\n\nAST1 - Shimada Data: https://console.cloud.google.com/storage/browser/ast1\nAST2 - Long Beach Carnage Data: https://console.cloud.google.com/storage/browser/ast2\nAST3 - Lisa Marie Data: https://console.cloud.google.com/storage/browser/ast3",
-    "crumbs": [
-      "How to Access Our Data"
-    ]
-  },
-  {
-    "objectID": "content/data-access.html#how-to-access-our-data",
-    "href": "content/data-access.html#how-to-access-our-data",
-    "title": "How to Access Our Data",
-    "section": "",
-    "text": "NOAA Coast Watch ERDDAP:\nCPS Trawl Haul Catch Data\nCPS Trawl Specimen Data\nNOAA Ship Reuben Lasker Underway Meteorological Data\nNOAA National Centers for Environmental Information (NCEI):\nLocate raw acoustic data using the NCEI Water Column Sonar Data Viewer.\nDownload raw acoustic data via the viewer or the AWS NCEI bucket.\n\n\n\nAcoustic data is located on AST servers located at SWFSC and on the Google Cloud Platform. The following links are only available to AST program members at SWFSC.\nAST Servers:\n\n\\\\swc-storage4-s\\AST1\n\\\\swc-storage4-s\\AST2\n\\\\swc-storage3-s\\AST3\n\\\\swc-storage4-s\\AST4\n\\\\swc-storage4-s\\AST5\n\nAST Google Cloud Buckets:\n\nAST1 - Shimada Data: https://console.cloud.google.com/storage/browser/ast1\nAST2 - Long Beach Carnage Data: https://console.cloud.google.com/storage/browser/ast2\nAST3 - Lisa Marie Data: https://console.cloud.google.com/storage/browser/ast3",
-    "crumbs": [
-      "How to Access Our Data"
-    ]
-  },
-  {
-    "objectID": "content/adding-refs.html",
-    "href": "content/adding-refs.html",
+    "objectID": "content/Not Used/adding-refs.html",
+    "href": "content/Not Used/adding-refs.html",
     "title": "References",
     "section": "",
     "text": "Quarto has powerful references functionality. You can easily insert citations from Zotero libraries that you maintain in the cloud (on Zotero). This allows the whole team to update the library and you can sync up to that library. Read about this on the Quarto documentation on citations. Google youtube videos on this also to see it in action.\nAdd a .bib file in to your project or add a linked Zotero library via RStudio in Visual mode with Tools &gt; Project Options… &gt; R Markdown &gt; select custom libraries from the Zotero dropdown.\nThe you can type @ and you will see a dropdown of the references in your libraries. You can then select the ones to add. If you don’t see the one you need, you can paste in the DOI and it will be added to your references file (with all the info). The references will be added to your references section of your book automatically.\nSee the references.qmd file for how to include the references.\n\n@ansley1981 will produce Ansley and Davis (1981)\n[@ansley1981] will produce (Ansley and Davis 1981).\n\n\n\n\n\nReferences\n\nAnsley, H. L. H., and C. D. Davis. 1981. “Migration and Standing Stock of Fishes Associated with Artificial and Natural Reefs on Georgia’s Outer Continental Shelf.” Brunswick, Georgia, USA."
+  },
+  {
+    "objectID": "content/Not Used/acquisition.html",
+    "href": "content/Not Used/acquisition.html",
+    "title": "Data Acquisition",
+    "section": "",
+    "text": "Figure 1: Transducer locations on the bottom of the centerboard aboard Lasker.\n\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard” (Figure 1). The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\n\nOn Lasker and Shimada, conductivity and temperature profiles were measured down to 300 m using calibrated sensors on a probe cast from the vessel while underway (UnderwayCTD, or UCTD; Teledyne Ocean- science). Casts were typically conducted between two to four times along each transect. These data indicate the depth of the surface mixed layer, above which most pelagic CPS reside during the day. These data were also used to estimate the time-averaged sound speed (Demer, 2004), for estimating ranges to the sound scatterers, and frequency-specific sound absorption coefficients, for compensating signal attenuation of the sound pulse between the transducer and scatterers (Simmonds and MacLennan, 2005)."
+  },
+  {
+    "objectID": "content/Not Used/acquisition.html#survey-equipment",
+    "href": "content/Not Used/acquisition.html#survey-equipment",
+    "title": "Data Acquisition",
+    "section": "",
+    "text": "Figure 1: Transducer locations on the bottom of the centerboard aboard Lasker.\n\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard” (Figure 1). The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\n\nOn Lasker and Shimada, conductivity and temperature profiles were measured down to 300 m using calibrated sensors on a probe cast from the vessel while underway (UnderwayCTD, or UCTD; Teledyne Ocean- science). Casts were typically conducted between two to four times along each transect. These data indicate the depth of the surface mixed layer, above which most pelagic CPS reside during the day. These data were also used to estimate the time-averaged sound speed (Demer, 2004), for estimating ranges to the sound scatterers, and frequency-specific sound absorption coefficients, for compensating signal attenuation of the sound pulse between the transducer and scatterers (Simmonds and MacLennan, 2005)."
+  },
+  {
+    "objectID": "content/Not Used/acquisition.html#software",
+    "href": "content/Not Used/acquisition.html#software",
+    "title": "Data Acquisition",
+    "section": "Software",
+    "text": "Software\n\nEchosounder Software\nEK80\n\n\nNetTime\nOn Lasker and Shimada, the computer clocks were synchronized with the GPS clock (UTC) using a synchronization software called NetTime.\n\n\nEAL\nThe 38-, 70-, 120-, 200-, and 333-kHz echosounders were controlled by the EK80 Adaptive Logger (EAL2, Renfree and Demer, 2016). The EAL optimizes the pulse interval based on the seabed depth, while avoiding aliased seabed echoes, and was programmed such that once an hour the echosounders would record three pings in passive mode, for obtaining estimates of the background noise level.\n\n\nK Sync\nTo minimize acoustic interference on Lasker and Shimada, transmit pulses from the EK80s, acoustic Doppler current profiler and echosounder (Simrad-Kongsberg EC150-3C), multibeam echosounder (Simrad- Kongsberg ME70), imaging sonar (Simrad-Kongsberg MS70), scanning sonar (Simrad-Kongsberg SX90), and a separate acoustic Doppler current profiler (Teledyne RD Instruments OS75 ADCP) were triggered using a synchronization system (Simrad K-Sync; Kongsberg). The K-Sync trigger rate, and thus the echosounder ping interval, was modulated by the EAL using the 18-kHz seabed depth provided by the Scientific Computing System (SCS)."
+  },
+  {
+    "objectID": "content/Not Used/acquisition.html#raw-acoustic-data-format",
+    "href": "content/Not Used/acquisition.html#raw-acoustic-data-format",
+    "title": "Data Acquisition",
+    "section": "Raw Acoustic Data Format",
+    "text": "Raw Acoustic Data Format\nMeasurements of volume backscattering strength (Sv; dB re 1 m2 m-3) and target strength (TS; dB re 1 m2), indexed by time and geographic positions provided by GPS receivers, were stored in Simrad-Kongsberg .raw format with a 1-GB maximum file size. During daytime, the echosounders operated in CW mode and logged to 60 m beyond the detected seabed range or to a maximum range of 500, 500, 500, 300, and 150 m for 38, 70, 120, 200, and 333 kHz, respectively. During nighttime, the echosounders operated in FM mode and logged to 100 m. For each acoustic instrument, the prefix for each fle name is a concatenation of the survey name (e.g., 2307RL), the operational mode (CW or FM), and the logging commencement date and time from the EK80 software (v21.15.1). For example, a file generated by the Simrad-Kongsberg EK80 software for a WBT operated in CW mode is named 2307RL_CW-D20220826-T155651.raw."
+  },
+  {
+    "objectID": "content/Not Used/code.html",
+    "href": "content/Not Used/code.html",
+    "title": "Rendering with Code",
+    "section": "",
+    "text": "You can have code (R, Python or Julia) in your qmd file. You will need to have these installed on your local computer, but presumably you do already if you are adding code to your qmd files.\nx &lt;- c(5, 15, 25, 35, 45, 55)\ny &lt;- c(5, 20, 14, 32, 22, 38)\nlm(x ~ y)\n\n\nCall:\nlm(formula = x ~ y)\n\nCoefficients:\n(Intercept)            y  \n      1.056        1.326"
+  },
+  {
+    "objectID": "content/Not Used/code.html#modify-the-github-action",
+    "href": "content/Not Used/code.html#modify-the-github-action",
+    "title": "Rendering with Code",
+    "section": "Modify the GitHub Action",
+    "text": "Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nrender-and-publish.old_yml\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it."
+  },
+  {
+    "objectID": "content/Not Used/code.html#render-locally-and-publish-to-gh-pages-branch",
+    "href": "content/Not Used/code.html#render-locally-and-publish-to-gh-pages-branch",
+    "title": "Rendering with Code",
+    "section": "Render locally and publish to gh-pages branch",
+    "text": "Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages"
+  },
+  {
+    "objectID": "content/Not Used/figures_and_tables.html",
+    "href": "content/Not Used/figures_and_tables.html",
+    "title": "Figures and Tables",
+    "section": "",
+    "text": "Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com."
+  },
+  {
+    "objectID": "content/Not Used/figures_and_tables.html#code",
+    "href": "content/Not Used/figures_and_tables.html#code",
+    "title": "Figures and Tables",
+    "section": "Code",
+    "text": "Code\nYou can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "content/Not Used/figures_and_tables.html#including-plots",
+    "href": "content/Not Used/figures_and_tables.html#including-plots",
+    "title": "Figures and Tables",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots and reference them, like so Figure 1.\n\n\n\n\n\n\n\n\nFigure 1: Plot of pressure\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "content/Not Used/figures_and_tables.html#including-tables",
+    "href": "content/Not Used/figures_and_tables.html#including-tables",
+    "title": "Figures and Tables",
+    "section": "Including Tables",
+    "text": "Including Tables\nYou can also embed tables and reference them with Table 1.\n\nlibrary(knitr)\nkable(head(iris))\n\n\n\nTable 1: Iris Data\n\n\n\n\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n5.0\n3.6\n1.4\n0.2\nsetosa\n\n\n5.4\n3.9\n1.7\n0.4\nsetosa"
+  },
+  {
+    "objectID": "content/Not Used/workflow.html",
+    "href": "content/Not Used/workflow.html",
+    "title": "Data Workflow",
+    "section": "",
+    "text": "Data pipeline from boat to shore to report"
+  },
+  {
+    "objectID": "content/setup-shipUCTD.html",
+    "href": "content/setup-shipUCTD.html",
+    "title": "Shipboard UCTD System",
+    "section": "",
+    "text": "We have used several UCTD systems on NOAA Ships. The most recent system is the Valeport rapidPro UCTD. The UCTD winch is deployed off the stern while the ship is underway at 7-8 knots via a winch.\n\nQuick Links:\n\nValeport UCTD Operating Instructions - charging, cast methods, data download\nUCTD Deployment and Data Processing Procedures - processing data via an R Script\nOperating Manuals and set up files can be found on the UCTD Google Drive Folder.",
+    "crumbs": [
+      "Set Up for Acoustic Trawl Surveys",
+      "Shipboard UCTD System"
+    ]
   },
   {
     "objectID": "content/setup-shipacoustics.html",
     "href": "content/setup-shipacoustics.html",
     "title": "Shipboard Acoustic Systems",
     "section": "",
-    "text": "When arriving to the ship, the following systems will need to be configured for Coastal Pelagic Species survey work. Each link goes to a Google document that will contain the latest procedures. Any updates and changes to configurations should be made inside the Google document.\n\nSetting up the Echoview PC\n\n\nSetting up the EK80\n\n\nSetting up K-Sync\n\n\nSetting up the SX90\n\n\nSetting up the ME70\n\n\nSetting up the MS70\n\n\nSetting up the TD50\nShip Centerboard Drop Keel Depths\nAnytime that the ship changes the centerboard depth, the manual depth in the EK80 software should be updated accordingly:\n\n\n\nReuben Lasker Centerboard Configuration\nManual Depth (meters)\n\n\n\n\nRetracted\n5.9 m\n\n\nIntermediate\n7.35 m\n\n\nExtended\n9.1 m\n\n\n\n\n\n\nBell M. Shimada Centerboard Configuration\nManual Depth (meters)\n\n\n\n\nRetracted\n6.1 m\n\n\nIntermediate\n7 m\n\n\nExtended\n9.15 m",
+    "text": "When arriving to the ship, the following systems will need to be configured for Coastal Pelagic Species survey work. Each link goes to a Google document that will contain the latest procedures. Any updates and changes to configurations should be made inside the Google Document.\n\nSetting up the Echoview PC\nSetting up the EK80 - A suite of transcievers, transducers, and software (ranges from 18-333 kHz). Includes set up of EAL (EK80 Adaptive Logger).\nSetting up K-Sync - A synchronization system (Simrad K-Sync; Kongsberg) that staggers the triggering of separate transducers to minimize interference across frequencies.\nSetting up the SX90\nSetting up the ME70\nSetting up the MS70\nSetting up the TD50\n\n\nShip Acoustic System Orientation:\n\nKongsberg EK80 Scientific Echo Sounders\n\n\n\n\n\n\nFigure 1: EK80 transducer locations on the bottom of the centerboard aboard R/V Reuben Lasker.\n\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard” (Figure 1). The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\n\nShip Centerboard Drop Keel Depths\nAnytime that the ship changes the centerboard depth, the manual depth in the EK80 software should be updated accordingly:\n\n\n\nReuben Lasker Centerboard Configuration\nManual Depth (meters)\n\n\n\n\nRetracted\n5.9 m\n\n\nIntermediate\n7.35 m\n\n\nExtended\n9.1 m\n\n\n\n\n\n\nBell M. Shimada Centerboard Configuration\nManual Depth (meters)\n\n\n\n\nRetracted\n6.1 m\n\n\nIntermediate\n7 m\n\n\nExtended\n9.15 m",
     "crumbs": [
       "Set Up for Acoustic Trawl Surveys",
       "Shipboard Acoustic Systems"
@@ -56,39 +131,14 @@
     ]
   },
   {
-    "objectID": "content/publishing.html",
-    "href": "content/publishing.html",
-    "title": "Publishing",
+    "objectID": "content/methods.html",
+    "href": "content/methods.html",
+    "title": "Methods for Acoustic Trawl Surveys",
     "section": "",
-    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
-  },
-  {
-    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "title": "Publishing",
-    "section": "Turn on GitHub Pages for your repo",
-    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
-  },
-  {
-    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "title": "Publishing",
-    "section": "Do your first publish to gh-pages",
-    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
-  },
-  {
-    "objectID": "content/publishing.html#dont-like-using-gh-pages",
-    "href": "content/publishing.html#dont-like-using-gh-pages",
-    "title": "Publishing",
-    "section": "Don’t like using gh-pages?",
-    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
-  },
-  {
-    "objectID": "content/noaa-ship-cps-surveys.html",
-    "href": "content/noaa-ship-cps-surveys.html",
-    "title": "NOAA Ship CPS Surveys",
-    "section": "",
-    "text": "Draft of dataflow for IWCPS on a NOAA Ship."
+    "text": "Daily operations at sea for acoustic trawl survey are fast paced and constantly changing. This section serves as an orientation on all details related to underway activities on acoustic trawl surveys.\nBelow are links to pages inside this Quarto Website:\n\nDaily Shipboard Acoustic Operations\nShip Trawl Selection\nDaily Nearshore Acoustic Operations\nAcoustic Data Processing",
+    "crumbs": [
+      "Methods for Acoustic Trawl Surveys"
+    ]
   },
   {
     "objectID": "content/setup-acoustic-trawl.html",
@@ -171,188 +221,6 @@
     "text": "9. [DRAFT] Setting up MS70"
   },
   {
-    "objectID": "content/add-content.html",
-    "href": "content/add-content.html",
-    "title": "Customize",
-    "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
-  },
-  {
-    "objectID": "content/add-content.html#edit-and-add-your-pages",
-    "href": "content/add-content.html#edit-and-add-your-pages",
-    "title": "Customize",
-    "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
-  },
-  {
-    "objectID": "content/add-content.html#add-your-pages-the-project",
-    "href": "content/add-content.html#add-your-pages-the-project",
-    "title": "Customize",
-    "section": "Add your pages the project",
-    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
-  },
-  {
-    "objectID": "content/preparation.html",
-    "href": "content/preparation.html",
-    "title": "Data Preparation",
-    "section": "",
-    "text": "Select regions of interest\n\nSelect data on transect lines\n\n\nIntegration stop and start lines"
-  },
-  {
-    "objectID": "content/processing.html",
-    "href": "content/processing.html",
-    "title": "Acoustic Data Processing",
-    "section": "",
-    "text": "After data acquisition, we identify acoustic echos of schooling CPS using a semi-automated data processing algorithm using Echoview software and in-house Posit code in the estimATM repository. With Echoview, we extract the backscatter of swim bladder fish and process using soundspeed and echosounder calibration values housed inside an Echoview Calibration Supplement (.ecs) file. The Echoview filters and thresholds were based on a sub-sample of echoes from randomly selected CPS schools. We complete the processing with the estimATM package in extract_CPS_NASC.R, where we further refine the backscatter selection to extract only CPS.\nThis page has two parts. Part 1: How to Process details the steps acousticians should follow to process raw acoustic data for CPS. Part 2: What Happens During Processing details the concepts and behind the scenes technical steps that happen during processing. Here we will cover the Echoview and estimATM semi-automated processing workflow.\n\nPart 1: How to Process\nBelow are google drive links to procedures for processing acoustic data (internal NOAA only):\n\nAcoustic Processing Procedure - Steps to process data in Echoview and using nasc.R script.\nNearshore Vessel Acoustic Processing Procedure - Additional steps specific for nearshore vessels.\n\nA Quick Overview: The first portion of acoustic processing will take place in Echoview. As acoustician’s we will do the following tasks in Echoview:\n\nAdd data (.raw acoustic data, add Echoivew calibration files created from UCTD/CTD casts)\nRemove bad data regions\nCreate Integration Stop/Start lines\nProduce csv and echogram image files containing swim bladdered fish backscatter\n\nThe second portion of acoustic processing will take place using the nasc.R script in RStudio. As acoustician’s we will do the following in RStudio :\n\nSelect backscatter specific to CPS and remove non-CPS backscatter\nProduce csv containing CPS-only backscatter and generalized echogram plots displaying regions removed/retained.\n\n\n\n\nOverview of CPS Acoustic Processing. Vessel position and attitude data is used from the POS MV (not shown).\n\n\n\n\n\nPart 2: What Happens During Processing\nIn Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process:\n\nData wrangling, cleaning, and noise removal (including surface noise and seabed removal)\nEcho classification for swim-bladdred fish\nAcoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.\n\n\n\n\nSimplified dataflow of processing in Echoview. *Surface noise and seabed removal replies on two manual inputs: the Integration Start and Integration Stop lines (not pictured, see step 5).\n\n\n\nSection 1) Data Wrangling, Cleaning, and Noise Removal:\n\nLoad RAW EK80 acoustic data and Echoview Calibration Supplement (.ecs)file into Echoview. The .ecs file contains soundspeed information calculated from the nearest (temporally and spatially) Underway CTD cast and echosounder calibration parameters. This file is used at the very beginning to convert from power to Sv (volume-backscattering coefficient).\nAlign sampling rate (time and geometry) from all transducers to the 38 kHz Sv. Acousticians call this step ‘matching geometry’ of all Sv variables. Making sure pings are aligned from all echosounders is important for calculating the frequency response of backscatter in steps later on.\nRemove passive-mode pings.\nNoise removal: estimate and subtract background noise using the background noise removal function described in De Robertis and Higginbottom (2007).\nSurface noise and seabed removal is completed by manually drawing an Integration Start and Integration Stop line in Echoview. The Integration Start line is drawn at the shallowest depth to include surface CPS schools but exclude transducer ring down and surface noise due to sea state (typically around 5 meters below the transducer face or ~10m depth). The Integration Stop line is drawn closest to the seabed to include bottom dwelling animals but exclude any non-living seabed features (typically 3 m above the estimated seabed (Demer et al. 2009) or to the maximum logging range (e.g., 350 m), whichever is shallowest). When drawing the lines, we set the color scale to a minimum Sv threshold of -60 dB which corresponds to a density of approximately three 20-cm-long Pacific Sardine per 100 m3). Doing this helps visually pick out schools from the seabed and from non-swim bladder animals that appear as diffuse scattering layers in the water column. The area of the water column between the two lines sets the depth range that will be integrated for swim bladder fish in steps later on.\nAverage the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.\nExpand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation. This replaces each averaged datapoint from Step 6 with the maximum datapoint surrounding it in a 7x7 pixel region.\n\n\n\nSection 2) Echo Classification for Swim Bladder Fish\n\nCalculate Frequency Response:\n\nFor each dilated pixel, compute:\nSv 200kHz − Sv 38kHz\nSv 120kHz − Sv 38kHz\nSv 70kHz − Sv 38kHz\nThe difference between Sv values provides the frequency response for those pixels. Swim bladder fish have a unique frequency response which we can use extract those acoustic returns in the next step. Acoustic returns that fall within the Sv ranges below are flagged as meeting the criteria for typical swim bladder fish, including CPS.\nCreate a Boolean echogram for Sv differences in the CPS range:\n−13.85 &lt; Sv 70kHz − Sv 38kHz &lt; 9.89\n− 13.5 &lt; Sv 120kHz −Sv 38kHz &lt; 9.37\n− 13.51 &lt; Sv 200kHz − Sv 38kHz &lt; 12.53\n\n\n\nCalculate Standard Deviation:\n\nFor 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (remove passive pings) and averaged Sv (11-sample x 3 ping bin averages).\nAverage the results using an 11-sample by 3-ping window to derive variance.\nCompute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively).\nExpand the standard deviation echograms with a 7 pixel x 7 pixel dilation (same step as Section 1, Step 7).\nCreate a Boolean echogram based on the standard deviations in the CPS range:\nσ120kHz &gt; -65 dB\nσ200kHz &gt; -65 dB\nDiffuse backscattering layers have low σ (Zwolinski et al. 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram .\n\n\n\n\nSection 3) Acoustic Backscatter Integration\n\nIntegrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;\nOutput the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.\n\n\n\n\n\nRStudio Processing Workflow\nThe exported .csv file from Echoview contains all swim bladder backscatter which can include non-target species such as rockfish. In order to further refine the acoustic classification to retain only CPS backscatter, the processed .csv file proceeds to the final semi-automated processing step in Posit using extract_CPS_NASC.R, an R-based tool in the estimATM package.\n\nEchoes from fishes with swimbladders (blue points, scaled by backscatter intensity) along an example acoustic transect (top) and the corresponding Echoview echogram image (bottom). In this example, the upper (blue) and lower lines (green) indicate boundaries within which echoes were retained. When the lower boundary is deeper than the seabed (black line), echoes above the seabed are retained. Echoes from deep, bottom-dwelling schools of non-CPS fishes with swimbladders, and from diffuse scatters near the surface are excluded.\nThe script will open a plot (top) where the acoustics technician can draw new integration start line (blue) and stop line (green). Blue points that fall below the stop line will be excluded while blue points below the start line will be included from the resulting .csv file. The goal is to visually review the Echoview exported echogram image (bottom) and remove backscatter that you believe are not CPS (e.g., rockfishes, hake), possibly contain accidental seabed, or any surface noise amd diffuse scattering layers. The process of picking out CPS from other swim-bladder fish can be tricky as CPS can have a range of characteristics. The Backscatter Identification section goes into detail on this process.\n\nOnce you are happy with the two lines, an image will appear showing the results of your editing. If the backscatter needs to be removed, or put back, you can re-run the script and the results will be replaced.\nThe result is a final .csv with only backscatter information for CPS targets.\n\n\n\n\n\nReferences\n\nDe Robertis, Alex, and Ian Higginbottom. 2007. “A Post-Processing Technique to Estimate the Signal-to-Noise Ratio and Remove Echosounder Background Noise.” ICES Journal of Marine Science 64 (6): 1282–91. https://doi.org/10.1093/icesjms/fsm112.\n\n\nDemer, David A., George R. Cutter, Josiah S. Renfree, and John L. Butler. 2009. “A Statistical-Spectral Method for Echo Classification.” ICES Journal of Marine Science 66 (6): 1081–90. https://doi.org/10.1093/icesjms/fsp054.\n\n\nZwolinski, Juan P., Paulo B. Oliveira, Victor Quintino, and Yorgos Stratoudakis. 2010. “Sardine Potential Habitat and Environmental Forcing Off Western Portugal.” ICES Journal of Marine Science 67 (8): 1553–64. https://doi.org/10.1093/icesjms/fsq068.",
-    "crumbs": [
-      "Methods for Acoustic Trawl Surveys",
-      "Acoustic Data Processing"
-    ]
-  },
-  {
-    "objectID": "content/methods-ship-trawl-selection.html",
-    "href": "content/methods-ship-trawl-selection.html",
-    "title": "Ship Trawl Selection",
-    "section": "",
-    "text": "Acoustic transects are processed for CPS backscatter on the day of acquisition and used to determine nightly trawl locations. This page will walk through the process of trawl selection.\n\n1. Visual Comparison\nThe acoustics technician on watch completes a visual comparison between an in-house published map (plotSurvey) of backscatter results and the transect acoustic echogram. Dense schools of CPS seen in the echogram will correlate to colorful bubbles on plotSurvey.\n\nClicking on summarized acoustic points shows a popup that contains the time and distance interval over which those data were summarized, allowing you to scrutinize the results of Echoview processing. We make sure to cross-reference backscatter spots on plotSurvey with the exported image from Echoview to make an informed trawl-location decision.\n\n\n\n2. Best Judgement\nThe acoustics technician will select 2-3 trawls each night based on the backscatter observed during the daytime acoustic transect, operational efficiency, and expected CPS habitat. If no CPS backscatter is observed, trawl locations will default to using expected CPS habitat information and operational efficiency.\n\nExpected CPS habitat is derived from prior survey results and models:\n\nSardine habitat based on a 12-year data set of sardine eggs, remotely sensed oceanographic variables, sea surface temperature, chlorophyll a concentrations, sea surface altitude (Zwolinski, Emmett, and Demer 2011).\nCharted bathymetry – Pacific sardines can be found from the ocean surface to ~350m in depth and typically reside around smoother (less rocky) bottom types.\nSardine eggs are most abundant at sea-surface temperatures of 13 to 15 ∘C, and larvae are most abundant at 13 to 16 ∘C. Temperature is a primary driver of the spatial and seasonal distribution of spawning. During warm ocean conditions, sardine spawning shifts northward concentrating in offshore regions and north of Point Conception to San Francisco and in some years is observed as far north as Oregon (Kuriyama, Zwolinski, and Hill 2020).\n\n\n\n\n\n\nReferences\n\nKuriyama, Peter T., Juan P. Zwolinski, and Kevin T. Hill. 2020. “Assessment of the Pacific Sardine Resource in 2020 for u.s. Management in 2020-2021.” Southwest Fisheries Science Center (U.S.). https://doi.org/10.25923/R2FZ-4Y79.\n\n\nZwolinski, Juan P., Robert L. Emmett, and David A. Demer. 2011. “Predicting Habitat to Optimize Sampling of Pacific Sardine (Sardinops Sagax).” ICES Journal of Marine Science 68 (5): 867–79. https://doi.org/10.1093/icesjms/fsr038.",
-    "crumbs": [
-      "Methods for Acoustic Trawl Surveys",
-      "Ship Trawl Selection"
-    ]
-  },
-  {
-    "objectID": "content/reporting.html",
-    "href": "content/reporting.html",
-    "title": "Survey Reporting and Final Products",
-    "section": "",
-    "text": "Leg Summaries and Passdown Notes\nUsing the r package ‘estimATM’ several reports are generating using the final processed acoustic data.",
-    "crumbs": [
-      "Survey Reporting and Final Products"
-    ]
-  },
-  {
-    "objectID": "content/biomass.html",
-    "href": "content/biomass.html",
-    "title": "Reporting",
-    "section": "",
-    "text": "Using the r package ‘estimATM’ several reports are generating using the final processed acoustic data."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AST Lab Manual",
-    "section": "",
-    "text": "Last updated: 2025-06-26 17:50:21 UTC",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#top-links",
-    "href": "index.html#top-links",
-    "title": "AST Lab Manual",
-    "section": "Top Links",
-    "text": "Top Links\n\nAST Cruises Calendar\nSWFSC Tech Tank Reservation Request\nAST Shared Drive Link\nAST Surveys Google Drive Link\nAST SOP Google Drive Link",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#who-are-we",
-    "href": "index.html#who-are-we",
-    "title": "AST Lab Manual",
-    "section": "Who are we?",
-    "text": "Who are we?\nThe Advanced Survey Technologies program supports ecosystem-based fisheries management through new or innovative uses of sampling technologies, including: multi-frequency acoustic systems, remotely operated vehicles, instrumented buoys, and instrumented small craft. Read more about our objectives on the SWFSC website. We work routinely work closely with the SWFSC Life History Program and the Fish Population Dynamics and Modeling Program.\nOur primary project is to manage an annual acoustic-trawl survey for West Coast coastal pelagic species (CPS). CPS play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries (Zwolinski et al. 2014). Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: Pacific Sardine Sardinops sagax, Northern Anchovy Engraulis mordax, Pacific Mackerel Scomber japonicus, Jack Mackerel Trachurus symmetricus, Pacific Herring Clupea pallasii, and Round Herring Etrumeus acuminatus. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#document-objective",
-    "href": "index.html#document-objective",
-    "title": "AST Lab Manual",
-    "section": "Document Objective:",
-    "text": "Document Objective:\nThis document serves to be a record of standard operating procedures and methods used in supporting AST projects. As part of our commitment to open science, reproducibility, and transparency, we provide this guide to compliment our public-domain data. Please consider this resource to be a Living Document. The code in this repository is regularly being updated and improved. \nUse the left hand panel to navigate through various projects and methodologies. Staff must have access to the AST Google Drive in order to view most google drive links.\nDo not hesitate to reach out (to us at either alice.beittel@noaa.gov or GitHub issues, especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#noaa-readme",
-    "href": "index.html#noaa-readme",
-    "title": "AST Lab Manual",
-    "section": "NOAA README",
-    "text": "NOAA README\nThis repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#noaa-license",
-    "href": "index.html#noaa-license",
-    "title": "AST Lab Manual",
-    "section": "NOAA License",
-    "text": "NOAA License\nSoftware code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.\nCopyright 2024 SWFSC Advanced Survey Technology Program\n\nLicensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "content/workflow.html",
-    "href": "content/workflow.html",
-    "title": "Data Workflow",
-    "section": "",
-    "text": "Data pipeline from boat to shore to report"
-  },
-  {
-    "objectID": "content/figures_and_tables.html",
-    "href": "content/figures_and_tables.html",
-    "title": "Figures and Tables",
-    "section": "",
-    "text": "Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com."
-  },
-  {
-    "objectID": "content/figures_and_tables.html#code",
-    "href": "content/figures_and_tables.html#code",
-    "title": "Figures and Tables",
-    "section": "Code",
-    "text": "Code\nYou can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
-  },
-  {
-    "objectID": "content/figures_and_tables.html#including-plots",
-    "href": "content/figures_and_tables.html#including-plots",
-    "title": "Figures and Tables",
-    "section": "Including Plots",
-    "text": "Including Plots\nYou can also embed plots and reference them, like so Figure 1.\n\n\n\n\n\n\n\n\nFigure 1: Plot of pressure\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
-  },
-  {
-    "objectID": "content/figures_and_tables.html#including-tables",
-    "href": "content/figures_and_tables.html#including-tables",
-    "title": "Figures and Tables",
-    "section": "Including Tables",
-    "text": "Including Tables\nYou can also embed tables and reference them with Table 1.\n\nlibrary(knitr)\nkable(head(iris))\n\n\n\nTable 1: Iris Data\n\n\n\n\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n5.0\n3.6\n1.4\n0.2\nsetosa\n\n\n5.4\n3.9\n1.7\n0.4\nsetosa"
-  },
-  {
-    "objectID": "content/surveyupdates.html",
-    "href": "content/surveyupdates.html",
-    "title": "Real Time Survey Updates",
-    "section": "",
-    "text": "**Page In Development\n\nReal Time Survey visualizations are available on the RPubs website.\n\n\nContact Kevin Stierhoff for access.\n\n\nplotSurvey\nplotSurvey is an R-based tool in the estimATM repository used to visualize preliminary trawl and acoustic backscatter data. Visualizations are critical for not only for you and others on the ship for decision making and error checking, but the results will be also be available for folks ashore. plotSurvey is in the estimATM Doc folder, as it is an .Rmd file.\nOnce configured properly, files used by plotSurvey are automatically copied to the appropriate locations using SyncBack. If recent changes have been made to the trawl database, manually run the SyncBack profile on the Chem Lab Trawl PC to collect the most recent data (we could not map to the Trawl PC from the EV PC, but we could map in the opposite direction). plotSurvey produces all of the interactive and static figures.\nAny of the tools described below can be run by making plotSurvey.Rmd the active tab, then “knitting” the file (i.e., pressing “Knit”):\n\nYou can publish the output from plotSurvey to Rpubs by pressing the Publish/Republish button in the upper right of the Rstudio Browser: \n\nThe result is a GIS-like interactive map that may be viewed in a web browser.\n\nOne useful addition is the ability to match the backscatter from interactive plotSurvey maps with exported echograms. Clicking on summarized acoustic points shows a popup that contains the time and distance interval over which those data were summarized, allowing you to scrutinize the results of Echoview processing. Make sure to cross-reference your backscatter spots on plotSurvey with the exported image from Echoview to make an informed trawl-location decision. For example:\n\nFurther, figures that are included in reports and Weekly Updates are created here: \nC:\\SURVEY\\2506SH\\ANALYSIS\\2506SH\\Figs, for example: \n\n\n\ncheckTrawls\nTrawl data is examined using checkTrawls.Rmd. This tool looks for missing data and input errors in the trawl database by mapping trawl paths and comparing length-weight data to historic growth models (from Palance et al. 2019), and also identifying specimens with extreme condition factors (K, ~L/W3), indicating an erroneous length or weight value.\nIt’s recommended to run checkTrawls daily and then report suspected errors to the trawl data entry person for review and correction. The Trawl PC in the Chem Lab is running a SyncBack profile that will obtain the output from checkTrawls. Errors that can later cause problems in the biomass estimation, such as measuring the FL instead of SL for anchovy or sardine, can be caught early and corrected.\n\n\nplotCTD\nProcessed CTD and UCTD casts can be scrutinized and visualized using plotCTD.Rmd. The results include cast summary tables (depth, deployment time, location), location maps, and interactive profiles of temperature and salinity, and for UCTD casts, descent rate, depth vs. time (for estimating deployment times), and sound velocity. \nIt is not necessary to run this, but you may find it informative to monitor and predict deployment times, water column properties, or easily identify casts that have not yet been processed to create ECS files (e.g., .asc files with no corresponding -results.txt file get identified for processing).\n\n\nUpdating and bug fixing\nBefore running, it is helpful to apply any recent updates/bug fixes by pressing “Pull” in the Git tab (upper right of the Rstudio GUI):\n\n(If you get an error message, right-click plotSurvey.Rmd file in the Git panel, or any other files that show-up there, and select “Revert”, then Pull again. This will discard any changes made on the ship and apply the latest updates from Github.)\n\nIf you’d like further instructions/assistance, or encounter any errors, or would like to request any improvements or changes, please contact Kevin.",
-    "crumbs": [
-      "Real Time Survey Updates"
-    ]
-  },
-  {
-    "objectID": "content/sop.html",
-    "href": "content/sop.html",
-    "title": "List of Links",
-    "section": "",
-    "text": "Google Documents linked in the Lab Manual are located in the NMFS SWFSC FRD AST Google Shared Drive which is restricted in access to AST members. For access contact Josiah Renfree.\nBelow is a list of relevant and high-use documents and resources related to AST lab projects:\n\nRPubs Website - Kevin’s maps of real time survey updates and data visualization charts\nDaily Ship Acoustic Operations document - Daily Acoustician responsibilities while conducting acoustic operations out at sea on NOAA ships.\nAcoustic Processing Procedure - Echoview processing and nasc.r acoustic processing steps.\nNearshore Vessel Acoustic Processing Procedure - Additional steps specific to processing acoustic data acquired on nearshore survey vessels.\nSetting up the Echoview PC - How to set up the Echoview PC on a NOAA Ship.\nSetting up the EK80 - How to set up the EK80 for running acoustic trawl survey lines. Includes set up for EAL.\nSetting up K-Sync - How to set up the K-Sync software for running acoustic trawl survey lines.\nSetting up the SX90 - How to set up the EK80 for running acoustic trawl survey lines.\nSetting up the ME70 - How to set up the ME70 for running acoustic trawl survey lines.\nSetting up the MS70 - How to set up the MS70 for running acoustic trawl survey lines.\nSetting up the TD50 - How to set up the TD50 software for visualizing acoustic data .",
-    "crumbs": [
-      "List of Links"
-    ]
-  },
-  {
     "objectID": "content/orientation.html",
     "href": "content/orientation.html",
     "title": "Orientation",
@@ -433,25 +301,128 @@
     ]
   },
   {
-    "objectID": "content/code.html",
-    "href": "content/code.html",
-    "title": "Rendering with Code",
+    "objectID": "content/sop.html",
+    "href": "content/sop.html",
+    "title": "List of Links",
     "section": "",
-    "text": "You can have code (R, Python or Julia) in your qmd file. You will need to have these installed on your local computer, but presumably you do already if you are adding code to your qmd files.\nx &lt;- c(5, 15, 25, 35, 45, 55)\ny &lt;- c(5, 20, 14, 32, 22, 38)\nlm(x ~ y)\n\n\nCall:\nlm(formula = x ~ y)\n\nCoefficients:\n(Intercept)            y  \n      1.056        1.326"
+    "text": "Google Documents linked in the Lab Manual are located in the NMFS SWFSC FRD AST Google Shared Drive which is restricted in access to AST members. For access contact Josiah Renfree.\nBelow is a list of relevant and high-use documents and resources related to AST lab projects:\n\nRPubs Website - Kevin’s maps of real time survey updates and data visualization charts\nDaily Ship Acoustic Operations document - Acoustics team’s daily responsibilities while conducting acoustic operations out at sea on NOAA ships. Updated each leg.\nLeg Summaries and Passdown Notes - Active document with all leg summaries and passdown notes. Updated each leg.\nAcoustic Processing Procedure - Echoview processing and nasc.r acoustic processing steps.\nNearshore Vessel Acoustic Processing Procedure - Additional steps specific to processing acoustic data acquired on nearshore survey vessels.\nSetting up the Echoview PC - How to set up the Echoview PC on a NOAA Ship.\nSetting up the EK80 - How to set up the EK80 for running acoustic trawl survey lines. Includes set up for EAL.\nSetting up K-Sync - How to set up the K-Sync software for running acoustic trawl survey lines.\nSetting up the SX90 - How to set up the EK80 for running acoustic trawl survey lines.\nSetting up the ME70 - How to set up the ME70 for running acoustic trawl survey lines.\nSetting up the MS70 - How to set up the MS70 for running acoustic trawl survey lines.\nSetting up the TD50 - How to set up the TD50 software for visualizing acoustic data .",
+    "crumbs": [
+      "List of Links"
+    ]
   },
   {
-    "objectID": "content/code.html#modify-the-github-action",
-    "href": "content/code.html#modify-the-github-action",
-    "title": "Rendering with Code",
-    "section": "Modify the GitHub Action",
-    "text": "Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nrender-and-publish.old_yml\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it."
+    "objectID": "content/surveyupdates.html",
+    "href": "content/surveyupdates.html",
+    "title": "Real Time Survey Updates",
+    "section": "",
+    "text": "**Page In Development\n\nReal Time Survey visualizations are available on the RPubs website.\n\n\nContact Kevin Stierhoff for access.\n\n\nplotSurvey\nplotSurvey is an R-based tool in the estimATM repository used to visualize preliminary trawl and acoustic backscatter data. Visualizations are critical for not only for you and others on the ship for decision making and error checking, but the results will be also be available for folks ashore. plotSurvey is in the estimATM Doc folder, as it is an .Rmd file.\nOnce configured properly, files used by plotSurvey are automatically copied to the appropriate locations using SyncBack. If recent changes have been made to the trawl database, manually run the SyncBack profile on the Chem Lab Trawl PC to collect the most recent data (we could not map to the Trawl PC from the EV PC, but we could map in the opposite direction). plotSurvey produces all of the interactive and static figures.\nAny of the tools described below can be run by making plotSurvey.Rmd the active tab, then “knitting” the file (i.e., pressing “Knit”):\n\nYou can publish the output from plotSurvey to Rpubs by pressing the Publish/Republish button in the upper right of the Rstudio Browser: \n\nThe result is a GIS-like interactive map that may be viewed in a web browser.\n\nOne useful addition is the ability to match the backscatter from interactive plotSurvey maps with exported echograms. Clicking on summarized acoustic points shows a popup that contains the time and distance interval over which those data were summarized, allowing you to scrutinize the results of Echoview processing. Make sure to cross-reference your backscatter spots on plotSurvey with the exported image from Echoview to make an informed trawl-location decision. For example:\n\nFurther, figures that are included in reports and Weekly Updates are created here: \nC:\\SURVEY\\2506SH\\ANALYSIS\\2506SH\\Figs, for example: \n\n\n\ncheckTrawls\nTrawl data is examined using checkTrawls.Rmd. This tool looks for missing data and input errors in the trawl database by mapping trawl paths and comparing length-weight data to historic growth models (from Palance et al. 2019), and also identifying specimens with extreme condition factors (K, ~L/W3), indicating an erroneous length or weight value.\nIt’s recommended to run checkTrawls daily and then report suspected errors to the trawl data entry person for review and correction. The Trawl PC in the Chem Lab is running a SyncBack profile that will obtain the output from checkTrawls. Errors that can later cause problems in the biomass estimation, such as measuring the FL instead of SL for anchovy or sardine, can be caught early and corrected.\n\n\nplotCTD\nProcessed CTD and UCTD casts can be scrutinized and visualized using plotCTD.Rmd. The results include cast summary tables (depth, deployment time, location), location maps, and interactive profiles of temperature and salinity, and for UCTD casts, descent rate, depth vs. time (for estimating deployment times), and sound velocity. \nIt is not necessary to run this, but you may find it informative to monitor and predict deployment times, water column properties, or easily identify casts that have not yet been processed to create ECS files (e.g., .asc files with no corresponding -results.txt file get identified for processing).\n\n\nUpdating and bug fixing\nBefore running, it is helpful to apply any recent updates/bug fixes by pressing “Pull” in the Git tab (upper right of the Rstudio GUI):\n\n(If you get an error message, right-click plotSurvey.Rmd file in the Git panel, or any other files that show-up there, and select “Revert”, then Pull again. This will discard any changes made on the ship and apply the latest updates from Github.)\n\nIf you’d like further instructions/assistance, or encounter any errors, or would like to request any improvements or changes, please contact Kevin.",
+    "crumbs": [
+      "Real Time Survey Updates"
+    ]
   },
   {
-    "objectID": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
-    "href": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
-    "title": "Rendering with Code",
-    "section": "Render locally and publish to gh-pages branch",
-    "text": "Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AST Lab Manual",
+    "section": "",
+    "text": "Last updated: 2025-06-26 23:25:04 UTC",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#top-links",
+    "href": "index.html#top-links",
+    "title": "AST Lab Manual",
+    "section": "Top Links",
+    "text": "Top Links\n\nAST Cruises Calendar\nSWFSC Tech Tank Reservation Request\nAST Shared Drive Link\nAST Surveys Google Drive Link\nAST SOP Google Drive Link",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#who-are-we",
+    "href": "index.html#who-are-we",
+    "title": "AST Lab Manual",
+    "section": "Who are we?",
+    "text": "Who are we?\nThe Advanced Survey Technologies program supports ecosystem-based fisheries management through new or innovative uses of sampling technologies, including: multi-frequency acoustic systems, remotely operated vehicles, instrumented buoys, and instrumented small craft. Read more about our objectives on the SWFSC website. We work routinely work closely with the SWFSC Life History Program and the Fish Population Dynamics and Modeling Program.\nOur primary project is to manage an annual acoustic-trawl survey for West Coast coastal pelagic species (CPS). CPS play an important role in the California Current ecosystem. They’re food sources for marine mammals, sea birds, and larger fish, and they support commercial and recreational fisheries (Zwolinski et al. 2014). Each year the NOAA Southwest Fisheries Science Center surveys the west coast from Baja Mexico to Vancouver Island, Canada to measure the biomass of 5 key coastal pelagic species: Pacific Sardine Sardinops sagax, Northern Anchovy Engraulis mordax, Pacific Mackerel Scomber japonicus, Jack Mackerel Trachurus symmetricus, Pacific Herring Clupea pallasii, and Round Herring Etrumeus acuminatus. The biomass and abundance estimates derived from the survey are used in stock assessment models to support sustainable fisheries.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#document-objective",
+    "href": "index.html#document-objective",
+    "title": "AST Lab Manual",
+    "section": "Document Objective:",
+    "text": "Document Objective:\nThis document serves to be a record of standard operating procedures and methods used in supporting AST projects. As part of our commitment to open science, reproducibility, and transparency, we provide this guide to compliment our public-domain data. Please consider this resource to be a Living Document. The code in this repository is regularly being updated and improved. \nUse the left hand panel to navigate through various projects and methodologies. Staff must have access to the AST Google Drive in order to view most google drive links.\nDo not hesitate to reach out (to us at either alice.beittel@noaa.gov or GitHub issues, especially if you find discrepancies in the data or want to suggest improvements to infrastructure. Thank you in advance for your collaboration and partnership with us as we develop our future data universe.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#open-science-resources",
+    "href": "index.html#open-science-resources",
+    "title": "AST Lab Manual",
+    "section": "Open Science Resources:",
+    "text": "Open Science Resources:\n\nNMFS Open Science Intranet Site - NMFS Workshops, Help Desk, Trainings, Tutorials\nNMFS Openscapes Program\nQuarto Site Inspirations:\n\nAlaska Fisheries Science Center Groundfish Assessment Program Production Data and Documentation (AFSC GAP Products)\nSouthwest Fisheries Science Center Ecosystem Science Division’s Glider Lab Manual\nSouthwest Fisheries Science Center Acoustics Ecology Lab’s Lab Manual\nSouthwest Fisheries Science Center Passive Acoustic Monitoring Program’s Lab Manual Template\nNMFS NOAA Quarto Book Template\n\n\n\nNOAA README\nThis repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.\n\n\nNOAA License\nSoftware code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.\nCopyright 2024 SWFSC Advanced Survey Technology Program\n\nLicensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "content/reporting.html",
+    "href": "content/reporting.html",
+    "title": "Survey Reporting and Final Products",
+    "section": "",
+    "text": "Using the r package ‘estimATM’ several reports are generating using the final processed acoustic data.",
+    "crumbs": [
+      "Survey Reporting and Final Products"
+    ]
+  },
+  {
+    "objectID": "content/methods-ship-trawl-selection.html",
+    "href": "content/methods-ship-trawl-selection.html",
+    "title": "Ship Trawl Selection",
+    "section": "",
+    "text": "Acoustic transects are processed for CPS backscatter on the day of acquisition and used to determine nightly trawl locations. This page will walk through the process of trawl selection.\n\n1. Visual Comparison\nThe acoustics technician on watch completes a visual comparison between an in-house published map (plotSurvey) of backscatter results and the transect acoustic echogram. Dense schools of CPS seen in the echogram will correlate to colorful bubbles on plotSurvey.\n\nClicking on summarized acoustic points shows a popup that contains the time and distance interval over which those data were summarized, allowing you to scrutinize the results of Echoview processing. We make sure to cross-reference backscatter spots on plotSurvey with the exported image from Echoview to make an informed trawl-location decision.\n\n\n\n2. Best Judgement\nThe acoustics technician will select 2-3 trawls each night based on the backscatter observed during the daytime acoustic transect, operational efficiency, and expected CPS habitat. If no CPS backscatter is observed, trawl locations will default to using expected CPS habitat information and operational efficiency.\n\nExpected CPS habitat is derived from prior survey results and models:\n\nSardine habitat based on a 12-year data set of sardine eggs, remotely sensed oceanographic variables, sea surface temperature, chlorophyll a concentrations, sea surface altitude (Zwolinski, Emmett, and Demer 2011).\nCharted bathymetry – Pacific sardines can be found from the ocean surface to ~350m in depth and typically reside around smoother (less rocky) bottom types.\nSardine eggs are most abundant at sea-surface temperatures of 13 to 15 ∘C, and larvae are most abundant at 13 to 16 ∘C. Temperature is a primary driver of the spatial and seasonal distribution of spawning. During warm ocean conditions, sardine spawning shifts northward concentrating in offshore regions and north of Point Conception to San Francisco and in some years is observed as far north as Oregon (Kuriyama, Zwolinski, and Hill 2020).\n\n\n\n\n\n\nReferences\n\nKuriyama, Peter T., Juan P. Zwolinski, and Kevin T. Hill. 2020. “Assessment of the Pacific Sardine Resource in 2020 for u.s. Management in 2020-2021.” Southwest Fisheries Science Center (U.S.). https://doi.org/10.25923/R2FZ-4Y79.\n\n\nZwolinski, Juan P., Robert L. Emmett, and David A. Demer. 2011. “Predicting Habitat to Optimize Sampling of Pacific Sardine (Sardinops Sagax).” ICES Journal of Marine Science 68 (5): 867–79. https://doi.org/10.1093/icesjms/fsr038.",
+    "crumbs": [
+      "Methods for Acoustic Trawl Surveys",
+      "Ship Trawl Selection"
+    ]
+  },
+  {
+    "objectID": "content/processing.html",
+    "href": "content/processing.html",
+    "title": "Acoustic Data Processing",
+    "section": "",
+    "text": "After data acquisition, we identify acoustic echos of schooling CPS using a semi-automated data processing algorithm using Echoview software and in-house Posit code in the estimATM repository. With Echoview, we extract the backscatter of swim bladder fish and process using soundspeed and echosounder calibration values housed inside an Echoview Calibration Supplement (.ecs) file. The Echoview filters and thresholds were based on a sub-sample of echoes from randomly selected CPS schools. We complete the processing with the estimATM package in extract_CPS_NASC.R, where we further refine the backscatter selection to extract only CPS.\nThis page has two parts. Part 1: How to Process details the steps acousticians should follow to process raw acoustic data for CPS. Part 2: What Happens During Processing details the concepts and behind the scenes technical steps that happen during processing. Here we will cover the Echoview and estimATM semi-automated processing workflow.",
+    "crumbs": [
+      "Methods for Acoustic Trawl Surveys",
+      "Acoustic Data Processing"
+    ]
+  },
+  {
+    "objectID": "content/processing.html#part-1-how-to-process",
+    "href": "content/processing.html#part-1-how-to-process",
+    "title": "Acoustic Data Processing",
+    "section": "Part 1: How to Process",
+    "text": "Part 1: How to Process\nBelow are google drive links to procedures for processing acoustic data (internal NOAA only):\n\nAcoustic Processing Procedure - Steps to process data in Echoview and using nasc.R script.\nNearshore Vessel Acoustic Processing Procedure - Additional steps specific for nearshore vessels.\n\nA Quick Overview: The first portion of acoustic processing will take place in Echoview. As acoustician’s we will do the following tasks in Echoview:\n\nAdd data (.raw acoustic data, add Echoivew calibration files created from UCTD/CTD casts)\nRemove bad data regions\nCreate Integration Stop/Start lines\nProduce csv and echogram image files containing swim bladdered fish backscatter\n\nThe second portion of acoustic processing will take place using the nasc.R script in RStudio. As acoustician’s we will do the following in RStudio :\n\nSelect backscatter specific to CPS and remove non-CPS backscatter\nProduce csv containing CPS-only backscatter and generalized echogram plots displaying regions removed/retained.\n\n\n\n\nOverview of CPS Acoustic Processing. Vessel position and attitude data is used from the POS MV (not shown).",
+    "crumbs": [
+      "Methods for Acoustic Trawl Surveys",
+      "Acoustic Data Processing"
+    ]
+  },
+  {
+    "objectID": "content/processing.html#part-2-what-happens-during-processing",
+    "href": "content/processing.html#part-2-what-happens-during-processing",
+    "title": "Acoustic Data Processing",
+    "section": "Part 2: What Happens During Processing",
+    "text": "Part 2: What Happens During Processing\nIn Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process:\n\nData wrangling, cleaning, and noise removal (including surface noise and seabed removal)\nEcho classification for swim-bladdred fish\nAcoustic Backscatter Integration. The aim of the filter criteria is to retain at least 95% of the noise-free backscatter from CPS while rejecting at least 95% of the non-CPS backscatter.\n\n\n\n\nSimplified dataflow of processing in Echoview. *Surface noise and seabed removal replies on two manual inputs: the Integration Start and Integration Stop lines (not pictured, see step 5).\n\n\n\nSection 1) Data Wrangling, Cleaning, and Noise Removal:\n\nLoad RAW EK80 acoustic data and Echoview Calibration Supplement (.ecs)file into Echoview. The .ecs file contains soundspeed information calculated from the nearest (temporally and spatially) Underway CTD cast and echosounder calibration parameters. This file is used at the very beginning to convert from power to Sv (volume-backscattering coefficient).\nAlign sampling rate (time and geometry) from all transducers to the 38 kHz Sv. Acousticians call this step ‘matching geometry’ of all Sv variables. Making sure pings are aligned from all echosounders is important for calculating the frequency response of backscatter in steps later on.\nRemove passive-mode pings.\nNoise removal: estimate and subtract background noise using the background noise removal function described in De Robertis and Higginbottom (2007).\nSurface noise and seabed removal is completed by manually drawing an Integration Start and Integration Stop line in Echoview. The Integration Start line is drawn at the shallowest depth to include surface CPS schools but exclude transducer ring down and surface noise due to sea state (typically around 5 meters below the transducer face or ~10m depth). The Integration Stop line is drawn closest to the seabed to include bottom dwelling animals but exclude any non-living seabed features (typically 3 m above the estimated seabed (Demer et al. 2009) or to the maximum logging range (e.g., 350 m), whichever is shallowest). When drawing the lines, we set the color scale to a minimum Sv threshold of -60 dB which corresponds to a density of approximately three 20-cm-long Pacific Sardine per 100 m3). Doing this helps visually pick out schools from the seabed and from non-swim bladder animals that appear as diffuse scattering layers in the water column. The area of the water column between the two lines sets the depth range that will be integrated for swim bladder fish in steps later on.\nAverage the noise-free Sv echograms using non-overlapping 11-sample by 3-ping bins.\nExpand the averaged, noise-reduced Sv echograms with a 7 pixel x 7 pixel dilation. This replaces each averaged datapoint from Step 6 with the maximum datapoint surrounding it in a 7x7 pixel region.\n\n\n\nSection 2) Echo Classification for Swim Bladder Fish\n\nCalculate Frequency Response:\n\nFor each dilated pixel, compute:\nSv 200kHz − Sv 38kHz\nSv 120kHz − Sv 38kHz\nSv 70kHz − Sv 38kHz\nThe difference between Sv values provides the frequency response for those pixels. Swim bladder fish have a unique frequency response which we can use extract those acoustic returns in the next step. Acoustic returns that fall within the Sv ranges below are flagged as meeting the criteria for typical swim bladder fish, including CPS.\nCreate a Boolean echogram for Sv differences in the CPS range:\n−13.85 &lt; Sv 70kHz − Sv 38kHz &lt; 9.89\n− 13.5 &lt; Sv 120kHz −Sv 38kHz &lt; 9.37\n− 13.51 &lt; Sv 200kHz − Sv 38kHz &lt; 12.53\n\n\n\nCalculate Standard Deviation:\n\nFor 120 and 200 kHz, compute the squared difference between the noise-filtered Sv (remove passive pings) and averaged Sv (11-sample x 3 ping bin averages).\nAverage the results using an 11-sample by 3-ping window to derive variance.\nCompute the square root to derive the 120- and 200-kHz standard deviations (σ120kHz and σ200kHz, respectively).\nExpand the standard deviation echograms with a 7 pixel x 7 pixel dilation (same step as Section 1, Step 7).\nCreate a Boolean echogram based on the standard deviations in the CPS range:\nσ120kHz &gt; -65 dB\nσ200kHz &gt; -65 dB\nDiffuse backscattering layers have low σ (Zwolinski et al. 2010) whereas fish schools have high σ. Intersect the two Boolean echograms to create an echogram with “TRUE” samples for candidate CPS schools and “FALSE” elsewhere. Mask the noise-reduced echograms using the CPS Boolean echogram .\n\n\n\n\nSection 3) Acoustic Backscatter Integration\n\nIntegrate the volume backscattering coefficients (sV , m2 m-3) attributed to CPS over 5-m depths and averaged over 100-m distances;\nOutput the resulting nautical area scattering coefficients (sA; m2 nmi-2) and associated information from each transect and frequency to comma-delimited text (.csv) files.\n\n\n\n\nRStudio Processing Workflow\nThe exported .csv file from Echoview contains all swim bladder backscatter which can include non-target species such as rockfish. In order to further refine the acoustic classification to retain only CPS backscatter, the processed .csv file proceeds to the final semi-automated processing step in Posit using extract_CPS_NASC.R, an R-based tool in the estimATM package.\n\nEchoes from fishes with swimbladders (blue points, scaled by backscatter intensity) along an example acoustic transect (top) and the corresponding Echoview echogram image (bottom). In this example, the upper (blue) and lower lines (green) indicate boundaries within which echoes were retained. When the lower boundary is deeper than the seabed (black line), echoes above the seabed are retained. Echoes from deep, bottom-dwelling schools of non-CPS fishes with swimbladders, and from diffuse scatters near the surface are excluded.\nThe script will open a plot (top) where the acoustics technician can draw new integration start line (blue) and stop line (green). Blue points that fall below the stop line will be excluded while blue points below the start line will be included from the resulting .csv file. The goal is to visually review the Echoview exported echogram image (bottom) and remove backscatter that you believe are not CPS (e.g., rockfishes, hake), possibly contain accidental seabed, or any surface noise amd diffuse scattering layers. The process of picking out CPS from other swim-bladder fish can be tricky as CPS can have a range of characteristics. The Backscatter Identification section goes into detail on this process.\n\nOnce you are happy with the two lines, an image will appear showing the results of your editing. If the backscatter needs to be removed, or put back, you can re-run the script and the results will be replaced.\nThe result is a final .csv with only backscatter information for CPS targets.",
+    "crumbs": [
+      "Methods for Acoustic Trawl Surveys",
+      "Acoustic Data Processing"
+    ]
   },
   {
     "objectID": "content/references.html",
@@ -474,39 +445,22 @@
     ]
   },
   {
-    "objectID": "content/acquisition.html",
-    "href": "content/acquisition.html",
-    "title": "Data Acquisition",
+    "objectID": "content/noaa-ship-cps-surveys.html",
+    "href": "content/noaa-ship-cps-surveys.html",
+    "title": "NOAA Ship CPS Surveys",
     "section": "",
-    "text": "Figure 1: Transducer locations on the bottom of the centerboard aboard Lasker.\n\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard” (Figure 1). The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\n\nOn Lasker and Shimada, conductivity and temperature profiles were measured down to 300 m using calibrated sensors on a probe cast from the vessel while underway (UnderwayCTD, or UCTD; Teledyne Ocean- science). Casts were typically conducted between two to four times along each transect. These data indicate the depth of the surface mixed layer, above which most pelagic CPS reside during the day. These data were also used to estimate the time-averaged sound speed (Demer, 2004), for estimating ranges to the sound scatterers, and frequency-specific sound absorption coefficients, for compensating signal attenuation of the sound pulse between the transducer and scatterers (Simmonds and MacLennan, 2005)."
-  },
-  {
-    "objectID": "content/acquisition.html#survey-equipment",
-    "href": "content/acquisition.html#survey-equipment",
-    "title": "Data Acquisition",
-    "section": "",
-    "text": "Figure 1: Transducer locations on the bottom of the centerboard aboard Lasker.\n\n\n\nOn Lasker and Shimada, multi-frequency Wideband Transceivers (Simrad EK80 WBTs; Kongsberg) were confgured with split-beam transducers (Simrad ES18, ES38-7, ES70-7C, ES120-7C, ES200-7C, and ES333- 7C on Lasker and ES18, ES38B, ES70-7C, ES120-7C, and ES200-7C on Shimada; Kongsberg). The transducers were mounted on the bottom of a retractable keel or “centerboard” (Figure 1). The keel was retracted (transducers ~5-m depth) during calibration, and extended to the intermediate position (transducers ~7-m depth) during the survey. Exceptions were made during shallow water operations, when the keel was retracted; or during times of heavy weather, when the keel was extended (transducers ~9-m depth) to provide extra stability and reduce the efect of weather-generated noise. Transducer position and motion were measured at 5 Hz using an inertial motion unit (Applanix POS-MV; Trimble).\n\n\n\nOn Lasker and Shimada, conductivity and temperature profiles were measured down to 300 m using calibrated sensors on a probe cast from the vessel while underway (UnderwayCTD, or UCTD; Teledyne Ocean- science). Casts were typically conducted between two to four times along each transect. These data indicate the depth of the surface mixed layer, above which most pelagic CPS reside during the day. These data were also used to estimate the time-averaged sound speed (Demer, 2004), for estimating ranges to the sound scatterers, and frequency-specific sound absorption coefficients, for compensating signal attenuation of the sound pulse between the transducer and scatterers (Simmonds and MacLennan, 2005)."
-  },
-  {
-    "objectID": "content/acquisition.html#software",
-    "href": "content/acquisition.html#software",
-    "title": "Data Acquisition",
-    "section": "Software",
-    "text": "Software\n\nEchosounder Software\nEK80\n\n\nNetTime\nOn Lasker and Shimada, the computer clocks were synchronized with the GPS clock (UTC) using a synchronization software called NetTime.\n\n\nEAL\nThe 38-, 70-, 120-, 200-, and 333-kHz echosounders were controlled by the EK80 Adaptive Logger (EAL2, Renfree and Demer, 2016). The EAL optimizes the pulse interval based on the seabed depth, while avoiding aliased seabed echoes, and was programmed such that once an hour the echosounders would record three pings in passive mode, for obtaining estimates of the background noise level.\n\n\nK Sync\nTo minimize acoustic interference on Lasker and Shimada, transmit pulses from the EK80s, acoustic Doppler current profiler and echosounder (Simrad-Kongsberg EC150-3C), multibeam echosounder (Simrad- Kongsberg ME70), imaging sonar (Simrad-Kongsberg MS70), scanning sonar (Simrad-Kongsberg SX90), and a separate acoustic Doppler current profiler (Teledyne RD Instruments OS75 ADCP) were triggered using a synchronization system (Simrad K-Sync; Kongsberg). The K-Sync trigger rate, and thus the echosounder ping interval, was modulated by the EAL using the 18-kHz seabed depth provided by the Scientific Computing System (SCS)."
-  },
-  {
-    "objectID": "content/acquisition.html#raw-acoustic-data-format",
-    "href": "content/acquisition.html#raw-acoustic-data-format",
-    "title": "Data Acquisition",
-    "section": "Raw Acoustic Data Format",
-    "text": "Raw Acoustic Data Format\nMeasurements of volume backscattering strength (Sv; dB re 1 m2 m-3) and target strength (TS; dB re 1 m2), indexed by time and geographic positions provided by GPS receivers, were stored in Simrad-Kongsberg .raw format with a 1-GB maximum file size. During daytime, the echosounders operated in CW mode and logged to 60 m beyond the detected seabed range or to a maximum range of 500, 500, 500, 300, and 150 m for 38, 70, 120, 200, and 333 kHz, respectively. During nighttime, the echosounders operated in FM mode and logged to 100 m. For each acoustic instrument, the prefix for each fle name is a concatenation of the survey name (e.g., 2307RL), the operational mode (CW or FM), and the logging commencement date and time from the EK80 software (v21.15.1). For example, a file generated by the Simrad-Kongsberg EK80 software for a WBT operated in CW mode is named 2307RL_CW-D20220826-T155651.raw."
+    "text": "Draft of dataflow for IWCPS on a NOAA Ship."
   },
   {
     "objectID": "content/identification.html",
     "href": "content/identification.html",
     "title": "Backscatter Identification",
     "section": "",
-    "text": "Acoustic Characteristics of CPS\nWhile the acoustic properties of swimbladder fish depends on several factors, the most important are the acoustic wavelength, swimbladder size, and swimbladder orientation to the incident sound pulse. We use 39, 70, 120, and 200kHz to capture a range of swimbladder sizes and orientations. During our nightly trawl catches, we measure the standard length for a collection of fish. Using the standard length we estimate the dorsal surface area of a swimbladder (swimbladder size). Knowing the approximate dorsal surface area of a swimbladder allows us to calculate the backscattering cross-section of one bladder and in turn the volume backscattering coefficient (many swim bladders together such as a school of fish). We are able to calculate backscattering coefficients for each CPS species. You may also hear the word Target Strength, which is a logrithmic function of the backscattering cross-section and describes how sound reflects off the swim bladder depending on its size. For this survey we calculate target strength as a logarithmic function of frequency and species-specific parameters obtained theoretically or experimentally and fish total length from trawl samples. Full details on species-specific target strength parameters can be found in the survey biomass report here.\n\n\n\n\n\nSv differences in the CPS range:\n−13.85 &lt; Sv 70kHz − Sv 38kHz &lt; 9.89\n− 13.5 &lt; Sv 120kHz −Sv 38kHz &lt; 9.37\n− 13.51 &lt; Sv 200kHz − Sv 38kHz &lt; 12.53\n\n\nThe automated CPS processing in ‘Echoview’ filters for all CPS meeting the criteria above, however some non-CPS targets still pass through the filter, specifically fishes like rockfish. To remove these CPS-like targets, we manually review each exported Echoview echogram.\n\n\nBelow is how we do that.\nUsing the ‘extract_CPS_NASC.R’, an R-based tool in the ‘estimATM’ package, we remove non-CPS targets from final echograms. This process aims to distinguish CPS from non-target species from mid-water, demersal, and benthic swim bladder fishes.\n\n\n\n\n\nWe follow a decision guide to help distinguish CPS and retain the backscatter that meets the criteria in green.\n\n\n\n\n\nBelow is an example of a well defined school with high Sv. CPS schools can occur in near the surface, mid-water column, or compressed to the seabed (especially in shallow waters during the day).\n\n\n\nCPS near sea surface\n\n\n\n\n\nCPS near seafloor\n\n\nBelow are examples of non-CPS that we manually using ‘extract_CPS_NASC.R’.\n\n\n\nDiffuse biological layer. Diffuse schools will often be observed offshore near the surface, near a shelf break, or deeper than ~250m\n\n\n\n\n\nRockfish on a seamount. Rockfish often will be observed near rugged or rocky seabed.\n\n\n\n\n\nThe hake snake. Hake tend to be mid-water column and in a snaking schooling behavior.\n\n\nWhen looking at Echoview echograms of acoustic transects, if there are areas where we are unsure if the backscatter is CPS or not CPS based on visual inspection, we dig deeper and examine how the volume backscattering coefficient (Sv) changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (Figure 1) with the decrease or flattening occurring between 120kHz and 200kHz.\n\n\n\n\n\n\nFigure 1\n\n\n\nReference: Content is adapted from this google document: Name that Backscatter!"
+    "text": "Acoustic Characteristics of CPS\nWhile the acoustic properties of swimbladder fish depends on several factors, the most important are the acoustic wavelength, swimbladder size, and swimbladder orientation to the incident sound pulse. We use 39, 70, 120, and 200kHz to capture a range of swimbladder sizes and orientations. During our nightly trawl catches, we measure the standard length for a collection of fish. Using the standard length we estimate the dorsal surface area of a swimbladder (swimbladder size). Knowing the approximate dorsal surface area of a swimbladder allows us to calculate the backscattering cross-section of one bladder and in turn the volume backscattering coefficient (many swim bladders together such as a school of fish). We are able to calculate backscattering coefficients for each CPS species. You may also hear the word Target Strength, which is a logrithmic function of the backscattering cross-section and describes how sound reflects off the swim bladder depending on its size. For this survey we calculate target strength as a logarithmic function of frequency and species-specific parameters obtained theoretically or experimentally and fish total length from trawl samples. Full details on species-specific target strength parameters can be found in the survey biomass report here.\n\n\n\n\n\nSv differences in the CPS range:\n−13.85 &lt; Sv 70kHz − Sv 38kHz &lt; 9.89\n− 13.5 &lt; Sv 120kHz −Sv 38kHz &lt; 9.37\n− 13.51 &lt; Sv 200kHz − Sv 38kHz &lt; 12.53\n\n\nThe automated CPS processing in ‘Echoview’ filters for all CPS meeting the criteria above, however some non-CPS targets still pass through the filter, specifically fishes like rockfish. To remove these CPS-like targets, we manually review each exported Echoview echogram.\n\n\nBelow is how we do that.\nUsing the ‘extract_CPS_NASC.R’, an R-based tool in the ‘estimATM’ package, we remove non-CPS targets from final echograms. This process aims to distinguish CPS from non-target species from mid-water, demersal, and benthic swim bladder fishes.\n\n\n\n\n\nWe follow a decision guide to help distinguish CPS and retain the backscatter that meets the criteria in green.\n\n\n\n\n\nBelow is an example of a well defined school with high Sv. CPS schools can occur in near the surface, mid-water column, or compressed to the seabed (especially in shallow waters during the day).\n\n\n\nCPS near sea surface\n\n\n\n\n\nCPS near seafloor\n\n\nBelow are examples of non-CPS that we manually using ‘extract_CPS_NASC.R’.\n\n\n\nDiffuse biological layer. Diffuse schools will often be observed offshore near the surface, near a shelf break, or deeper than ~250m\n\n\n\n\n\nRockfish on a seamount. Rockfish often will be observed near rugged or rocky seabed.\n\n\n\n\n\nThe hake snake. Hake tend to be mid-water column and in a snaking schooling behavior.\n\n\nWhen looking at Echoview echograms of acoustic transects, if there are areas where we are unsure if the backscatter is CPS or not CPS based on visual inspection, we dig deeper and examine how the volume backscattering coefficient (Sv) changes over each frequency. We refer to this as the frequency response. Swimbladder fish are expected to have a flat or decreasing frequency response across 38kHz, 70kHz, 120kHz, and 200kHz (Figure 1) with the decrease or flattening occurring between 120kHz and 200kHz.\n\n\n\n\n\n\nFigure 1\n\n\n\nReference: Content is adapted from this google document: Name that Backscatter!",
+    "crumbs": [
+      "Methods for Acoustic Trawl Surveys",
+      "Backscatter Identification"
+    ]
   },
   {
     "objectID": "content/cps-dailyops.html",
@@ -520,26 +474,88 @@
     "href": "content/methods-dailyshipacoustics.html",
     "title": "Daily Shipboard Acoustic Operations",
     "section": "",
-    "text": "The Acoustician on watch should follow the daily tasks detailed in the Daily Ship Acoustic Operations document.\n\nOrientation to the Echoview PC:\nThe main survey directory is C:\\SURVEY\\[Survey Name Code]. For example for 2025 the directory is: C:\\SURVEY\\2506SH. All work by the acoustician must be done inside of this folder. DO NOT work with data sotred in the Survey_Backup folder on the NAS Drive – this folder is mirrored from the C:\\ drive and will be overwritten during subsequent backups.\n\nThe C:\\SURVEY\\[Survey Name Code] directory contains all survey-related items excluding sounder data. Sounder data is instead recorded to local (or external) hard drives on each individual system and/or backed up to the NAS drive.\n\n\nLeg Summaries and Passdown Notes:\nThroughout each leg acousticians will record issues, progress notes, and information to pass to the next crew in this google doc.\n\n\nTroubleshooting:\n\nFor issues on echosounder software, refer to the Set Up for Acoustic Trawl page and instillation settings for the echosounder.\nFor issues on ship networking, contact the ship ET and ship survey technician\nThe AST group chat is always available for additional techinical and emotional support :)",
+    "text": "While conducting acoustic-trawl surveys, the acoustics team is responsible for ensuring the proper operation of all acoustic instruments, processing acoustic transects, and determining CPS school sites for nightly trawling. This page details the daily tasks the acoustics team will undertake while at sea.\n\nQuick Links:\n\nDaily Ship Acoustic Operations document - Daily task list for sunrise, throughout the day, and sunset. Updated each leg.\nLeg Summaries and Passdown Notes - Active document with all leg summaries and passdown notes. Updated each leg.\n\n\n\nOrientation to the Echoview PC:\nThe main survey directory is C:\\SURVEY\\[Survey Name Code]. For example for 2025 the directory is: C:\\SURVEY\\2506SH. All work by the acoustician must be done inside of this folder. DO NOT work with data stored in the Survey_Backup folder on the NAS Drive – this folder is mirrored from the C:\\ drive and will be overwritten during subsequent backups.\n\nThe C:\\SURVEY\\[Survey Name Code] directory contains all survey-related items excluding sounder data. Sounder data is instead recorded to local (or external) hard drives on each individual system and/or backed up to the NAS drive.\n\n\nTroubleshooting:\n\nFor issues on echosounder software, refer to the Set Up for Acoustic Trawl page and instillation settings for the echosounder.\nFor issues on ship networking, contact the ship ET and ship survey technician\nThe AST group chat is always available for additional techinical and emotional support :)",
     "crumbs": [
       "Methods for Acoustic Trawl Surveys",
       "Daily Shipboard Acoustic Operations"
     ]
   },
   {
-    "objectID": "content/setup-shipUCTD.html",
-    "href": "content/setup-shipUCTD.html",
-    "title": "Shipboard UCTD System",
+    "objectID": "content/data-access.html",
+    "href": "content/data-access.html",
+    "title": "How to Access Our Data",
     "section": "",
-    "text": "We have used several UCTD systems on NOAA Ships. The most recent system is the Valeport rapidPro UCTD.\n\nOperating Instructions for Valeport UCTD - charging, cast methods, data download.\nOperating Manuals and set up files can be found on the UCTD Google Drive Folder.",
+    "text": "Public Access to Acoustic-Trawl Data:\nNOAA Coast Watch ERDDAP:\nCPS Trawl Haul Catch Data\nCPS Trawl Specimen Data\nNOAA Ship Reuben Lasker Underway Meteorological Data\nNOAA National Centers for Environmental Information (NCEI):\nLocate raw acoustic data using the NCEI Water Column Sonar Data Viewer.\nDownload raw acoustic data via the viewer or the AWS NCEI bucket.\n\n\nInternal Access to Acoustic-Trawl Data:\nAcoustic data is located on AST servers located at SWFSC and on the Google Cloud Platform. The following links are only available to AST program members at SWFSC.\nAST Servers:\n\n\\\\swc-storage4-s\\AST1\n\\\\swc-storage4-s\\AST2\n\\\\swc-storage3-s\\AST3\n\\\\swc-storage4-s\\AST4\n\\\\swc-storage4-s\\AST5\n\nAST Google Cloud Buckets:\n\nAST1 - Shimada Data: https://console.cloud.google.com/storage/browser/ast1\nAST2 - Long Beach Carnage Data: https://console.cloud.google.com/storage/browser/ast2\nAST3 - Lisa Marie Data: https://console.cloud.google.com/storage/browser/ast3",
     "crumbs": [
-      "Set Up for Acoustic Trawl Surveys",
-      "Shipboard UCTD System"
+      "How to Access Our Data"
     ]
   },
   {
-    "objectID": "content/acknowledgements.html",
-    "href": "content/acknowledgements.html",
+    "objectID": "content/Not Used/biomass.html",
+    "href": "content/Not Used/biomass.html",
+    "title": "Reporting",
+    "section": "",
+    "text": "Using the r package ‘estimATM’ several reports are generating using the final processed acoustic data."
+  },
+  {
+    "objectID": "content/Not Used/preparation.html",
+    "href": "content/Not Used/preparation.html",
+    "title": "Data Preparation",
+    "section": "",
+    "text": "Select regions of interest\n\nSelect data on transect lines\n\n\nIntegration stop and start lines"
+  },
+  {
+    "objectID": "content/Not Used/add-content.html",
+    "href": "content/Not Used/add-content.html",
+    "title": "Customize",
+    "section": "",
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "content/Not Used/add-content.html#edit-and-add-your-pages",
+    "href": "content/Not Used/add-content.html#edit-and-add-your-pages",
+    "title": "Customize",
+    "section": "",
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "content/Not Used/add-content.html#add-your-pages-the-project",
+    "href": "content/Not Used/add-content.html#add-your-pages-the-project",
+    "title": "Customize",
+    "section": "Add your pages the project",
+    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
+  },
+  {
+    "objectID": "content/Not Used/publishing.html",
+    "href": "content/Not Used/publishing.html",
+    "title": "Publishing",
+    "section": "",
+    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
+  },
+  {
+    "objectID": "content/Not Used/publishing.html#turn-on-github-pages-for-your-repo",
+    "href": "content/Not Used/publishing.html#turn-on-github-pages-for-your-repo",
+    "title": "Publishing",
+    "section": "Turn on GitHub Pages for your repo",
+    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
+  },
+  {
+    "objectID": "content/Not Used/publishing.html#do-your-first-publish-to-gh-pages",
+    "href": "content/Not Used/publishing.html#do-your-first-publish-to-gh-pages",
+    "title": "Publishing",
+    "section": "Do your first publish to gh-pages",
+    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
+  },
+  {
+    "objectID": "content/Not Used/publishing.html#dont-like-using-gh-pages",
+    "href": "content/Not Used/publishing.html#dont-like-using-gh-pages",
+    "title": "Publishing",
+    "section": "Don’t like using gh-pages?",
+    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
+  },
+  {
+    "objectID": "content/Not Used/acknowledgements.html",
+    "href": "content/Not Used/acknowledgements.html",
     "title": "Acknowledgments",
     "section": "",
     "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."

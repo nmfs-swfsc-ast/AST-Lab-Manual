@@ -49,7 +49,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/surveyupdates.html" rel="next">
+<link href="../content/identification.html" rel="next">
 <link href="../content/methods-dailynearshoreacoustics.html" rel="prev">
 <link href="../assets/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -396,6 +396,12 @@ div.csl-indent {
  <span class="menu-text">Acoustic Data Processing</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/identification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Backscatter Identification</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -450,8 +456,10 @@ div.csl-indent {
    
   <ul>
   <li><a href="#part-1-how-to-process" id="toc-part-1-how-to-process" class="nav-link active" data-scroll-target="#part-1-how-to-process">Part 1: How to Process</a></li>
-  <li><a href="#part-2-what-happens-during-processing" id="toc-part-2-what-happens-during-processing" class="nav-link" data-scroll-target="#part-2-what-happens-during-processing"><strong>Part 2: What Happens During Processing</strong></a></li>
+  <li><a href="#part-2-what-happens-during-processing" id="toc-part-2-what-happens-during-processing" class="nav-link" data-scroll-target="#part-2-what-happens-during-processing"><strong>Part 2: What Happens During Processing</strong></a>
+  <ul class="collapse">
   <li><a href="#rstudio-processing-workflow" id="toc-rstudio-processing-workflow" class="nav-link" data-scroll-target="#rstudio-processing-workflow"><code>RStudio</code> Processing Workflow</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/edit/main/content/processing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/blob/main/content/processing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -480,12 +488,12 @@ div.csl-indent {
 
 <p>After data acquisition, we identify acoustic echos of schooling CPS using a semi-automated data processing algorithm using Echoview software and in-house <code>Posit</code> code in the <code>estimATM</code> <a href="https://github.com/kstierhoff/estimATM">repository</a>. With Echoview, we extract the backscatter of swim bladder fish and process using soundspeed and echosounder calibration values housed inside an Echoview Calibration Supplement (<code>.ecs)</code> file. The Echoview filters and thresholds were based on a sub-sample of echoes from randomly selected CPS schools. We complete the processing with the <code>estimATM</code> package in <code>extract_CPS_NASC.R</code>, where we further refine the backscatter selection to extract only CPS.</p>
 <p>This page has two parts. <strong>Part 1: How to Process</strong> details the steps acousticians should follow to process raw acoustic data for CPS. <strong>Part 2: What Happens During Processing</strong> details the concepts and behind the scenes technical steps that happen during processing. Here we will cover the Echoview and <code>estimATM</code> semi-automated processing workflow.</p>
-<section id="part-1-how-to-process" class="level3">
-<h3 class="anchored" data-anchor-id="part-1-how-to-process">Part 1: How to Process</h3>
+<section id="part-1-how-to-process" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-how-to-process">Part 1: How to Process</h2>
 <p>Below are google drive links to procedures for processing acoustic data (internal NOAA only):</p>
 <ul>
-<li><p><a href="https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?usp=drive_link">Acoustic Processing Procedure</a> - Steps to process data in Echoview and using nasc.R script.</p></li>
-<li><p><a href="https://docs.google.com/document/d/1fWika7Z1LAe0QYnfdJnMMnfD950439AhpqRl94DVfvk/edit?tab=t.0">Nearshore Vessel Acoustic Processing Procedure</a> - Additional steps specific for nearshore vessels.</p></li>
+<li><p><a href="https://docs.google.com/document/d/1tTdo0pPXLM2GqPcw8AekjrZYpUUeCxWssOc0d6HT2gQ/edit?usp=drive_link"><strong>Acoustic Processing Procedure</strong></a> - Steps to process data in Echoview and using nasc.R script.</p></li>
+<li><p><a href="https://docs.google.com/document/d/1fWika7Z1LAe0QYnfdJnMMnfD950439AhpqRl94DVfvk/edit?tab=t.0"><strong>Nearshore Vessel Acoustic Processing Procedure</strong></a> - Additional steps specific for nearshore vessels.</p></li>
 </ul>
 <p><em>A Quick Overview:</em> The first portion of acoustic processing will take place in Echoview. As acoustician’s we will do the following tasks in Echoview:</p>
 <ul>
@@ -507,8 +515,8 @@ div.csl-indent {
 </div>
 <hr>
 </section>
-<section id="part-2-what-happens-during-processing" class="level3">
-<h3 class="anchored" data-anchor-id="part-2-what-happens-during-processing"><strong>Part 2: What Happens During Processing</strong></h3>
+<section id="part-2-what-happens-during-processing" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-what-happens-during-processing"><strong>Part 2: What Happens During Processing</strong></h2>
 <p>In Echoview, we organize, clean, and extract acoustic backscatter of swim bladder fish. There are three key steps to this process:</p>
 <ol type="1">
 <li><p>Data wrangling, cleaning, and noise removal (including surface noise and seabed removal)</p></li>
@@ -571,7 +579,6 @@ div.csl-indent {
 </ol>
 <hr>
 </section>
-</section>
 <section id="rstudio-processing-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="rstudio-processing-workflow"><code>RStudio</code> Processing Workflow</h3>
 <p>The exported <code>.csv</code> file from Echoview contains all swim bladder backscatter which can include non-target species such as rockfish. In order to further refine the acoustic classification to retain only CPS backscatter, the processed <code>.csv</code> file proceeds to the final semi-automated processing step in <code>Posit</code> using <code>extract_CPS_NASC.R</code>, an R-based tool in the <code>estimATM</code> package.</p>
@@ -584,6 +591,7 @@ div.csl-indent {
 
 
 
+</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
@@ -1021,8 +1029,8 @@ Zwolinski, Juan P., Paulo B. Oliveira, Victor Quintino, and Yorgos Stratoudakis.
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/surveyupdates.html" class="pagination-link" aria-label="Real Time Survey Updates">
-        <span class="nav-page-text">Real Time Survey Updates</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/identification.html" class="pagination-link" aria-label="Backscatter Identification">
+        <span class="nav-page-text">Backscatter Identification</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
