@@ -437,6 +437,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#quick-links" id="toc-quick-links" class="nav-link active" data-scroll-target="#quick-links">Quick Links:</a></li>
   <li><a href="#ast-google-shared-drive-structure" id="toc-ast-google-shared-drive-structure" class="nav-link" data-scroll-target="#ast-google-shared-drive-structure">AST Google Shared Drive Structure:</a></li>
+  <li><a href="#data-archiving" id="toc-data-archiving" class="nav-link" data-scroll-target="#data-archiving">Data Archiving:</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/edit/main/content/data-management.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/blob/main/content/data-management.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -476,26 +477,52 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="ast-google-shared-drive-structure" class="level3">
 <h3 class="anchored" data-anchor-id="ast-google-shared-drive-structure">AST Google Shared Drive Structure:</h3>
-<section id="equipment-documentation" class="level4">
-<h4 class="anchored" data-anchor-id="equipment-documentation">Equipment Documentation</h4>
-<pre><code>Add folder structure</code></pre>
-</section>
 <section id="calibrations" class="level4">
 <h4 class="anchored" data-anchor-id="calibrations">Calibrations</h4>
-<p>The structure of an individual GDrive Calibration folder:</p>
-<pre><code>Survey Code-Calibration [2506LBC-Calibration]
-├── transceiver type [EK80]
-  ├── RAW
-  ├── RESULTS
-├── ECS 
-  ├── Survey Code_UCTD Cast Number.ecs [2506LBC_UCTD001-1.ecs] </code></pre>
+<p>The file structure for Survey Calibration data on the GDrive.</p>
+<pre><code>20210702_LASKER_SummerCPS
+├── DATA
+  ├── EK80
+    ├── RAW
+    ├── CALIBRATION
+      ├── RAW
+      ├── RESULTS
+      ├── SETUP</code></pre>
 </section>
-<section id="cce-moorings-and-landers" class="level4">
-<h4 class="anchored" data-anchor-id="cce-moorings-and-landers">CCE Moorings and Landers</h4>
-<pre><code>Add folder structure</code></pre>
+<section id="projects" class="level4">
+<h4 class="anchored" data-anchor-id="projects">Projects</h4>
+<p>The file structure for Projects on the GDrive.</p>
+<pre><code>CCE Mooring and Landers
+├── Point Conception Lander
+  ├── 06 (Deployment Number)
+    ├── WBAT
+      ├── RAW
+      ├── SETUP
+      ├── CALIBRATION
+        ├── RAW
+        ├── RESULTS
+        ├── SETUP
+      
+    
+California Current Ecosystem Buoys
+  ├── CCE1
+    ├── 02 (Deployment Number)
+      ├── WBAT
+        ├── RAW
+        ├── SETUP
+        ├── CALIBRATION
+          ├── RAW
+          ├── RESULTS
+          ├── SETUP
+        </code></pre>
+</section>
+</section>
+<section id="data-archiving" class="level3">
+<h3 class="anchored" data-anchor-id="data-archiving">Data Archiving:</h3>
+<p>We use the NCEI Software <a href="https://www.ncei.noaa.gov/products/cruisepack"><strong>CruisePack</strong></a> to archive acoustic data. CruisePack is a data packaging and metadata gathering software tool NCEI developed to simplify data submission preparation for cruise-based data. All AST acoustic survey data should be archived to the <a href="https://registry.opendata.aws/ncei-wcsd-archive/">NCEI Water Column Sonar Data Archive</a> which is hosted on an Amazon Web Service (AWS) cloud database. <a href="https://docs.google.com/document/d/1qEs_M0CJ_3slh8j4MNP3Ld-uo1m0KxAPJtTMvJn30bU/edit?tab=t.0#heading=h.u2f00jdzppyd">Here are AST procedures for archiving acoustic data to NCEI</a>.</p>
+<p><img src="images/clipboard-294079156.png" class="img-fluid"></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
