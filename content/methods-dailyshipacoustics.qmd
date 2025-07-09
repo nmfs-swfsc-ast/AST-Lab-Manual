@@ -24,4 +24,4 @@ The **C:\\SURVEY\\\[Survey Name Code\]** directory contains all survey-related i
 
 -   For issues on ship networking, contact the ship ET and ship survey technician
 
--   The AST group chat is always available for additional techinical and emotional support :)
+-   The AST group chat is always available for additional technical and emotional support :)

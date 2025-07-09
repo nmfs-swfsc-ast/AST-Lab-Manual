@@ -19,27 +19,53 @@ This page provides the in-the-weeds data management details, which will likely o
 
 ### AST Google Shared Drive Structure:
 
-#### Equipment Documentation
-
-```         
-Add folder structure
-```
-
 #### Calibrations
 
-The structure of an individual GDrive Calibration folder:
+The file structure for Survey Calibration data on the GDrive.
 
 ```         
-Survey Code-Calibration [2506LBC-Calibration]
-├── transceiver type [EK80]
-  ├── RAW
-  ├── RESULTS
-├── ECS 
-  ├── Survey Code_UCTD Cast Number.ecs [2506LBC_UCTD001-1.ecs] 
+20210702_LASKER_SummerCPS
+├── DATA
+  ├── EK80
+    ├── RAW
+    ├── CALIBRATION
+      ├── RAW
+      ├── RESULTS
+      ├── SETUP
 ```
 
-#### CCE Moorings and Landers
+#### Projects 
+
+The file structure for Projects on the GDrive.
 
 ```         
-Add folder structure
+CCE Mooring and Landers
+├── Point Conception Lander
+  ├── 06 (Deployment Number)
+    ├── WBAT
+      ├── RAW
+      ├── SETUP
+      ├── CALIBRATION
+        ├── RAW
+        ├── RESULTS
+        ├── SETUP
+      
+    
+California Current Ecosystem Buoys
+  ├── CCE1
+    ├── 02 (Deployment Number)
+      ├── WBAT
+        ├── RAW
+        ├── SETUP
+        ├── CALIBRATION
+          ├── RAW
+          ├── RESULTS
+          ├── SETUP
+        
 ```
+
+### Data Archiving:
+
+We use the NCEI Software [**CruisePack**](https://www.ncei.noaa.gov/products/cruisepack) to archive acoustic data. CruisePack is a data packaging and metadata gathering software tool NCEI developed to simplify data submission preparation for cruise-based data. All AST acoustic survey data should be archived to the [NCEI Water Column Sonar Data Archive](https://registry.opendata.aws/ncei-wcsd-archive/) which is hosted on an Amazon Web Service (AWS) cloud database. [Here are AST procedures for archiving acoustic data to NCEI](https://docs.google.com/document/d/1qEs_M0CJ_3slh8j4MNP3Ld-uo1m0KxAPJtTMvJn30bU/edit?tab=t.0#heading=h.u2f00jdzppyd).
+
+![](images/clipboard-294079156.png)
