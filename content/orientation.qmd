@@ -2,6 +2,10 @@
 title: "Orientation"
 ---
 
+## How to Interact with this Site:
+
+To submit requests to improve the site, please submit an issue to the site's [repository](https://github.com/nmfs-swfsc-ast/AST-Lab-Manual/issues)!
+
 ## Code of Conduct
 
 ```{r setup, include=FALSE}
