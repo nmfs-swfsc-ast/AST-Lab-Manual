@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Ship Trawl Selection – AST Lab Manual</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -24,7 +27,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -58,14 +60,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-415af80b9251e762d6fac308c5d7446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-894000b0ab7b91f01332d20673007561.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-415af80b9251e762d6fac308c5d7446a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8432ee26c2eb86eb0659ec3d4cbd73c9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-049b89148c041f11256bd001a988d46e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-8432ee26c2eb86eb0659ec3d4cbd73c9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -283,7 +285,8 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="https://media.fisheries.noaa.gov/dam-migration-miss/md_YPyChZ2sgSi5.png?1595971802" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="https://media.fisheries.noaa.gov/dam-migration-miss/md_YPyChZ2sgSi5.png?1595971802" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://media.fisheries.noaa.gov/dam-migration-miss/md_YPyChZ2sgSi5.png?1595971802" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://www.fisheries.noaa.gov/west-coast/science-data/advanced-survey-technologies-assessments-california-current-ecosystem" title="SWFSC AST" class="quarto-navigation-tool px-1" aria-label="SWFSC AST"><i class="bi bi-globe"></i></a>
@@ -497,18 +500,18 @@ div.csl-indent {
 <p><img src="images/trawl-selection.JPG" class="img-fluid" width="642"></p>
 <p>Expected CPS habitat is derived from prior survey results and models:</p>
 <ul>
-<li><p>Sardine habitat based on a 12-year data set of sardine eggs, remotely sensed oceanographic variables, sea surface temperature, chlorophyll <em>a</em> concentrations, sea surface altitude <span class="citation" data-cites="zwolinski2011">(<a href="#ref-zwolinski2011" role="doc-biblioref">Zwolinski, Emmett, and Demer 2011</a>)</span>.</p></li>
+<li><p>Sardine habitat based on a 12-year data set of sardine eggs, remotely sensed oceanographic variables, sea surface temperature, chlorophyll <em>a</em> concentrations, sea surface altitude <span class="citation" data-cites="zwolinski2011">(<a href="#ref-zwolinski2011" role="doc-biblioref">Zwolinski et al. 2011</a>)</span>.</p></li>
 <li><p>Charted bathymetry – Pacific sardines can be found from the ocean surface to ~350m in depth and typically reside around smoother (less rocky) bottom types.</p></li>
-<li><p>Sardine eggs are most abundant at sea-surface temperatures of 13 to 15 ∘C, and larvae are most abundant at 13 to 16 ∘C. Temperature is a primary driver of the spatial and seasonal distribution of spawning. During warm ocean conditions, sardine spawning shifts northward concentrating in offshore regions and north of Point Conception to San Francisco and in some years is observed as far north as Oregon <span class="citation" data-cites="kuriyama2020">(<a href="#ref-kuriyama2020" role="doc-biblioref">Kuriyama, Zwolinski, and Hill 2020</a>)</span>.</p></li>
+<li><p>Sardine eggs are most abundant at sea-surface temperatures of 13 to 15 ∘C, and larvae are most abundant at 13 to 16 ∘C. Temperature is a primary driver of the spatial and seasonal distribution of spawning. During warm ocean conditions, sardine spawning shifts northward concentrating in offshore regions and north of Point Conception to San Francisco and in some years is observed as far north as Oregon <span class="citation" data-cites="kuriyama2020">(<a href="#ref-kuriyama2020" role="doc-biblioref">Kuriyama et al. 2020</a>)</span>.</p></li>
 </ul>
 
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-kuriyama2020" class="csl-entry" role="listitem">
-Kuriyama, Peter T., Juan P. Zwolinski, and Kevin T. Hill. 2020. <span>“Assessment of the Pacific Sardine Resource in 2020 for u.s. Management in 2020-2021.”</span> <em>Southwest Fisheries Science Center (U.S.)</em>. <a href="https://doi.org/10.25923/R2FZ-4Y79">https://doi.org/10.25923/R2FZ-4Y79</a>.
+Kuriyama, Peter T., Juan P. Zwolinski, and Kevin T. Hill. 2020. <span>“Assessment of the Pacific Sardine Resource in 2020 for u.s. Management in 2020-2021.”</span> <em>Southwest Fisheries Science Center (U.S.)</em>, ahead of print. <a href="https://doi.org/10.25923/R2FZ-4Y79">https://doi.org/10.25923/R2FZ-4Y79</a>.
 </div>
 <div id="ref-zwolinski2011" class="csl-entry" role="listitem">
 Zwolinski, Juan P., Robert L. Emmett, and David A. Demer. 2011. <span>“Predicting Habitat to Optimize Sampling of Pacific Sardine (Sardinops Sagax).”</span> <em>ICES Journal of Marine Science</em> 68 (5): 867–79. <a href="https://doi.org/10.1093/icesjms/fsr038">https://doi.org/10.1093/icesjms/fsr038</a>.
@@ -578,13 +581,14 @@ Zwolinski, Juan P., Robert L. Emmett, and David A. Demer. 2011. <span>“Predict
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
