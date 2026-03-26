@@ -5,7 +5,7 @@ render.date <- format(Sys.time(), format = "%F %T", usetz = TRUE)
 **Last updated:** `{r} render.date`
 
 ---
-title: "AST Lab Manual"
+title: "AST Lab Manual-NOAA"
 subtitle: "This is a training and field manual describing methods used in the SWFSC Advanced Survey Technologies Program."
 page-layout: full
 ---
